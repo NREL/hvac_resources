@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="directoryApp">
+<head>
+	<title>AngularJS For Everyone</title>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="directory.js"></script>
+	<style>
+		.over-thirty{
+			background: red;
+			color: white;
+		}
+		.under-thirty{
+			background: blue;
+			color: white;
+		}
+	</style>
+</head>
+<body ng-controller="directoryController as dirList">
+
+	<input type="text" ng-model="search"></input>
+	<UL ng-class="{'hidden': !dirList.toggle}">
+		<li ng-repeat="item in dirList.list | filter:search"
+		ng-class="item.age>29 ? 'over-thirty' : 'under-thirty'">
+		{{item.name}} - <em>{{item.age}}</em>
+		</li>
+	</UL>
+	<button ng-show="!dirList.toggle" ng-click="dirList.toggle=true">Show Names</button>
+	<button ng-show="dirList.toggle" ng-click="dirList.toggle=false">Hide Names</button>
+	<form ng-submit="dirList.addPerson()">
+		<input type="text" placeholder="Name" ng-model="dirList.name"></input>
+		<input type="number" placeholder="Age" ng-model="dirList.age"></input>
+		<input type="submit" value="Submit"></input>
+	</form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <script src="lib/angular/angular.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="controllers/script.js"></script>
+    <script src="controllers/directory.js"></script>
+   <script src="lib/angular/angular-ui-router.js"></script>
+    <script src="lib/angular/angular-animate.js"></script>
+</head>
+
+<style>
+
+</style>
+
+    <body>
+        <div class="container">
+            <div ng-controller="SidebarController" class="sidebar" sidebar-directive="state">
+                <a href="#" id="navigation-toggle" ng-click="toggleState()">Navigation</a>
+                <ul class="navigation">
+                    <li class="navigation-items"> <a href="/">Air Compressor</a> </li>
+                    <li class="navigation-items"> <a href="/">Boiler</a> </li>
+                    <li class="navigation-items"> <a href="/">Chiller</a> </li>
+                    <li class="navigation-items"> <a href="/">Cooling Tower</a> </li>
+                    <li class="navigation-items"> <a href="/">Fan</a> </li>
+                </ul>
+            </div>
+        </div>
+<!--        <div><ng-include src="'/img/forsvg.svg'"></ng-include></div>-->
+        
+    </body>
+
+</html>

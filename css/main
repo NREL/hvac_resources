@@ -1,0 +1,57 @@
+		.over-thirty{
+			background: white;
+			color: black;
+		}
+		.under-thirty{
+			background: white;
+			color: black;
+		}
+		.hidden{
+			display: none;
+		}
+        ul{
+            list-style: none;
+        }
+        li{
+            display: flex;
+            margin-bottom: 10px;
+        }
+        li span{
+            display: inline-block;
+            line-height: 50px;
+        }
+        li img{
+            margin-right: 10px;
+            border-radius: 50%;
+            width: 50px;
+            Height:75px;
+        }
+        #boiler{
+            fill:teal!important;
+            stroke:black!important;
+        } 
+        /* The starting CSS styles for the enter animation */
+        li.ng-enter {
+            animation: fadeIn 0.3s linear;
+        }
+        @keyframes fadeIn {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        li.ng-enter.ng-enter-active {
+            opacity:1;
+            transform: translate(-100);
+        }
+        ul.ng-leave {
+            transition:0.3s ease all;
+            opacity:1;
+            transform: translate(0);
+        }
+        ul.ng-leave.ng-leave-active {
+            opacity:0;
+            transform: translate(10px);
+        }mai

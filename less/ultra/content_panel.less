@@ -1,0 +1,173 @@
+/*--------------------
+Content_Panel CSS
+----------------------*/
+
+body {
+	// For PUSH Menu
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.cp-collapse-fixed {
+	margin-left: @width-collapsed-left-panel !important;
+	left: 0 !important; 
+}
+
+.panel-horizontal {
+	.content-panel {
+		left: auto !important;
+		right: auto !important;
+		margin-left: 0 !important;
+		margin-right: 0!important;
+	}
+}
+
+.content-wrapper {	
+	position: relative;
+	background-color: white;
+}
+
+.content-panel {
+	position: relative;
+	top: 80px;
+	padding-top: 15px;
+	overflow-y: auto;
+	background-color: white;
+}
+
+.content-shrink {
+	margin-left: @width-left-panel;
+	left: 0px;
+}
+
+.content-push {
+	position: relative;
+	left: @width-left-panel;
+}
+
+.content-overlay {
+	margin-left: 0;
+	left: 0;
+}
+
+.collapse-true {
+	.content-overlay {
+		margin-left: @width-collapsed-left-panel;
+	}
+	@media(max-width: @screen-xs) {
+		.content-overlay {
+			margin-left: 0;
+		}
+	}
+}
+
+@media(min-width: @screen-xs) {
+
+	//Large Devices
+	.panel-lg {
+		.content-shrink {
+			margin-left: 0;
+		}
+		.content-push {
+			left: 0;
+		}
+	}
+}
+
+@media(max-width: @screen-xs) {
+	
+	.content-shrink {
+		margin-left: 0;
+	}
+
+	.content-push {
+		left: 0;
+	}
+
+	.content-overlay {
+		margin-left: 0;
+	}
+
+	// Small Devices
+	.panel-sm{
+		.content-shrink {
+			margin-left: @width-left-panel;
+		}
+
+		.content-push {
+			left: @width-left-panel;
+		}
+	}
+}
+
+
+@media(min-width: @screen-xs) {
+	
+	//Control Collapsed
+	//For XL Devices only
+	.panel-cp{	
+		.content-shrink {
+			margin-left: @width-collapsed-left-panel;
+		}
+
+		.content-push {
+			left: 0;
+			margin-left: @width-collapsed-left-panel;
+		}
+	}
+}
+
+/* Force PUSH Mode
+	Description-When Sreen Width is very less, then .content-push will be used
+*/
+
+@media(max-width: @screen-xs) {
+	// Small Devices
+	.panel-sm{
+		.content-shrink {
+			margin-left: 0;
+			left: @width-left-panel;
+		}
+	}
+}
+
+// Ultra features
+@fe-pad: 10px;
+pre {
+	border-radius: 0;
+}
+.ultra-feature-container {
+	background-color: #FBFBFC;
+	border: 1px solid #E1E1E8;
+	margin-top: 5px;
+	padding: (2*@fe-pad);
+	padding-bottom: 0;
+	[class^=col-]{
+		padding-left: @fe-pad;
+		padding-right: @fe-pad;
+	}
+	.row {
+		margin-left: (-@fe-pad);
+		margin-right: (-@fe-pad);
+	}
+}
+
+.ultra-feature {
+	background-color: #F7F7F9;
+	border: 1px solid #ECECF0;
+	text-align: center;
+	padding: 8px 12px;
+	margin-bottom: (2*@fe-pad);
+}
+
+.feature-icon {
+	display: block;
+	font-size: 25px;
+	color: #aaa;
+}
+
+.feature-text {
+	font-size: 13px;
+	font-weight: 600;
+	color: #00C3D2;
+}
