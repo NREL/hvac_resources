@@ -30,23 +30,3 @@ app.directive('sidebarDirective', function() {
   
   
 }())
-
-angular.module('directoryApp',['ngAnimate','ui.router'])
-    .config(function($stateProvider, $urlRouterProvider){
-        
-       $urlRouterProvider.otherwise('/');  
-        $stateProvider
-        .state('home', {
-            url:'/',
-            templateUrl:'views/home.html',
-            controller:'directoryController as dirList'
-        })
-        .state('test', {
-            url:'/test',
-            templateUrl:'views/myfixed.html'
-        })
-                .state('test2', {
-            url:'/test2',
-            templateUrl:'views/indexa.html'
-        });
-    })

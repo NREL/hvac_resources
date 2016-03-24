@@ -1,38 +1,103 @@
-            body {
-                font-family : arial;
+/*        body {
+            font-family: 'Open Sans', sans-serif;
             }
+            body, h1, h2, h3, h4, h5, h6, p, div {
+            font-family: 'Open Sans', sans-serif;
+            }*/
+
+            body, .tooltip, .popover {
+            font-family: 'Open Sans', sans-serif;
+            }
+
+            body {
+                background: black!important;
+            }
+        #photolayer{
+            z-index: 1; 
+            left: 5px; 
+            top: 0px; 
+            width: 100%; 
+            height: 100%; 
+            visibility: visible
+        }
+
+        .leftnav{
+            font-size: 16px;
+            background-color: #282828;
+            width : 250px;
+            }
+        .leftnav a:hover {
+            text-decoration: none;
+            color: white!important;
+            background: teal!important;
+            }
+            .leftnav a:active,
+            .leftnav a:focus {
+             text-decoration: none;
+            }
+
+        .leftnavt{
+            font-size: 16px;
+            font: bold;
+            background-color: black;
+            width : 250px;
+            }
+
+        .topbar {
+            width : 100%;
+            height: 80px;
+            background-color: #3d3d3d;
+            border-bottom: 1px solid #e5e5e5;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            text-align: left;
+            font-size: 48px;
+            color: White;
+            font-weight: 100;
+            float: left;
+            padding : 20px;
+            line-height: 50px;
+            position: relative;
+        }
             .sidebar {
                 position : absolute;
-                top : 0;
-                left : -160px;;
+                margin-top:80px;
+                left : -200px;;
                 transition : 100ms left;
             }
             #navigation-toggle {
                     position : absolute;
-                    left : 160px;
+                    left : 40px;
                     background : rgba(3,159,244,.95);
                     color : white;
                     text-decoration : none;
                     padding : 20px;
+                    width : 250px;
             }
             .show {
                 left : 0;
             }
             .navigation {
                 list-style : none;
-                padding : 0;
-                margin : 0;
+                padding : 2;
+                margin-top:60px;
+                margin : 2;
             }
             .navigation-items a {
                 display : block;
                 background-color : #444;
                 color : white;
-                line-height : 2em;
+                line-height : 3em;
                 text-decoration : none;
                 padding : 10px 30px;
-                width : 100px;
+                width : 250px;
+                font-size: 14px;
+                font-family: font-family: 'Open Sans Condensed', sans-serif; 
 
             }
             .navigation-items a:hover {
-                background-color : #222;
+                background-color : teal;
+                color : white;
             }

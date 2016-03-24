@@ -1,34 +1,70 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html>
 
 <head>
   <script src="lib/angular/angular.min.js"></script>
   <link rel="stylesheet" href="css/style.css" />
   <script src="controllers/script.js"></script>
-    <script src="controllers/directory.js"></script>
+        <script src="js/jquery-1.12.1.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
    <script src="lib/angular/angular-ui-router.js"></script>
+        <script src="controllers/app.js"></script>
     <script src="lib/angular/angular-animate.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 </head>
 
 <style>
-
 </style>
 
-    <body>
+   <body ng-app="routerApp">
+<!--       <div class="topbar">HVAC Resources</div>
         <div class="container">
             <div ng-controller="SidebarController" class="sidebar" sidebar-directive="state">
-                <a href="#" id="navigation-toggle" ng-click="toggleState()">Navigation</a>
+                <a href="#" id="navigation-toggle" ng-click="toggleState()">HVAC Components</a>
                 <ul class="navigation">
-                    <li class="navigation-items"> <a href="/">Air Compressor</a> </li>
+                    <li class="navigation-items"> <a href="/#/about">Air Compressor</a> </li>                 
                     <li class="navigation-items"> <a href="/">Boiler</a> </li>
                     <li class="navigation-items"> <a href="/">Chiller</a> </li>
                     <li class="navigation-items"> <a href="/">Cooling Tower</a> </li>
                     <li class="navigation-items"> <a href="/">Fan</a> </li>
                 </ul>
             </div>
+        </div>-->
+       <div class="topbar">HVAC Resources</div>
+<div class="row"> 
+    <!-- COLUMN ONE NAMED VIEW -->
+    <div class="col-sm-1">
+       <div class="container">
+       <ul ng-controller="leftnavController" class="nav nav-pills nav-stacked" sidebar-directive="state">
+                    <li class="leftnavt"> <a href="/">CENTRAL PLANT</a> </li>  
+                    <li class="leftnav"> <a href="/">Air Compressor</a> </li>                 
+                    <li class="leftnav"> <a href="/#/boiler">Boiler</a> </li>
+                    <li class="leftnav"> <a href="/#/about">Chiller</a> </li>
+                    <li class="leftnav"> <a href="/">Cooling Tower</a> </li>
+                    <li class="leftnav"> <a href="/">Fan</a> </li>
+           </ul>
+       </div>
+    </div> 
+    <!-- COLUMN TWO NAMED VIEW -->
+    <div class="col-sm-5" >
+    <div class="container">
+        <!-- Page Content Here ============================== -->
+        <div id="photolayer">
+        <ng-include src="'/img/forsvg.svg'"></ng-include>
+        </div> 
+    </div>
+    </div>
+       
+       <!-- COLUMN Three NAMED VIEW -->
+    <div class="col-sm-6" >
+    <div class="container">
+        <!-- Page Content Here ============================== -->
+        <div ui-view></div>
         </div>
-<!--        <div><ng-include src="'/img/forsvg.svg'"></ng-include></div>-->
-        
+    </div>
+</div> 
     </body>
 
 </html>
