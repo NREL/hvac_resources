@@ -18,27 +18,14 @@
 <style>
 </style>
 
-   <body ng-app="routerApp">
-<!--       <div class="topbar">HVAC Resources</div>
-        <div class="container">
-            <div ng-controller="SidebarController" class="sidebar" sidebar-directive="state">
-                <a href="#" id="navigation-toggle" ng-click="toggleState()">HVAC Components</a>
-                <ul class="navigation">
-                    <li class="navigation-items"> <a href="/#/about">Air Compressor</a> </li>                 
-                    <li class="navigation-items"> <a href="/">Boiler</a> </li>
-                    <li class="navigation-items"> <a href="/">Chiller</a> </li>
-                    <li class="navigation-items"> <a href="/">Cooling Tower</a> </li>
-                    <li class="navigation-items"> <a href="/">Fan</a> </li>
-                </ul>
-            </div>
-        </div>-->
+<body ng-app="routerApp">
        <div class="topbar">HVAC Resources</div>
 <div class="row"> 
     <!-- COLUMN ONE NAMED VIEW -->
-    <div class="col-sm-1">
+    <div class="col-sm-3">
        <div class="container">
-       <ul ng-controller="leftnavController" class="nav nav-pills nav-stacked" sidebar-directive="state">
-                    <li class="leftnavt"> <a href="/">CENTRAL PLANT</a> </li>  
+       <ul>
+                    <li class="leftnavt">CENTRAL PLANT</li>  
                     <li class="leftnav"> <a href="/">Air Compressor</a> </li>                 
                     <li class="leftnav"> <a href="/#/boiler">Boiler</a> </li>
                     <li class="leftnav"> <a href="/#/about">Chiller</a> </li>
@@ -48,7 +35,8 @@
        </div>
     </div> 
     <!-- COLUMN TWO NAMED VIEW -->
-    <div class="col-sm-5" >
+<!--    <div class="col-sm-2 visible-lg text-success">-->
+     <div class="col-sm-2 ">
     <div class="container">
         <!-- Page Content Here ============================== -->
         <div id="photolayer">
@@ -58,13 +46,22 @@
     </div>
        
        <!-- COLUMN Three NAMED VIEW -->
-    <div class="col-sm-6" >
+    <div class="col-sm-7" >
     <div class="container">
-        <!-- Page Content Here ============================== -->
+        <div class="panel panel-default">
+  <div class="panel-body">
+    <!-- Page Content Here ============================== -->
         <div ui-view></div>
+  </div>
+</div>
+    </div> 
         </div>
-    </div>
-</div> 
-    </body>
+        
+<div class="row">
+        <div class="footer">Footer Text with Credits</div>
+</div>
+       
+       </div>
+</body>
 
 </html>

@@ -16,44 +16,76 @@
             z-index: 1; 
             left: 5px; 
             top: 0px; 
-            width: 100%; 
-            height: 100%; 
+            width: 70%; 
+            height: 70%; 
             visibility: visible
         }
+        
+        .leftnavt{
+            font-size: 24px;
+            color: white!important;
+            background-color: black;
+            width : 250px;
+            padding: 10px 0 10px 10px;
+            }
+            
 
         .leftnav{
-            font-size: 16px;
+            font-size: 24px;
+            letter-spacing:1px;
+            color: white!important;
             background-color: #282828;
             width : 250px;
             }
-        .leftnav a:hover {
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            color: white;
+         }
+
+        li a {
+            display: block;
+            color: white;
+            padding: 10px 0 10px 20px;
             text-decoration: none;
-            color: white!important;
-            background: teal!important;
-            }
-            .leftnav a:active,
+        }
+
+        /* Change the link color on hover */
+        li a:hover {
+            background-color: teal;
+            color: white;
+        }
+        li a:active,
             .leftnav a:focus {
              text-decoration: none;
+                background-color: teal;
+                color: white;
             }
 
-        .leftnavt{
-            font-size: 16px;
-            font: bold;
-            background-color: black;
-            width : 250px;
-            }
+        li {
+        text-align: left;
+        border-bottom: 1px solid #555;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
 
         .topbar {
             width : 100%;
-            height: 80px;
+            height: 100px;
             background-color: #3d3d3d;
-            border-bottom: 1px solid #e5e5e5;
+            border-bottom: 20px solid black;
             position: absolute;
             top: 0;
             left: 0;
             z-index: 3;
             text-align: left;
             font-size: 48px;
+            letter-spacing:3px;
             color: White;
             font-weight: 100;
             float: left;
@@ -61,43 +93,19 @@
             line-height: 50px;
             position: relative;
         }
-            .sidebar {
-                position : absolute;
-                margin-top:80px;
-                left : -200px;;
-                transition : 100ms left;
-            }
-            #navigation-toggle {
-                    position : absolute;
-                    left : 40px;
-                    background : rgba(3,159,244,.95);
-                    color : white;
-                    text-decoration : none;
-                    padding : 20px;
-                    width : 250px;
-            }
-            .show {
-                left : 0;
-            }
-            .navigation {
-                list-style : none;
-                padding : 2;
-                margin-top:60px;
-                margin : 2;
-            }
-            .navigation-items a {
-                display : block;
-                background-color : #444;
-                color : white;
-                line-height : 3em;
-                text-decoration : none;
-                padding : 10px 30px;
-                width : 250px;
-                font-size: 14px;
-                font-family: font-family: 'Open Sans Condensed', sans-serif; 
 
-            }
-            .navigation-items a:hover {
-                background-color : teal;
-                color : white;
-            }
+        .footer {
+            width : 100%;
+            height: 120px;
+            background-color: #3d3d3d;
+            position: absolute;
+            text-align: center;
+            font-size: 20px;
+            letter-spacing:2px;
+            color: White;
+            font-weight: 100;
+            float: left;
+            padding : 50 px;
+            line-height: 50px;
+            position: relative;
+        }
