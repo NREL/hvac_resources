@@ -1,21 +1,20 @@
 <style>
-        #boiler{
-            fill:teal!important;
-            stroke:black!important;
+  #boiler {
+    fill: teal !important;
+    stroke: black !important;
+  }
 </style>
-<div class="container">
-<h1>Boiler</h1>
-<div class="wrapper"> 
-    <div class="col-sm-9">
-       <div class="content-main">
-         <div ui-view></div>     
-        </div>
+<div class="row">
+  <h1>Boiler</h1>
+  <div class="col-sm-9">
+    <div class="content-main">
+      <div ui-view></div>
     </div>
-      <div class="col-sm-3">
-       <div class="content-secondary">
-            <a ui-sref=".basics" class="list-group-item">Basics</a>
-            <a ui-sref=".design" class="list-group-item">Design Guides</a>
-        </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="content-secondary">
+      <a ui-sref=".basics" class="list-group-item">Basics</a>
+      <a ui-sref=".design" class="list-group-item">Design Guides</a>
     </div>
-    </div>
-    </div>
+  </div>
+</div>

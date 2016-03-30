@@ -1,66 +1,61 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <script src="lib/angular/angular.min.js"></script>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="controllers/script.js"></script>
-        <script src="js/jquery-1.12.1.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-   <script src="lib/angular/angular-ui-router.js"></script>
-        <script src="controllers/app.js"></script>
+  <head>
+    <script src="lib/angular/angular.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="controllers/script.js"></script>
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="lib/angular/angular-ui-router.js"></script>
+    <script src="controllers/app.js"></script>
     <script src="lib/angular/angular-animate.js"></script>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-</head>
-
-<style>
-</style>
-
-<body ng-app="routerApp">
-       <div class="topbar">HVAC Resources</div>
-<div class="container-fluid">
-<div class="row"> 
-    <!-- COLUMN ONE NAMED VIEW -->
-    <div class="col-md-1 col-xs-12 col-sm-6">
-       <div class="container">
-       <ul>
-                    <li class="leftnavt">CENTRAL PLANT</li>  
-                    <li class="leftnav"> <a href="/">Air Compressor</a> </li>                 
-                    <li class="leftnav"> <a href="/#/boiler/basics">Boiler</a> </li>
-                    <li class="leftnav"> <a href="/#/chiller/paragraph">Chiller</a> </li>
-                    <li class="leftnav"> <a href="/">Cooling Tower</a> </li>
-                    <li class="leftnav"> <a href="/">Fan</a> </li>
-           </ul>
-       </div>
-    </div> 
-    <!-- COLUMN TWO NAMED VIEW -->
-     <div class="col-md-2 col-xs-12 col-sm-6 hidden-xs">
-    <div class="container">
-        <!-- SVG Content Here ============================== -->
-        <div id="photolayer">
-        <ng-include src="'/img/forsvg.svg'" class="img-responsive"></ng-include>
-        </div> 
-    </div>
-    </div>
-       
-       <!-- COLUMN Three NAMED VIEW -->
-    <div class="col-md-9 col-xs-12 col-sm-12" >
-    <div class="container">
-        <div class="infocontainer">
-    <!-- Page Content Here ============================== -->
-        <div ui-view></div>
+  </head>
+  <body ng-app="routerApp">
+    <div class="topbar">HVAC Resources</div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- COLUMN ONE NAMED VIEW -->
+        <div class="col-md-1 col-xs-12 col-sm-6">
+          <div class="container">
+            <ul>
+              <li class="leftnavt">CENTRAL PLANT</li>
+              <li class="leftnav"><a href="/">Air Compressor</a></li>
+              <li class="leftnav"><a href="/#/boiler/basics">Boiler</a></li>
+              <li class="leftnav"><a href="/#/chiller/paragraph">Chiller</a></li>
+              <li class="leftnav"><a href="/">Cooling Tower</a></li>
+              <li class="leftnav"><a href="/">Fan</a></li>
+            </ul>
+          </div>
         </div>
-    </div> 
+        <!-- COLUMN TWO NAMED VIEW -->
+        <div class="col-md-5 col-sm-6 hidden-xs">
+          <div class="container">
+            <!-- SVG Content Here ============================== -->
+            <div id="photolayer">
+              <ng-include src="'/img/forsvg.svg'" class="img-responsive"></ng-include>
+            </div>
+          </div>
         </div>
-    </div>
-        
-<div class="row">
+
+        <!-- COLUMN Three NAMED VIEW -->
+        <div class="col-md-6 col-xs-12 col-sm-12">
+
+          <div class="infocontainer">
+            <!-- Page Content Here ============================== -->
+            <div ui-view></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row">
         <div class="footer">Footer Text with Credits</div>
-</div>
+      </div>
     </div>
-    
-</body>
+
+  </body>
 
 </html>
