@@ -11,60 +11,47 @@ $urlRouterProvider.otherwise('/home');
         url: '/home',
         templateUrl: 'views/partial-home.html'
     })
+ 
+    // Boiler STATES AND NESTED VIEWS ========================================
+     .state('boiler', {
+        url: '/boiler',
+        templateUrl: 'views/boiler.html'
+    })
+
+    .state('boiler.design', {
+        url: '/design',
+        templateUrl: 'views/boiler_design.html',
+    })
+
+    .state('boiler.basics', {
+        url: '/basics',
+        templateUrl: 'views/boiler_basics.html',
+    })
+ 
+ 
+     // Chiller STATES AND NESTED VIEWS ========================================
+    .state('chiller', {
+        url: '/chiller',
+        templateUrl: 'views/chiller.html'
+    })
 
     // nested list with custom controller
-    .state('home.list', {
+    .state('chiller.list', {
         url: '/list',
-        templateUrl: 'views/partial-home-list.html',
-        controller: function($scope) {
-            $scope.dogs = ['Bernese', 'Husky', 'Goldendoodle'];
-        }
+        templateUrl: 'views/chiller_design.html',
     })
 
     // nested list with just some random string data
-    .state('home.paragraph', {
+    .state('chiller.paragraph', {
         url: '/paragraph',
-        template: 'some text here'
+        templateUrl: 'views/chiller_basics.html',
     })
-     .state('boiler', {
-        url: '/boiler',
-        views: {
 
-            // the main template will be placed here (relatively named)
-            '': { templateUrl: 'views/partial-boiler.html' },
-
-            // the child views will be defined here (absolutely named)
-            'columnOne@boiler': { 
-                templateUrl: 'views/about_boiler.html'},
-
-            // for column two, we'll define a separate controller 
-            'columnTwo@boiler': { 
-                templateUrl: 'views/boiler_basics.html'}
-        }
-        
-    })
-    .state('about', {
-        url: '/about',
-        views: {
-
-            // the main template will be placed here (relatively named)
-            '': { templateUrl: 'views/partial-about.html' },
-
-            // the child views will be defined here (absolutely named)
-            'columnOne@about': { 
-                templateUrl: 'views/about.html'},
-
-            // for column two, we'll define a separate controller 
-            'columnTwo@about': { 
-                templateUrl: 'views/chiller_basics.html'}
-        }
-        
-    });
 
 }); // closes $routerApp.config()
 
 
-// let's define the scotch controller that we call up in the about state
+/*// let's define the scotch controller that we call up in the about state
 routerApp.controller('scotchController', function($scope) {
     
     $scope.message = 'test';
@@ -84,7 +71,7 @@ routerApp.controller('scotchController', function($scope) {
         }
     ];
     
-});
+});*/
 
 
 routerApp.controller('leftnavController', function($scope) {

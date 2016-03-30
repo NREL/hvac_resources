@@ -12,17 +12,40 @@
             body {
                 background: black!important;
             }
+        .h1 {
+            font-style: normal;
+            letter-spacing:3px;
+        }
+        .wrapper {
+          .make-row();
+        }
+        .content-main {
+          .make-lg-column(8);
+        }
+        .content-secondary {
+          .make-lg-column(3);
+          .make-lg-column-offset(1);
+        }
         #photolayer{
             z-index: 1; 
             left: 5px; 
-            top: 0px; 
-            width: 70%; 
-            height: 70%; 
-            visibility: visible
+            top: 0px;
+            max-width: 50%;
+            visibility: visible;
+            min-width: 30%;
+            min-height: 30%;
+             
+        }
+        .infocontainer{
+            background-color: #eeeeee; 
+            padding: 15px;
+            margin-right: 10px;
+            border-radius: 10px;
+            max-width: 100%;
         }
         
         .leftnavt{
-            font-size: 24px;
+            font-size: 20px;
             color: white!important;
             background-color: black;
             width : 250px;
@@ -31,7 +54,7 @@
             
 
         .leftnav{
-            font-size: 24px;
+            font-size: 16px;
             letter-spacing:1px;
             color: white!important;
             background-color: #282828;
@@ -89,8 +112,8 @@
             color: White;
             font-weight: 100;
             float: left;
-            padding : 20px;
-            line-height: 50px;
+            padding : 10px;
+            line-height: 70px;
             position: relative;
         }
 
@@ -109,3 +132,6 @@
             line-height: 50px;
             position: relative;
         }
+
+       
+

@@ -20,48 +20,47 @@
 
 <body ng-app="routerApp">
        <div class="topbar">HVAC Resources</div>
+<div class="container-fluid">
 <div class="row"> 
     <!-- COLUMN ONE NAMED VIEW -->
-    <div class="col-sm-3">
+    <div class="col-md-1 col-xs-12 col-sm-6">
        <div class="container">
        <ul>
                     <li class="leftnavt">CENTRAL PLANT</li>  
                     <li class="leftnav"> <a href="/">Air Compressor</a> </li>                 
-                    <li class="leftnav"> <a href="/#/boiler">Boiler</a> </li>
-                    <li class="leftnav"> <a href="/#/about">Chiller</a> </li>
+                    <li class="leftnav"> <a href="/#/boiler/basics">Boiler</a> </li>
+                    <li class="leftnav"> <a href="/#/chiller/paragraph">Chiller</a> </li>
                     <li class="leftnav"> <a href="/">Cooling Tower</a> </li>
                     <li class="leftnav"> <a href="/">Fan</a> </li>
            </ul>
        </div>
     </div> 
     <!-- COLUMN TWO NAMED VIEW -->
-<!--    <div class="col-sm-2 visible-lg text-success">-->
-     <div class="col-sm-2 ">
+     <div class="col-md-2 col-xs-12 col-sm-6 hidden-xs">
     <div class="container">
-        <!-- Page Content Here ============================== -->
+        <!-- SVG Content Here ============================== -->
         <div id="photolayer">
-        <ng-include src="'/img/forsvg.svg'"></ng-include>
+        <ng-include src="'/img/forsvg.svg'" class="img-responsive"></ng-include>
         </div> 
     </div>
     </div>
        
        <!-- COLUMN Three NAMED VIEW -->
-    <div class="col-sm-7" >
+    <div class="col-md-9 col-xs-12 col-sm-12" >
     <div class="container">
-        <div class="panel panel-default">
-  <div class="panel-body">
+        <div class="infocontainer">
     <!-- Page Content Here ============================== -->
         <div ui-view></div>
-  </div>
-</div>
+        </div>
     </div> 
         </div>
+    </div>
         
 <div class="row">
         <div class="footer">Footer Text with Credits</div>
 </div>
-       
-       </div>
+    </div>
+    
 </body>
 
 </html>
