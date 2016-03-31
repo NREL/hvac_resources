@@ -12,51 +12,78 @@
             body {
                 background: black!important;
             }
-        .wrapper {
+/*        .wrapper {
           .make-row();
         }
         .content-main {
-          .make-lg-column(8);
+          .make-lg-column(3);
         }
         .content-secondary {
-          .make-lg-column(3);
+          .make-lg-column(2);
           .make-lg-column-offset(1);
+        }*/
+
+        .flexcontainer{
+           display: flex;
+            flex-flow: wrap;
+            justify-content:space-between;
+            flex-direction: row;
         }
-        #photolayer{
-            z-index: 1; 
+        .subflexcontainer{
+           display: flex;
+            justify-content:space-between;
+            flex-direction: row;
+        }
+        .content-main{
+            flex-grow: 0;     
+        }
+
+        .content-secondary{
+            flex-grow: 0;
+        }
+        .diagram{
             left: 5px; 
             top: 0px;
-            max-width: 50%;
-            visibility: visible;
-            min-width: 30%;
-            min-height: 30%;
-             
+            max-width: 35%;
+            order: 2;    
         }
         .infocontainer{
             background-color: #eeeeee; 
-            padding: 15px;
-            margin-right: 10px;
+            padding: 20px;
+            margin-right: 5px;
+            order: 3;
             border-radius: 10px;
-            max-width: 100%;
+            max-width: 50%;
         }
-        
+        .navcontainer{
+          order: 1;
+            flex-grow: 0;
+            max-width: 15%;
+        }
         .leftnavt{
-            font-size: 20px;
-            color: teal!important;
+            font-size: 18px;
+            color: #44aa99!important;
             background-color: black;
-            width : 225px;
+            width : 200px;
             letter-spacing:2px;
             padding: 10px 0 10px 10px;
             }
-            
+         .leftnavs{
+            font-size: 16px;
+            color: #44aa99 !important;
+            background-color: black;
+            width : 200px;
+            letter-spacing:2px;
+            padding: 10px 0 10px 15px;
+            }
 
         .leftnav{
-            font-size: 16px;
+            font-size: 14px;
             letter-spacing:1px;
             color: white!important;
             background-color: #282828;
-            width : 225px;
-            font-weight: 100;
+            width : 200px;
+            font-weight: 200;
             letter-spacing:3px;
             }
 
@@ -77,14 +104,15 @@
 
         /* Change the link color on hover */
         li a:hover {
-            background-color: teal;
+            background-color: #44aa99 ;
             color: white;
         }
         li a:active,
             .leftnav a:focus {
              text-decoration: none;
                 background-color: teal;
-                color: white;
+                color: black!important;
+                font-weight: 500;
             }
 
         li {
@@ -98,7 +126,7 @@
 
         .topbar {
             width : 100%;
-            height: 85px;
+            height: 15%;
             background-color: #3d3d3d;
             border-bottom: 10px solid black;
             position: absolute;
@@ -106,7 +134,7 @@
             left: 0;
             z-index: 3;
             text-align: left;
-            font-size: 48px;
+            font-size: 38px;
             letter-spacing:4px;
             color: White;
             font-weight: 100;
@@ -131,6 +159,138 @@
             line-height: 50px;
             position: relative;
         }
+ /* Central Plant Navigation */
+       .leftnavtcp{
+            font-size: 18px;
+            color: #44aa99!important;
+            background-color: black;
+            width : 225px;
+            letter-spacing:2px;
+            padding: 10px 0 10px 10px;
+            }
+         .leftnavscp{
+            font-size: 16px;
+            color: #44aa99!important;
+            background-color: black;
+            width : 225px;
+            letter-spacing:2px;
+            padding: 10px 0 10px 15px;
+            }
 
-       
+        .leftnavcp{
+            font-size: 14px;
+            letter-spacing:1px;
+            color: white!important;
+            background-color: #282828;
+            width : 225px;
+            font-weight: 200;
+            letter-spacing:3px;
+            }
+
+        .leftnavcp {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 225px;
+            color: white;
+         }
+
+        .leftnavcp a {
+            display: block;
+            color: white;
+            padding: 10px 0 10px 20px;
+            text-decoration: none;
+        }
+
+        /* Change the link color on hover */
+        .leftnavcp a:hover {
+            background-color: #44aa99;
+            color: white;
+        }
+        .leftnavcp a:active,
+            .leftnavcp a:focus {
+             text-decoration: none;
+                background-color: #44aa99;
+                color: black!important;
+                font-weight: 500;
+            }
+
+        .leftnavcp {
+        text-align: left;
+        border-bottom: 1px solid #555;
+        }
+
+        .leftnavcp:last-child {
+            border-bottom: none;
+        }
+ /* Distribution Nav */
+       .leftnavtd{
+            font-size: 18px;
+            color: #ddcc77!important;
+            background-color: black;
+            width : 225px;
+            letter-spacing:2px;
+            padding: 10px 0 10px 10px;
+           font-weight: 200;
+            }
+         .leftnavsd{
+            font-size: 16px;
+            color: #ddcc77!important;
+            background-color: black;
+            width : 225px;
+            letter-spacing:2px;
+            padding: 10px 0 10px 15px;
+            font-weight: 200;
+            }
+
+        .leftnavd{
+            font-size: 14px;
+            letter-spacing:1px;
+            color: white!important;
+            background-color: #282828;
+            width : 225px;
+            font-weight: 200;
+            letter-spacing:3px;
+            }
+
+        .leftnavd {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 225px;
+            color: white;
+         }
+
+        .leftnavd a {
+            display: block;
+            color: white;
+            padding: 10px 0 10px 20px;
+            text-decoration: none;
+        }
+
+        /* Change the link color on hover */
+        .leftnavd a:hover {
+            background-color: #ddcc77;
+            color: black;
+            font-weight: 500;
+        }
+        .leftnavd a:active,
+            .leftnavd a:focus {
+             text-decoration: none;
+            background-color: #ddcc77;
+            color: black!important;
+            font-weight: 500;
+            }
+
+        .leftnavd {
+        text-align: left;
+        border-bottom: 1px solid #555;
+        }
+
+        .leftnavd:last-child {
+            border-bottom: none;
+        }
+
+
+
 

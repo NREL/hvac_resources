@@ -36,14 +36,14 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
     })
 
     // nested list with custom controller
-    .state('chiller.list', {
-      url: '/list',
+    .state('chiller.design', {
+      url: '/design',
       templateUrl: 'views/chiller_design.html'
     })
 
     // nested list with just some random string data
-    .state('chiller.paragraph', {
-      url: '/paragraph',
+    .state('chiller.basics', {
+      url: '/basics',
       templateUrl: 'views/chiller_basics.html'
     })
 

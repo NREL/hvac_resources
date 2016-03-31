@@ -1,20 +1,22 @@
 <style>
   #chiller {
-    fill: teal !important;
+    fill: #44aa99!important;
     stroke: black !important;
   }
+    #chill{
+    background-color: #44aa99!important;
+    color: black!important
+    }
+
 </style>
-<div class="row">
+
   <h1>Chiller</h1>
-  <div class="col-sm-9">
+<div class="subflexcontainer">
     <div class="content-main">
       <div ui-view></div>
     </div>
-  </div>
-  <div class="col-sm-3">
     <div class="content-secondary">
-      <a ui-sref=".paragraph" class="list-group-item">Basics</a>
-      <a ui-sref=".list" class="list-group-item">Design Guides</a>
+      <a ui-sref=".basics" class="list-group-item">Basics</a>
+      <a ui-sref=".design" class="list-group-item">Design Guides</a>
     </div>
-  </div>
 </div>
