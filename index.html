@@ -13,12 +13,20 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
   </head>
   <body ng-app="routerApp">
-<!--    <div class="topbar">HVAC Resources</div>-->
       
-      <div class="flexcontainer">
+<div class="flexcontainer">
+    <div class="topbar">HVAC Resources</div>
+</div>
+      
+<div class="flexcontainer">
         <!-- COLUMN ONE NAMED VIEW -->
 
           <div class="navcontainer">
+            <div class="btn-group btn-group-sm" role="group" aria-label="...">
+                  <button type="button" class="btn btn-default"><a href="/">Home</a></button>
+                  <button type="button" class="btn btn-default">HVAC</button>
+                  <button type="button" class="btn btn-default">Loads</button>
+                </div>  
             <ul>
             <li class="leftnavtcp">CENTRAL PLANT</li>
               <li class="leftnavcp"><a href="/">Air Compressor</a></li>
@@ -40,8 +48,7 @@
         <!-- COLUMN TWO NAMED VIEW -->
             <!-- SVG Content Here ============================== -->
             <div class="diagram">
-                <p>ejagoijigra'[jgaoprjtapraptoptioaeirtopseotopwjaopywjhwop</p>
-              <ng-include src="'/img/forsvg.svg'"></ng-include></ng-include>
+              <ng-include src="'/img/forsvg.svg'"></ng-include>
             </div>
 
         <!-- COLUMN Three NAMED VIEW -->
@@ -49,13 +56,11 @@
             <!-- Page Content Here ============================== -->
             <div ui-view></div>
           </div>
-        </div>
+</div>
       
-      
-    <!--  
       <div class="row">
         <div class="footer">Footer Text with Credits</div>
-      </div>-->
+      </div>
 
 
   </body>

@@ -12,40 +12,27 @@
             body {
                 background: black!important;
             }
-/*        .wrapper {
-          .make-row();
-        }
+
         .content-main {
-          .make-lg-column(3);
         }
         .content-secondary {
-          .make-lg-column(2);
-          .make-lg-column-offset(1);
-        }*/
-
+        }
         .flexcontainer{
-           display: flex;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-flex-flow: wrap;
+            -ms-flex-flow: wrap;
             flex-flow: wrap;
             justify-content:space-between;
-            flex-direction: row;
+            width: 100%;
         }
-        .subflexcontainer{
-           display: flex;
-            justify-content:space-between;
-            flex-direction: row;
-        }
-        .content-main{
-            flex-grow: 0;     
-        }
-
-        .content-secondary{
-            flex-grow: 0;
-        }
-        .diagram{
-            left: 5px; 
-            top: 0px;
-            max-width: 35%;
-            order: 2;    
+        .subflex{
+            display: flex;
+            display: -webkit-flex;       
         }
         .infocontainer{
             background-color: #eeeeee; 
@@ -53,26 +40,48 @@
             margin-right: 5px;
             order: 3;
             border-radius: 10px;
-            max-width: 50%;
+            flex: 2 3 0;
+        /*    min-width: 20%;*/
         }
+        .diagram{
+            order: 2;
+            max-width: 40%;
+            flex: 0 1 350px;
+        }
+        .mybtn{
+        background-color: gray;
+            font-size: 12px;
+            letter-spacing:1px;
+            color: white!important;
+        }
+        .mybtn a:hover {
+            background-color: #dddddd;
+            color: white;
+            font-weight: 500;
+        }
+        .mybtn a:active,
+            .mybtn a:focus {
+            background-color: yellow;
+            color: black!important;
+            font-weight: 500;
+            }
         .navcontainer{
-          order: 1;
-            flex-grow: 0;
-            max-width: 15%;
+            order: 1;
+            flex: 0 1 225px
         }
         .leftnavt{
-            font-size: 18px;
+            font-size: 16px;
             color: #44aa99!important;
             background-color: black;
-            width : 200px;
+            width : 180px;
             letter-spacing:2px;
             padding: 10px 0 10px 10px;
             }
          .leftnavs{
-            font-size: 16px;
+            font-size: 14px;
             color: #44aa99 !important;
             background-color: black;
-            width : 200px;
+            width : 180px;
             letter-spacing:2px;
             padding: 10px 0 10px 15px;
             }
@@ -82,7 +91,7 @@
             letter-spacing:1px;
             color: white!important;
             background-color: #282828;
-            width : 200px;
+            width : 180px;
             font-weight: 200;
             letter-spacing:3px;
             }
