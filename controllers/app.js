@@ -46,6 +46,24 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
       url: '/basics',
       templateUrl: 'views/chiller_basics.html'
     })
+  
+      // Pump STATES AND NESTED VIEWS ========================================
+    .state('pump', {
+      url: '/pump',
+      templateUrl: 'views/pump.html'
+    })
+
+    // nested list with custom controller
+    .state('pump.design', {
+      url: '/design',
+      templateUrl: 'views/pump_design.html'
+    })
+
+    // nested list with just some random string data
+    .state('pump.basics', {
+      url: '/basics',
+      templateUrl: 'views/pump_basics.html'
+    })
 
 
 }); // closes $routerApp.config()

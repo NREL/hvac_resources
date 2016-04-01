@@ -16,6 +16,8 @@
         .content-main {
         }
         .content-secondary {
+            padding-left: 20px;
+            align-self: flex-start;
         }
         .flexcontainer{
             display: -webkit-flex;
@@ -33,6 +35,11 @@
         .subflex{
             display: flex;
             display: -webkit-flex;       
+        }
+        .flexnav{
+            display: flex;
+            display: -webkit-flex; 
+            flex-flow: column;
         }
         .infocontainer{
             background-color: #eeeeee; 
@@ -298,6 +305,28 @@
 
         .leftnavd:last-child {
             border-bottom: none;
+        }
+
+/*This adds a fade in and out to the views*/
+        [ui-view].ng-enter, [ui-view].ng-leave {
+          -webkit-transition:all 1s ease-in-out;
+          transition:all .3s ease-in-out;
+        }
+
+        [ui-view].ng-enter {
+          opacity: 0;
+        }
+
+        [ui-view].ng-enter-active {
+          opacity: 1;
+        }
+
+        [ui-view].ng-leave {
+          opacity: 1;
+        }
+
+        [ui-view].ng-leave-active {
+          opacity: 0;
         }
 
 
