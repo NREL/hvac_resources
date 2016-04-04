@@ -22,24 +22,11 @@
 <div class="flexcontainer">
         <!-- COLUMN ONE NAMED VIEW -->
         <div class="navcontainer"> 
-            <ul>
-            <li class="leftnavtcp">CENTRAL PLANT</li>
-              <li class="leftnavcp"><a href="/">Air Compressor</a></li>
-              <li class="leftnavcp" id="boil"><a href="/#/boiler/basics">Boiler</a></li>
-              <li class="leftnavcp" id="chill"><a href="/#/chiller/basics">Chiller</a></li>
-                <li class="leftnavcp"><a href="/#/pump/basics">Pump</a></li>
-              <li class="leftnavcp"><a href="/">Cooling Tower</a></li>
-              <li class="leftnavcp"><a href="/">Fan</a></li>
-            <li class="leftnavtd">DISTRIBUTION</li>
-                <li class="leftnavd"><a href="/">Air Handing Unit</a></li>
-                <li class="leftnavd"><a href="/">Fan</a></li>
-                <li class="leftnavd"><a href="/">Ducts</a></li>
-            <li class="leftnavsd">Zones</li>
-                <li class="leftnavd"><a href="/">VAV Boxes</a></li>
-                <li class="leftnavd"><a href="/">Terminal Units</a></li>
-                <li class="leftnavd"><a href="/">Diffusers</a></li>
-            </ul>
-          </div>
+              <a ui-sref=".homenav" class="list-group-item">Home</a>
+                <a ui-sref=".hvacnav" class="list-group-item">HVAC</a>
+<!--                <a ui-sref=".loadsnav" class="list-group-item">Loads</a>-->
+            <div ui-view></div>
+    </div>
         <!-- COLUMN TWO NAMED VIEW -->
             <!-- SVG Content Here ============================== -->
             <div class="diagram">
