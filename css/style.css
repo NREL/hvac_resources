@@ -1,18 +1,17 @@
-/*        body {
+        body {
             font-family: 'Open Sans', sans-serif;
             }
-            body, h1, h2, h3, h4, h5, h6, p, div {
+            body, p, h1, h2, h3, h4, h5, h6, div {
             font-family: 'Open Sans', sans-serif;
-            }*/
+            }
+            html,body {
+            height:100%;
+            background: black!important;
+            }
 
             body, .tooltip, .popover {
             font-family: 'Open Sans', sans-serif;
             }
-
-            body {
-                background: black!important;
-            }
-
         .content-main {
         }
         .content-secondary {
@@ -31,7 +30,7 @@
             flex-flow: wrap;
             justify-content:space-between;
             width: 100%;
-            height: 80%;
+            height: 100%;
             line-height: 150%;
         }
         flexfoot{
@@ -60,11 +59,12 @@
             order: 3;
             border-radius: 10px;
             flex: 2 3 0;
-        /*    min-width: 20%;*/
-        }
+            height: 100%;
+         }   
+        
         .diagram{
             order: 2;
-            max-width: 40%;
+            max-width: 25%;
             flex: 0 1 350px;
         }
         .mybtn{
@@ -88,242 +88,188 @@
             order: 1;
             flex: 0 1 225px
         }
-        .leftnavt{
-            font-size: 16px;
-            color: #44aa99!important;
-            background-color: black;
-            width : 180px;
-            letter-spacing:2px;
-            padding: 10px 0 10px 10px;
-            }
-         .leftnavs{
-            font-size: 14px;
-            color: #44aa99 !important;
-            background-color: black;
-            width : 180px;
-            letter-spacing:2px;
-            padding: 10px 0 10px 15px;
-            }
-
-        .leftnav{
-            font-size: 14px;
-            letter-spacing:1px;
-            color: white!important;
-            background-color: #282828;
-            width : 180px;
-            font-weight: 200;
-            letter-spacing:3px;
-            }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 200px;
-            color: white;
-         }
-
-        li a {
-            display: block;
-            color: white;
-            padding: 10px 0 10px 20px;
-            text-decoration: none;
-        }
-
-        /* Change the link color on hover */
-        li a:hover {
-            background-color: #44aa99 ;
-            color: white;
-        }
-        li a:active,
-            .leftnav a:focus {
-             text-decoration: none;
-                background-color: teal;
-                color: black!important;
-                font-weight: 500;
-            }
-
-        li {
-        text-align: left;
-        border-bottom: 1px solid #555;
-        }
-
-        li:last-child {
-            border-bottom: none;
-        }
+    .topbartitle{
+            font-family: "open sans";
+            font-weight: 300;
+            text-align: left;
+            font-size: 36px;
+            letter-spacing:4px;
+            color: White;       
+    }
 
         .topbar {
             width : 100%;
-            height: 15%;
+            height: 80px;
             background-color: #3d3d3d;
             border-bottom: 10px solid black;
             position: absolute;
             top: 0;
-            left: 0;
-            text-align: left;
-            font-size: 38px;
-            letter-spacing:4px;
-            color: White;
-            font-weight: 100;
+            left: 0px;
             float: left;
             padding : 10px;
             line-height: 50px;
             position: relative;
         }
-
- /* Central Plant Navigation */
-       .leftnavtcp{
-            font-size: 18px;
-            color: #44aa99!important;
-            background-color: black;
-            width : 225px;
-            letter-spacing:2px;
-            padding: 10px 0 10px 10px;
-            }
-         .leftnavscp{
-            font-size: 16px;
-            color: #44aa99!important;
-            background-color: black;
-            width : 225px;
-            letter-spacing:2px;
-            padding: 10px 0 10px 15px;
-            }
-
-        .leftnavcp{
-            font-size: 14px;
-            letter-spacing:1px;
-            color: white!important;
-            background-color: #282828;
-            width : 225px;
-            font-weight: 200;
-            letter-spacing:3px;
-            }
-
-        .leftnavcp {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 225px;
-            color: white;
-         }
-
-        .leftnavcp a {
-            display: block;
-            color: white;
-            padding: 10px 0 10px 20px;
-            text-decoration: none;
+        .cp{
+            color: teal!important;
         }
-
-        /* Change the link color on hover */
-        .leftnavcp a:hover {
-            background-color: #44aa99;
-            color: white;
-        }
-        .leftnavcp a:active,
-            .leftnavcp a:focus {
-             text-decoration: none;
-                background-color: #44aa99;
-                color: black!important;
-                font-weight: 500;
-            }
-
-        .leftnavcp {
-        text-align: left;
-        border-bottom: 1px solid #555;
-        }
-
-        .leftnavcp:last-child {
-            border-bottom: none;
-        }
- /* Distribution Nav */
-       .leftnavtd{
-            font-size: 18px;
+        .ds{
             color: #ddcc77!important;
-            background-color: black;
-            width : 225px;
-            letter-spacing:2px;
-            padding: 10px 0 10px 10px;
-           font-weight: 200;
+        }
+
+/*trying a side menu css*/
+.nav-side-menu {
+  overflow: auto;
+  font-family: "open sans";
+  font-size: 12px;
+  font-weight: 200;
+  background-color: #282828;
+/*  position: fixed;*/
+  top: 80px;
+min-width: 225px;
+  height: 100%;
+  color: #eeeeee;
+}
+.nav-side-menu .brand {
+  background-color: #282828;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  height: 80px;
+}
+.nav-side-menu .toggle-btn {
+  display: none;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 35px;
+  cursor: pointer;
+      
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
             }
-         .leftnavsd{
-            font-size: 16px;
-            color: #ddcc77!important;
-            background-color: black;
-            width : 225px;
-            letter-spacing:2px;
-            padding: 10px 0 10px 15px;
-            font-weight: 200;
-            }
+     }
 
-        .leftnavd{
-            font-size: 14px;
-            letter-spacing:1px;
-            color: white!important;
-            background-color: #282828;
-            width : 225px;
-            font-weight: 200;
-            letter-spacing:3px;
-            }
-
-        .leftnavd {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 225px;
-            color: white;
-         }
-
-        .leftnavd a {
-            display: block;
-            color: white;
-            padding: 10px 0 10px 20px;
-            text-decoration: none;
-        }
-
-        /* Change the link color on hover */
-        .leftnavd a:hover {
-            background-color: #ddcc77;
-            color: black;
-            font-weight: 500;
-        }
-        .leftnavd a:active,
-            .leftnavd a:focus {
-             text-decoration: none;
-            background-color: #ddcc77;
-            color: black!important;
-            font-weight: 500;
-            }
-
-        .leftnavd {
-        text-align: left;
-        border-bottom: 1px solid #555;
-        }
-
-        .leftnavd:last-child {
-            border-bottom: none;
-        }
-
-/*This adds a fade in and out to the views*/
-        [ui-view].ng-enter, [ui-view].ng-leave {
-          -webkit-transition:all 1s ease-in-out;
-          transition:all .3s ease-in-out;
-        }
-
-        [ui-view].ng-enter {
-          opacity: 0;
-        }
-
-        [ui-view].ng-enter-active {
-          opacity: 1;
-        }
-
-        [ui-view].ng-leave {
-          opacity: 0;
-        }
-
-        [ui-view].ng-leave-active {
-          opacity: 0;
-        }
+}
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+}
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+  border-left: 3px solid #ffffff;
+  background-color: #545454;
+}
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+  color: #ffffff;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #ffffff;
+    background-color: #545454;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+  background-color: #181c20;
+  border: none;
+  line-height: 28px;
+  border-bottom: 1px solid #23282e;
+  margin-left: 0px;
+}
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+  background-color: #545454;
+}
+.nav-side-menu ul .sub-menu li:before,
+.nav-side-menu li .sub-menu li:before {
+  font-family: FontAwesome;
+  content: "\f111";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.nav-side-menu li {
+  padding-left: 0px;
+  border-left: 3px solid #2e353d;
+  border-bottom: 1px solid #23282e;
+}
+.nav-side-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav-side-menu li a i {
+  padding-left: 10px;
+  width: 20px;
+  padding-right: 20px;
+}
+.nav-side-menu li:hover {
+  border-left: 3px solid #ffffff;
+  background-color: #264f6b;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+@media (max-width: 767px) {
+  .nav-side-menu {
+    position: relative;
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10 !important;
+    padding: 3px;
+    background-color: #ffffff;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+  .brand {
+    text-align: left !important;
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 50px !important;
+    background-color: #282828;
+  }
+    .navtitle {
+    text-align: left !important;
+    font-size: 14px;
+    padding-left: 60px;
+    line-height: 30px !important;
+    background-color: #282828 !important;
+  }
+}
+@media (min-width: 767px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+      margin-top: 0
+  }
+}
 
 /**
  * CSSReset.com - How To Keep Footer At Bottom of Page with CSS
@@ -333,12 +279,6 @@
  *
  * NB: Make sure the value for 'padding-bottom' on #content is equal to or greater than the height of #footer.
  */
-html,
-body {
-	margin:0;
-	padding:0;
-	height:100%;
-}
 #wrapper {
 	min-height:100%;
 	position:relative;
@@ -364,7 +304,4 @@ body {
     letter-spacing:4px;
     padding-top: 15px;
 }
-
-
-
 

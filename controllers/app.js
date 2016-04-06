@@ -11,6 +11,11 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
       url: '/home',
       templateUrl: 'views/partial-home.html'
     })
+      // HOME STATES AND NESTED VIEWS ========================================
+    .state('space_loads', {
+      url: '/space_loads',
+      templateUrl: 'views/space_loads.html'
+    })
 
     // Boiler STATES AND NESTED VIEWS ========================================
     .state('boiler', {
@@ -91,3 +96,5 @@ routerApp.directive('sidebarDirective', function () {
     }
   };
 });
+
+
