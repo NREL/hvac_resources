@@ -25,53 +25,53 @@
       
 <div class="flexcontainer">
         <!-- COLUMN ONE NAMED VIEW -->
-       <div class="navcontainer"> 
+    <div class="navcontainer"> 
         <div class="nav-side-menu">
-        <div class="brand">
+        <div class="brand">TSTNG</div>
             <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-            </div>
-            <div class="menu-list">
+  
+        <div class="menu-list">
   
             <ul id="menu-content" class="menu-content collapse out">
                 <li>
-                  <a href="/#/home" class="leftnavt">
-                   Home
+                  <a href="/#/home">
+                  <i class="fa fa-home fa-lg"></i> Home
                   </a>
                 </li>
 
                 <li  data-toggle="collapse" data-target="#products" class="collapsed">
-                  <a href="" class="leftnavt"> HVAC Components <span class="arrow"></span></a>
+                  <a href=""><i class="fa fa-gift fa-lg"></i> HVAC Components <span class="arrow"></span></a>
                 </li>
                 
                 <ul class="sub-menu collapse" id="products">
-                    <li class="leftnavtcp">CENTRAL PLANT</li>
-                    <li class="leftnavcp"><a href="/#/boiler/basics">Boiler</a></li>
-                    <li class="leftnavcp"><a href="/#/chiller/basics">Chiller</a></li>
-                    <li class="leftnavcp"><a href="/#/pump/basics">Pump</a></li>
-                    <li class="leftnavcp"><a href="#">Cooling Tower</a></li>
-                    <li class="leftnavtd">Distribution System</li>
-                    <li class="leftnavd"><a href="#">Air Handling Unit</a></li>
-                    <li class="leftnavd"><a href="#">Fan</a></li>
-                    <li class="leftnavd"><a href="#">Pump</a></li>
-                    <li class="leftnavd"><a href="#">Ducts</a></li>
-                    <li class="leftnavd"><a href="#">VAV Box</a></li>
-                    <li class="leftnavd"><a href="#">Terminal Units</a></li>
-                    <li class="leftnavd"><a href="#">Diffusers</a></li>
+                    <div class="navtitle">Central Plant</div>
+                    <li class="cp"><a href="/#/boiler/basics">Boiler</a></li>
+                    <li class="cp"><a href="/#/chiller/basics">Chiller</a></li>
+                    <li class="cp"><a href="/#/pump/basics">Pump</a></li>
+                    <li class="cp"><a href="#">Cooling Tower</a></li>
+                    <div class="navtitle">Distribution System</div>
+                    <li class="ds"><a href="#">Air Handling Unit</a></li>
+                    <li class="ds"><a href="#">Fan</a></li>
+                    <li class="ds"><a href="#">Pump</a></li>
+                    <li class="ds"><a href="#">Ducts</a></li>
+                    <li class="ds"><a href="#">VAV Box</a></li>
+                    <li class="ds"><a href="#">Terminal Units</a></li>
+                    <li class="ds"><a href="#">Diffusers</a></li>
                 </ul>
 
 
                 <li data-toggle="collapse" data-target="#service" class="collapsed">
-                  <a href="/#/space_loads" class="leftnavt"> Space Loads <span class="arrow"></span></a>
+                  <a href="/#/space_loads"><i class="fa fa-globe fa-lg"></i> Space Loads <span class="arrow"></span></a>
                 </li>  
                 <ul class="sub-menu collapse" id="service">
-                  <li>Link 1</li>
-                  <li>Link 2</li>
-                  <li>Link 3</li>
+                  <li>New Service 1</li>
+                  <li>New Service 2</li>
+                  <li>New Service 3</li>
                 </ul>
 
 
                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                  <a href="#" class="leftnavt">Other <span class="arrow"></span></a>
+                  <a href="#"><i class="fa fa-car fa-lg"></i> Other <span class="arrow"></span></a>
                 </li>
                 <ul class="sub-menu collapse" id="new">
                   <li>New New 1</li>
@@ -81,13 +81,19 @@
 
 
                  <li>
-                  <a href="#" class="leftnavt">
-                   About
+                  <a href="#">
+                  <i class="fa fa-user fa-lg"></i> Profile
                   </a>
                   </li>
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-users fa-lg"></i> Users
+                  </a>
+                </li>
             </ul>
             </div>
-            </div>
+        </div>
 </div>
         <!-- COLUMN TWO NAMED VIEW -->
             <!-- SVG Content Here ============================== -->
@@ -101,7 +107,6 @@
             <div ui-view></div>
           </div>
 </div>
-        </div>
         </div>
     
       <div id="footer">
