@@ -44,12 +44,15 @@
             align-self: flex-end;
         }
         .subflex{
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex;
-            display: -webkit-flex;       
+            display: -webkit-flex;
         }
         .flexnav{
-            display: flex;
-            display: -webkit-flex; 
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex; 
             flex-flow: column;
         }
         .infocontainer{
@@ -59,13 +62,17 @@
             order: 3;
             border-radius: 10px;
             flex: 2 3 0;
+            -webkit-flex: 2 3 0;
+            -ms-flex: 2 3 0;
             height: 100%;
          }   
         
         .diagram{
             order: 2;
             max-height: 100%;
-            flex: 0 0 350px;
+            flex: 1 0 350px;
+             -webkit-flex: 1 0 0;
+            -ms-flex: 1 0 350px;
         }
         .mybtn{
         background-color: gray;
@@ -86,7 +93,9 @@
             }
         .navcontainer{
             order: 1;
-            flex: 0 0 180px
+            flex: 0 0 180px;
+            -webkit-flex: 0 0 180px;
+            -ms-flex: 0 0 180px;
         }
         .topbartitle{
             font-family: "open sans";
@@ -374,4 +383,18 @@ body {
     font-size: 10px;
     letter-spacing:4px;
     padding-top: 15px;
+}
+
+
+
+/* Rollovers on the Central PlantDiagram*/
+
+#chiller:hover{
+    fill: yellow!important;
+    stroke: black !important;
+
+}
+#chiller:active{
+    fill: gray!important;
+    stroke: red!important;   
 }
