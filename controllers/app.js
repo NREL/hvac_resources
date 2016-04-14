@@ -9,9 +9,9 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
     // HOME STATES AND NESTED VIEWS ========================================
     .state('home', {
       url: '/home',
-      templateUrl: 'views/partial-home.html'
+      templateUrl: 'views/home.html'
     })
-      // HOME STATES AND NESTED VIEWS ========================================
+      // Space Loads NESTED VIEWS ========================================
     .state('space_loads', {
       url: '/space_loads',
       templateUrl: 'views/space_loads.html'
@@ -73,6 +73,9 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
 
 }); // closes $routerApp.config()
 
+
+
+//not sure what this is for
 routerApp.controller('leftnavController', function ($scope) {
 
   $scope.state = false;
@@ -97,4 +100,22 @@ routerApp.directive('sidebarDirective', function () {
   };
 });
 
+//Hider
+/*
+function MyCtrl($scope) {
+  $scope.visible = fase;
 
+  $scope.toggle = function() {
+    $scope.visible = !$scope.hidden;
+  };
+}
+*/
+
+/*
+$scope.hoverIn = function(){
+    this.hoverEdit = true;
+};
+
+$scope.hoverOut = function(){
+    this.hoverEdit = false;
+};*/

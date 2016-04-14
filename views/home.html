@@ -1,12 +1,24 @@
-<script>
+
+
+<style>
     #hvac{
     opacity: 1;
+  transition: opacity 1s linear;
     }
     #space{
-    opacity: 0;
+     opacity: 0;
+  transition: visibility 0s 1s, opacity .1s linear;
     }
+    .infocontainer{
+/*     display: none;*/
+        
+   }
 
-</script>
+    
+</style>
 
-
-<div ui-view></div>
+    <body>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit</b>.</h1>
+        
+    </body>

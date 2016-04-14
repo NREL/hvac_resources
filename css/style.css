@@ -65,17 +65,39 @@
             -webkit-flex: 2 3 0;
             -ms-flex: 2 3 0;
             height: 100%;
-         }   
-        
+        }
+
+            .fadein {
+            transition: opacity .5s linear,                       
+            visibility .5s linear; 
+            }
+            .fadein.ng-enter {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .fadein.ng-enter.ng-enter-active {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .fadein.ng-leave {
+                opacity: 1;
+                visibility: visible;
+            }
+            .fadein.ng-leave.ng-leave-active {
+                opacity: 0;
+                visibility: hidden;
+            }
+            
         .diagram{
             order: 2;
-            max-height: 100%;
             flex: 1 0 350px;
-             -webkit-flex: 1 0 0;
+             -webkit-flex: 1 0 350px;
             -ms-flex: 1 0 350px;
+            max-height: 50%;
         }
         .mybtn{
-        background-color: gray;
+            background-color: gray;
             font-size: 12px;
             letter-spacing:1px;
             color: white!important;
@@ -389,12 +411,48 @@ body {
 
 /* Rollovers on the Central PlantDiagram*/
 
-#chiller:hover{
-    fill: yellow!important;
-    stroke: black !important;
+    #chiller:hover{
+    fill: #44aa99!important;
+    stroke: black !important; 
+}
+    
+    #chiller:active{
+    fill: #44aa99!important;
+    stroke: yellow!important;   
+}
 
+    #boiler:hover{
+    fill: #44aa99!important;
+    stroke: black !important; 
+    font-size: 14px;  
 }
-#chiller:active{
-    fill: gray!important;
-    stroke: red!important;   
+    
+    #boiler:active{
+    fill: #44aa99!important;
+    stroke: yellow!important;   
 }
+
+  #cp-pump:hover{
+    fill: #44aa99!important;
+    stroke: black !important;
+  }
+
+#cp-pump:hover {
+    fill: #44aa99!important;
+    stroke: black !important;     
+            }
+
+.cpoff {
+      fill: black!important;
+    stroke: #44aa99!important; 
+}
+.cpover{
+    fill: #44aa99!important;
+    stroke: black !important;
+}
+.cpon{
+        fill: #44aa99!important;
+    stroke: black !important;
+}
+    
+    

@@ -9,41 +9,36 @@
     <script src="controllers/app.js"></script>
     <script src="lib/angular/angular-animate.js"></script>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" type="text/css">
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,greek,greek-ext' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,600italic,700,700italic,300italic&subset=latin,greek,greek-ext' rel='stylesheet' type='text/css'>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
   </head>
   <body ng-app="routerApp">
-<div id="wrapper">
+      <div id="wrapper">
     <div id="content">
 <div class="flexcontainer">
-    <div class="topbar">HVAC Resources</div>
-</div>
+    <div class="topbar">
+        <div class="topbartitle">
+            HVAC Resources
+        </div>
+    </div>
       
 <div class="flexcontainer">
-        <!-- COLUMN ONE NAMED VIEW -->
-        <div class="navcontainer"> 
-              <a ui-sref=".homenav" class="list-group-item">Home</a>
-                <a ui-sref=".hvacnav" class="list-group-item">HVAC</a>
-                <a ui-sref=".loadsnav" class="list-group-item">Loads</a>
-    </div>
-        <!-- COLUMN TWO NAMED VIEW -->
             <!-- SVG Content Here ============================== -->
-            <div class="diagram">
-              <ng-include src="'/img/forsvg.svg'"></ng-include>
+            <div class="diagramfull">
+              <ng-include src="'/img/combined.svg'" class="combined"></ng-include>
             </div>
 
-        <!-- COLUMN Three NAMED VIEW -->
-          <div class="infocontainer">
-            <!-- Page Content Here ============================== -->
-            <div ui-view></div>
-          </div>
 </div>
+        </div>
+        </div>
+    
       <div id="footer">
         <p>The HVAC Resources site was developed by the National Renewable Energy Laboratory with support from the U.S. Department of                      Energy's Building Technologies Office. </p>
             <p>NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.</p>
           </div>
 </div>
-    </div>
   </body>
 
 </html>

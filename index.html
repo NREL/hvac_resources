@@ -13,7 +13,6 @@
       <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,greek,greek-ext' rel='stylesheet' type='text/css'>
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,600italic,700,700italic,300italic&subset=latin,greek,greek-ext' rel='stylesheet' type='text/css'>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
   </head>
   <body ng-app="routerApp">
       <div id="wrapper">
@@ -46,23 +45,28 @@
                 </li>
                 
                 <ul class="sub-menu collapse" id="products">
-                    <li class="leftnavtcp">CENTRAL PLANT</li>
-                    <li class="leftnavcp"><a href="/#/boiler/basics">Boiler</a></li>
+                    <li class="leftnavtcp" >CENTRAL PLANT</li>
                     <li class="leftnavcp"><a href="/#/chiller/basics">Chiller</a></li>
-                    <li class="leftnavcp"><a href="/#/pump/basics">Pump</a></li>
+                    <li class="leftnavcp"><a href="/#/boiler/basics">Boiler</a></li>
                     <li class="leftnavcp"><a href="#">Cooling Tower</a></li>
+                    <li class="leftnavcp"><a href="/#/pump/basics">Pump</a></li>
+                    <li class="leftnavcp"><a href="#">Thermal Energy Storage</a></li>
+                    <li class="leftnavcp"><a href="#">Sensors and Controls</a></li>
+                    <li class="leftnavcp"><a href="#">Cogeneration Design</a></li>
                     <li class="leftnavtd">Distribution System</li>
+                    <li class="leftnavd"><a href="#">Piping</a></li>
+                    <li class="leftnavd"><a href="#">Valves</a></li>
                     <li class="leftnavd"><a href="#">Air Handling Unit</a></li>
-                    <li class="leftnavd"><a href="#">Fan</a></li>
-                    <li class="leftnavd"><a href="#">Pump</a></li>
-                    <li class="leftnavd"><a href="#">Ducts</a></li>
-                    <li class="leftnavd"><a href="#">VAV Box</a></li>
+                    <li class="leftnavd"><a href="#">Fans</a></li>
+                    <li class="leftnavd"><a href="#">Ducting</a></li>
+                    <li class="leftnavd"><a href="#">VAV Boxes</a></li>
                     <li class="leftnavd"><a href="#">Terminal Units</a></li>
                     <li class="leftnavd"><a href="#">Diffusers</a></li>
+                    <li class="leftnavd"><a href="#">Steam Traps</a></li>
                 </ul>
 
 
-                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                <li data-toggle="collapse" data-target="#service" class="collapsed" ng-click="toggle()">
                   <a href="/#/space_loads" class="leftnavt"> Space Loads <span class="arrow"></span></a>
                 </li>  
                 <ul class="sub-menu collapse" id="service">
@@ -83,7 +87,7 @@
 
 
                  <li>
-                  <a href="#" class="leftnavt">
+                  <a href="/#/test" class="leftnavt">
                    About
                   </a>
                   </li>
@@ -100,7 +104,7 @@
         <!-- COLUMN Three NAMED VIEW -->
           <div class="infocontainer">
             <!-- Page Content Here ============================== -->
-            <div ui-view></div>
+            <div ui-view class="fadein"></div>
           </div>
 </div>
         </div>
