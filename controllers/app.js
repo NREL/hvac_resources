@@ -41,9 +41,9 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
     })
 
     // nested list with custom controller
-    .state('chiller.design', {
-      url: '/design',
-      templateUrl: 'views/chiller_design.html'
+    .state('chiller.types', {
+      url: '/types',
+      templateUrl: 'views/chiller_types.html'
     })
 
     // nested list with just some random string data
@@ -119,3 +119,4 @@ $scope.hoverIn = function(){
 $scope.hoverOut = function(){
     this.hoverEdit = false;
 };*/
+/* animation */

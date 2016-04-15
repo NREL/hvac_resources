@@ -56,7 +56,8 @@
             flex-flow: column;
         }
         .infocontainer{
-            background-color: #eeeeee; 
+            background-color: #000000; 
+            color: white;
             padding: 20px;
             margin-right: 5px;
             order: 3;
@@ -95,6 +96,11 @@
              -webkit-flex: 1 0 350px;
             -ms-flex: 1 0 350px;
             max-height: 50%;
+            -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+    transition: width 1s ease-in-out, left 1.5s ease-in-out;
         }
         .mybtn{
             background-color: gray;
