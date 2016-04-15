@@ -12,14 +12,21 @@
     stroke: black !important;
     
      }
-
+     /* Tooltip */
+  .mytip + .tooltip > .tooltip-inner {
+      background-color: #73AD21; 
+      color: #FFFFFF; 
+      border: 1px solid green; 
+      padding: 15px;
+      font-size: 20px;
+  }
     
 
 </style>
 
   <h1>Chiller</h1>
       <div class="btn-toolbar" role="toolbar" aria-label="...">
-          <div class="btn-group btn-group-lg" role="group" aria-label="..."><a ui-sref=".basics" data-toggle="tooltip" title="Hooray!"><i class="fa fa-info fa-3x"></i></a></div>
+          <div class="btn-group btn-group-lg" role="group" aria-label="..."><a ui-sref=".basics" data-toggle="tooltip" title="General Description and Uses", placement: "bottom"><i class="fa fa-info fa-3x"></i></a></div>
           <div class="btn-group btn-group-lg" role="group" aria-label="..."><a ui-sref=".types"><i class="fa fa-tasks fa-3x"></i></a></div>
           <div class="btn-group btn-group-lg" role="group" aria-label="..."><a ui-sref=".codes"><i class="fa fa-check-square fa-3x"></i></a></div>
         </div>
