@@ -92,15 +92,16 @@
             
         .diagram{
             order: 2;
-            flex: 1 0 350px;
-             -webkit-flex: 1 0 350px;
-            -ms-flex: 1 0 350px;
-            max-height: 50%;
+            width: 30%;
+            height: 30%;
+            /*flex: 1 0 350px;
+            -webkit-flex: 1 0 350px;
+            -ms-flex: 1 0 350px;*/
             -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-    transition: width 1s ease-in-out, left 1.5s ease-in-out;
+            -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+            -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+            -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+            transition: width 1s ease-in-out, left 1.5s ease-in-out;
         }
         .mybtn{
             background-color: gray;
