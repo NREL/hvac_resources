@@ -1,0 +1,211 @@
+/*----------------
+	Topbar CSS
+-----------------*/
+
+#u-topbar {
+	height: @min-height-topbar;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid #e5e5e5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: @z-index-topbar;
+	.title {
+		text-align: left;
+		background-color: @bg-title-left-panel;
+		font-size: 24px;
+		padding: @padding-title-left-panel;
+		color: @color-title-left-panel;
+		font-weight: 100;
+		float:left;
+		line-height: 12px;
+		width: @width-left-panel;
+		position: relative;
+		.title-sub {
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 10px;
+		}
+	}
+}
+
+// Left Panel Toggle Button
+.left-panel-toggle {
+	margin:27px 0 0 60px;
+	display: inline-block;
+	font-size: 17px;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+@media(max-width: @screen-topbar-sm) {
+	#u-topbar {
+		.title {
+			padding: 28px 0px 23px 10px;
+			width: 80px;
+		}
+		.left-panel-toggle {
+			margin: 27px 0px 0px 20px;
+		}
+		.topbar-button {
+			margin: 27px 0px 0px 40px;
+		}
+	}
+	.right-true {
+		#u-topbar {
+			.left-panel-toggle {
+				margin-right: 15px;
+			}
+		}
+	}
+}
+@media(max-width: @screen-topbar-xs) {
+	#u-topbar {
+		.message-btn {
+			display: none;
+		}
+		.topbar-button {
+			margin: 27px 0px 0px 30px;
+		}
+	}
+}
+@media(max-width: @screen-topbar-sm) {
+	#u-topbar{
+		.topbar-user {
+			span {
+				display: none;
+			}
+			.topbar-username {
+				display: inline-block;
+				margin-top: 15px;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+//Topbar Buttons
+.topbar-button {
+	display: inline-block;
+	margin: 27px 0px 0px 60px;
+	> li {
+		display: inline-block;
+		margin-right: 25px;
+		> a {
+			position: relative;
+			> i {
+				color: #95a5a6;
+				font-size: 20px;
+			}
+			em {
+				position: absolute;
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				opacity: 0.65;
+				right: -5px;
+				top: -5px;
+				border-radius: 50%;
+			}
+		}
+	}
+	.em-blue {
+		background-color: #37A1E7;
+	}
+	.em-orange {
+		background-color: #F5883C;
+	}
+}
+
+// Topbar User
+
+.topbar-user {
+	display: inline-block;
+	float: right;
+	margin: 17px 60px 0 0;
+	span {
+		display: inline-block;
+	}
+	.badge-user {
+		margin-top: 0px;
+	}
+	.topbar-username {
+		color: #37A1E7;
+		font-size: 13px;
+		font-weight: 600;
+		margin-left: 10px;
+		padding-left: 10px;
+		border-left: 1px solid #E2E6E9;
+		> i {
+			margin-left:3px;
+		}
+	}
+	.topbar-userimage {
+		margin-left: 10px;
+		img {
+			border-radius: 50%;
+			width: 45px;
+			height: 45px;
+		}
+	}
+	.dropdown {
+		a, a:hover, a:focus {
+			outline: 0;
+			text-decoration: none;
+		}
+		.dropdown-menu {
+			border: 1px solid #E5E5E5;
+			box-shadow: none;
+			border-radius: 0px;
+			padding: 0;
+			> li a {
+				padding-top: 8px;
+				padding-bottom: 8px;
+				color: #777;
+				font-size: 13px;
+				font-weight: 600;
+				&:hover {
+					background-color: #45C7A6;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+// Badges
+.badge {
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.link-badge {
+	margin-left: 20px;
+	margin-top: -4px;
+}
+.left-menu-sub {
+	.link-badge {
+		margin-left: 15px;
+		margin-top: 2px;
+	}
+}
+
+// Badges
+.badge-green {
+	background-color: #45C7A6;
+}
+
+.badge-blue {
+	background-color: #37A1E7;
+}
+
+.badge-orange {
+	background-color: #F5883C;
+}
+
+.badge-gray {
+	background-color: #7F8C8D;
+}
+

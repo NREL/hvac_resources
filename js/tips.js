@@ -3,3 +3,4 @@ $('[data-toggle="tooltip"]').tooltip();
 
 // Select a specified element
 $('#myTooltip').tooltip();
+
