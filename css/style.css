@@ -17,6 +17,7 @@
         .content-secondary {
             padding-left: 20px;
             align-self: flex-start;
+            min-width: 120px;
         }
         .flexcontainer{
             display: -webkit-flex;
@@ -185,7 +186,6 @@
             width: 180px;
             color: white;
          }
-
         li a {
             display: block;
             color: white;
