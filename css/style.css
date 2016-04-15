@@ -257,8 +257,9 @@
             color: #44aa99!important;
             background-color: black;
             width : 180px;
-            letter-spacing:2px;
-            padding: 10px 0 10px 15px;
+            letter-spacing:1px;
+             font-weight: 200;
+            padding: 10px 0 10px 10px;
             }
 
         .leftnavcp{

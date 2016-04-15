@@ -16,6 +16,11 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
       url: '/space_loads',
       templateUrl: 'views/space_loads.html'
     })
+        // Central Plant NESTED VIEWS ========================================
+    .state('central_plant', {
+      url: '/central_plant',
+      templateUrl: 'views/central_plant.html'
+    })
 
     // Boiler STATES AND NESTED VIEWS ========================================
     .state('boiler', {
