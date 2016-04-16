@@ -125,3 +125,5 @@ $scope.hoverOut = function(){
     this.hoverEdit = false;
 };*/
 /* animation */
+
+
