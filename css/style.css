@@ -9,15 +9,20 @@
             background: black!important;
             }
 
-            body, .tooltip, .popover {
-            font-family: 'Open Sans', sans-serif;
+            li, .tooltip, .popover {
+            font-family: 'Open Sans Condensed', sans-serif;
             }
+            
         .content-main {
         }
         .content-secondary {
-            padding-left: 20px;
+            padding-left: 10px;
             align-self: flex-start;
-            min-width: 120px;
+            max-width: 145px;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex; 
+            flex-flow: column;
         }
         .flexcontainer{
             display: -webkit-flex;
@@ -59,10 +64,9 @@
         .infocontainer{
             background-color: #000000; 
             color: white;
-            padding: 20px;
+            padding: 10px;
             margin-right: 5px;
             order: 3;
-            border-radius: 10px;
             flex: 2 3 0;
             -webkit-flex: 2 3 0;
             -ms-flex: 2 3 0;
@@ -141,19 +145,17 @@
             height: 80px;
             background-color: #3d3d3d;
             border-bottom: 10px solid black;
-            position: absolute;
             top: 0;
             left: 0px;
             float: left;
             padding : 10px;
             line-height: 50px;
-            position: relative;
         }
 
 /*mynav*/
         
         .leftnavt{
-            font-size: 16px;
+            font-size: 18px;
             color: #ffffff!important;
             background-color: black;
             width : 180px;
@@ -161,7 +163,7 @@
             padding: 10px 0 10px 10px;
             }
          .leftnavs{
-            font-size: 14px;
+            font-size: 16px;
             color: #44aa99 !important;
             background-color: black;
             width : 180px;
@@ -170,12 +172,12 @@
             }
 
         .leftnav{
-            font-size: 14px;
+            font-size: 16px;
             letter-spacing:1px;
             color: white!important;
             background-color: #282828;
             width : 180px;
-            font-weight: 200;
+            font-weight: 300;
             letter-spacing:3px;
             }
 
@@ -197,13 +199,14 @@
         li a:hover {
             background-color: #545454;
             color: white;
+            font-weight: 600;
         }
         li a:active,
             .leftnav a:focus {
              text-decoration: none;
                 background-color: teal;
                 color: black!important;
-                font-weight: 500;
+                font-weight: 600;
             }
 
         li {
@@ -245,7 +248,7 @@
 
        /* Central Plant Navigation */
        .leftnavtcp{
-            font-size: 16px;
+            font-size: 18px;
             color: #44aa99!important;
             background-color: black;
             width : 180px;
@@ -253,22 +256,22 @@
             padding: 10px 0 10px 10px;
             }
          .leftnavscp{
-            font-size: 14px;
+            font-size: 16px;
             color: #44aa99!important;
             background-color: black;
             width : 180px;
             letter-spacing:1px;
-             font-weight: 200;
+             font-weight: 300;
             padding: 10px 0 10px 10px;
             }
 
         .leftnavcp{
-            font-size: 12px;
+            font-size: 16px;
             letter-spacing:1px;
             color: white!important;
             background-color: #282828;
             width : 180px;
-            font-weight: 200;
+            font-weight: 300;
             letter-spacing:3px;
             }
 
@@ -291,13 +294,14 @@
         .leftnavcp a:hover {
             background-color: #44aa99;
             color: white;
+            font-weight: 600;
         }
         .leftnavcp a:active,
             .leftnavcp a:focus {
              text-decoration: none;
                 background-color: #44aa99;
                 color: black!important;
-                font-weight: 500;
+                font-weight: 600;
             }
 
         .leftnavcp {
@@ -310,7 +314,7 @@
         }
  /* Distribution Nav */
        .leftnavtd{
-            font-size: 16px;
+            font-size: 18px;
             color: #ddcc77!important;
             background-color: black;
             width : 180px;
@@ -319,22 +323,22 @@
            font-weight: 200;
            }
          .leftnavsd{
-            font-size: 14px;
+            font-size: 16px;
             color: #ddcc77!important;
             background-color: black;
             width : 180px;
             letter-spacing:2px;
             padding: 10px 0 10px 15px;
-            font-weight: 200;
+            font-weight: 300;
             }
 
         .leftnavd{
-            font-size: 12px;
+            font-size: 16px;
             letter-spacing:1px;
             color: white!important;
             background-color: #282828;
             width : 180px;
-            font-weight: 200;
+            font-weight: 300;
             letter-spacing:3px;
             }
 
@@ -357,14 +361,14 @@
         .leftnavd a:hover {
             background-color: #ddcc77;
             color: black;
-            font-weight: 500;
+            font-weight: 600;
         }
         .leftnavd a:active,
             .leftnavd a:focus {
              text-decoration: none;
             background-color: #ddcc77;
             color: black!important;
-            font-weight: 500;
+            font-weight: 600;
             }
 
         .leftnavd {
@@ -415,7 +419,57 @@ body {
     padding-top: 15px;
 }
 
+/*Right Nav*/
+ .rtnav{
+            font-size: 12px;
+            color: white!important;
+            background-color: #282828;
+            width : 145px;
+            font-weight: 100;
+            border-radius: 3px;
+            }
 
+        .rtnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 10;
+            width: 145px;
+            color: white;
+         }
+
+        .rtnav a {
+            display: block;
+            color: white;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-decoration: none;
+        }
+
+        /* Change the link color on hover */
+        .rtnav a:hover {
+            background-color: #44aa99;
+            color: white;
+        }
+        .rtnav a:active,
+            .rtnav a:focus {
+             text-decoration: none;
+                background-color: #44aa99;
+                color: black!important;
+                font-weight: 100;
+            }
+
+        .rtnav {
+        text-align: left;
+        border-bottom: 1px solid #555;
+        }
+
+        .rtnav:last-child {
+            border-bottom: none;
+        }
+
+        
 
 /* Rollovers on the Central PlantDiagram*/
 
