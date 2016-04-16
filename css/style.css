@@ -199,14 +199,14 @@
         li a:hover {
             background-color: #545454;
             color: white;
-            font-weight: 600;
+            font-weight: 300;
         }
         li a:active,
             .leftnav a:focus {
              text-decoration: none;
                 background-color: teal;
                 color: black!important;
-                font-weight: 600;
+                font-weight: 300;
             }
 
         li {
@@ -266,13 +266,14 @@
             }
 
         .leftnavcp{
-            font-size: 16px;
+            font-size: 14px;
             letter-spacing:1px;
             color: white!important;
             background-color: #282828;
             width : 180px;
             font-weight: 300;
             letter-spacing:3px;
+            padding-left: 5px;
             }
 
         .leftnavcp {
@@ -286,7 +287,6 @@
         .leftnavcp a {
             display: block;
             color: white;
-            padding: 10px 0 10px 20px;
             text-decoration: none;
         }
 
@@ -294,14 +294,14 @@
         .leftnavcp a:hover {
             background-color: #44aa99;
             color: white;
-            font-weight: 600;
+            font-weight: 300;
         }
         .leftnavcp a:active,
             .leftnavcp a:focus {
              text-decoration: none;
                 background-color: #44aa99;
                 color: black!important;
-                font-weight: 600;
+                font-weight: 300;
             }
 
         .leftnavcp {
@@ -333,10 +333,11 @@
             }
 
         .leftnavd{
-            font-size: 16px;
+            font-size: 14px;
             letter-spacing:1px;
             color: white!important;
             background-color: #282828;
+            padding-left: 5px;
             width : 180px;
             font-weight: 300;
             letter-spacing:3px;
@@ -353,7 +354,6 @@
         .leftnavd a {
             display: block;
             color: white;
-            padding: 10px 0 10px 20px;
             text-decoration: none;
         }
 
@@ -361,14 +361,14 @@
         .leftnavd a:hover {
             background-color: #ddcc77;
             color: black;
-            font-weight: 600;
+            font-weight: 300;
         }
         .leftnavd a:active,
             .leftnavd a:focus {
              text-decoration: none;
             background-color: #ddcc77;
             color: black!important;
-            font-weight: 600;
+            font-weight: 300;
             }
 
         .leftnavd {
