@@ -81,6 +81,7 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
 
 
 //not sure what this is for
+/*
 routerApp.controller('leftnavController', function ($scope) {
 
   $scope.state = false;
@@ -104,6 +105,7 @@ routerApp.directive('sidebarDirective', function () {
     }
   };
 });
+*/
 
 //Hider
 /*
