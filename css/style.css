@@ -1,9 +1,12 @@
         body {
             font-family: 'Open Sans', sans-serif;
             }
-            body, p, h1, h2, h3, h4, h5, h6, div {
+            p, h1, h2, h3, h4, h5, h6, div {
             font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+                letter-spacing: 1px; 
             }
+
             html,body {
             height:100%;
             background: black!important;
@@ -12,6 +15,40 @@
             li, .tooltip, .popover {
             font-family: 'Open Sans Condensed', sans-serif;
             }
+      
+            .myh1 {
+            font-family: "Roboto Slab";
+            font-weight: 300;
+            text-align: left;
+            font-size: 32px;
+            letter-spacing:2px;
+            color: #eeeeee;  
+            padding-top: 15px;
+            padding-bottom: 10px;
+                }
+            .myh2 {
+            font-family: "Roboto Slab";
+            font-weight: 300;
+            text-align: left;
+            font-size: 24px;
+            letter-spacing:2px;
+            color: #eeeeee;  px;
+                padding-top: 15px;
+                padding-bottom: 10px;
+                }
+             .myh3 {
+            font-family: "Roboto Slab";
+            font-weight: 300;
+            text-align: left;
+            font-size: 20px;
+            letter-spacing:2px;
+            color: #eeeeee;  px;
+                padding-top: 10px;
+                padding-bottom: 8px;
+                 margin-top: 10px;
+                 border-top-style: solid;
+    border-top: dotted #545454; 
+                }
             
         .content-main {
         }
@@ -132,12 +169,12 @@
             -ms-flex: 0 0 180px;
         }
         .topbartitle{
-            font-family: "open sans";
-            font-weight: 300;
+            font-family: "Roboto Slab";
+            font-weight: 400;
             text-align: left;
             font-size: 36px;
             letter-spacing:4px;
-            color: White;       
+            color: #eeeeee;       
         }
 
         .topbar {
@@ -202,8 +239,8 @@
         li a:active,
             .leftnav a:focus {
              text-decoration: none;
-                background-color: teal;
-                color: black!important;
+                background-color: #545454;
+                color: white!important;
                 font-weight: 300;
             }
 
@@ -377,6 +414,9 @@
         .leftnavd:last-child {
             border-bottom: none;
         }
+
+
+
 /**
  * CSSReset.com - How To Keep Footer At Bottom of Page with CSS
  * 
