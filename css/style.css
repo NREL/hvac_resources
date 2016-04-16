@@ -160,7 +160,6 @@
             background-color: black;
             width : 180px;
             letter-spacing:2px;
-            padding: 10px 0 10px 10px;
             }
          .leftnavs{
             font-size: 16px;
@@ -168,7 +167,6 @@
             background-color: black;
             width : 180px;
             letter-spacing:2px;
-            padding: 10px 0 10px 15px;
             }
 
         .leftnav{
@@ -191,7 +189,7 @@
         li a {
             display: block;
             color: white;
-            padding: 10px 0 10px 20px;
+            padding: 10px 0 10px 10px;
             text-decoration: none;
         }
 
