@@ -227,6 +227,10 @@
             background-color: black;
             width : 180px;
             letter-spacing:1px;
+               border-right-style: solid;
+            border-right: solid #eeeeee; 
+            border-right-width: 2px;*
+            
             }
          .leftnavs{
             font-size: 16px;
@@ -320,6 +324,9 @@
             background-color: black;
             width : 180px;
             letter-spacing:1px;
+             border-right-style: solid;
+            border-right: solid #44aa99; 
+            border-right-width: 2px;*
             }
          .leftnavscp{
             font-size: 16px;
@@ -388,6 +395,9 @@
             width : 180px;
             letter-spacing:1px;
            font-weight: 200;
+             border-right-style: solid;
+            border-right: solid #ddcc77; 
+            border-right-width: 2px;*
            }
          .leftnavsd{
             font-size: 16px;
@@ -447,7 +457,19 @@
             border-bottom: none;
         }
 
-
+ /* space loads */
+       .leftnavspacet{
+            font-size: 18px;
+            color: #88ccee!important;
+            background-color: black;
+            width : 180px;
+            letter-spacing:1px;
+           font-weight: 200;
+             border-right-style: solid;
+            border-right: solid #88ccee; 
+            border-right-width: 2px;
+           border-bottom: 1px solid #555;
+           }
 
 /**
  * CSSReset.com - How To Keep Footer At Bottom of Page with CSS
