@@ -50,8 +50,13 @@
                 padding-bottom: 8px;
                  margin-top: 10px;
                  border-top-style: solid;
-    border-top: dotted #545454; 
+                 border-top: dotted #545454; 
                 }
+        .doctitle{
+            font-style: italic;
+            font-weight:600;
+            font-size: 14pt;
+        }
             
         .content-main {
         }

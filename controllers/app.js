@@ -50,6 +50,11 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
       url: '/types',
       templateUrl: 'views/chiller_types.html'
     })
+   // nested list with just some random string data
+    .state('chiller.design', {
+      url: '/chiller_design',
+      templateUrl: 'views/chiller_design.html'
+        })
 
     // nested list with just some random string data
     .state('chiller.basics', {
@@ -127,5 +132,6 @@ $scope.hoverOut = function(){
     this.hoverEdit = false;
 };*/
 /* animation */
+
 
 
