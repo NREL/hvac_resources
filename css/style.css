@@ -159,10 +159,11 @@ li, .tooltip, .popover {
   visibility: hidden;
 }
 
-.diagram {
+#diagram {
   order: 2;
   width: 30%;
   height: 30%;
+  overflow: hidden;
   /*flex: 1 0 350px;
   -webkit-flex: 1 0 350px;
   -ms-flex: 1 0 350px;*/
@@ -194,7 +195,6 @@ li, .tooltip, .popover {
 
 .navcontainer {
   order: 1;
-  z-index: 10;
   flex: 0 0 180px;
   -webkit-flex: 0 0 180px;
   -ms-flex: 0 0 180px;
@@ -230,10 +230,10 @@ li, .tooltip, .popover {
   margin-right: 10px;
 }
 
-@media only screen and (max-width: 310px) {
+@media (max-width: 430px) {
   .topbartitle {
     font-size: 20px;
-    line-height: 28px;
+    line-height: 2.5em;
   }
 }
 
@@ -322,20 +322,20 @@ li:last-child {
 }
 
 @media only screen and (min-width: 767px) {
+  .navcontainer {
+    z-index: 10;
+  }
   .brand {
     display: none;
+  }
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .diagram {
+  #diagram {
     display: none;
-  }
-}
-
-@media (min-width: 461px) {
-  .nav-side-menu .menu-list .menu-content {
-    display: block;
   }
 }
 

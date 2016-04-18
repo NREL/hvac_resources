@@ -92,6 +92,17 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
 }); // closes $routerApp.config()
 
 
+$(function() {
+  var $body = $('body');
+  $body.on('mouseenter', '#diagram a', function (evt) {
+    var id = $(evt.target).attr('id');
+    console.debug('Hovering over ' + id);
+  });
+  $body.on('mouseleave', '#diagram a', function (evt) {
+    var id = $(evt.target).attr('id');
+    console.debug('Left ' + id);
+  });
+});
 
 //not sure what this is for
 /*
