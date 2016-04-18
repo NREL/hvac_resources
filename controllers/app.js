@@ -62,6 +62,12 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
       templateUrl: 'views/chiller_basics.html'
     })
   
+    // nested list with just some random string data
+    .state('chiller.codes', {
+      url: '/chiller_codes',
+      templateUrl: 'views/chiller_codes.html'
+    })
+  
       // Pump STATES AND NESTED VIEWS ========================================
     .state('pump', {
       url: '/pump',
