@@ -25,84 +25,80 @@
   <body ng-app="routerApp">
     <div id="wrapper">
       <div id="content">
-        <div class="flexcontainer">
-          <div class="topbar">
-            <div class="topbartitle">
-              <img src="img/hvac_icon.png" alt="logo">
-              HVAC Resources
-            </div>
+        <div class="topbar">
+          <div class="topbartitle">
+            <img src="img/hvac_icon.png" alt="logo">
+            HVAC Resources
           </div>
+        </div>
 
-          <div class="flexcontainer">
-            <!-- COLUMN ONE NAMED VIEW -->
-            <div class="navcontainer">
-              <div class="nav-side-menu">
-                <div class="brand">
-                  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
-                </div>
-                <div class="menu-list">
+        <div class="flexcontainer">
+          <!-- COLUMN ONE NAMED VIEW -->
+          <div class="navcontainer">
+            <div class="nav-side-menu">
+              <div class="brand">
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+              </div>
+              <div class="menu-list">
 
-                  <ul id="menu-content" class="menu-content collapse out">
-                    <li>
-                      <a href="#/home" class="leftnavt">
-                        HOME
-                      </a>
-                    </li>
+                <ul id="menu-content" class="menu-content collapse out">
+                  <li>
+                    <a href="#/home" class="leftnavt">HOME</a>
+                  </li>
 
-                    <li data-toggle="collapse" data-target="#centralplant" class="collapsed">
-                      <a href="#/central_plant" class="leftnavtcp"> CENTRAL PLANT <span class="arrow"></span></a>
-                    </li>
+                  <li data-toggle="collapse" data-target="#centralplant" class="collapsed">
+                    <a href="#/central_plant" class="leftnavtcp"> CENTRAL PLANT <span class="arrow"></span></a>
+                  </li>
 
-                    <li>
-                      <ul class="sub-menu collapse" id="centralplant">
-                        <li class="leftnavcp"><a href="#/chiller/basics">Chiller</a></li>
-                        <li class="leftnavcp"><a href="#/boiler/basics">Boiler</a></li>
-                        <li class="leftnavcp"><a href="#">Cooling Tower</a></li>
-                        <li class="leftnavcp"><a href="#/pump/basics">Pump</a></li>
-                        <li class="leftnavcp"><a href="#">Thermal Energy Storage</a></li>
-                        <li class="leftnavcp"><a href="#">Sensors & Controls</a></li>
-                        <li class="leftnavcp"><a href="#">Cogeneration Design</a></li>
-                      </ul>
-                    </li>
+                  <li>
+                    <ul class="sub-menu collapse" id="centralplant">
+                      <li class="leftnavcp"><a href="#/chiller/basics">Chiller</a></li>
+                      <li class="leftnavcp"><a href="#/boiler/basics">Boiler</a></li>
+                      <li class="leftnavcp"><a href="#">Cooling Tower</a></li>
+                      <li class="leftnavcp"><a href="#/pump/basics">Pump</a></li>
+                      <li class="leftnavcp"><a href="#">Thermal Energy Storage</a></li>
+                      <li class="leftnavcp"><a href="#">Sensors & Controls</a></li>
+                      <li class="leftnavcp"><a href="#">Cogeneration Design</a></li>
+                    </ul>
+                  </li>
 
-                    <li data-toggle="collapse" data-target="#distributions" class="collapsed">
-                      <a href="#/central_plant" class="leftnavtd"> DISTRIBUTION SYSTEM <span class="arrow"></span></a>
-                    </li>
+                  <li data-toggle="collapse" data-target="#distributions" class="collapsed">
+                    <a href="#/central_plant" class="leftnavtd"> DISTRIBUTION SYSTEM <span class="arrow"></span></a>
+                  </li>
 
-                    <li>
-                      <ul class="sub-menu collapse" id="distributions">
-                        <li class="leftnavd"><a href="#">Piping</a></li>
-                        <li class="leftnavd"><a href="#">Valves</a></li>
-                        <li class="leftnavd"><a href="#">Air Handling Unit</a></li>
-                        <li class="leftnavd"><a href="#">Fans</a></li>
-                        <li class="leftnavd"><a href="#">Ducting</a></li>
-                        <li class="leftnavd"><a href="#">VAV Boxes</a></li>
-                        <li class="leftnavd"><a href="#">Terminal Units</a></li>
-                        <li class="leftnavd"><a href="#">Diffusers</a></li>
-                        <li class="leftnavd"><a href="#">Steam Traps</a></li>
-                      </ul>
-                    </li>
+                  <li>
+                    <ul class="sub-menu collapse" id="distributions">
+                      <li class="leftnavd"><a href="#">Piping</a></li>
+                      <li class="leftnavd"><a href="#">Valves</a></li>
+                      <li class="leftnavd"><a href="#">Air Handling Unit</a></li>
+                      <li class="leftnavd"><a href="#">Fans</a></li>
+                      <li class="leftnavd"><a href="#">Ducting</a></li>
+                      <li class="leftnavd"><a href="#">VAV Boxes</a></li>
+                      <li class="leftnavd"><a href="#">Terminal Units</a></li>
+                      <li class="leftnavd"><a href="#">Diffusers</a></li>
+                      <li class="leftnavd"><a href="#">Steam Traps</a></li>
+                    </ul>
+                  </li>
 
-                    <li data-toggle="collapse" data-target="#loads" class="collapsed" ng-click="toggle()">
-                      <a href="#/space_loads" class="leftnavspacet"> SPACE LOADS <span class="arrow"></span></a>
-                    </li>
+                  <li data-toggle="collapse" data-target="#loads" class="collapsed" ng-click="toggle()">
+                    <a href="#/space_loads" class="leftnavspacet"> SPACE LOADS <span class="arrow"></span></a>
+                  </li>
 
-                  </ul>
-                </div>
+                </ul>
               </div>
             </div>
-            <!-- COLUMN TWO NAMED VIEW -->
-            <!-- SVG Content Here ============================== -->
+          </div>
+          <!-- COLUMN TWO NAMED VIEW -->
+          <!-- SVG Content Here ============================== -->
 
-            <div class="diagram">
-              <ng-include src="'/img/hvacdiagram-02.svg'" viewBox="601.6 315 248.4 462"></ng-include>
-            </div>
+          <div class="diagram">
+            <ng-include src="'/img/hvacdiagram-02.svg'"></ng-include>
+          </div>
 
-            <!-- COLUMN Three NAMED VIEW -->
-            <div class="infocontainer">
-              <!-- Page Content Here ============================== -->
-              <div ui-view class="fadein"></div>
-            </div>
+          <!-- COLUMN Three NAMED VIEW -->
+          <div class="infocontainer">
+            <!-- Page Content Here ============================== -->
+            <div ui-view class="fadein"></div>
           </div>
         </div>
       </div>

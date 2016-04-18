@@ -11,12 +11,14 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
       url: '/home',
       templateUrl: 'views/home.html'
     })
-      // Space Loads NESTED VIEWS ========================================
+
+    // Space Loads NESTED VIEWS ========================================
     .state('space_loads', {
       url: '/space_loads',
       templateUrl: 'views/space_loads.html'
     })
-        // Central Plant NESTED VIEWS ========================================
+
+    // Central Plant NESTED VIEWS ========================================
     .state('central_plant', {
       url: '/central_plant',
       templateUrl: 'views/central_plant.html'
@@ -38,7 +40,6 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
       templateUrl: 'views/boiler_basics.html'
     })
 
-
     // Chiller STATES AND NESTED VIEWS ========================================
     .state('chiller', {
       url: '/chiller',
@@ -50,25 +51,26 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
       url: '/types',
       templateUrl: 'views/chiller_types.html'
     })
-   // nested list with just some random string data
+
+    // nested list with just some random string data
     .state('chiller.design', {
       url: '/chiller_design',
       templateUrl: 'views/chiller_design.html'
-        })
+    })
 
     // nested list with just some random string data
     .state('chiller.basics', {
       url: '/basics',
       templateUrl: 'views/chiller_basics.html'
     })
-  
+
     // nested list with just some random string data
     .state('chiller.codes', {
       url: '/chiller_codes',
       templateUrl: 'views/chiller_codes.html'
     })
-  
-      // Pump STATES AND NESTED VIEWS ========================================
+
+    // Pump STATES AND NESTED VIEWS ========================================
     .state('pump', {
       url: '/pump',
       templateUrl: 'views/pump.html'
@@ -130,12 +132,12 @@ function MyCtrl($scope) {
 */
 
 /*
-$scope.hoverIn = function(){
-    this.hoverEdit = true;
+$scope.hoverIn = function() {
+  this.hoverEdit = true;
 };
 
-$scope.hoverOut = function(){
-    this.hoverEdit = false;
+$scope.hoverOut = function() {
+  this.hoverEdit = false;
 };*/
 /* animation */
 

@@ -74,7 +74,6 @@ li, .tooltip, .popover {
 .content-secondary {
   padding-left: 10px;
   align-self: flex-start;
-  max-width: 155px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -128,7 +127,6 @@ li, .tooltip, .popover {
   background-color: #000000;
   color: white;
   padding: 10px;
-  margin-right: 5px;
   order: 3;
   flex: 2 3 0;
   -webkit-flex: 2 3 0;
@@ -182,7 +180,7 @@ li, .tooltip, .popover {
 }
 
 .mybtn a:hover {
-  background-color: #dddddd;
+  background-color: #ddd;
   color: white;
   font-weight: 500;
 }
@@ -196,6 +194,7 @@ li, .tooltip, .popover {
 
 .navcontainer {
   order: 1;
+  z-index: 10;
   flex: 0 0 180px;
   -webkit-flex: 0 0 180px;
   -ms-flex: 0 0 180px;
@@ -220,7 +219,7 @@ li, .tooltip, .popover {
   float: left;
   padding: 8px;
   line-height: 50px;
-  border-top: 1px solid #44aa99;
+  border-top: 1px solid #4a9;
   border-bottom: solid #4b625e;
 }
 
@@ -251,7 +250,7 @@ li, .tooltip, .popover {
 
 .leftnavs {
   font-size: 16px;
-  color: #44aa99 !important;
+  color: #4a9 !important;
   background-color: black;
   width: 180px;
   letter-spacing: 1px;
@@ -343,16 +342,16 @@ li:last-child {
 /* Central Plant Navigation */
 .leftnavtcp {
   font-size: 18px;
-  color: #44aa99 !important;
+  color: #4a9 !important;
   background-color: black;
   width: 180px;
   letter-spacing: 1px;
-  border-right: 2px solid #44aa99;
+  border-right: 2px solid #4a9;
 }
 
 .leftnavscp {
   font-size: 16px;
-  color: #44aa99 !important;
+  color: #4a9 !important;
   background-color: black;
   width: 180px;
   letter-spacing: 1px;
@@ -367,7 +366,7 @@ li:last-child {
   font-weight: 300;
   letter-spacing: 3px;
   padding-left: 5px;
-  border-right: 2px solid #44aa99;
+  border-right: 2px solid #4a9;
 }
 
 .leftnavcp {
@@ -386,7 +385,7 @@ li:last-child {
 
 /* Change the link color on hover */
 .leftnavcp a:hover {
-  background-color: #44aa99;
+  background-color: #4a9;
   color: white;
   font-weight: 300;
 }
@@ -394,7 +393,7 @@ li:last-child {
 .leftnavcp a:active,
 .leftnavcp a:focus {
   text-decoration: none;
-  background-color: #44aa99;
+  background-color: #4a9;
   color: black !important;
   font-weight: 300;
 }
@@ -534,19 +533,15 @@ body {
 /*Right Nav*/
 .rtnav {
   font-size: 13px;
-  color: white !important;
+  color: white;
   background-color: #282828;
-  width: 155px;
   font-weight: 100;
   border-radius: 3px;
-}
-
-.rtnav {
   list-style-type: none;
   margin: 0;
   padding: 10px;
-  width: 155px;
-  color: white;
+  text-align: left;
+  border-bottom: 1px solid #555;
 }
 
 .rtnav a {
@@ -558,7 +553,7 @@ body {
 
 /* Change the link color on hover */
 .rtnav a:hover {
-  background-color: #44aa99;
+  background-color: #4a9;
   color: white;
   font-weight: 100;
 }
@@ -566,14 +561,9 @@ body {
 .rtnav a:active,
 .rtnav a:focus {
   text-decoration: none;
-  background-color: #44aa99;
+  background-color: #4a9;
   color: black !important;
   font-weight: 100;
-}
-
-.rtnav {
-  text-align: left;
-  border-bottom: 1px solid #555;
 }
 
 .rtnav:last-child {
@@ -583,48 +573,48 @@ body {
 /* Rollovers on the Central PlantDiagram*/
 
 #chiller:hover {
-  fill: #44aa99 !important;
+  fill: #4a9 !important;
   stroke: black !important;
 }
 
 #chiller:active {
-  fill: #44aa99 !important;
+  fill: #4a9 !important;
   stroke: yellow !important;
 }
 
 #boiler:hover {
-  fill: #44aa99 !important;
+  fill: #4a9 !important;
   stroke: black !important;
   font-size: 14px;
 }
 
 #boiler:active {
-  fill: #44aa99 !important;
+  fill: #4a9 !important;
   stroke: yellow !important;
 }
 
 #cp-pump:hover {
-  fill: #44aa99 !important;
+  fill: #4a9 !important;
   stroke: black !important;
 }
 
 #cp-pump:hover {
-  fill: #44aa99 !important;
+  fill: #4a9 !important;
   stroke: black !important;
 }
 
 .cpoff {
   fill: black !important;
-  stroke: #44aa99 !important;
+  stroke: #4a9 !important;
 }
 
 .cpover {
-  fill: #44aa99 !important;
+  fill: #4a9 !important;
   stroke: black !important;
 }
 
 .cpon {
-  fill: #44aa99 !important;
+  fill: #4a9 !important;
   stroke: black !important;
 }
 
