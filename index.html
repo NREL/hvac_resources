@@ -1,113 +1,113 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="js/angular.min.js"></script>
-    <link rel="stylesheet" href="css/style.css"/>
-    <script src="js/jquery-1.12.1.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-<!--    <script src="js/tips.js"></script>  -->
-    <script src="js/angular-ui-router.js"></script>
+    <link rel="shortcut icon" href="img/hvac_icon2.ico">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,greek,greek-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,600italic,700,700italic,300italic&subset=latin,greek,greek-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/GreenSock-JS/src/minified/TweenMax.min.js"></script>
+    <!--<script src="js/tips.js"></script>-->
     <script src="controllers/app.js"></script>
-    <script src="js/angular-animate.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/font-awesome.min.css">
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,greek,greek-ext' rel='stylesheet' type='text/css'>
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,600italic,700,700italic,300italic&subset=latin,greek,greek-ext' rel='stylesheet' type='text/css'>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
-      <link rel="stylesheet" href="css/font-awesome.min.css">
-      <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="css/animate.css">
-      <link rel="shortcut icon" href="img/hvac_icon2.ico" />
-      
   </head>
   <body ng-app="routerApp">
-      <div id="wrapper">
-    <div id="content">
-<div class="flexcontainer">
-    <div class="topbar">
-        <div class="topbartitle">
-              <img src="img/hvac_icon.png" alt="logo" />
-            HVAC Resources
-        </div>
-    </div>
-      
-<div class="flexcontainer">
-        <!-- COLUMN ONE NAMED VIEW -->
-       <div class="navcontainer"> 
-        <div class="nav-side-menu">
-        <div class="brand">
-            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    <div id="wrapper">
+      <div id="content">
+        <div class="flexcontainer">
+          <div class="topbar">
+            <div class="topbartitle">
+              <img src="img/hvac_icon.png" alt="logo">
+              HVAC Resources
             </div>
-            <div class="menu-list">
-  
-            <ul id="menu-content" class="menu-content collapse out">
-                <li>
-                  <a href="/#/home" class="leftnavt">
-                   HOME
-                  </a>
-                </li>
+          </div>
 
-                <li  data-toggle="collapse" data-target="#centralplant" class="collapsed">
-                  <a href="/#/central_plant" class="leftnavtcp"> CENTRAL PLANT <span class="arrow"></span></a>
-                </li>
-                
-                <ul class="sub-menu collapse" id="centralplant">
-                    <li class="leftnavcp"><a href="/#/chiller/basics">Chiller</a></li>
-                    <li class="leftnavcp"><a href="/#/boiler/basics">Boiler</a></li>
-                    <li class="leftnavcp"><a href="#">Cooling Tower</a></li>
-                    <li class="leftnavcp"><a href="/#/pump/basics">Pump</a></li>
-                    <li class="leftnavcp"><a href="#">Thermal Energy Storage</a></li>
-                    <li class="leftnavcp"><a href="#">Sensors & Controls</a></li>
-                    <li class="leftnavcp"><a href="#">Cogeneration Design</a></li>
-                </ul>
-                
-            <li  data-toggle="collapse" data-target="#distributions" class="collapsed">
-                  <a href="/#/central_plant" class="leftnavtd"> DISTRIBUTION SYSTEM <span class="arrow"></span></a>
-                </li>
-                
-                <ul class="sub-menu collapse" id="distributions">
-                    <li class="leftnavd"><a href="#">Piping</a></li>
-                    <li class="leftnavd"><a href="#">Valves</a></li>
-                    <li class="leftnavd"><a href="#">Air Handling Unit</a></li>
-                    <li class="leftnavd"><a href="#">Fans</a></li>
-                    <li class="leftnavd"><a href="#">Ducting</a></li>
-                    <li class="leftnavd"><a href="#">VAV Boxes</a></li>
-                    <li class="leftnavd"><a href="#">Terminal Units</a></li>
-                    <li class="leftnavd"><a href="#">Diffusers</a></li>
-                    <li class="leftnavd"><a href="#">Steam Traps</a></li>
-                </ul>
+          <div class="flexcontainer">
+            <!-- COLUMN ONE NAMED VIEW -->
+            <div class="navcontainer">
+              <div class="nav-side-menu">
+                <div class="brand">
+                  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+                </div>
+                <div class="menu-list">
 
+                  <ul id="menu-content" class="menu-content collapse out">
+                    <li>
+                      <a href="#/home" class="leftnavt">
+                        HOME
+                      </a>
+                    </li>
 
-                <li data-toggle="collapse" data-target="#loads" class="collapsed" ng-click="toggle()">
-                  <a href="/#/space_loads" class="leftnavspacet"> SPACE LOADS <span class="arrow"></span></a>
-                </li>  
-                
-            </ul>
+                    <li data-toggle="collapse" data-target="#centralplant" class="collapsed">
+                      <a href="#/central_plant" class="leftnavtcp"> CENTRAL PLANT <span class="arrow"></span></a>
+                    </li>
+
+                    <li>
+                      <ul class="sub-menu collapse" id="centralplant">
+                        <li class="leftnavcp"><a href="#/chiller/basics">Chiller</a></li>
+                        <li class="leftnavcp"><a href="#/boiler/basics">Boiler</a></li>
+                        <li class="leftnavcp"><a href="#">Cooling Tower</a></li>
+                        <li class="leftnavcp"><a href="#/pump/basics">Pump</a></li>
+                        <li class="leftnavcp"><a href="#">Thermal Energy Storage</a></li>
+                        <li class="leftnavcp"><a href="#">Sensors & Controls</a></li>
+                        <li class="leftnavcp"><a href="#">Cogeneration Design</a></li>
+                      </ul>
+                    </li>
+
+                    <li data-toggle="collapse" data-target="#distributions" class="collapsed">
+                      <a href="#/central_plant" class="leftnavtd"> DISTRIBUTION SYSTEM <span class="arrow"></span></a>
+                    </li>
+
+                    <li>
+                      <ul class="sub-menu collapse" id="distributions">
+                        <li class="leftnavd"><a href="#">Piping</a></li>
+                        <li class="leftnavd"><a href="#">Valves</a></li>
+                        <li class="leftnavd"><a href="#">Air Handling Unit</a></li>
+                        <li class="leftnavd"><a href="#">Fans</a></li>
+                        <li class="leftnavd"><a href="#">Ducting</a></li>
+                        <li class="leftnavd"><a href="#">VAV Boxes</a></li>
+                        <li class="leftnavd"><a href="#">Terminal Units</a></li>
+                        <li class="leftnavd"><a href="#">Diffusers</a></li>
+                        <li class="leftnavd"><a href="#">Steam Traps</a></li>
+                      </ul>
+                    </li>
+
+                    <li data-toggle="collapse" data-target="#loads" class="collapsed" ng-click="toggle()">
+                      <a href="#/space_loads" class="leftnavspacet"> SPACE LOADS <span class="arrow"></span></a>
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
             </div>
-            </div>
-</div>
-        <!-- COLUMN TWO NAMED VIEW -->
+            <!-- COLUMN TWO NAMED VIEW -->
             <!-- SVG Content Here ============================== -->
-    
+
             <div class="diagram">
               <ng-include src="'/img/hvacdiagram-02.svg'" viewBox="601.6 315 248.4 462"></ng-include>
-           </div>
+            </div>
 
-        <!-- COLUMN Three NAMED VIEW -->
-          <div class="infocontainer">
-            <!-- Page Content Here ============================== -->
-            <div ui-view class="fadein"></div>
+            <!-- COLUMN Three NAMED VIEW -->
+            <div class="infocontainer">
+              <!-- Page Content Here ============================== -->
+              <div ui-view class="fadein"></div>
+            </div>
           </div>
-</div>
         </div>
-        </div>
-    
+      </div>
+
       <div id="footer">
-        <p>The HVAC Resources site was developed by the National Renewable Energy Laboratory with support from the U.S. Department of                      Energy's Building Technologies Office. </p>
-            <p>NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.</p>
-          </div>
-</div>
+        <p>The HVAC Resources site was developed by the National Renewable Energy Laboratory with support from the U.S. Department of Energy's Building Technologies Office. </p>
+        <p>NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.</p>
+      </div>
+    </div>
   </body>
 
 </html>
