@@ -312,7 +312,7 @@
         <path fill="none" stroke="#4A9" stroke-width="1.0488" stroke-linecap="round" stroke-miterlimit="10" d="M779.8,349.7 l1.8-1.5c0.2-0.2,0.3-0.4,0.3-0.6v-2.7"/>
         <line fill="none" stroke="#4A9" stroke-width="1.0488" stroke-linecap="round" stroke-miterlimit="10" x1="783.6" y1="349.7" x2="781.8" y2="347.9"/>
       </g>
-      <path id="t-box" fill="#000000" stroke="#4A9" stroke-width="0.8901" stroke-miterlimit="10" d="M775.2,354.7h-3.1c-0.5,0-0.8-0.4-0.8-0.8 v-2.6c0-0.5,0.4-0.8,0.8-0.8h3.1c0.5,0,0.8,0.4,0.8,0.8v2.6C776,354.3,775.6,354.7,775.2,354.7z"/>
+      <path id="t-box" fill="none" stroke="#4A9" stroke-width="0.8901" stroke-miterlimit="10" d="M775.2,354.7h-3.1c-0.5,0-0.8-0.4-0.8-0.8 v-2.6c0-0.5,0.4-0.8,0.8-0.8h3.1c0.5,0,0.8,0.4,0.8,0.8v2.6C776,354.3,775.6,354.7,775.2,354.7z"/>
       <line fill="none" stroke="#4A9" stroke-width="1.0488" stroke-linecap="round" stroke-miterlimit="10" x1="773.6" y1="354.9" x2="773.6" y2="368.5"/>
       <path id="t-water" fill="none" stroke="#4A9" stroke-width="0.8901" stroke-miterlimit="10" d="M756.4,360.5c-0.2-0.6,0.5-1.1,1.1-0.9 c2.7,1.3,8.9,3.1,17-0.8c0,0,9-4.3,17-0.8c0.3,0.2,0.5,0.5,0.5,0.2l-1.9,9.7c-0.1,1.1-0.4,1.4-0.8,1.4l-30.4,0.1 c-0.4,0-0.7-0.2-0.8-0.6L756.4,360.5z"/>
       <g id="fan_2_">
