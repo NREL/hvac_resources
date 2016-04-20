@@ -75,6 +75,34 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         name: 'basics',
         url: '/basics',
         templateUrl: 'views/tower_basics.html'
+          }, {
+		name: 'design',
+        url: '/design',
+        templateUrl: 'views/tower_design.html'
+        }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/tower_cases.html'
+        }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/tower_codes.html'
+        }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/tower_operation.html'
+        }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/tower_procure.html'
+        }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/tower_tools.html'
+            }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/tower_types.html'
       }]
     })
     .state({
