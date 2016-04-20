@@ -93,6 +93,16 @@ routerApp.config(function ($stateProvider, $urlRouterProvider) {
       url: '/chiller_operation',
       templateUrl: 'views/chiller_operation.html'
      })   
+  
+      // Cooling Tower STATES AND NESTED VIEWS ========================================
+    .state('tower', {
+      url: '/tower',
+      templateUrl: 'views/tower.html'
+    })
+      .state('tower.basics', {
+      url: '/basics',
+      templateUrl: 'views/tower_basics.html'
+    })
 
     // Pump STATES AND NESTED VIEWS ========================================
     .state('pump', {
