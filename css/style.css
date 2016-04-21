@@ -16,6 +16,16 @@ html, body {
 li, .tooltip, .popover {
   font-family: 'Open Sans Condensed', sans-serif;
 }
+a:link {
+   color: #4e77f9; 
+}
+
+a:visited{
+    color: #55b741;
+}
+a:hover{
+    color: #809df9;
+}
 
 .myh1 {
   font-family: "Roboto Slab";
@@ -66,6 +76,20 @@ li, .tooltip, .popover {
   font-weight: 300;
   font-size: 11pt;
   color: gray;
+}
+.whiteimg{
+    padding: 8px;
+    background-color: white;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    text-align: center;
+}
+
+.myimage{
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .content-main {
