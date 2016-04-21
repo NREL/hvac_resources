@@ -125,6 +125,20 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
       templateUrl: 'views/distribution_system.html'
     })
     .state({
+      name: 'ahu',
+      url: '/ahu',
+      templateUrl: 'views/ahu.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/ahu_design.html'
+      }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/ahu_basics.html'
+      }]
+    })
+    .state({
       name: 'space_loads',
       url: '/space_loads',
       templateUrl: 'views/space_loads.html'

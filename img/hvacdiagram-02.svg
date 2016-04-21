@@ -143,8 +143,8 @@
       <path fill="#1B39B2" d="M741.9,420.3h-1.8v-57.2v-0.9c0-0.6,0.4-1.1,0.9-1.1h15.7c0.5,0,0.8,0.4,0.9,0.8h0.4 c0.1,0.7-0.3,1.3-0.9,1.3h-14.2c-0.5,0-0.9,0.5-0.9,1.1V420.3z"/>
       <path fill="#1B39B2" d="M804.6,416.4h1.8v-51.9v-4c0-0.6-0.4-1.1-0.9-1.1h-14.9l-0.4,2.1h13.4c0.5,0,0.9,0.5,0.9,1.1V416.4z"/>
     </g>
-    <polygon id="duct2" opacity="0.2" fill="#DC7" enable-background="new " points="796.8,532.5 798.5,542.8 825.8,542.7 825.4,669.7 751.6,669.6 751.6,688.2 761.9,688.2 761.9,682.1 801.2,682.1 801.2,688.2 811.4,688.2 811.4,682.1 836.8,681.7 836.8,532.5"/>
-    <polygon id="duct1" opacity="0.2" fill="#DC7" enable-background="new " points="794.3,547.3 796.5,557.7 799.5,557.6 799.5,644.9 636.7,644.7 636.7,715.4 646.9,715.4 646.9,657.2 690.9,657.2 690.9,715.4 701.1,715.4 701.1,657.2 810.5,657.2 810.5,638.8 810.5,547.3"/>
+    <polygon id="duct2" opacity="0.15" fill="#DC7" enable-background="new " points="796.8,532.5 798.5,542.8 825.8,542.7 825.4,669.7 751.6,669.6 751.6,688.2 761.9,688.2 761.9,682.1 801.2,682.1 801.2,688.2 811.4,688.2 811.4,682.1 836.8,681.7 836.8,532.5"/>
+    <polygon id="duct1" opacity="0.15" fill="#DC7" enable-background="new " points="794.3,547.3 796.5,557.7 799.5,557.6 799.5,644.9 636.7,644.7 636.7,715.4 646.9,715.4 646.9,657.2 690.9,657.2 690.9,715.4 701.1,715.4 701.1,657.2 810.5,657.2 810.5,638.8 810.5,547.3"/>
     <polygon id="duct2-outline" fill="none" stroke="#DC7" stroke-miterlimit="10" points="796.8,532.5 798.5,542.8 825.8,542.7 825.4,669.7 751.6,669.6 751.6,688.2 761.9,688.2 761.9,682.1 801.2,682.1 801.2,688.2 811.4,688.2 811.4,682.1 836.8,681.7 836.8,532.5"/>
     <polygon id="duct1-outline" fill="none" stroke="#DC7" stroke-miterlimit="10" points="794.3,547.3 796.5,557.7 799.5,557.6 799.5,644.9 636.7,644.7 636.7,715.4 646.9,715.4 646.9,657.2 690.9,657.2 690.9,715.4 701.1,715.4 701.1,657.2 810.5,657.2 810.5,638.8 810.5,547.3"/>
     <line id="ductconnectionline2" fill="none" stroke="#DC7" stroke-miterlimit="10" x1="795.2" y1="528.4" x2="799.5" y2="545.3"/>
@@ -206,24 +206,24 @@
     </g>
     <g id="ahu">
       <g id="ahu-back">
-        <rect x="747.5" y="569" stroke="#DC7" stroke-miterlimit="10" width="32.5" height="25.7"/>
-        <rect x="698.8" y="532.1" stroke="#DC7" stroke-miterlimit="10" width="7.3" height="25.7"/>
-        <rect x="706.2" y="532.1" stroke="#DC7" stroke-miterlimit="10" width="17.8" height="25.7"/>
-        <rect x="780" y="569" stroke="#DC7" stroke-miterlimit="10" width="7.9" height="25.7"/>
-        <rect x="729" y="569" stroke="#DC7" stroke-miterlimit="10" width="10.8" height="25.7"/>
-        <rect x="739.8" y="569.1" stroke="#DC7" stroke-miterlimit="10" width="7.7" height="25.7"/>
-        <rect x="748.8" y="532.1" stroke="#DC7" stroke-width="0.5133" stroke-miterlimit="10" width="30.8" height="25.7"/>
+        <rect x="747.5" y="569" fill="#000000" stroke="#DC7" stroke-miterlimit="10" width="32.5" height="25.7"/>
+        <rect x="698.8" y="532.1" fill="#000000" stroke="#DC7" stroke-miterlimit="10" width="7.3" height="25.7"/>
+        <rect x="706.2" y="532.1" fill="#000000" stroke="#DC7" stroke-miterlimit="10" width="17.8" height="25.7"/>
+        <rect x="780" y="569" fill="#000000" stroke="#DC7" stroke-miterlimit="10" width="7.9" height="25.7"/>
+        <rect x="729" y="569" fill="#000000" stroke="#DC7" stroke-miterlimit="10" width="10.8" height="25.7"/>
+        <rect x="739.8" y="569.1" fill="#000000"stroke="#DC7" stroke-miterlimit="10" width="7.7" height="25.7"/>
+        <rect x="748.8" y="532.1" fill="#000000"stroke="#DC7" stroke-width="0.5133" stroke-miterlimit="10" width="30.8" height="25.7"/>
         <polygon stroke="#DC7" stroke-miterlimit="10" points="779.6,532.1 785.6,532.1 790.1,557.7 779.6,557.7"/>
-        <rect x="736.4" y="532.1" stroke="#DC7" stroke-miterlimit="10" width="12.4" height="25.7"/>
-        <rect x="724" y="532.1" stroke="#DC7" stroke-miterlimit="10" width="12.4" height="25.7"/>
+        <rect x="736.4" y="532.1" fill="#000000" stroke="#DC7" stroke-miterlimit="10" width="12.4" height="25.7"/>
+        <rect x="724" y="532.1" fill="#000000" stroke="#DC7" stroke-miterlimit="10" width="12.4" height="25.7"/>
         <polygon stroke="#DC7" stroke-miterlimit="10" points="642.3,569.1 642.3,594.7 672.6,594.7 672.6,594.7 693,594.7 698.7,594.7 729,594.7 729,569 698.7,569 698.7,532.1 672.6,532.1 669.4,532.1 642.3,532.1 642.3,557.7 669.4,557.7 669.4,569.1"/>
       </g>
       <g>
-        <line fill="none" stroke="#DC7" stroke-miterlimit="10" x1="698.4" y1="563.4" x2="669.4" y2="563.4"/>
-        <line fill="none" stroke="#DC7" stroke-miterlimit="10" x1="696.4" y1="560.8" x2="691.1" y2="566.1"/>
-        <line fill="none" stroke="#DC7" stroke-miterlimit="10" x1="690.2" y1="560.8" x2="685" y2="566.1"/>
-        <line fill="none" stroke="#DC7" stroke-miterlimit="10" x1="684.2" y1="560.8" x2="678.9" y2="566.1"/>
-        <line fill="none" stroke="#DC7" stroke-miterlimit="10" x1="678.1" y1="560.8" x2="672.8" y2="566.1"/>
+        <line fill="000000" stroke="#DC7" stroke-miterlimit="10" x1="698.4" y1="563.4" x2="669.4" y2="563.4"/>
+        <line fill="#000000" stroke="#DC7" stroke-miterlimit="10" x1="696.4" y1="560.8" x2="691.1" y2="566.1"/>
+        <line fill="#000000" stroke="#DC7" stroke-miterlimit="10" x1="690.2" y1="560.8" x2="685" y2="566.1"/>
+        <line fill="#000000" stroke="#DC7" stroke-miterlimit="10" x1="684.2" y1="560.8" x2="678.9" y2="566.1"/>
+        <line fill="000000" stroke="#DC7" stroke-miterlimit="10" x1="678.1" y1="560.8" x2="672.8" y2="566.1"/>
       </g>
       <polyline fill="none" stroke="#DC7" stroke-miterlimit="10" points="699.1,557.6 705.8,553.8 698.8,549.8 705.9,545.7 698.6,541.6 705.9,536.6 698.4,532.2"/>
       <g>
@@ -241,14 +241,14 @@
         <line fill="none" stroke="#DC7" stroke-miterlimit="10" x1="668.8" y1="537.8" x2="663.5" y2="532.5"/>
       </g>
       <g id="fan2">
-        <ellipse fill="#010101" stroke="#DC7" stroke-miterlimit="10" cx="759.9" cy="587.7" rx="2.1" ry="5.9"/>
-        <ellipse fill="#010101" stroke="#DC7" stroke-miterlimit="10" cx="759.4" cy="576.1" rx="2.1" ry="5.9"/>
-        <path fill="#010101" stroke="#DC7" stroke-miterlimit="10" d="M758.7,581.2h6.7c0.3,0,0.5,0.3,0.5,0.5l0,0 c0,0.3-0.3,0.5-0.5,0.5h-6.7c-0.3,0-0.5-0.3-0.5-0.5l0,0C758.1,581.6,758.4,581.2,758.7,581.2z"/>
+        <ellipse fill="#000000" stroke="#DC7" stroke-miterlimit="10" cx="759.9" cy="587.7" rx="2.1" ry="5.9"/>
+        <ellipse fill="#000000" stroke="#DC7" stroke-miterlimit="10" cx="759.4" cy="576.1" rx="2.1" ry="5.9"/>
+        <path fill="#000000" stroke="#DC7" stroke-miterlimit="10" d="M758.7,581.2h6.7c0.3,0,0.5,0.3,0.5,0.5l0,0 c0,0.3-0.3,0.5-0.5,0.5h-6.7c-0.3,0-0.5-0.3-0.5-0.5l0,0C758.1,581.6,758.4,581.2,758.7,581.2z"/>
       </g>
       <g id="fan1">
-        <ellipse fill="#010101" stroke="#DC7" stroke-miterlimit="10" cx="763.9" cy="538.9" rx="2.1" ry="5.9"/>
-        <ellipse fill="#010101" stroke="#DC7" stroke-miterlimit="10" cx="764.4" cy="550.5" rx="2.1" ry="5.9"/>
-        <path fill="#010101" stroke="#DC7" stroke-miterlimit="10" d="M765.1,545.3h-6.7c-0.3,0-0.5-0.3-0.5-0.5l0,0 c0-0.3,0.3-0.5,0.5-0.5h6.7c0.3,0,0.5,0.3,0.5,0.5l0,0C765.7,545,765.5,545.3,765.1,545.3z"/>
+        <ellipse fill="#000000" stroke="#DC7" stroke-miterlimit="10" cx="763.9" cy="538.9" rx="2.1" ry="5.9"/>
+        <ellipse fill="#000000" stroke="#DC7" stroke-miterlimit="10" cx="764.4" cy="550.5" rx="2.1" ry="5.9"/>
+        <path fill="#000000" stroke="#DC7" stroke-miterlimit="10" d="M765.1,545.3h-6.7c-0.3,0-0.5-0.3-0.5-0.5l0,0 c0-0.3,0.3-0.5,0.5-0.5h6.7c0.3,0,0.5,0.3,0.5,0.5l0,0C765.7,545,765.5,545.3,765.1,545.3z"/>
       </g>
       <line fill="none" stroke="#DC7" stroke-miterlimit="10" x1="784.6" y1="526.4" x2="790.6" y2="560.9"/>
       <path id="heat-coil1_1_" fill="#930318" d="M732.9,594.2h-2.3c0-2,2.1-2.8,3.7-3.5c0.9-0.4,2.4-0.9,2.4-1.5c0-0.5-1.4-1.1-2.4-1.5 c-1.7-0.7-3.7-1.5-3.7-3.5c0-2,2.1-2.8,3.7-3.5c0.9-0.4,2.4-0.9,2.4-1.5c0-0.5-1.4-1.1-2.4-1.5c-1.7-0.7-3.7-1.5-3.7-3.5 s2.1-2.8,3.7-3.5c0.9-0.4,2.4-0.9,2.4-1.5h2.3c0,2-2.1,2.8-3.7,3.5c-0.9,0.4-2.4,0.9-2.4,1.5c0,0.5,1.4,1.1,2.4,1.5 c1.7,0.7,3.7,1.5,3.7,3.5s-2.1,2.8-3.7,3.5c-0.9,0.4-2.4,0.9-2.4,1.5c0,0.5,1.4,1.1,2.4,1.5c1.7,0.7,3.7,1.5,3.7,3.5 s-2.1,2.8-3.7,3.5C734.4,593.2,732.9,593.8,732.9,594.2z"/>
