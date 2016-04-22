@@ -276,7 +276,7 @@
 	</g>
 	<g id="vav">
 		
-			<rect id="rect4449" x="1174.7" y="1559.4" stroke="#DDCC77" stroke-width="0.9349" stroke-miterlimit="10" width="167" height="96.6"/>
+			<rect id="rect4449" x="1174.7" y="1559.4" stroke="#DDCC77" stroke-width="1" stroke-miterlimit="10" width="167" height="96.6"/>
 		
 			<line id="line4451" fill="none" stroke="#930318" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="1307.3" y1="1570.3" x2="1270.2" y2="1570.3"/>
 		
@@ -347,6 +347,7 @@
 			<text id="text4507" transform="matrix(1 0 0 1 1338.3395 2023.4623)" fill="#DDCC77" font-family="'PTSans-Regular'" font-size="29.5161">T</text>
 	</g>
 	<g id="ahu">
+        <a id="ahu-link" xlink:href="#/ahu/basics" >
 		<g id="ahu-back">
 			<rect id="rect4511" x="1165.5" y="1296.6" stroke="#DDCC77" stroke-miterlimit="10" width="125.6" height="99.3"/>
 			<rect id="rect4513" x="977.3" y="1154" stroke="#DDCC77" stroke-miterlimit="10" width="28.2" height="99.3"/>
@@ -365,6 +366,7 @@
 				976.9,1396 1094,1396 1094,1296.6 976.9,1296.6 976.9,1154 876,1154 863.6,1154 758.9,1154 758.9,1253 863.6,1253 863.6,1297 			
 				"/>
 		</g>
+            </a>
 		<g id="g4533">
 			<line id="line4535" fill="none" stroke="#DDCC77" stroke-miterlimit="10" x1="975.7" y1="1275" x2="863.6" y2="1275"/>
 			<line id="line4537" fill="none" stroke="#DDCC77" stroke-miterlimit="10" x1="968" y1="1265" x2="947.5" y2="1285.4"/>
