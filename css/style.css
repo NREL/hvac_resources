@@ -1,5 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  overflow-y: scroll;
 }
 
 p, h1, h2, h3, h4, h5, h6, div {
@@ -16,25 +17,24 @@ html, body {
 li, .tooltip, .popover {
   font-family: 'Open Sans Condensed', sans-serif;
 }
+
 a:link {
-   color: #4e77f9; 
+  color: #4e77f9;
 }
 
-a:visited{
-    color: #55b741;
+a:visited {
+  color: #55b741;
 }
-a:hover{
-    color: #809df9;
+
+a:hover {
+  color: #809df9;
 }
-hr { 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-width: 1px;
-    border-color: #545454;
-    border-bottom-style: dotted;
+
+hr {
+  display: block;
+  margin: 0.5em auto;
+  border: 1px #545454;
+  border-bottom-style: dotted;
 }
 
 .myh1 {
@@ -85,47 +85,49 @@ hr {
   font-weight: 300;
   font-size: 10pt;
   color: #dddddd;
-    padding-top= 5px;
-    padding-bottom= 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
 .pquote {
-    float: left;
-    width: 100%;
-    background: #282828;
-    font-weight: 400;
-    font-style: italic;
-    padding: 13px;
-    margin: 0 13px 13px 0;
-    line-height: 180%!important;
+  float: left;
+  width: 100%;
+  background: #282828;
+  font-weight: 400;
+  font-style: italic;
+  padding: 13px;
+  margin: 0 13px 13px 0;
+  line-height: 180% !important;
 }
 
 blockquote {
-    margin: 0; /* gets rid of the default blockquote margin */
+  margin: 0; /* gets rid of the default blockquote margin */
 }
 
-.whiteimg{
-    padding: 8px;
-    background-color: white;
-    border-radius: 8px;
-    display: inline-block;
-    vertical-align: middle;
-     width: 100%;
-    max-width: 730px;
-    text-align: center;
-}
-.transimg{
-    padding: 8px;
-    border-radius: 8px;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
+.whiteimg {
+  padding: 8px;
+  background-color: white;
+  border-radius: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 730px;
+  text-align: center;
 }
 
-.myimage{
-    display: inline-block;
-    vertical-align: middle;
-        width: 100%;
-    max-width: 700px;
+.transimg {
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.myimage {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 700px;
 }
 
 .content-main {
@@ -384,15 +386,18 @@ li:last-child {
   .navcontainer {
     z-index: 10;
   }
+
   .brand {
     display: none;
   }
+
   .nav-side-menu .menu-list .menu-content {
     display: block;
   }
-    .pquote{
-        width: 40%;
-}
+
+  .pquote {
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -402,7 +407,7 @@ li:last-child {
 }
 
 @media only screen and (max-width: 1200px) {
- .pquote {
+  .pquote {
     width: 100%;
   }
 }
@@ -673,23 +678,25 @@ body {
   stroke: black !important;
 }
 
-#cp-pump:hover {
+#cp-pump:active {
   fill: #4a9 !important;
+  stroke: yellow !important;
+}
+
+#ahu-back:hover {
+  fill: #4a4428 !important;
+  stroke: #ddcc77 !important;:
+}
+
+#fan1:hover {
+  fill: #ddcc77 !important;
   stroke: black !important;
 }
 
-#ahu-back:hover{
-    fill: #4a4428 !important;
-    stroke: #ddcc77 !important;: 
-  }
-#fan1:hover{
-    fill: #ddcc77 !important;
-    stroke: black !important;
-  }
-#fan2:hover{
-    fill: #ddcc77 !important;
-    stroke: black !important;
-  }
+#fan2:hover {
+  fill: #ddcc77 !important;
+  stroke: black !important;
+}
 
 .cpoff {
   fill: black !important;
@@ -705,7 +712,6 @@ body {
   fill: #4a9 !important;
   stroke: black !important;
 }
-
 
 .noselect {
   -webkit-touch-callout: none;
