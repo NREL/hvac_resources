@@ -26,6 +26,16 @@ a:visited{
 a:hover{
     color: #809df9;
 }
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    border-color: #545454;
+    border-bottom-style: dotted;
+}
 
 .myh1 {
   font-family: "Roboto Slab";
@@ -62,8 +72,6 @@ a:hover{
   padding-top: 10px;
   padding-bottom: 8px;
   margin-top: 14px;
-  border-top: dotted #545454;
-    border-spacing: 22px;
 }
 
 .doctitle {
