@@ -2,12 +2,12 @@ var routerApp = angular.module('routerApp', ['ngAnimate', 'ui.router', 'ui.route
 
 routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
 
-  $urlRouterProvider.otherwise('/home');
+  $urlRouterProvider.when('', '/').otherwise('/');
 
   stateHelperProvider
     .state({
       name: 'home',
-      url: '/home',
+      url: '/',
       templateUrl: 'views/home.html'
     })
     .state({
@@ -75,31 +75,31 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         name: 'basics',
         url: '/basics',
         templateUrl: 'views/tower_basics.html'
-          }, {
-		name: 'design',
+      }, {
+        name: 'design',
         url: '/design',
         templateUrl: 'views/tower_design.html'
-        }, {
+      }, {
         name: 'cases',
         url: '/cases',
         templateUrl: 'views/tower_cases.html'
-        }, {
+      }, {
         name: 'codes',
         url: '/codes',
         templateUrl: 'views/tower_codes.html'
-        }, {
+      }, {
         name: 'operation',
         url: '/operation',
         templateUrl: 'views/tower_operation.html'
-        }, {
+      }, {
         name: 'procure',
         url: '/procure',
         templateUrl: 'views/tower_procure.html'
-        }, {
+      }, {
         name: 'tools',
         url: '/tools',
         templateUrl: 'views/tower_tools.html'
-            }, {
+      }, {
         name: 'types',
         url: '/types',
         templateUrl: 'views/tower_types.html'
@@ -143,7 +143,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
       url: '/space_loads',
       templateUrl: 'views/space_loads.html'
     })
-  .state({
+    .state({
       name: 'fan',
       url: '/fan',
       templateUrl: 'views/fan.html',
@@ -155,75 +155,40 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         name: 'basics',
         url: '/basics',
         templateUrl: 'views/fan_basics.html'
-          }, {
+      }, {
         name: 'types',
         url: '/types',
         templateUrl: 'views/fan_types.html'
       }]
-    })
+    });
 
 }); // closes $routerApp.config()
 
 
-$(function () {
-  var $body = $('body');
-  $body.on('mouseenter', '#diagram a', function (evt) {
-    var id = $(evt.target).attr('id');
-    console.debug('Hovering over ' + id);
+routerApp.run(['$rootScope', '$log', '$state', function ($rootScope, $log, $state) {
+  $(function () {
+    var $body = $('body');
+    $body.on('mouseenter', '#diagram a', function (evt) {
+      var id = $(evt.target).attr('id');
+      console.debug('Hovering over ' + id);
+    });
+    $body.on('mouseleave', '#diagram a', function (evt) {
+      var id = $(evt.target).attr('id');
+      console.debug('Left ' + id);
+    });
   });
-  $body.on('mouseleave', '#diagram a', function (evt) {
-    var id = $(evt.target).attr('id');
-    console.debug('Left ' + id);
+
+  $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+    //$log.debug('$stateChangeStart');
   });
-});
-
-//not sure what this is for
-/*
- routerApp.controller('leftnavController', function ($scope) {
-
- $scope.state = false;
-
- $scope.toggleState = function () {
- $scope.state = !$scope.state;
- };
-
- });
-
- routerApp.directive('sidebarDirective', function () {
- return {
- link: function (scope, element, attr) {
- scope.$watch(attr.sidebarDirective, function (newVal) {
- if (newVal) {
- element.addClass('show');
- return;
- }
- element.removeClass('show');
- });
- }
- };
- });
- */
-
-//Hider
-/*
- function MyCtrl($scope) {
- $scope.visible = fase;
-
- $scope.toggle = function() {
- $scope.visible = !$scope.hidden;
- };
- }
- */
-
-/*
- $scope.hoverIn = function() {
- this.hoverEdit = true;
- };
-
- $scope.hoverOut = function() {
- this.hoverEdit = false;
- };*/
-/* animation */
-
-
-
+  $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+    //$log.debug('$stateChangeSuccess');
+  });
+  $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, error) {
+    $log.error('Unhandled state change error:', error);
+    //$state.go('home');
+  });
+  $rootScope.$on('$stateNotFound', function (event, unfoundState, fromState, fromParams) {
+    $log.error('State not found:', unfoundState.to);
+  });
+}]);
