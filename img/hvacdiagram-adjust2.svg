@@ -366,6 +366,7 @@
 			<line id="line4567" fill="none" stroke="#DDCC77" stroke-miterlimit="10" x1="829.1" y1="709.3" x2="820" y2="700.2"/>
 			<line id="line4569" fill="none" stroke="#DDCC77" stroke-miterlimit="10" x1="829.1" y1="698.8" x2="820" y2="689.7"/>
 		</g>
+        <a id="ahu-link" xlink:href="#/fan/basics" >
 		<g id="fan2">
 			<ellipse id="ellipse4572" stroke="#DDCC77" stroke-miterlimit="10" cx="986.1" cy="784.8" rx="3.6" ry="10.2"/>
 			<ellipse id="ellipse4574" stroke="#DDCC77" stroke-miterlimit="10" cx="985.3" cy="764.8" rx="3.6" ry="10.2"/>
@@ -378,6 +379,7 @@
 			<path id="path4583" stroke="#DDCC77" stroke-miterlimit="10" d="M995.1,711.7h-11.5c-0.5,0-0.8-0.5-0.8-0.8l0,0
 				c0-0.5,0.5-0.8,0.8-0.8h11.5c0.5,0,0.8,0.5,0.8,0.8l0,0C996.1,711.2,995.8,711.7,995.1,711.7z"/>
 		</g>
+            </a>
 		<line id="line4585" fill="none" stroke="#DDCC77" stroke-miterlimit="10" x1="1028.7" y1="679.2" x2="1039" y2="738.6"/>
 		<path id="heat-coil1_1_" fill="#930318" d="M939.6,796h-4c0-3.4,3.6-4.8,6.4-6c1.6-0.7,4.1-1.6,4.1-2.6c0-0.8-2.4-1.9-4.1-2.6
 			c-2.9-1.2-6.4-2.6-6.4-6c0-3.4,3.6-4.8,6.4-6c1.6-0.7,4.1-1.6,4.1-2.6c0-0.8-2.4-1.9-4.1-2.6c-2.9-1.2-6.4-2.6-6.4-6

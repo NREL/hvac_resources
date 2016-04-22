@@ -652,9 +652,17 @@ body {
   stroke: black !important;
 }
 
-  #ahu-back:hover{
+#ahu-back:hover{
     fill: #4a4428 !important;
     stroke: #ddcc77 !important;: 
+  }
+#fan1:hover{
+    fill: #ddcc77 !important;
+    stroke: black !important;
+  }
+#fan2:hover{
+    fill: #ddcc77 !important;
+    stroke: black !important;
   }
 
 .cpoff {
