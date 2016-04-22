@@ -469,8 +469,9 @@
 		</g>
 	</g>
 	<g id="tower">
-		<path id="t-outline" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" d="M1038.5,406c-0.2,1.9-0.7,2.6-1.4,2.6h-53.8
-			h-0.5l-3.4-18.1l-9.8-51c-0.2-0.8,0.5-1.6,1.4-1.6h78.1c0.8,0,1.4,0.8,1.4,0.4L1038.5,406z"/>
+		<a id="tower-link" xlink:href="#/tower/basics" >
+            <path id="t-outline" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" d="M1038.5,406c-0.2,1.9-0.7,2.6-1.4,2.6h-53.8
+			h-0.5l-3.4-18.1l-9.8-51c-0.2-0.8,0.5-1.6,1.4-1.6h78.1c0.8,0,1.4,0.8,1.4,0.4L1038.5,406z"/></a>
 		
 			<line id="line4657" fill="none" stroke="#44AA99" stroke-width="1.1722" stroke-miterlimit="10" x1="974" y1="366.3" x2="1045.4" y2="366.3"/>
 		<g id="g4659">
