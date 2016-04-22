@@ -88,6 +88,14 @@ hr {
     padding-top= 5px;
     padding-bottom= 5px;
 }
+.imgtitle {
+   font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  color: #eeeeee;
+    padding-top= 5px;
+    padding-bottom= 5px;
+}
 .pquote {
     float: left;
     width: 100%;
@@ -126,6 +134,12 @@ blockquote {
     vertical-align: middle;
         width: 100%;
     max-width: 700px;
+}
+.myimagesm{
+    display: inline-block;
+    vertical-align: middle;
+        width: 100%;
+    max-width: 350px;
 }
 
 .content-main {
