@@ -82,7 +82,7 @@ a:hover{
 }
 .pquote {
     float: left;
-    width: 25%;
+    width: 100%;
     background: #282828;
     font-weight: 400;
     font-style: italic;
@@ -147,7 +147,6 @@ blockquote {
   width: 100%;
   height: 100%;
   line-height: 150%;
-
 }
 
 .flexfoot {
@@ -383,11 +382,20 @@ li:last-child {
   .nav-side-menu .menu-list .menu-content {
     display: block;
   }
+    .pquote{
+        width: 40%;
+}
 }
 
 @media only screen and (max-width: 767px) {
   #diagram {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+ .pquote {
+    width: 100%;
   }
 }
 
