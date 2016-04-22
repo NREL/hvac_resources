@@ -316,33 +316,33 @@
 		c0-5.8,4.6-10.4,10.4-10.4h164.3c5.8,0,10.4,4.6,10.4,10.4v126.8C1492,2045.2,1487.4,2049.9,1481.6,2049.9z"/>
 	<g id="zone1-temp">
 		
-			<line id="line4482" fill="none" stroke="#DDCC77" stroke-width="0.75" stroke-miterlimit="10" x1="698.6" y1="2049.9" x2="698.6" y2="2026.7"/>
+			<line id="line4482" fill="none" stroke="#DDCC77" stroke-width="1" stroke-miterlimit="10" x1="698.6" y1="2049.9" x2="698.6" y2="2026.7"/>
 		
-			<rect id="rect4484" x="683.9" y="1992.7" fill="none" stroke="#DDCC77" stroke-width="0.75" stroke-miterlimit="10" width="30.1" height="34.8"/>
+			<rect id="rect4484" x="683.9" y="1992.7" fill="none" stroke="#DDCC77" stroke-width="1" stroke-miterlimit="10" width="30.1" height="34.8"/>
 		
 			<text id="text4486" transform="matrix(1 0 0 1 690.7966 2022.4421)" fill="#DDCC77" font-family="'PTSans-Regular'" font-size="29.5161">T</text>
 	</g>
 	<g id="zone2-temp">
 		
-			<line id="line4489" fill="none" stroke="#DDCC77" stroke-width="0.75" stroke-miterlimit="10" x1="908.5" y1="2051" x2="908.5" y2="2027.9"/>
+			<line id="line4489" fill="none" stroke="#DDCC77" stroke-width="1" stroke-miterlimit="10" x1="908.5" y1="2051" x2="908.5" y2="2027.9"/>
 		
-			<rect id="rect4491" x="894.2" y="1993.8" fill="none" stroke="#DDCC77" stroke-width="0.75" stroke-miterlimit="10" width="30.1" height="34.8"/>
+			<rect id="rect4491" x="894.2" y="1993.8" fill="none" stroke="#DDCC77" stroke-width="1" stroke-miterlimit="10" width="30.1" height="34.8"/>
 		
 			<text id="text4493" transform="matrix(1 0 0 1 900.8679 2023.4623)" fill="#DDCC77" font-family="'PTSans-Regular'" font-size="29.5161">T</text>
 	</g>
 	<g id="zone3-temp">
 		
-			<line id="line4496" fill="none" stroke="#DDCC77" stroke-width="0.75" stroke-miterlimit="10" x1="1144.2" y1="2052.2" x2="1144.2" y2="2028.6"/>
+			<line id="line4496" fill="none" stroke="#DDCC77" stroke-width="1" stroke-miterlimit="10" x1="1144.2" y1="2052.2" x2="1144.2" y2="2028.6"/>
 		
-			<rect id="rect4498" x="1129.9" y="1995" fill="none" stroke="#DDCC77" stroke-width="0.75" stroke-miterlimit="10" width="30.1" height="34.8"/>
+			<rect id="rect4498" x="1129.9" y="1995" fill="none" stroke="#DDCC77" stroke-width="1" stroke-miterlimit="10" width="30.1" height="34.8"/>
 		
 			<text id="text4500" transform="matrix(1 0 0 1 1136.6981 2024.4823)" fill="#DDCC77" font-family="'PTSans-Regular'" font-size="29.5161">T</text>
 	</g>
 	<g id="zone4-temp">
 		
-			<line id="line4503" fill="none" stroke="#DDCC77" stroke-width="0.75" stroke-miterlimit="10" x1="1346.3" y1="2051" x2="1346.3" y2="2027.9"/>
+			<line id="line4503" fill="none" stroke="#DDCC77" stroke-width="1" stroke-miterlimit="10" x1="1346.3" y1="2051" x2="1346.3" y2="2027.9"/>
 		
-			<rect id="rect4505" x="1331.3" y="1993.8" fill="none" stroke="#DDCC77" stroke-width="0.75" stroke-miterlimit="10" width="30.1" height="34.8"/>
+			<rect id="rect4505" x="1331.3" y="1993.8" fill="none" stroke="#DDCC77" stroke-width="1" stroke-miterlimit="10" width="30.1" height="34.8"/>
 		
 			<text id="text4507" transform="matrix(1 0 0 1 1338.3395 2023.4623)" fill="#DDCC77" font-family="'PTSans-Regular'" font-size="29.5161">T</text>
 	</g>

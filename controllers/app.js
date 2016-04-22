@@ -143,6 +143,20 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
       url: '/space_loads',
       templateUrl: 'views/space_loads.html'
     })
+  .state({
+      name: 'fan',
+      url: '/fan',
+      templateUrl: 'views/fan.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/fan_design.html'
+      }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/fan_basics.html'
+      }]
+    })
 
 }); // closes $routerApp.config()
 

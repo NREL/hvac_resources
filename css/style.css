@@ -63,6 +63,7 @@ a:hover{
   padding-bottom: 8px;
   margin-top: 14px;
   border-top: dotted #545454;
+    border-spacing: 22px;
 }
 
 .doctitle {
@@ -74,9 +75,26 @@ a:hover{
 .source {
   font-style: italic;
   font-weight: 300;
-  font-size: 11pt;
-  color: gray;
+  font-size: 10pt;
+  color: #dddddd;
+    padding-top= 5px;
+    padding-bottom= 5px;
 }
+.pquote {
+    float: left;
+    width: 25%;
+    background: #282828;
+    font-weight: 400;
+    font-style: italic;
+    padding: 13px;
+    margin: 0 13px 13px 0;
+    line-height: 180%!important;
+}
+
+blockquote {
+    margin: 0; /* gets rid of the default blockquote margin */
+}
+
 .whiteimg{
     padding: 8px;
     background-color: white;
