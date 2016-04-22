@@ -155,6 +155,10 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         name: 'basics',
         url: '/basics',
         templateUrl: 'views/fan_basics.html'
+          }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/fan_types.html'
       }]
     })
 

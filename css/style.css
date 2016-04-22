@@ -101,13 +101,23 @@ blockquote {
     border-radius: 8px;
     display: inline-block;
     vertical-align: middle;
-    height: 100%;
+     width: 100%;
+    max-width: 730px;
+    text-align: center;
+}
+.transimg{
+    padding: 8px;
+    border-radius: 8px;
+    display: inline-block;
+    vertical-align: middle;
     text-align: center;
 }
 
 .myimage{
     display: inline-block;
     vertical-align: middle;
+        width: 100%;
+    max-width: 700px;
 }
 
 .content-main {
@@ -168,7 +178,7 @@ blockquote {
 .infocontainer {
   background-color: #000000;
   color: white;
-  padding: 10px;
+  padding: 15px;
   order: 3;
   flex: 2 3 0;
   -webkit-flex: 2 3 0;
