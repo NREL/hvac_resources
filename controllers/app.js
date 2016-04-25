@@ -136,6 +136,10 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         name: 'basics',
         url: '/basics',
         templateUrl: 'views/ahu_basics.html'
+         }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/ahu_types.html'
       }]
     })
     .state({
