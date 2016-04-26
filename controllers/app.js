@@ -156,7 +156,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         name: 'design',
         url: '/design',
         templateUrl: 'views/ahu_design.html'
-      }, {
+        }, {
         name: 'basics',
         url: '/basics',
         templateUrl: 'views/ahu_basics.html'
@@ -164,6 +164,26 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         name: 'types',
         url: '/types',
         templateUrl: 'views/ahu_types.html'
+         }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/ahu_cases.html'
+        }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/ahu_codes.html'
+        }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/ahu_operation.html'
+        }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/ahu_procure.html'
+        }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/ahu_tools.html'
       }]
     })
     .state({
@@ -187,6 +207,26 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         name: 'types',
         url: '/types',
         templateUrl: 'views/fan_types.html'
+    }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/fan_tools.html'
+    }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/fan_cases.html'
+    }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/fan_operation.html'
+    }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/fan_procure.html'
+    }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/fan_codes.html'
       }]
     });
 
