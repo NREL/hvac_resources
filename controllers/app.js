@@ -117,6 +117,30 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         name: 'basics',
         url: '/basics',
         templateUrl: 'views/pump_basics.html'
+    }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/pump_codes.html'
+     }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/pump_operation.html'
+          }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/pump_tools.html'
+               }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/pump_cases.html'
+             }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/pump_types.html'
+                      }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/pump_procure.html'
       }]
     })
     .state({
