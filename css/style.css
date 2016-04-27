@@ -725,6 +725,10 @@ body {
   fill: #ddcc77 !important;
   stroke: black !important;
 }
+  #t-outline:hover {
+    fill: #14332e !important;
+    stroke: #4a9 !important;
+  }
 
 .cpoff {
   fill: black !important;
@@ -737,7 +741,7 @@ body {
 }
 
 .cpon {
-  fill: #4a9 !important;
+  fill: #14332e !important;
   stroke: black !important;
 }
 
