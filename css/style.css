@@ -119,7 +119,7 @@ blockquote {
   margin: 0; /* gets rid of the default blockquote margin */
 }
 .mylist{
-    text-indent: 7%;
+    margin-left: 7%;
 }
 
 .whiteimg {
