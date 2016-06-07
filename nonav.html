@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HVAC Resources</title>
+    <link rel="shortcut icon" href="img/hvac_icon2.ico">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700&subset=latin,greek,greek-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,600italic,700,700italic,300italic&subset=latin,greek,greek-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,300" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-ui-router.stateHelper/statehelper.min.js"></script>
+    <script src="bower_components/GreenSock-JS/src/minified/TweenMax.min.js"></script>
+    <!--<script src="js/tips.js"></script>-->
+    <script src="controllers/app.js"></script>
+  </head>
+  <body ng-app="routerApp">
+    <div id="wrapper">
+      <div id="content">
+        <div class="topbar">
+          <div class="topbartitle">
+            <img src="img/hvac_icon.png" alt="logo">
+            HVAC Resources
+          </div>
+        </div>
+
+        <div class="flexcontainer">
+          <!-- COLUMN ONE NAMED VIEW -->
+          <div class="navcontainer noselect">
+            <div class="nav-side-menu">
+              <div class="brand">
+                <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+              </div>
+              <div class="menu-list">
+
+                <ul id="menu-content" class="menu-content collapse out">
+                  <li>
+                    <a href="#/" class="leftnavt">HOME</a>
+                  </li>
+
+                  <li data-toggle="collapse" data-target="#centralplant" class="collapsed">
+                    <a href="#/central_plant" class="leftnavtcp"> CENTRAL PLANT <i class="fa fa-angle-down fa-fw" aria-hidden="true"></i></a>
+                  </li>
+
+                  <li>
+                    <ul class="sub-menu collapse" id="centralplant">
+                      <li class="leftnavcp"><a href="#/chiller/basics">Chiller</a></li>
+                      <li class="leftnavcp"><a href="#/boiler/basics">Boiler</a></li>
+                      <li class="leftnavcp"><a href="#/tower/basics">Cooling Tower</a></li>
+                      <li class="leftnavcp"><a href="#/pump/basics">Pump</a></li>
+                      <li class="leftnavcp"><a href="#">Thermal Energy Storage</a></li>
+                      <li class="leftnavcp"><a href="#">Sensors & Controls</a></li>
+                      <li class="leftnavcp"><a href="#">Cogeneration Design</a></li>
+                    </ul>
+                  </li>
+
+                  <li data-toggle="collapse" data-target="#distributions" class="collapsed">
+                    <a href="#/distribution_system" class="leftnavtd"> DISTRIBUTION SYSTEM <i class="fa fa-angle-down fa-fw" aria-hidden="true"></i> <span class="arrow"></span></a>
+                  </li>
+
+                  <li>
+                    <ul class="sub-menu collapse" id="distributions">
+                      <li class="leftnavd"><a href="#/pipe/basics">Piping</a></li>
+                      <li class="leftnavd"><a href="#/valve/basics">Valves</a></li>
+                      <li class="leftnavd"><a href="#/ahu/basics">Air Handling Unit</a></li>
+                      <li class="leftnavd"><a href="#/fan/basics">Fans</a></li>
+                      <li class="leftnavd"><a href="#/duct/basics">Ducting</a></li>
+                      <li class="leftnavd"><a href="#/vav/basics">VAV Boxes</a></li>
+                      <li class="leftnavd"><a href="#/terminal/basics">Terminal Units</a></li>
+                      <li class="leftnavd"><a href="#/diffuser/basics">Diffusers</a></li>
+                      <li class="leftnavd"><a href="#">Steam Traps</a></li>
+                    </ul>
+                  </li>
+
+                  <li data-toggle="collapse" data-target="#loads" class="collapsed" ng-click="toggle()">
+                    <a href="#/space_loads" class="leftnavspacet"> SPACE LOADS <span class="arrow"></span></a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- COLUMN TWO NAMED VIEW -->
+          <!-- SVG Content Here ============================== -->
+
+          <div id="diagram" class="noselect" ng-include="'img/hvacdiagram-adjust2.svg'"></div>
+
+          <!-- COLUMN Three NAMED VIEW -->
+          <div class="infocontainer">
+            <!-- Page Content Here ============================== -->
+            <div ui-view class="fadein"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <p>The HVAC Resources site was developed by the National Renewable Energy Laboratory with support from the U.S. Department of Energy's Building Technologies Office. </p>
+        <p>NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.</p>
+      </div>
+    </div>
+  </body>
+
+</html>
