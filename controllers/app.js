@@ -186,6 +186,234 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         templateUrl: 'views/ahu_tools.html'
       }]
     })
+  .state({
+      name: 'pipe',
+      url: '/pipe',
+      templateUrl: 'views/pipe.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/pipe_design.html'
+        }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/pipe_basics.html'
+         }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/pipe_types.html'
+         }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/pipe_cases.html'
+        }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/pipe_codes.html'
+        }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/pipe_operation.html'
+        }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/pipe_procure.html'
+        }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/pipe_tools.html'
+      }]
+    })
+  .state({
+      name: 'valve',
+      url: '/valve',
+      templateUrl: 'views/valve.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/valve_design.html'
+        }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/valve_basics.html'
+         }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/valve_types.html'
+         }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/valve_cases.html'
+        }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/valve_codes.html'
+        }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/valve_operation.html'
+        }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/valve_procure.html'
+        }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/valve_tools.html'
+      }]
+    })
+  .state({
+      name: 'duct',
+      url: '/duct',
+      templateUrl: 'views/duct.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/duct_design.html'
+        }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/duct_basics.html'
+         }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/duct_types.html'
+         }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/duct_cases.html'
+        }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/duct_codes.html'
+        }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/duct_operation.html'
+        }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/duct_procure.html'
+        }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/duct_tools.html'
+      }]
+    })
+  .state({
+      name: 'vav',
+      url: '/vav',
+      templateUrl: 'views/vav.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/vav_design.html'
+        }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/vav_basics.html'
+         }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/vav_types.html'
+         }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/vav_cases.html'
+        }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/vav_codes.html'
+        }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/vav_operation.html'
+        }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/vav_procure.html'
+        }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/vav_tools.html'
+      }]
+    })
+  .state({
+      name: 'terminal',
+      url: '/terminal',
+      templateUrl: 'views/terminal.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/terminal_design.html'
+        }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/terminal_basics.html'
+         }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/terminal_types.html'
+         }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/terminal_cases.html'
+        }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/terminal_codes.html'
+        }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/terminal_operation.html'
+        }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/terminal_procure.html'
+        }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/terminal_tools.html'
+      }]
+    })
+  .state({
+      name: 'diffuser',
+      url: '/diffuser',
+      templateUrl: 'views/diffuser.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/diffuser_design.html'
+        }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/diffuser_basics.html'
+         }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/diffuser_types.html'
+         }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/diffuser_cases.html'
+        }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/diffuser_codes.html'
+        }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/diffuser_operation.html'
+        }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/diffuser_procure.html'
+        }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/diffuser_tools.html'
+      }]
+    })
     .state({
       name: 'space_loads',
       url: '/space_loads',
@@ -260,3 +488,5 @@ routerApp.run(['$rootScope', '$log', '$state', function ($rootScope, $log, $stat
     $log.error('State not found:', unfoundState.to);
   });
 }]);
+
+

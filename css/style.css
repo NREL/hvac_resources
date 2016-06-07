@@ -713,7 +713,11 @@ body {
 
 #ahu-back:hover {
   fill: #4a4428 !important;
-  stroke: #ddcc77 !important;:
+  stroke: #ddcc77 !important;
+}
+#ahu-back:active {
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
 }
 
 #fan1:hover {
@@ -725,9 +729,21 @@ body {
   fill: #ddcc77 !important;
   stroke: black !important;
 }
+#fan1:active {
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
+}
+#fan2:active {
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
+}
 #t-outline:hover {
     fill: #14332e !important;
     stroke: #4a9 !important;
+}
+#t-outline:active {
+    fill: #4a9 !important;
+  stroke: yellow !important;
 }
 
 .cpoff {
