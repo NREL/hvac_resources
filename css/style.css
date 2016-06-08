@@ -711,6 +711,15 @@ body {
   stroke: yellow !important;
 }
 
+#d-pump1:hover, #d-pump2:hover {
+fill: #ddcc77 !important;
+  stroke: black !important;  
+}
+#d-pump1:active, #d-pump2:active {
+fill: #ddcc77 !important;
+  stroke: yellow !important;  
+}
+
 #ahu-back:hover {
   fill: #4a4428 !important;
   stroke: #ddcc77 !important;
@@ -720,23 +729,52 @@ body {
   stroke: yellow !important;
 }
 
-#fan1:hover {
+#fan1:hover, #fan2:hover {
   fill: #ddcc77 !important;
   stroke: black !important;
 }
 
-#fan2:hover {
-  fill: #ddcc77 !important;
-  stroke: black !important;
-}
-#fan1:active {
+#fan1:active, #fan2:active {
   fill: #ddcc77 !important;
   stroke: yellow !important;
 }
-#fan2:active {
+#duct1-outline:hover, #duct2-outline:hover {
+  fill: #ddcc77 !important;
+    stroke: #ddcc77 !important;
+}
+
+#duct1-outline:active, #duct2-outline:active {
   fill: #ddcc77 !important;
   stroke: yellow !important;
 }
+#diffuser1:hover, #diffuser2:hover {
+  fill: #ddcc77 !important;
+    stroke: #ddcc77 !important;
+}
+
+#terminal1:hover, #terminal2:hover {
+  fill: #ddcc77 !important;
+    stroke: #ddcc77 !important;  
+}
+
+#diffuser1:active, #diffuser2:active {
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
+}
+#terminal1:active, #terminal2:active {
+        fill: #4a4428 !important;
+    stroke: #ddcc77 !important;
+  }
+#vav:hover{
+  fill: #7f723b !important;
+    stroke: #ddcc77 !important;
+}
+
+#vav:active {
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
+}
+
 #t-outline:hover {
     fill: #14332e !important;
     stroke: #4a9 !important;
@@ -760,6 +798,7 @@ body {
   fill: #14332e !important;
   stroke: black !important;
 }
+
 
 .noselect {
   -webkit-touch-callout: none;

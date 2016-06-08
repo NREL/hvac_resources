@@ -225,8 +225,8 @@
 	
 		<line id="ductconnectionline1" fill="none" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" x1="1044.2" y1="711.1" x2="1050.6" y2="740.2"/>
         </a>
-	<g id="terminal2"><a id="terminallink" xlink:href="#/terminal/basics" target="_top" >
-		<rect id="rect4431" x="1044.9" y="958" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" width="42" height="64.8"/>
+	<g id="terminal2all"><a id="terminallink" xlink:href="#/terminal/basics" target="_top" >
+		<rect id="terminal2" x="1044.9" y="958" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" width="42" height="64.8"/>
 		
 			<line id="line4433" fill="none" stroke="#DDCC77" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="1051.9" y1="993.3" x2="1079.7" y2="965.6"/>
 		<line id="line4435" fill="none" stroke="#DDCC77" stroke-miterlimit="10" x1="1044.9" y1="1000.6" x2="1086.8" y2="1000.6"/>
@@ -237,8 +237,8 @@
 			c3.1,0,4.6,3.6,5.7,6.4C1084,1011.6,1085,1014,1085.7,1014z"/>
         </a>
 	</g>
-	<g id="terminal1"><a id="terminallink" xlink:href="#/terminal/basics" target="_top" >
-		<rect id="rect4440" x="961.3" y="958" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" width="42" height="64.8"/>
+	<g id="terminal1all"><a id="terminallink" xlink:href="#/terminal/basics" target="_top" >
+		<rect id="terminal1" x="961.3" y="958" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" width="42" height="64.8"/>
 		
 			<line id="line4442" fill="none" stroke="#DDCC77" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="968.4" y1="993.3" x2="995.9" y2="965.6"/>
 		<line id="line4444" fill="none" stroke="#DDCC77" stroke-miterlimit="10" x1="961.3" y1="1000.6" x2="1003" y2="1000.6"/>
@@ -249,8 +249,8 @@
 			C1000.4,1011.6,1001.5,1014,1002.1,1014z"/>
         </a>
 	</g>
-	<g id="vav"><a id="vavlink" xlink:href="#/vav/basics" target="_top" >
-		<rect id="rect4449" x="968.9" y="869.8" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" width="74.5" height="43.1"/>
+	<g id="vavall"><a id="vavlink" xlink:href="#/vav/basics" target="_top" >
+		<rect id="vav" x="968.9" y="869.8" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" width="74.5" height="43.1"/>
 		
 			<line id="line4451" fill="none" stroke="#930318" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="1028" y1="874.6" x2="1011.4" y2="874.6"/>
 		
@@ -269,15 +269,15 @@
 			<line id="line4465" fill="none" stroke="#DDCC77" stroke-linecap="round" stroke-miterlimit="10" x1="1032.3" y1="869.8" x2="1032.3" y2="912.7"/>
 	   </a>
         </g>
-	<g id="diffuser2"><a id="diffuserlink2" xlink:href="#/diffuser/basics" target="_top" >
-		<polygon id="polygon4468" stroke="#DDCC77" stroke-width="3" stroke-miterlimit="10" points="851.5,1021.6 902.9,1021.6 
+	<g id="diffuser2all"><a id="diffuserlink2" xlink:href="#/diffuser/basics" target="_top" >
+		<g id="diffuser2"><polygon id="polygon4468" stroke="#DDCC77" stroke-width="3" stroke-miterlimit="10" points="851.5,1021.6 902.9,1021.6 
 			884.9,1004.7 867.4,1004.7 		"/>
 		<polygon id="polygon4470" stroke="#DDCC77" stroke-width="3" stroke-miterlimit="10" points="887,1022.3 864.6,1022.3 
-			867.2,1005.4 884.5,1005.4 		"/>
+			867.2,1005.4 884.5,1005.4 		"/></g>
 	</a>
         </g>
-	<g id="diffuser1"><a id="diffuserlink1" xlink:href="#/diffuser/basics" target="_top" >
-		<polygon id="polygon4473" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" points="758.1,1021.9 809.3,1021.9 
+	<a id="diffuserlink1" xlink:href="#/diffuser/basics" target="_top" >
+		<g id="diffuser1"><polygon id="polygon4473" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" points="758.1,1021.9 809.3,1021.9 
 			791.4,1004.9 774,1004.9 		"/>
 		<polygon id="polygon4475" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" points="793.6,1022.6 771.2,1022.6 
 			773.8,1005.6 790.9,1005.6 		"/>
@@ -522,7 +522,7 @@
 			c8.8,0,16.4-3.6,19.8-9.1v9.1h3.4v-11.2h7.2v-5.2h-7.2v-1.2L1092.8,514.6L1092.8,514.6z"/>
 	</a>
     <g id="boilericon">
-        <a xlink:href="#/boiler/basics"  target="_top">
+        <a xlink:href="#/boiler/basics"  target="_parent">
 		<path id="boiler" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" d="M880,430.2v5.4h-9c-1-12.6-10.3-22.6-21.7-22.6
 			H764c-7.8,0-14.7,4.6-18.6,11.9H740v33.9h5.4c3.8,7,10.7,11.9,18.6,11.9v14.8h13.6v-14.8h52.9v14.8h13.6v-14.8h5.4
 			c11,0,20.3-9.5,21.7-21.9h9v4.1h19.8v-22.7L880,430.2L880,430.2z"/>
