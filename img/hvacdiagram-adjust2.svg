@@ -190,6 +190,7 @@
 	<path id="cp-outline" fill="none" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3" d="M1120.2,573
 		H734.9c-3.6,0-6.4-2.9-6.4-6.4V332c0-3.6,2.9-6.4,6.4-6.4h385.3c3.6,0,6.4,2.9,6.4,6.4v234.5C1126.7,570.1,1124,573,1120.2,573z"/>
 	<g id="pipes">
+        <a id="pipelink" xlink:href="#/pipe/basics" target="_top" >
 		<g id="g4410">
 			<polygon id="polygon4412" fill="#930318" points="797.8,457.8 793.6,457.8 793.6,559.8 793.8,640.6 925.6,640.6 925.6,688.8 
 				929.6,688.8 929.6,636.6 797.8,636.6 			"/>
@@ -204,8 +205,10 @@
 			c0.2,1.2-0.5,2.2-1.6,2.2h-24.5c-0.8,0-1.6,0.8-1.6,1.9v96.5H955.1z"/>
 		<path id="path4422" fill="#1B39B2" d="M1063.1,489.6h3.1v-89.4v-6.9c0-1-0.7-1.9-1.6-1.9H1039l-0.7,3.6h23.1
 			c0.8,0,1.6,0.8,1.6,1.9v92.7L1063.1,489.6L1063.1,489.6z"/>
+    </a>        
 	</g>
-	<polygon id="duct2" opacity="0.15" fill="#DDCC77" enable-background="new    " points="1049.7,689.7 1052.6,707.5 1099.7,707.3 
+	<a id="ductlink" xlink:href="#/duct/basics" target="_top" >
+    <polygon id="duct2" opacity="0.15" fill="#DDCC77" enable-background="new    " points="1049.7,689.7 1052.6,707.5 1099.7,707.3 
 		1099,926.1 971.8,925.9 971.8,958 989.6,958 989.6,947.5 1057.3,947.5 1057.3,958 1074.9,958 1074.9,947.5 1118.6,946.8 
 		1118.6,689.7 	"/>
 	<polygon id="duct1" opacity="0.15" fill="#DDCC77" enable-background="new    " points="1045.4,715.2 1049.2,733.1 1054.3,733 
@@ -221,7 +224,8 @@
 		<line id="ductconnectionline2" fill="none" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" x1="1046.9" y1="682.6" x2="1054.3" y2="711.7"/>
 	
 		<line id="ductconnectionline1" fill="none" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" x1="1044.2" y1="711.1" x2="1050.6" y2="740.2"/>
-	<g id="terminal2">
+        </a>
+	<g id="terminal2"><a id="terminallink" xlink:href="#/terminal/basics" target="_top" >
 		<rect id="rect4431" x="1044.9" y="958" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" width="42" height="64.8"/>
 		
 			<line id="line4433" fill="none" stroke="#DDCC77" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="1051.9" y1="993.3" x2="1079.7" y2="965.6"/>
@@ -231,8 +235,9 @@
 			c-3.1,0-4.6-3.6-5.7-6.4c-0.7-1.6-1.6-4.1-2.2-4.1v-4c3.1,0,4.6,3.6,5.7,6.4c0.7,1.6,1.6,4.1,2.2,4.1c0.8,0,1.7-2.4,2.2-4.1
 			c1-2.9,2.6-6.4,5.7-6.4s4.6,3.6,5.7,6.4c0.7,1.6,1.6,4.1,2.2,4.1c0.8,0,1.7-2.4,2.2-4.1c1-2.9,2.6-6.4,5.7-6.4
 			c3.1,0,4.6,3.6,5.7,6.4C1084,1011.6,1085,1014,1085.7,1014z"/>
+        </a>
 	</g>
-	<g id="terminal1">
+	<g id="terminal1"><a id="terminallink" xlink:href="#/terminal/basics" target="_top" >
 		<rect id="rect4440" x="961.3" y="958" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" width="42" height="64.8"/>
 		
 			<line id="line4442" fill="none" stroke="#DDCC77" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" x1="968.4" y1="993.3" x2="995.9" y2="965.6"/>
@@ -242,8 +247,9 @@
 			s-4.6-3.6-5.7-6.4c-0.7-1.6-1.6-4.1-2.2-4.1v-4c3.1,0,4.6,3.6,5.7,6.4c0.7,1.6,1.6,4.1,2.2,4.1c0.8,0,1.7-2.4,2.2-4.1
 			c1-2.9,2.6-6.4,5.7-6.4s4.6,3.6,5.7,6.4c0.7,1.6,1.6,4.1,2.2,4.1c0.8,0,1.7-2.4,2.2-4.1c1-2.9,2.6-6.4,5.7-6.4s4.6,3.6,5.7,6.4
 			C1000.4,1011.6,1001.5,1014,1002.1,1014z"/>
+        </a>
 	</g>
-	<g id="vav">
+	<g id="vav"><a id="vavlink" xlink:href="#/vav/basics" target="_top" >
 		<rect id="rect4449" x="968.9" y="869.8" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" width="74.5" height="43.1"/>
 		
 			<line id="line4451" fill="none" stroke="#930318" stroke-width="3" stroke-linecap="round" stroke-miterlimit="10" x1="1028" y1="874.6" x2="1011.4" y2="874.6"/>
@@ -261,19 +267,22 @@
 			<line id="line4463" fill="none" stroke="#DDCC77" stroke-linecap="round" stroke-miterlimit="10" x1="1007.1" y1="869.8" x2="1007.1" y2="912.7"/>
 		
 			<line id="line4465" fill="none" stroke="#DDCC77" stroke-linecap="round" stroke-miterlimit="10" x1="1032.3" y1="869.8" x2="1032.3" y2="912.7"/>
-	</g>
-	<g id="diffuser2">
+	   </a>
+        </g>
+	<g id="diffuser2"><a id="diffuserlink2" xlink:href="#/diffuser/basics" target="_top" >
 		<polygon id="polygon4468" stroke="#DDCC77" stroke-width="3" stroke-miterlimit="10" points="851.5,1021.6 902.9,1021.6 
 			884.9,1004.7 867.4,1004.7 		"/>
 		<polygon id="polygon4470" stroke="#DDCC77" stroke-width="3" stroke-miterlimit="10" points="887,1022.3 864.6,1022.3 
 			867.2,1005.4 884.5,1005.4 		"/>
-	</g>
-	<g id="diffuser1">
+	</a>
+        </g>
+	<g id="diffuser1"><a id="diffuserlink1" xlink:href="#/diffuser/basics" target="_top" >
 		<polygon id="polygon4473" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" points="758.1,1021.9 809.3,1021.9 
 			791.4,1004.9 774,1004.9 		"/>
 		<polygon id="polygon4475" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" points="793.6,1022.6 771.2,1022.6 
 			773.8,1005.6 790.9,1005.6 		"/>
-	</g>
+	</a>
+        </g>
 	<path id="zone1" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" d="M819,1088.5h-73.2c-2.6,0-4.6-2.1-4.6-4.6v-56.5
 		c0-2.6,2.1-4.6,4.6-4.6H819c2.6,0,4.6,2.1,4.6,4.6v56.5C823.6,1086.4,821.5,1088.5,819,1088.5z"/>
 	<path id="zone2" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" d="M910.6,1088.5h-73.2c-2.6,0-4.6-2.1-4.6-4.6v-56.5
@@ -319,7 +328,7 @@
 		</g>
 	</g>
 	<g id="ahu">
-		<a id="ahu-link" xlink:href="#/ahu/basics" >
+		<a id="ahu-link" xlink:href="#/ahu/basics" target="_top" >
 			<g id="ahu-back">
 				<rect id="rect4511" x="964.8" y="752.6" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" width="56" height="44.3"/>
 				<rect id="rect4513" x="880.8" y="689" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" width="12.6" height="44.3"/>
@@ -366,7 +375,7 @@
 			<line id="line4567" fill="none" stroke="#DDCC77" stroke-miterlimit="10" x1="829.1" y1="709.3" x2="820" y2="700.2"/>
 			<line id="line4569" fill="none" stroke="#DDCC77" stroke-miterlimit="10" x1="829.1" y1="698.8" x2="820" y2="689.7"/>
 		</g>
-        <a id="ahu-link" xlink:href="#/fan/basics" >
+        <a id="ahu-link" xlink:href="#/fan/basics" target="_top" >
 		<g id="fan2">
 			<ellipse id="ellipse4572" stroke="#DDCC77" stroke-miterlimit="10" cx="986.1" cy="784.8" rx="3.6" ry="10.2"/>
 			<ellipse id="ellipse4574" stroke="#DDCC77" stroke-miterlimit="10" cx="985.3" cy="764.8" rx="3.6" ry="10.2"/>
@@ -397,23 +406,28 @@
 			c2.9,1.2,6.4,2.6,6.4,6c0,3.4-3.6,4.8-6.4,6c-1.6,0.7-4.1,1.6-4.1,2.6c0,0.8,2.4,1.9,4.1,2.6c2.9,1.2,6.4,2.6,6.4,6
 			c0,3.4-3.6,4.8-6.4,6C955.3,730.6,952.9,731.4,952.9,732.2z"/>
 	</g>
-	<path id="d-pump2" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" d="M1045.4,621.6h-18.1c-0.8-0.2-1.6-0.4-2.4-0.4
+	<a id="a4592" xlink:href="#/pump/basics" target="_top" >
+        <path id="d-pump2" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" d="M1045.4,621.6h-18.1c-0.8-0.2-1.6-0.4-2.4-0.4
 		c-0.8,0-1.6,0.2-2.4,0.4l0,0l0,0c-7.4,1.2-12.9,7.6-12.9,15.2c0,8.4,6.9,15.3,15.3,15.3c8.4,0,15.3-6.9,15.3-15.3
 		c0-0.8-0.2-1.7-0.4-2.6h5.4v-12.6H1045.4L1045.4,621.6z"/>
-	<path id="d-pump1" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" d="M814.3,599.4h-18.1c-0.8-0.2-1.6-0.4-2.4-0.4
+        </a>
+	<a id="a4592" xlink:href="#/pump/basics" target="_top" >
+        <path id="d-pump1" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" d="M814.3,599.4h-18.1c-0.8-0.2-1.6-0.4-2.4-0.4
 		s-1.6,0.2-2.4,0.4h-0.2l0,0c-7.4,1.2-12.9,7.6-12.9,15.2c0,8.4,6.9,15.3,15.3,15.3c8.6,0,15.3-6.9,15.3-15.3c0-0.8-0.2-1.7-0.4-2.6
 		h5.4v-12.6H814.3z"/>
-	<a id="a4592" xlink:href="#/pump/basics" >
+        </a>
+	<a id="a4592" xlink:href="#/pump/basics" target="_top" >
 		<path id="cp-pump" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" d="M974.2,418.3h-18.1c-0.8-0.2-1.6-0.4-2.4-0.4
 			s-1.6,0.2-2.4,0.4h-0.2l0,0c-7.4,1.2-12.9,7.6-12.9,15.2c0,8.4,6.9,15.3,15.3,15.3c8.6,0,15.3-6.9,15.3-15.3
 			c0-0.8-0.2-1.7-0.4-2.6h5.4L974.2,418.3L974.2,418.3z"/>
 	</a>
-	<g id="cp-valve">
+	<g id="cp-valve"><a xlink:href="#/valve/basics" target="_top">
 		<polygon id="polygon4596" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" points="803.1,518.2 795,532.4 786.9,518.2 
 					"/>
 		<polygon id="polygon4598" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" points="786.9,546.5 795,532.5 803.1,546.5 
 					"/>
-	</g>
+	       </a> 
+        </g>
 	<g id="cp-valve-control">
 		<g id="g4601">
 			<polygon id="polygon4603" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" points="868.2,518.2 860.3,532.2 
@@ -454,7 +468,7 @@
 			<path fill="#DDCC77" stroke="#DDCC77" stroke-miterlimit="10" d="M992.7,667.3h1.1v9.2h-1.1V667.3z"/>
 		</g>
 	</g>
-	<g id="d-valve">
+	<g id="d-valve"><a xlink:href="#/valve/basics" target="_top">
 		<g id="g4639">
 			<polygon id="polygon4641" stroke="#DDCC77" stroke-miterlimit="10" points="978.5,583.1 970.2,597.1 962.4,583.1 			"/>
 			<polygon id="polygon4643" stroke="#DDCC77" stroke-miterlimit="10" points="962.4,611.1 970.2,597.1 978.5,611.1 			"/>
@@ -467,9 +481,10 @@
 		<g enable-background="new    ">
 			<path fill="#DDCC77" stroke="#DDCC77" stroke-miterlimit="10" d="M994.9,590.6h1.5V603h-1.5V590.6z"/>
 		</g>
+        </a>
 	</g>
 	<g id="tower">
-		<a id="tower-link" xlink:href="#/tower/basics" >
+		<a id="tower-link" xlink:href="#/tower/basics" target="_top">
             <path id="t-outline" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" d="M1038.5,406c-0.2,1.9-0.7,2.6-1.4,2.6h-53.8
 			h-0.5l-3.4-18.1l-9.8-51c-0.2-0.8,0.5-1.6,1.4-1.6h78.1c0.8,0,1.4,0.8,1.4,0.4L1038.5,406z"/></a>
 		
@@ -500,21 +515,23 @@
 				c0.5,0,0.8,0.5,0.8,0.8v11.5c0,0.5-0.5,0.8-0.8,0.8l0,0C1009.2,353.1,1008.7,352.8,1008.7,352.1z"/>
 		</g>
 	</g>
-	<a id="a4682" xlink:href="#/chiller/basics" >
+	<a id="a4682" xlink:href="#/chiller/basics" target="_top">
 		<path id="chiller" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" d="M1092.8,514.6v-5.2h-7.2v-11.4h-3.4v7.4
 			c-2.1-3.3-5.8-5.8-10.3-7.6c-0.4-16.7-14.1-22.7-23.3-22.7h-37.2v-7.8h-52V496h52v-7.8h37.1c0.8,0,8.6,0.4,10,8.1h-81.5
 			c-9.8,0-17.9,4.5-20.9,10.7v-10.8h-6.4v34.1h6.4v-8.8c2.9,6.2,11,10.7,20.9,10.7v14.8h13.6v-15h52.9v14.8h13.6V532h5.4
 			c8.8,0,16.4-3.6,19.8-9.1v9.1h3.4v-11.2h7.2v-5.2h-7.2v-1.2L1092.8,514.6L1092.8,514.6z"/>
 	</a>
     <g id="boilericon">
-	<a id="boilerlink" xlink:href="#/boiler/basics" >
+        <a xlink:href="/#/boiler/basics"  target="_top">
 		<path id="boiler" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" d="M880,430.2v5.4h-9c-1-12.6-10.3-22.6-21.7-22.6
 			H764c-7.8,0-14.7,4.6-18.6,11.9H740v33.9h5.4c3.8,7,10.7,11.9,18.6,11.9v14.8h13.6v-14.8h52.9v14.8h13.6v-14.8h5.4
 			c11,0,20.3-9.5,21.7-21.9h9v4.1h19.8v-22.7L880,430.2L880,430.2z"/>
 	</a>
         </g>
+    <a id="ductlink" xlink:href="#/duct/basics" target="_top" >
 	<polygon id="ductoutline2" display="none" fill="none" stroke="#DDCC77" stroke-miterlimit="10" points="1049,689.4 1053.1,707.1 
 		1100.4,706.9 1099.7,925.8 972.5,925.6 972.5,957.6 990.3,957.6 990.3,947 1058,947 1058,957.6 1075.6,957.6 1075.6,947 
 		1119.3,946.5 1119.3,689.4 	"/>
+        </a>
 </g>
 </svg>
