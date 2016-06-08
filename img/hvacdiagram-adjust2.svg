@@ -270,7 +270,7 @@
 	   </a>
         </g>
 	<g id="diffuser2all"><a id="diffuserlink2" xlink:href="#/diffuser/basics" target="_top" >
-		<g id="diffuser2"><polygon id="polygon4468" stroke="#DDCC77" stroke-width="3" stroke-miterlimit="10" points="851.5,1021.6 902.9,1021.6 
+		<g id="diffuser2"><polygon id="polygon4468" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" points="851.5,1021.6 902.9,1021.6 
 			884.9,1004.7 867.4,1004.7 		"/>
 		<polygon id="polygon4470" stroke="#DDCC77" stroke-width="3" stroke-miterlimit="10" points="887,1022.3 864.6,1022.3 
 			867.2,1005.4 884.5,1005.4 		"/></g>
