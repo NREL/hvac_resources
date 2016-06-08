@@ -282,7 +282,6 @@
 		<polygon id="polygon4475" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" points="793.6,1022.6 771.2,1022.6 
 			773.8,1005.6 790.9,1005.6 		"/>
 	</a>
-        </g>
 	<path id="zone1" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" d="M819,1088.5h-73.2c-2.6,0-4.6-2.1-4.6-4.6v-56.5
 		c0-2.6,2.1-4.6,4.6-4.6H819c2.6,0,4.6,2.1,4.6,4.6v56.5C823.6,1086.4,821.5,1088.5,819,1088.5z"/>
 	<path id="zone2" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" d="M910.6,1088.5h-73.2c-2.6,0-4.6-2.1-4.6-4.6v-56.5
