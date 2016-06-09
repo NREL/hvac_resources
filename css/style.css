@@ -738,6 +738,31 @@ fill: #ddcc77 !important;
   fill: #ddcc77 !important;
   stroke: yellow !important;
 }
+#pipes:hover {
+    stroke: #ddcc77 !important;
+      stroke-width: 3px;    
+  }
+  #pipes:active {
+    stroke: #ddcc77 !important;
+    fill: #ddcc77 !important;
+    stroke-width: 1px;    
+  }
+ #cp-valve:hover, #cp-valve-control:hover{
+    fill: #4a9 !important;
+    stroke: #44aa99 !important;
+  }
+ #cp-valve:active, #cp-valve-control:active{
+    fill: #4a9 !important;
+    stroke: yellow !important;
+ }
+#d-valve:hover{
+     fill: #ddcc77 !important;
+    stroke: #ddcc77 !important;
+  }
+#d-valve:active{
+     fill: #ddcc77 !important;
+    stroke: yellow !important;
+  }
 #duct1-outline:hover, #duct2-outline:hover {
   fill: #ddcc77 !important;
     stroke: #ddcc77 !important;
@@ -753,7 +778,7 @@ fill: #ddcc77 !important;
 }
 
 #terminal1:hover, #terminal2:hover {
-  fill: #ddcc77 !important;
+  fill: #7f723b !important;
     stroke: #ddcc77 !important;  
 }
 

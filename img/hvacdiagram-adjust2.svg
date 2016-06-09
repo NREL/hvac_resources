@@ -189,9 +189,9 @@
 		M1120.7,829H734.5c-3.3,0-6-2.8-6-6v-228c0-3.3,2.8-6,6-6h386.2c3.3,0,6,2.8,6,6v227.8C1126.7,826.2,1124,829,1120.7,829z"/>
 	<path id="cp-outline" fill="none" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="3" d="M1120.2,573
 		H734.9c-3.6,0-6.4-2.9-6.4-6.4V332c0-3.6,2.9-6.4,6.4-6.4h385.3c3.6,0,6.4,2.9,6.4,6.4v234.5C1126.7,570.1,1124,573,1120.2,573z"/>
-	<g id="pipes">
+	<g id="pipesall">
         <a id="pipelink" xlink:href="#/pipe/basics" target="_top" >
-		<g id="g4410">
+		<g id="pipes">
 			<polygon id="polygon4412" fill="#930318" points="797.8,457.8 793.6,457.8 793.6,559.8 793.8,640.6 925.6,640.6 925.6,688.8 
 				929.6,688.8 929.6,636.6 797.8,636.6 			"/>
 			<polygon id="polygon4414" fill="#1B39B2" points="967,518.8 971,518.8 971,627.8 952.3,627.8 952.3,689 948.5,689 948.5,623.9 
@@ -200,11 +200,12 @@
 				938.9,688.8 938.9,623.5 863.6,623.5 			"/>
 			<polygon id="polygon4418" fill="#1B39B2" points="1025.4,529.3 1029.4,529.3 1029.4,642 962,642 962,689 958,689 958,638 
 				1025.4,638 			"/>
-		</g>
+		
 		<path id="path4420" fill="#1B39B2" d="M955.1,496.4H952v-98.6v-1.6c0-1,0.7-1.9,1.6-1.9h27.1c0.8,0,1.4,0.7,1.6,1.4h0.7
 			c0.2,1.2-0.5,2.2-1.6,2.2h-24.5c-0.8,0-1.6,0.8-1.6,1.9v96.5H955.1z"/>
 		<path id="path4422" fill="#1B39B2" d="M1063.1,489.6h3.1v-89.4v-6.9c0-1-0.7-1.9-1.6-1.9H1039l-0.7,3.6h23.1
 			c0.8,0,1.6,0.8,1.6,1.9v92.7L1063.1,489.6L1063.1,489.6z"/>
+            </g>
     </a>        
 	</g>
 	<a id="ductlink" xlink:href="#/duct/basics" target="_top" >
@@ -420,28 +421,28 @@
 			s-1.6,0.2-2.4,0.4h-0.2l0,0c-7.4,1.2-12.9,7.6-12.9,15.2c0,8.4,6.9,15.3,15.3,15.3c8.6,0,15.3-6.9,15.3-15.3
 			c0-0.8-0.2-1.7-0.4-2.6h5.4L974.2,418.3L974.2,418.3z"/>
 	</a>
-	<g id="cp-valve"><a xlink:href="#/valve/basics" target="_top">
-		<polygon id="polygon4596" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" points="803.1,518.2 795,532.4 786.9,518.2 
+	<g><a xlink:href="#/valve/basics" target="_top">
+		<g id="cp-valve"><polygon id="cp-valve" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" points="803.1,518.2 795,532.4 786.9,518.2 
 					"/>
 		<polygon id="polygon4598" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" points="786.9,546.5 795,532.5 803.1,546.5 
 					"/>
-	       </a> 
+	      </g> </a> 
         </g>
-	<g id="cp-valve-control">
-		<g id="g4601">
+	<g><a xlink:href="#/valve/basics" target="_top">
+		<g id="cp-valve-control">
 			<polygon id="polygon4603" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" points="868.2,518.2 860.3,532.2 
 				852.2,518.2 			"/>
 			<polygon id="polygon4605" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" points="852.2,546.5 860.3,532.4 
 				868.2,546.5 			"/>
 			<polygon id="polygon4607" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" points="846.4,524.1 860.3,532.2 
 				846.4,540.3 			"/>
-		</g>
+		
 		
 			<line id="line4609" fill="none" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" x1="860.3" y1="532.4" x2="876.7" y2="532.4"/>
 		<rect id="rect4611" x="876.7" y="520.1" stroke="#44AA99" stroke-miterlimit="10" width="18.1" height="24.3"/>
 		<text id="text4613" transform="matrix(1 0 0 1 883.001 538.2226)" font-family="'PTSans-Regular'" font-size="17.6575">I</text>
 		
-			<text id="text4615" transform="matrix(1 0 0 1 883.001 538.2226)" fill="#44AA99" stroke="#44AA99" stroke-miterlimit="10" font-family="'PTSans-Regular'" font-size="17.6575">I</text>
+			<text id="text4615" transform="matrix(1 0 0 1 883.001 538.2226)" fill="#44AA99" stroke="#44AA99" stroke-miterlimit="10" font-family="'PTSans-Regular'" font-size="17.6575">I</text></g></a>
 	</g>
 	<g id="boiler-temp">
 		
@@ -467,12 +468,12 @@
 			<path fill="#DDCC77" stroke="#DDCC77" stroke-miterlimit="10" d="M992.7,667.3h1.1v9.2h-1.1V667.3z"/>
 		</g>
 	</g>
-	<g id="d-valve"><a xlink:href="#/valve/basics" target="_top">
-		<g id="g4639">
+	<g><a xlink:href="#/valve/basics" target="_top">
+		<g id="d-valve">
 			<polygon id="polygon4641" stroke="#DDCC77" stroke-miterlimit="10" points="978.5,583.1 970.2,597.1 962.4,583.1 			"/>
 			<polygon id="polygon4643" stroke="#DDCC77" stroke-miterlimit="10" points="962.4,611.1 970.2,597.1 978.5,611.1 			"/>
 			<polygon id="polygon4645" stroke="#DDCC77" stroke-miterlimit="10" points="956.3,588.9 970.2,597.1 956.3,605.1 			"/>
-		</g>
+		
 		
 			<line id="line4647" fill="none" stroke="#DDCC77" stroke-width="2" stroke-miterlimit="10" x1="970.2" y1="597.1" x2="986.6" y2="597.1"/>
 		<rect id="rect4649" x="986.6" y="584.9" stroke="#DDCC77" stroke-miterlimit="10" width="18.1" height="24.3"/>
@@ -480,6 +481,7 @@
 		<g enable-background="new    ">
 			<path fill="#DDCC77" stroke="#DDCC77" stroke-miterlimit="10" d="M994.9,590.6h1.5V603h-1.5V590.6z"/>
 		</g>
+            </g>
         </a>
 	</g>
 	<g id="tower">
