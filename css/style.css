@@ -156,6 +156,28 @@ blockquote {
   max-width: 350px;
   text-align: center;
 }
+table, td {
+    border: 1px solid #444444;
+    border-collapse: collapse;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+th {
+    background-color: #333333;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid black;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+th, td {
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+tr:nth-child(even) {
+    background-color: #222222;
+}
 
 .content-main {
   width: 100%;
