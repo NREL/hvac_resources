@@ -235,14 +235,17 @@ tr:nth-child(even) {
 }
 
 .infocontainer {
-  background-color: #000000;
+  background-color: #282828;
   color: white;
-  padding: 15px;
+    margin-top: 20px;
+    margin-right: 5px;
+  padding: 10px;
   order: 3;
   flex: 2 3 0;
   -webkit-flex: 2 3 0;
   -ms-flex: 2 3 0;
   height: 100%;
+    border-radius: 8px;
 }
 
 .fadein {
@@ -351,7 +354,7 @@ tr:nth-child(even) {
 /*mynav*/
 
 .leftnavt {
-  font-size: 18px;
+  font-size: 17px;
   color: #ffffff !important;
   background-color: black;
   width: 200px;
