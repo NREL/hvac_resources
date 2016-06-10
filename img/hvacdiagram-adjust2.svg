@@ -7,7 +7,7 @@
 	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
 ]>
 <svg version="1.1"
-	 id="svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" inkscape:version="0.91 r13725" sodipodi:docname="hvacdiagram-adjust2.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+	 id="svg" onload="init(evt)" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" inkscape:version="0.91 r13725" sodipodi:docname="hvacdiagram-adjust2.svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 x="0px" y="0px" viewBox="720 315 413 792" enable-background="new 720 315 413 792" xml:space="preserve">
 <g id="space_1_">
@@ -192,16 +192,16 @@
 	<g id="pipesall">
         <a id="pipelink" xlink:href="#/pipe/basics" target="_top" >
 		<g id="pipes">
-			<polygon id="polygon4412" fill="#930318" points="797.8,457.8 793.6,457.8 793.6,559.8 793.8,640.6 925.6,640.6 925.6,688.8 
+			<polygon id="polygon4412" fill="#455999" points="797.8,457.8 793.6,457.8 793.6,559.8 793.8,640.6 925.6,640.6 925.6,688.8 
 				929.6,688.8 929.6,636.6 797.8,636.6 			"/>
-			<polygon id="polygon4414" fill="#1B39B2" points="967,518.8 971,518.8 971,627.8 952.3,627.8 952.3,689 948.5,689 948.5,623.9 
+			<polygon id="polygon4414" fill="#ba6919" points="967,518.8 971,518.8 971,627.8 952.3,627.8 952.3,689 948.5,689 948.5,623.9 
 				967,623.9 			"/>
 			<polygon id="polygon4416" fill="#930318" points="862.2,456.4 859,456.4 859.6,559.8 859.6,627.5 934.9,627.5 934.9,688.8 
 				938.9,688.8 938.9,623.5 863.6,623.5 			"/>
 			<polygon id="polygon4418" fill="#1B39B2" points="1025.4,529.3 1029.4,529.3 1029.4,642 962,642 962,689 958,689 958,638 
 				1025.4,638 			"/>
 		
-		<path id="path4420" fill="#1B39B2" d="M955.1,496.4H952v-98.6v-1.6c0-1,0.7-1.9,1.6-1.9h27.1c0.8,0,1.4,0.7,1.6,1.4h0.7
+		<path id="path4420" fill="#ba6919" d="M955.1,496.4H952v-98.6v-1.6c0-1,0.7-1.9,1.6-1.9h27.1c0.8,0,1.4,0.7,1.6,1.4h0.7
 			c0.2,1.2-0.5,2.2-1.6,2.2h-24.5c-0.8,0-1.6,0.8-1.6,1.9v96.5H955.1z"/>
 		<path id="path4422" fill="#1B39B2" d="M1063.1,489.6h3.1v-89.4v-6.9c0-1-0.7-1.9-1.6-1.9H1039l-0.7,3.6h23.1
 			c0.8,0,1.6,0.8,1.6,1.9v92.7L1063.1,489.6L1063.1,489.6z"/>
@@ -522,11 +522,11 @@
 			c-9.8,0-17.9,4.5-20.9,10.7v-10.8h-6.4v34.1h6.4v-8.8c2.9,6.2,11,10.7,20.9,10.7v14.8h13.6v-15h52.9v14.8h13.6V532h5.4
 			c8.8,0,16.4-3.6,19.8-9.1v9.1h3.4v-11.2h7.2v-5.2h-7.2v-1.2L1092.8,514.6L1092.8,514.6z"/>
 	</a>
-    <g id="boilericon">
+    <g id="boilericon" tooltip="Boiler" tooltip-append-to-body="true" tooltip-placement="right">
         <a xlink:href="#/boiler/basics"  target="_parent">
 		<path id="boiler" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" d="M880,430.2v5.4h-9c-1-12.6-10.3-22.6-21.7-22.6
 			H764c-7.8,0-14.7,4.6-18.6,11.9H740v33.9h5.4c3.8,7,10.7,11.9,18.6,11.9v14.8h13.6v-14.8h52.9v14.8h13.6v-14.8h5.4
-			c11,0,20.3-9.5,21.7-21.9h9v4.1h19.8v-22.7L880,430.2L880,430.2z"/>
+			c11,0,20.3-9.5,21.7-21.9h9v4.1h19.8v-22.7L880,430.2L880,430.2z" v2-tooltip="Hello"/>
 	</a>
         </g>
     <a id="ductlink" xlink:href="#/duct/basics" target="_top" >
@@ -535,4 +535,5 @@
 		1119.3,946.5 1119.3,689.4 	"/>
         </a>
 </g>
+
 </svg>

@@ -24,6 +24,30 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         url: '/design',
         templateUrl: 'views/boiler_design.html'
       }, {
+          name: 'types',
+        url: '/types',
+        templateUrl: 'views/boiler_types.html'
+      }, {
+            name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/boiler_codes.html'
+      }, {
+              name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/boiler_tools.html'
+      }, {
+              name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/boiler_procure.html'
+      }, {
+              name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/boiler_operation.html'
+      }, {
+              name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/boiler_cases.html'
+      }, {
         name: 'basics',
         url: '/basics',
         templateUrl: 'views/boiler_basics.html'
@@ -222,6 +246,82 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         name: 'tools',
         url: '/tools',
         templateUrl: 'views/pipe_tools.html'
+      }]
+    })
+      .state({
+      name: 'thermalstorage',
+      url: '/thermalstorage',
+      templateUrl: 'views/thermalstorage.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/thermalstorage_design.html'
+      }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/thermalstorage_types.html'
+      }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/thermalstorage_codes.html'
+      }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/thermalstorage_tools.html'
+      }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/thermalstorage_procure.html'
+      }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/thermalstorage_operation.html'
+      }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/thermalstorage_cases.html'
+      }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/thermalstorage_basics.html'
+      }]
+    })
+        .state({
+      name: 'sensors_controls',
+      url: '/sensors_controls',
+      templateUrl: 'views/sensors_controls.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/sensors_controls_design.html'
+      }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/sensors_controls_types.html'
+      }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/sensors_controls_codes.html'
+      }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/sensors_controls_tools.html'
+      }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/sensors_controls_procure.html'
+      }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/sensors_controls_operation.html'
+      }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/sensors_controls_cases.html'
+      }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/sensors_controls_basics.html'
       }]
     })
   .state({
@@ -488,5 +588,3 @@ routerApp.run(['$rootScope', '$log', '$state', function ($rootScope, $log, $stat
     $log.error('State not found:', unfoundState.to);
   });
 }]);
-
-
