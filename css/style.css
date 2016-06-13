@@ -85,6 +85,18 @@ hr {
   font-size: 13pt;
 }
 
+.myh3bold {
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  text-align: left;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #eeeeee;
+  line-height: 110%;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  margin-top: 14px;
+}
 .source {
   font-style: italic;
   font-weight: 300;
@@ -614,7 +626,7 @@ li:last-child {
 
 /**
  * CSSReset.com - How To Keep Footer At Bottom of Page with CSS
- * 
+ *
  * Original Tutorial: http://www.cssreset.com/2010/css-tutorials/how-to-keep-footer-at-bottom-of-page-with-css/
  * License: Free - do whatever you like with it! Credit and linkbacks much appreciated.
  *
