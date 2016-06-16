@@ -538,7 +538,7 @@
             </a>
 	</a>
         </g>
-    <a id="ductotherlink" xlink:href="#/duct/basics" target="_top" ><title>Duct</title>
+    <a id="ductotherlink" xlink:href="#/duct/basics" target="_top" ><title>Ducts</title>
 	<polygon id="ductoutline2" display="none" fill="none" stroke="#DDCC77" stroke-miterlimit="10" points="1049,689.4 1053.1,707.1 
 		1100.4,706.9 1099.7,925.8 972.5,925.6 972.5,957.6 990.3,957.6 990.3,947 1058,947 1058,957.6 1075.6,957.6 1075.6,947 
 		1119.3,946.5 1119.3,689.4"/>
@@ -551,7 +551,6 @@
       {
          new Title(event.getTarget().getOwnerDocument(), 12);
       }
-
    ]]>
     </script>
     
