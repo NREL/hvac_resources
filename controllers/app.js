@@ -63,7 +63,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         templateUrl: 'views/chiller_types.html'
       }, {
         name: 'design',
-        url: '/chiller_design',
+        url: '/eems',
         templateUrl: 'views/chiller_design.html'
       }, {
         name: 'basics',
@@ -135,7 +135,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
       templateUrl: 'views/pump.html',
       children: [{
         name: 'design',
-        url: '/design',
+        url: '/eems',
         templateUrl: 'views/pump_design.html'
       }, {
         name: 'basics',

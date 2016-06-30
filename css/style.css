@@ -298,6 +298,30 @@ tr:nth-child(even) {
   -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
   transition: width 1s ease-in-out, left 1.5s ease-in-out;
 }
+/* Tooltip container */
+.mytooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.mytooltip .mytooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: gray;
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.mytooltip:hover .mytooltiptext {
+    visibility: visible;
+}
 
 .mybtn {
   background-color: gray;
@@ -720,6 +744,7 @@ body {
 #chiller:hover {
   fill: #4a9 !important;
   stroke: black !important;
+
 }
 
 #chiller:active {

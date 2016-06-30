@@ -492,7 +492,7 @@
             </g>
         </a>
 	</g>
-	<g id="tower"><title>Tower</title>
+	<g id="tower"><title>Cooling Tower</title>
 		<a id="tower-link" xlink:href="#/tower/basics" target="_top">
             <path id="t-outline" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" d="M1038.5,406c-0.2,1.9-0.7,2.6-1.4,2.6h-53.8
 			h-0.5l-3.4-18.1l-9.8-51c-0.2-0.8,0.5-1.6,1.4-1.6h78.1c0.8,0,1.4,0.8,1.4,0.4L1038.5,406z"/></a>
@@ -517,7 +517,8 @@
 		<path id="t-water" fill="none" stroke="#44AA99" stroke-width="0.8901" stroke-miterlimit="10" d="M980.1,393.3
 			c-0.4-1,0.8-1.9,1.9-1.6c4.6,2.2,15.3,5.4,29.3-1.4c0,0,15.5-7.4,29.3-1.4c0.5,0.4,0.8,0.8,0.8,0.4l-3.3,16.7
 			c-0.2,1.9-0.7,2.4-1.4,2.4l-52.4,0.2c-0.7,0-1.2-0.4-1.4-1L980.1,393.3z"/>
-		<g id="fan_2_"><title>Fan</title>
+		
+        <g id="fan_2_"><title>Fan</title>
 			<ellipse id="ellipse4676" stroke="#44AA99" stroke-miterlimit="10" cx="1019.7" cy="350.2" rx="10.2" ry="3.6"/>
 			<ellipse id="ellipse4678" stroke="#44AA99" stroke-miterlimit="10" cx="999.7" cy="350.9" rx="10.2" ry="3.6"/>
 			<path id="path4680" stroke="#44AA99" stroke-miterlimit="10" d="M1008.7,352.1v-11.5c0-0.5,0.5-0.8,0.8-0.8l0,0
@@ -530,22 +531,26 @@
 			c-9.8,0-17.9,4.5-20.9,10.7v-10.8h-6.4v34.1h6.4v-8.8c2.9,6.2,11,10.7,20.9,10.7v14.8h13.6v-15h52.9v14.8h13.6V532h5.4
 			c8.8,0,16.4-3.6,19.8-9.1v9.1h3.4v-11.2h7.2v-5.2h-7.2v-1.2L1092.8,514.6L1092.8,514.6z"/>
 	</a>
-    <g id="boilericon"><title>Boiler</title>
-        <a xlink:href="#/boiler/basics"  target="_parent">
+    <g id="boilericon">
+        <a xlink:href="#/boiler/basics"><title>Boiler</title>
 		<path id="boiler" stroke="#44AA99" stroke-width="2" stroke-miterlimit="10" d="M880,430.2v5.4h-9c-1-12.6-10.3-22.6-21.7-22.6
 			H764c-7.8,0-14.7,4.6-18.6,11.9H740v33.9h5.4c3.8,7,10.7,11.9,18.6,11.9v14.8h13.6v-14.8h52.9v14.8h13.6v-14.8h5.4
 			c11,0,20.3-9.5,21.7-21.9h9v4.1h19.8v-22.7L880,430.2L880,430.2z"/>
             </a>
 	</a>
         </g>
-    <a id="ductotherlink" xlink:href="#/duct/basics" target="_top" ><title>Ducts</title>
+    <a id="ductotherlink" xlink:href="#/duct/basics" target="_top"><title>Ducts</title>
 	<polygon id="ductoutline2" display="none" fill="none" stroke="#DDCC77" stroke-miterlimit="10" points="1049,689.4 1053.1,707.1 
 		1100.4,706.9 1099.7,925.8 972.5,925.6 972.5,957.6 990.3,957.6 990.3,947 1058,947 1058,957.6 1075.6,957.6 1075.6,947 
 		1119.3,946.5 1119.3,689.4"/>
     
 </g>
     
-<script xlink:href="../js/Title.js" />    
+ </script>
+  <!-- or reference JavaScript here: -->
+  <script type="application/ecmascript" xlink:href="../js/Title.js">
+  </script>
+
    <script><![CDATA[
       function LoadHandler(event) 
       {
@@ -553,6 +558,5 @@
       }
    ]]>
     </script>
-    
 
 </svg>
