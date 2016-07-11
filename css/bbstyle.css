@@ -1,0 +1,897 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-y: scroll;
+}
+
+p, h1, h2, h3, h4, h5, h6, div {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+html, body {
+  height: 100%;
+  background: #eeeeee !important;
+}
+
+li, .tooltip, .popover {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* placeholder hyperlinks */
+a:not([href]) {
+  cursor: pointer;
+}
+
+a:link {
+  color: #4e77f9;
+}
+
+a:visited {
+  color: #55b741;
+}
+
+a:hover {
+  color: white;
+}
+
+hr {
+  display: block;
+  margin: 0.5em auto;
+  border: 1px #545454;
+  border-bottom-style: dotted;
+}
+
+.myh1 {
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  text-align: left;
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: #1e428a;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  line-height: 110%;
+}
+
+.myh2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #1e428a;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  line-height: 110%;
+}
+
+.myh3 {
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  text-align: left;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: #1e428a;
+  line-height: 110%;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  margin-top: 14px;
+}
+
+.doctitle {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13pt;
+}
+
+.myh3bold {
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  text-align: left;
+  font-size: 22px;
+  letter-spacing: 2px;
+  color: black;
+  line-height: 110%;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  margin-top: 14px;
+}
+.source {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 10pt;
+  color: #dddddd;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.imgtitle {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 12pt;
+  color: #dddddd;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5%;
+}
+
+.pquote {
+  float: left;
+  width: 100%;
+  background: #282828;
+  font-weight: 400;
+  font-style: italic;
+  padding: 13px;
+  margin: 0 13px 13px 0;
+  line-height: 180% !important;
+}
+
+blockquote {
+  margin: 0; /* gets rid of the default blockquote margin */
+}
+.mylist{
+    margin-left: 7%;
+}
+
+.whiteimg {
+  padding: 8px;
+  background-color: white;
+  border-radius: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+  max-width: 730px;
+  text-align: center;
+}
+
+.transimg {
+  padding: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+}
+
+.myimage {
+  display: inline-block;
+  vertical-align: middle;
+  width: 90%;
+  max-width: 600px;
+}
+
+.myimagesm {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+table, td {
+    border: 1px solid #444444;
+    border-collapse: collapse;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+th {
+    background-color: #333333;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid black;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+th, td {
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+tr:nth-child(even) {
+    background-color: #222222;
+}
+
+.content-main {
+  width: 100%;
+}
+
+.content-secondary {
+  padding-left: 10px;
+  align-self: flex-start;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+
+.flexcontainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  line-height: 150%;
+}
+
+.flexfoot {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  width: 100%;
+  align-self: flex-end;
+}
+
+.subflex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+}
+
+.flexnav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+}
+
+.infocontainer {
+  background-color: #282828;
+  color: white;
+    margin-top: 20px;
+    margin-right: 5px;
+  padding: 10px;
+  order: 3;
+  flex: 2 3 0;
+  -webkit-flex: 2 3 0;
+  -ms-flex: 2 3 0;
+  height: 100%;
+    border-radius: 8px;
+}
+
+.fadein {
+  transition: opacity .5s linear,
+  visibility .5s linear;
+}
+
+.fadein.ng-enter {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.fadein.ng-enter.ng-enter-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fadein.ng-leave {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fadein.ng-leave.ng-leave-active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#diagram {
+  order: 2;
+  width: 26%;
+  height: 26%;
+  overflow: hidden;
+  /*flex: 1 0 350px;
+  -webkit-flex: 1 0 350px;
+  -ms-flex: 1 0 350px;*/
+  -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+  -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+  -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
+  transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}
+/* Tooltip container */
+.mytooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.mytooltip .mytooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: gray;
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.mytooltip:hover .mytooltiptext {
+    visibility: visible;
+}
+
+.mybtn {
+  background-color: gray;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: white !important;
+}
+
+.mybtn a:hover {
+  background-color: #ddd;
+  color: white;
+  font-weight: 500;
+}
+
+.mybtn a:active,
+.mybtn a:focus {
+  background-color: yellow;
+  color: black !important;
+  font-weight: 500;
+}
+
+.navcontainer {
+  order: 1;
+  flex: 0 0 200px;
+  -webkit-flex: 0 0 200px;
+  -ms-flex: 0 0 200px;
+}
+
+.topbartitle {
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  text-align: left;
+  font-size: 36px;
+  letter-spacing: 4px;
+  color: #eeeeee;
+}
+
+.topbar {
+  width: 100%;
+  height: 18%;
+  position: relative;
+  background-color: #3d3d3d;
+  top: 0;
+  left: 0;
+  float: left;
+  padding: 8px;
+  line-height: 50px;
+  border-top: 1px solid #4a9;
+  border-bottom: solid #4b625e;
+}
+
+.topbar img {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+@media (max-width: 430px) {
+  .topbartitle {
+    font-size: 20px;
+    line-height: 2.5em;
+  }
+}
+
+/*mynav*/
+
+.leftnavt {
+  font-size: 17px;
+  color: #ffffff !important;
+  background-color: black;
+  width: 200px;
+  letter-spacing: 1px;
+  border-right: 2px solid #dddddd;
+}
+
+.leftnavs {
+  font-size: 16px;
+  color: #4a9 !important;
+  background-color: black;
+  width: 200px;
+  letter-spacing: 1px;
+}
+
+.leftnav {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: white !important;
+  background-color: #282828;
+  width: 200px;
+  font-weight: 300;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  color: white;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 6px 0 10px 10px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #545454;
+  color: white;
+  font-weight: 300;
+  /*border-left-style: solid;
+  border-left: solid #4b625e;
+  border-left-width: 4px;*/
+}
+
+li a:active,
+.leftnav a:focus {
+  text-decoration: none;
+  background-color: #545454;
+  color: white !important;
+  font-weight: 300;
+}
+
+li {
+  text-align: left;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.nav-side-menu {
+  width: 200px;
+}
+
+.nav-side-menu .toggle-btn {
+  display: block;
+  cursor: pointer;
+  z-index: 10 !important;
+  padding: 3px;
+  color: #dddddd;
+  width: 40px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 767px) {
+  .navcontainer {
+    z-index: 10;
+  }
+
+  .brand {
+    display: none;
+  }
+
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+
+  .pquote {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #diagram {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .pquote {
+    width: 100%;
+  }
+}
+
+/* Central Plant Navigation */
+.leftnavtcp {
+  font-size: 18px;
+  color: #4a9 !important;
+  background-color: black;
+  width: 200px;
+  letter-spacing: 1px;
+  border-right: 2px solid #4a9;
+}
+
+.leftnavscp {
+  font-size: 16px;
+  color: #4a9 !important;
+  background-color: black;
+  width: 200px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.leftnavcp {
+  font-size: 16px;
+  color: white !important;
+  background-color: #282828;
+  width: 200px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding-left: 5px;
+  border-right: 2px solid #4a9;
+}
+
+.leftnavcp {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  color: white;
+}
+
+.leftnavcp a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.leftnavcp a:hover {
+  background-color: #4a9;
+  color: white;
+  font-weight: 300;
+}
+
+.leftnavcp a:active,
+.leftnavcp a:focus {
+  text-decoration: none;
+  background-color: #4a9;
+  color: black !important;
+  font-weight: 300;
+}
+
+.leftnavcp {
+  text-align: left;
+  border-bottom: 1px solid #555;
+}
+
+.leftnavcp:last-child {
+  border-bottom: none;
+}
+
+/* Distribution Nav */
+.leftnavtd {
+  font-size: 18px;
+  color: #ddcc77 !important;
+  background-color: black;
+  width: 200px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  border-right: 2px solid #ddcc77;
+}
+
+.leftnavsd {
+  font-size: 16px;
+  color: #ddcc77 !important;
+  background-color: black;
+  width: 200px;
+  letter-spacing: 2px;
+  padding: 10px 0 10px 15px;
+  font-weight: 300;
+}
+
+.leftnavd {
+  font-size: 16px;
+  color: white !important;
+  background-color: #282828;
+  width: 200px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  border-right: 2px solid #ddcc77;
+}
+
+.leftnavd {
+  list-style-type: none;
+  width: 200px;
+  color: white;
+}
+
+.leftnavd a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.leftnavd a:hover {
+  background-color: #ddcc77;
+  color: black;
+  font-weight: 300;
+}
+
+.leftnavd a:active,
+.leftnavd a:focus {
+  text-decoration: none;
+  background-color: #ddcc77;
+  color: black !important;
+  font-weight: 300;
+}
+
+.leftnavd {
+  text-align: left;
+  border-bottom: 1px solid #555;
+}
+
+.leftnavd:last-child {
+  border-bottom: none;
+}
+
+/* space loads */
+.leftnavspacet {
+  font-size: 18px;
+  color: #88ccee !important;
+  background-color: black;
+  width: 200px;
+  letter-spacing: 1px;
+  font-weight: 200;
+  border-right: 2px solid #88ccee;
+  border-bottom: 1px solid #555;
+}
+
+/**
+ * CSSReset.com - How To Keep Footer At Bottom of Page with CSS
+ *
+ * Original Tutorial: http://www.cssreset.com/2010/css-tutorials/how-to-keep-footer-at-bottom-of-page-with-css/
+ * License: Free - do whatever you like with it! Credit and linkbacks much appreciated.
+ *
+ * NB: Make sure the value for 'padding-bottom' on #content is equal to or greater than the height of #footer.
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+#header {
+  background: #ededed;
+  padding: 10px;
+}
+
+#content {
+  padding-bottom: 100px; /* Height of the footer element */
+}
+
+#footer {
+  background-color: #3d3d3d;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  line-height: 150%;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 4px;
+  padding-top: 15px;
+}
+
+/*Right Nav*/
+.rtnav {
+  font-size: 13px;
+  color: white;
+  background-color: #282828;
+  font-weight: 100;
+  border-radius: 3px;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #555;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.rtnav a {
+  display: block;
+  color: white;
+  padding: 10px 6px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.rtnav a:hover {
+  background-color: #4a9;
+  color: white;
+  font-weight: 100;
+}
+
+.rtnav a:active,
+.rtnav a:focus {
+  text-decoration: none;
+  background-color: #4a9;
+  color: black !important;
+  font-weight: 100;
+}
+
+.rtnav:last-child {
+  border-bottom: none;
+}
+
+/* Rollovers on the Central PlantDiagram*/
+
+#chiller:hover {
+  fill: #4a9 !important;
+  stroke: black !important;
+
+}
+
+#chiller:active {
+  fill: #4a9 !important;
+  stroke: yellow !important;
+}
+
+#boiler:hover {
+  fill: #4a9 !important;
+  stroke: black !important;
+  font-size: 14px;
+}
+
+#boiler:active {
+  fill: #4a9 !important;
+  stroke: yellow !important;
+}
+
+#cp-pump:hover {
+  fill: #4a9 !important;
+  stroke: black !important;
+}
+
+#cp-pump:active {
+  fill: #4a9 !important;
+  stroke: yellow !important;
+}
+
+#d-pump1:hover, #d-pump2:hover {
+fill: #ddcc77 !important;
+  stroke: black !important;  
+}
+#d-pump1:active, #d-pump2:active {
+fill: #ddcc77 !important;
+  stroke: yellow !important;  
+}
+
+#ahu-back:hover {
+  fill: #4a4428 !important;
+  stroke: #ddcc77 !important;
+}
+#ahu-back:active {
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
+}
+
+#fan1:hover, #fan2:hover {
+  fill: #ddcc77 !important;
+  stroke: black !important;
+}
+
+#fan1:active, #fan2:active {
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
+}
+#pipes:hover {
+    stroke: #ddcc77 !important;
+      stroke-width: 3px;    
+  }
+  #pipes:active {
+    stroke: #ddcc77 !important;
+    fill: #ddcc77 !important;
+    stroke-width: 1px;    
+  }
+ #cp-valve:hover, #cp-valve-control:hover{
+    fill: #4a9 !important;
+    stroke: #44aa99 !important;
+  }
+ #cp-valve:active, #cp-valve-control:active{
+    fill: #4a9 !important;
+    stroke: yellow !important;
+ }
+#d-valve:hover{
+     fill: #ddcc77 !important;
+    stroke: #ddcc77 !important;
+  }
+#d-valve:active{
+     fill: #ddcc77 !important;
+    stroke: yellow !important;
+  }
+#duct1-outline:hover, #duct2-outline:hover {
+  fill: #ddcc77 !important;
+    stroke: #ddcc77 !important;
+}
+
+#duct1-outline:active, #duct2-outline:active {
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
+}
+#diffuser1:hover, #diffuser2:hover {
+  fill: #ddcc77 !important;
+    stroke: #ddcc77 !important;
+}
+
+#terminal1:hover, #terminal2:hover {
+  fill: #7f723b !important;
+    stroke: #ddcc77 !important;  
+}
+
+#diffuser1:active, #diffuser2:active {
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
+}
+#terminal1:active, #terminal2:active {
+        fill: #4a4428 !important;
+    stroke: #ddcc77 !important;
+  }
+#vav:hover{
+  fill: #7f723b !important;
+    stroke: #ddcc77 !important;
+}
+
+#vav:active {
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
+}
+
+#t-outline:hover {
+    fill: #14332e !important;
+    stroke: #4a9 !important;
+}
+#t-outline:active {
+    fill: #4a9 !important;
+  stroke: yellow !important;
+}
+
+.cpoff {
+  fill: black !important;
+  stroke: #4a9 !important;
+}
+
+.cpover {
+  fill: #4a9 !important;
+  stroke: black !important;
+}
+
+.cpon {
+  fill: #14332e !important;
+  stroke: black !important;
+}
+
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

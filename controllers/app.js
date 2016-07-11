@@ -249,42 +249,160 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
       }]
     })
       .state({
-      name: 'thermalstorage',
-      url: '/thermalstorage',
-      templateUrl: 'views/thermalstorage.html',
+      name: 'coolthermal',
+      url: '/cool_thermal',
+      templateUrl: 'views/cool_thermal.html',
       children: [{
         name: 'design',
         url: '/design',
-        templateUrl: 'views/thermalstorage_design.html'
+        templateUrl: 'views/cool_thermal_design.html'
       }, {
         name: 'types',
         url: '/types',
-        templateUrl: 'views/thermalstorage_types.html'
+        templateUrl: 'views/cool_thermal_types.html'
       }, {
         name: 'codes',
         url: '/codes',
-        templateUrl: 'views/thermalstorage_codes.html'
+        templateUrl: 'views/cool_thermal_codes.html'
       }, {
         name: 'tools',
         url: '/tools',
-        templateUrl: 'views/thermalstorage_tools.html'
+        templateUrl: 'views/cool_thermal_tools.html'
       }, {
         name: 'procure',
         url: '/procure',
-        templateUrl: 'views/thermalstorage_procure.html'
+        templateUrl: 'views/cool_thermal_procure.html'
       }, {
         name: 'operation',
         url: '/operation',
-        templateUrl: 'views/thermalstorage_operation.html'
+        templateUrl: 'views/cool_thermal_operation.html'
       }, {
         name: 'cases',
         url: '/cases',
-        templateUrl: 'views/thermalstorage_cases.html'
+        templateUrl: 'views/cool_thermal_cases.html'
       }, {
         name: 'basics',
         url: '/basics',
-        templateUrl: 'views/thermalstorage_basics.html'
+        templateUrl: 'views/cool_thermal_basics.html'
       }]
+          
+    })
+   .state({
+      name: 'hotthermal',
+      url: '/hot_thermal',
+      templateUrl: 'views/hot_thermal.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/hot_thermal_design.html'
+      }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/hot_thermal_types.html'
+      }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/hot_thermal_codes.html'
+      }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/hot_thermal_tools.html'
+      }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/hot_thermal_procure.html'
+      }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/hot_thermal_operation.html'
+      }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/hot_thermal_cases.html'
+      }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/hot_thermal_basics.html'
+      }]
+          
+    })
+    .state({
+      name: 'expansion',
+      url: '/expansion_tank',
+      templateUrl: 'views/expansion.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/expansion_design.html'
+      }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/expansion_types.html'
+      }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/expansion_codes.html'
+      }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/expansion_tools.html'
+      }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/expansion_procure.html'
+      }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/expansion_operation.html'
+      }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/expansion_cases.html'
+      }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/expansion_basics.html'
+      }]
+          
+    })
+    .state({
+      name: 'exchanger',
+      url: '/exchanger',
+      templateUrl: 'views/exchanger.html',
+      children: [{
+        name: 'design',
+        url: '/design',
+        templateUrl: 'views/exchanger_design.html'
+      }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/exchanger_types.html'
+      }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/exchanger_codes.html'
+      }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/exchanger_tools.html'
+      }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/exchanger_procure.html'
+      }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/exchanger_operation.html'
+      }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/exchanger_cases.html'
+      }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/exchanger_basics.html'
+      }]
+          
     })
         .state({
       name: 'sensors_controls',
@@ -324,6 +442,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         templateUrl: 'views/sensors_controls_basics.html'
       }]
     })
+  
   .state({
       name: 'valve',
       url: '/valve',
