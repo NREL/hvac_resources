@@ -1,36 +1,142 @@
 <div class="myh2">Types</div>
 
-<p>For an overview of fan types and characteristics, selection criteria and system design principles refer to 
-<a class="doctitle" href="http://www.lorencook.com/PDFs/Catalogs/Cookbook_Catalog.pdf" target="_blank">“Engineering Cookbook, A Handbook for the Mechanical Engineer” 2nd Ed, 1999.</a> Loren Cook Company, Springfield, MO.</p> 
+<table class="mytable" style="width:100%">
 
-<p>An overview of fan types, characteristics, system design and general considerations as well as performance improvement opportunities and how to implement them can be found in <a class="doctitle" href="http://www.nrel.gov/docs/fy03osti/29166.pdf" target="_blank">  
-“Improving Fan System Performance”</a> U.S. DOE and AMCA DOE/GO-102003-1294.</p>
+  <tr>
+    <th>Fan type</th>
+    <th>Advantage</th>
+    <th>Disadvantage</th>
+    <th>Application</th>
+    <th>Images <sup> 1</sup></th>
+  </tr>
 
-<p>Overview of fan types and where they are typically used in HVAC systems is addressed in <a class="doctitle" href="http://www.esource.com/members/iv-tech-answer-171/what-are-most-common-fan-types-hvac-applications" target="_blank"> “What are the most common fan types for HVAC applications?”</a> E Source. 
--	Quantitative comparison of fan efficiency “Energy Efficiency Classification for Fans” ANSI/AMCA Standard 205-12.</p> 
+  <tr>
+    <th>Centrifugal, Forward curved</th>
+    <td>&middot; High velocity
+           <br>&middot; Low to medium pressure (0-5 in wg)
+           <br>&middot; Compact
+           <br>&middot; Low cost</td>
+    <td>&middot; Can overload motor in variable static pressure applications</td>
+    <td>&middot; RTUs
+           <br>&middot; Exhaust fans
+           <br> &middot;Residential furnaces </td>
+    <td>  <img class="transimage" ng-src="img/Fan_Centr_Fwd_curve.jpg" width="100px" height="100px"</img> </td>
+
+  </tr>
+
+  <tr>
+    <th>Centrifugal, Backward curved, Backward inclined</th>
+    <td>&middot; High pressure
+           <br>&middot; High efficiency
+    </td>
+    <td>&middot; Higher rotation speeds
+           <br>&middot;Heavier
+           <br>&middot;Larger than forward curved</td>
+    <td>&middot; RTUs
+           <br>&middot; AHUs
+    </td>
+    <td>  <img class="transimage" ng-src="img/Fan_Back_Fwd_curve.jpg" width="100px" height="100px"</img> </td>
+  </tr>
+
+  <tr>
+    <th>Centrifugal, Airfoil</th>
+    <td>&middot; High pressure (5-10 in wg)
+           <br>&middot; High efficiency
+    </td>
+    <td>&middot; Higher rotation speeds
+           <br>&middot; Heavier
+           <br>&middot; Larger than forward curved</td>
+    <td>&middot; AHUs
+           <br>&middot; Industrial applications
+    </td>
+    <td>  <img class="transimage" ng-src="img/Fan_centrfgl_airfoil.jpg" width="100px" height="100px"</img> </td>
+  </tr>
+
+  <tr>
+    <th>Axial, Propeller</th>
+    <td>&middot; Large air flows
+           <br>&middot; Light
+           <br>&middot; Low cost
+           <br>&middot; Low pressure
+    </td>
+    <td>&middot; Very low pressure
+    </td>
+    <td>&middot; Unducted applications
+	          <br>&middot; Exhaust fans
+            <br>&middot; Condenser fans
+            <br>&middot; Transfer fans
+    </td>
+    <td>  <img class="transimage" ng-src="img/Fan_axial_propeller.jpg" width="100px" height="100px"</img> </td>
+  </tr>
+
+  <tr>
+    <th>Axial, Tubeaxial</th>
+    <td>&middot; High air flow rates
+           <br>&middot; Medium pressure (< 5 in wg)
+           <br>&middot; Low rotating mass
+           <br>&middot; Quick response
+    </td>
+    <td>&middot; Poor downstream air flow distribution
+    </td>
+    <td>&middot; RTUs
+	          <br>&middot; AHUs
+            <br>&middot; Exhaust fans
+    </td>
+    <td>  <img class="transimage" ng-src="img/Fan_axial_tubeaxial.jpg" width="100px" height="100px"</img> </td>
+  </tr>
+
+  <tr>
+    <th>Axial, Vaneaxial</th>
+    <td>&middot; Medium air flow rates
+           <br>&middot; High pressure
+           <br>&middot; Compact
+           <br>&middot; Good air distribution
+           <br>&middot; Low rotating mass
+           <br>&middot; Quick response
+    </td>
+    <td>
+    </td>
+    <td>&middot; RTUs
+            <br>&middot; AHUs
+            <br>&middot; Exhaust fans
+    </td>
+    <td>  <img class="transimage" ng-src="img/Fan_axial_vaneaxial.jpg" width="100px" height="100px"</img> </td>
+  </tr>
+
+</table>
+
+<p> <sup>1</sup> <a class="doctitle" href="US DOE and AMCA DOE/GO-102003-1294" target="_blank" >US DOE and AMCA DOE/GO-102003-1294</a>
+  <br>
+  <hr>
+<p class="myh3">Drives</p>
+<p>Belt (indirect) driven fans are the most common and have the advantages that they are readily accessible for maintenance, require simple maintenance, easy to adjust the
+  speed for the system design, and low stress on the motor. The main disadvantage is the efficiency loss of 3% to 5% compared to direct drive. Synchronous drive belts can
+   improve system performance by 2%. Direct drive fans can provide higher efficiency and have a simpler design compared to belt driven fans. However, may have increased stress
+    on the motor and bearings and most applications require a method for speed control like a variable frequency drive. Refer the <a class="doctitle" href="http://dms.hvacpartners.com/docs/1001/Public/0F/04-581070-01.pdf" target="_blank"> Applications of Fans in Commercial HVAC equipment report</a>
+  by Carrier for more details.</p>
+
+<br>
+<hr>
+<p class="myh3">Motors</p>
+<p>Most HVAC system motors are AC induction motors with single phase motors for small systems (< 5 hp) and three phase motors for larger systems. The most common single phase
+  motor are permanent split capacitance and some shaded pole (smaller motors and very low performance). Speed control and improved part load efficiency can be achieved with the
+  addition of variable frequency drives (VFD); however, VFDs add a 3% to 5% efficiency penalty. More efficient motor options include permanent magnet motors (e.g. electrically
+  commutated [EC]) and switched reluctance motors. EC and other permanent magnet motors are widely available for small (< 1hp) motors and are starting to become more available for
+   midsized motors (2-5 hp). Switched reluctance motors have the advantage of not using expensive rare earth materials and recent advances are overcoming speed and vibration control
+    challenges.</p>
 <br>
 <hr>
 
-<p class="myh3">Centrifugal</p>
-<p>Centrifugal fans can be compact, higher pressure, and are cheap to make. Blade curvature: forward, backward, radial, airfoil. See <a class="doctitle" href="http://www.nrel.gov/docs/fy03osti/29166.pdf" target="_blank">  “Improving Fan System Performance”</a>.  Typical applications include RTUs, commercial AHUs, exhaust fans, built up fan systems, and residential furnaces.</p> 
-    
-<p>For an overview of attributes of forward curved vs airfoil centrifugal fans as well as housing and drive considerations and a good description of fan overloading for forward curved fans is provided in <a class="doctitle" href="http://dms.hvacpartners.com/docs/1001/Public/0F/04-581070-01.pdf" target="_blank">“Application of Fans in Commercial HVAC Equipment”</a> Carrier Corporation Syracuse, NY May 2013.</p> 
-<br>
-<hr>
-<p class="myh3">Axial</p>
-<p>Azial fans are more efficient than centrifugal at lower pressures, tend to be larger. See <a class="doctitle" href="http://www.nrel.gov/docs/fy03osti/29166.pdf" target="_blank">  “Improving Fan System Performance”</a>. These are often used in unducted ventilation applications and condenser cooling.</p>
-<p>An overview of many types of axial as well as other fans, typical characteristics and use cases:</p>
-<p><a class="doctitle" href="http://www.pdhcenter.com/courses/m213/m213content.pdf" target="_blank">“Characteristics and Selection Parameters of Fans and Blower Systems”</a> PDH Online 2012.</p>
-<br>
-<hr>
-<p class="myh3">Motors</p>	
-<p>Although energy codes dictate minimum efficiency requirements for motors, there are typically motor selections available above minimum requirements that can save significant energy over the life of the motor.  Variable frequency drives are commonly available in many HVAC applications to reduce energy use, provide soft starting, and aid air volume control.</p>  
+<p class="myh3">Sources</p>
+<div class="source">
+<p>&middot; <a class="doctitle" href="http://www.tcf.com/docs/fan-engineering-letters/integral-ac-motor-selection-and-application-guide-for-fans---fe-800.pdf?Status=Master" target="_blank">Integral AC Motor Selection and Application Guide For Fans</a></p>
+<p>&middot; <a class="doctitle" href="http://www.greenheck.com/library/articles/33" target="_blank">Motor Application Guide for Ventilation Products FA 113-01</a></p>
+<p>Provides an overview of motor considerations for ventilation systems including enclosure options, fan type compatibility and electric motor characteristics</p>
+<p>&middot;<a class="doctitle" href="http://www.lorencook.com/PDFs/Catalogs/Cookbook_Catalog.pdf" target="_blank">Engineering Cookbook, A Handbook for the Mechanical Engineer </a>2nd Ed, 1999. Loren Cook Company, Springfield, MO </p>
+<p>Overview of fan types and characteristics, selection criteria and system design principles </p>
+<p>&middot;<a class="doctitle" href="http://www.esource.com/members/iv-tech-answer-171/what-are-most-common-fan-types-hvac-applications" target="_blank" >What are the most common fan types for HVAC applications?</a> </p>
+<p>Overview of fan types and where they are typically used in HVAC systems </p>
+<p>&middot;<a class="doctitle" href="http://www.amca.org/store/item.aspx?ItemId=95" target="_blank" >Energy Efficiency Classification for Fans </a> ANSI/AMCA Standard 205-12   </p>
+<p>Quantitative comparison of fan efficiency </p>
 
-<p></p>The following reference provides a description of electronically commutated (EC) motors, applications and efficiency. Typically EC motors are used on fans requiring less horsepower, such as small exhaust fans, room cooling units, 
-A. Hauer <a class="doctitle" href="http://ctashrae.org/downloads/ashrae_2010_12_09_1.pdf" target="_blank">“EC fans: efficient, programmable, intelligent”</a> Connecticut Chapter of ASHRAE</p>
-
-<p>An AC motor selection guide for fans can be found in
-Twin City Fans &amp; Blowers <a class="doctitle" href="http://www.tcf.com/docs/fan-engineering-letters/integral-ac-motor-selection-and-application-guide-for-fans---fe-800.pdf?Status=Master" target="_blank">“Integral AC Motor Selection and Application Guide For Fans”</a></p>
-
-<p>The <a class="doctitle" href="http://www.greenheck.com/library/articles/33" target="_blank">Motor Application Guide for Ventilation Products FA 113-01</a> provides an overview of motor considerations for ventilation systems including enclosure options, fan type compatibility and electric motor characteristics.</p>
-
+</div>
