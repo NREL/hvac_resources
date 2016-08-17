@@ -51,8 +51,8 @@ a:hover {
 }
 
 .bbtop {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 /*top bar and horizontal navigation*/
@@ -115,6 +115,28 @@ a:hover {
     font-size: 12pt;
     border-top: 4px solid #1d449c!important;
 }
+.topbartitle {
+     position: relative;
+  top: 0;
+  left: 0;
+  float: left;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  font-weight: lighter; 
+  text-align: left;
+  font-size: 24px;
+  color: black;
+  line-height: 120%;
+margin-left: 15%;
+    margin-right: 15%;
+}
+@media (max-width: 430px) {
+  .topbartitle {
+    font-size: 20px;
+    line-height: 2.5em;
+  }
+}
+
 
 
 /* headers and underlines */
@@ -315,11 +337,11 @@ tr:nth-child(even) {
   -ms-flex-flow: wrap;
   flex-flow: wrap;
   justify-content: space-between;
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
   line-height: 140%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .flexfoot {
@@ -423,29 +445,6 @@ tr:nth-child(even) {
   background-color: yellow;
   color: #1D428A !important;
   font-weight: 500;
-}
-
-
-.topbartitle {
-     position: relative;
-  top: 0;
-  left: 0;
-  float: left;
-    padding-top: 7px;
-    padding-bottom: 7px;
-  font-weight: lighter; 
-  text-align: left;
-  font-size: 20px;
-  color: black;
-  line-height: 120%;
-margin-left: 10%;
-    margin-right: 10%;
-}
-@media (max-width: 430px) {
-  .topbartitle {
-    font-size: 20px;
-    line-height: 2.5em;
-  }
 }
 
 
@@ -692,12 +691,12 @@ body {
 
 /* Rollovers on the Central PlantDiagram*/
 
-#chiller:hover, #boiler:hover, #cp-pump:hover, #d-pump1:hover, #d-pump2:hover, #fan1:hover, #fan2:hover, #cp-valve:hover, #cp-valve-control:hover, #d-valve:hover, #duct1-outline:hover, #duct2-outline:hover, #diffuser1:hover, #diffuser2:hover, #terminal1:hover, #terminal2:hover, #vav:hover, #t-outline:hover, #ahu-back:hover       {
+#chiller:hover, #boiler:hover, #cp-pump:hover, #d-pump1:hover, #d-pump2:hover, #fan1:hover, #fan2:hover, #cp-valve:hover, #cp-valve-control:hover, #d-valve:hover, #duct1-outline:hover, #duct2-outline:hover, #diffuser1:hover, #diffuser2:hover, #terminal1:hover, #terminal2:hover, #vav:hover, #t-outline:hover, #ahu-back:hover, #cp-valve:hover, #cp-valve2:hover       {
   fill: #00A3E0!important;
     stroke: #444444 !important;
 }
 
-#chiller:active, #boiler:active, #cp-pump:active, #d-pump1:active, #d-pump2:active, #fan1:active, #fan2:active, #cp-valve:active, #cp-valve-control:active, #d-valve:active, #duct1-outline:active, #duct2-outline:active, #diffuser1:active, #diffuser2:active, #terminal1:active, #terminal2:active, #vav:active, #t-outline:active, #ahu-back:active {
+#chiller:active, #boiler:active, #cp-pump:active, #d-pump1:active, #d-pump2:active, #fan1:active, #fan2:active, #cp-valve:active, #cp-valve-control:active, #d-valve:active, #duct1-outline:active, #duct2-outline:active, #diffuser1:active, #diffuser2:active, #terminal1:active, #terminal2:active, #vav:active, #t-outline:active, #ahu-back:active, #cp-valve1:active, #cp-valve2:active {
   fill: #71C5E8 !important;
   stroke: #444444 !important;
 }
