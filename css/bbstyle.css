@@ -15,10 +15,11 @@ body {
   overflow-y: scroll;
 }
 
-p, h1, h2, h3, h4, h5, h6, li, div {
-  font-family:  'avenir';
+p, h1, h2, h3, h4, h5, h6, li, div, th, tr {
+  font-family:  'Avenir';
     color: black;
 }
+
 
 html, body {
   height: 100%;
@@ -26,8 +27,8 @@ html, body {
 }
 
 li, ul, .tooltip, .popover {
-  font-family:'AvenirNextLTPro";
- 
+  font-family:'Avenir';
+
 }
 
 /* placeholder hyperlinks */
@@ -166,12 +167,13 @@ hr {
 }
 
 .doctitle {
+    font-family: 'Avenir';
   font-style: italic;
   font-size: 12pt;
+    font-weight: bolder;
 }
 
 .myh3bold {
-  font-family: "Roboto Slab";
   font-weight: bold;
   text-align: left;
   font-size: 14px;
@@ -267,14 +269,12 @@ blockquote {
 table, td {
     border: 1px solid white;
     border-collapse: collapse;
-    font-family: 'Open Sans Condensed', sans-serif;
 }
 th {
     background-color: #e2e2e2;
     text-align: center;
     padding: 15px;
     border: 1px solid white;
-    font-family: 'Open Sans Condensed', sans-serif;
     color: black;
 }
 
@@ -282,7 +282,6 @@ th, td {
     padding: 15px;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: 'Open Sans Condensed', sans-serif;
 }
 tr:nth-child(even) {
     background-color: #eeeeee;
@@ -395,6 +394,7 @@ tr:nth-child(even) {
 #diagram {
   order: 2;
   width: 25%;
+  border: 1px solid #dddddd!important;
   overflow: hidden;
   /*flex: 1 0 350px;
   -webkit-flex: 1 0 350px;
