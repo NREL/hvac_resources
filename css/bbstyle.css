@@ -571,6 +571,8 @@ text-decoration: none!important;
  *
  * NB: Make sure the value for 'padding-bottom' on #content is equal to or greater than the height of #footer.
  */
+
+/*keeps the footer at the bottom*/
 html,
 body {
   margin: 0;
@@ -591,7 +593,7 @@ body {
 #content {
   padding-bottom: 130px; /* Height of the footer element */
 }
-
+/*bb footers*/
 #bluebottom {
      padding-top: 7px;
     background: #1e5aab;
@@ -630,8 +632,18 @@ body {
     padding-left: 10%;
     padding-right: 10%;
 }
+.doelogo {
+    align-content: center;
+    text-align: left;
+    width: 70%;
+}
+.bottomlinks {
+    align-content: center;
+    text-align: right;
+    width: 30%;
+}
 
-/*Right Nav*/
+/*Right Navigation Settings*/
 .rtnav {
   font-size: 13px;
   color: #0062A0;
