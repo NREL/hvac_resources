@@ -649,30 +649,31 @@ body {
   font-size: 10px;
   letter-spacing: 4px;
   padding-top: 15px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .doelogo {
-    align-content: center;
-    text-align: left;
-    width: 70%;
+    float: left;
+    width: 95%;
+        
 }
 .bottomlinks {
-    align-content: center;
-    text-align: right;
-    width: 30%;
+    float:right;
+    color: #1d449c;
+    padding-right: 30px;
+    text-decoration:none!important;
 }
 
 /*Right Navigation Settings*/
 .rtnav {
-  font-size: 13px;
+  font-size: 12px;
   color: #0062A0;
   background-color: #ffffff;
   font-weight: 100;
   list-style-type: none;
   margin: 0;
   border-left: 1px solid #dddddd;
-  padding: 10px;
+  padding: 4px;
   text-align: left;
   border-bottom: 1px solid #dddddd;
 
