@@ -1,17 +1,11 @@
 @font-face {
     font-family: 'Avenir';
-    src: url('fonts/AvenirNextLTPro-Regular.woff')
-    format('Web Open Font Format');
-    src: url('fonts/AvenirNextLTPro-Bold.woff')
-        format('We b Open Font Format');
-    src: url('fonts/AvenirNextLTPro-lt.woff')
-        format('Web Open Font Format');
-    src: url('fonts/AvenirNextLTPro-UltLtCn.woff')
-        format('Web Open Font Format');
+    src: url('fonts/Avenir.woff2')format('woff2')
+    url('fonts/Avenir.woff')format('woff');
 }
 
 body {
-  font-family: 'avenir';
+  font-family: 'Avenir';
   overflow-y: scroll;
 }
 
@@ -43,7 +37,6 @@ a:not([href]) {
 
 a:link {
   color: #0062A0;
-    text-decoration: underline;
     
 }
 
@@ -159,7 +152,7 @@ hr {
 .myh1 {
   font-weight: lighter; 
   text-align: left;
-  font-size: 20px;
+  font-size: 22px;
   color: #1e428a;
   padding-top: 15px;
   padding-bottom: 10px;
@@ -169,7 +162,7 @@ hr {
 .myh2 {
   font-weight: bold;
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
   color: #1e428a;
   padding-top: 15px;
   padding-bottom: 10px;
@@ -177,23 +170,12 @@ hr {
 }
 
 .myh3 {
-  font-weight: 300;
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
   color: #1e428a;
   line-height: 120%;
   padding-top: 10px;
   padding-bottom: 8px;
-  margin-top: 14px;
-}
-.myh3 {
-  font-weight: 300;
-  text-align: left;
-  font-size: 16px;
-  color: #444444;
-  line-height: 130%;
-  padding-top: 10px;
-  padding-bottom: 10px;
   margin-top: 14px;
 }
 
@@ -201,8 +183,10 @@ hr {
     font-family: 'Avenir';
   font-style: italic;
   font-size: 12pt;
-    font-weight: bolder;
+    text-decoration: underline;
+    
 }
+
 
 .myh3bold {
   font-weight: bold;
@@ -241,14 +225,15 @@ hr {
 /* quote box and text style */
 .pquote {
   float: left;
+    font-size: 11pt;
   color: #444444;
   width: 100%;
   background: #eeeeee;
-  font-weight: 400;
+  font-weight: lighter;
   font-style: italic;
   padding: 13px;
   margin: 0 13px 13px 0;
-  line-height: 180% !important;
+  line-height: 170% !important;
 }
 
 blockquote {
@@ -257,7 +242,13 @@ blockquote {
 
 /* custom indent for lists */
 .mylist{
-    margin-left: 7%;
+    margin-left: 7px;
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1em;
+    padding-left: 1em;
+     line-height: 160% !important;
+    
 }
 
 /* image style */
@@ -661,12 +652,12 @@ body {
     float:right;
     color: #1d449c;
     padding-right: 30px;
-    text-decoration:none!important;
+    text-decoration: none;
 }
 
 /*Right Navigation Settings*/
 .rtnav {
-  font-size: 12px;
+  font-size: 13px;
   color: #0062A0;
   background-color: #ffffff;
   font-weight: 100;
