@@ -185,12 +185,13 @@ hr {
   padding-bottom: 8px;
   margin-top: 14px;
     text-decoration: none;
+    font-weight: bolder;
 }
 
 .doctitle {
     font-family: 'Avenir';
   font-style: italic;
-  font-size: 12pt;
+  font-size: 12pt!important;
     text-decoration: underline;
     
 }
@@ -228,6 +229,7 @@ hr {
 
 /* image title style */
 .imgtitle {
+    font-family: 'Avenir';
   font-weight: 300;
   font-size: 12pt;
   color: #444444;
@@ -240,7 +242,7 @@ hr {
 .pquote {
     font-family: 'Avenir';
   float: left;
-    font-size: 11pt;
+    font-size: 12pt!important;
   color: #444444;
   width: 100%;
   background: #eeeeee;
