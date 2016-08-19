@@ -1,33 +1,27 @@
 @font-face {
     font-family: 'Avenir';
     src: url('fonts/Avenir.woff2')format('woff2')
-    url('fonts/Avenir.woff')format('woff');
+    url('fonts/Avenir.woff')format('woff');   
 }
 
 body {
-  font-family: 'Avenir';
   overflow-y: scroll;
 }
 
-p, h1, h2, h3, h4, h5, h6, li, div, th, tr {
-  font-family:  'Avenir';
+myh1, myh2, myh3, myh4, h1, h2, h3, h4, h5, h6 {
+    color: #0062A0;
+    font-family: 'Avenir';
+}
+p .tooltip, .popover { 
     color: black;
+    font-family: 'Avenir';
+    font-size: 12pt;
 }
-
-li, ul, ol {
-    padding-left: 10px;
-    position: relative; 
-}
-
 
 html, body {
   height: 100%;
   background: #ffffff !important;
-}
-
-li, ul, .tooltip, .popover {
-  font-family:'Avenir';
-
+font-family: 'Avenir';
 }
 
 /* placeholder hyperlinks */
@@ -117,6 +111,7 @@ a:hover {
 }
 .topbartitle {
      position: relative;
+    font-family:  'Avenir';
   top: 0;
   left: 0;
   float: left;
@@ -150,7 +145,7 @@ hr {
 }
 /*headers*/
 .myh1 {
-  font-weight: lighter; 
+  font-family: 'Avenir';
   text-align: left;
   font-size: 22px;
   color: #1e428a;
@@ -160,7 +155,8 @@ hr {
 }
 
 .myh2 {
-  font-weight: bold;
+  font-family: 'Avenir';
+    font-weight: bold;
   text-align: left;
   font-size: 20px;
   color: #1e428a;
@@ -170,6 +166,7 @@ hr {
 }
 
 .myh3 {
+    font-family: 'Avenir';
   text-align: left;
   font-size: 18px;
   color: #1e428a;
@@ -177,6 +174,17 @@ hr {
   padding-top: 10px;
   padding-bottom: 8px;
   margin-top: 14px;
+}
+.myh4 {
+    font-family: 'Avenir';
+  text-align: left;
+  font-size: 16px;
+  color: #1e428a;
+  line-height: 120%;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  margin-top: 14px;
+    text-decoration: none;
 }
 
 .doctitle {
@@ -189,6 +197,7 @@ hr {
 
 
 .myh3bold {
+    font-family: 'Avenir';
   font-weight: bold;
   text-align: left;
   font-size: 14px;
@@ -204,11 +213,16 @@ hr {
 /* source of information style */
 .source {
   font-style: italic;
-  font-weight: 300;
   font-size: 10pt;
   color: #444444;
   padding-top: 5px;
   padding-bottom: 5px;
+    font-family: 'Avenir';
+}
+.caption {
+    font-family: 'Avenir';
+    color: #444444;
+    font-size: 12px;   
 }
 
 
@@ -224,6 +238,7 @@ hr {
 
 /* quote box and text style */
 .pquote {
+    font-family: 'Avenir';
   float: left;
     font-size: 11pt;
   color: #444444;
@@ -232,7 +247,7 @@ hr {
   font-weight: lighter;
   font-style: italic;
   padding: 13px;
-  margin: 0 13px 13px 0;
+  margin: 0 23px 23px 0;
   line-height: 170% !important;
 }
 
@@ -291,22 +306,28 @@ blockquote {
 table, td {
     border: 1px solid white;
     border-collapse: collapse;
+    font-family: 'PT Sans Narrow', sans-serif;
+     font-weight: normal;
 }
 th {
     background-color: #e2e2e2;
     text-align: center;
-    padding: 15px;
+    padding: 3px;
     border: 1px solid white;
     color: black;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bolder!important;
 }
 
 th, td {
-    padding: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 3px;
+    font-family: 'PT Sans Narrow', sans-serif;
 }
 tr:nth-child(even) {
     background-color: #eeeeee;
+}
+td li {
+    margin-left: 0px!important;
 }
 
 
@@ -391,7 +412,7 @@ tr:nth-child(even) {
 /*containter for the sub-page text and fade in*/
 
 .infocontainer {
-  padding: 15px;
+  padding-left: 10px;
   order: 3;
   flex: 2 3 0;
   -webkit-flex: 2 3 0;
@@ -657,10 +678,8 @@ body {
 
 /*Right Navigation Settings*/
 .rtnav {
-  font-size: 13px;
   color: #0062A0;
   background-color: #ffffff;
-  font-weight: 100;
   list-style-type: none;
   margin: 0;
   border-left: 1px solid #dddddd;
@@ -675,7 +694,10 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-
+.rtnav li {
+  font-size: 12px;
+    font-family: 'Avenir';
+}
 .rtnav a {
   display: block;
   color: #0062A0;

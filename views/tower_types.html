@@ -1,9 +1,5 @@
 <p class="myh2">Types</p>
-<br>
-
-<hr>
-
-<table class="mytable" style="width:100%">
+<table class="mytable" style="width=100%">
 
   <tr>
     <th>Cooling tower type</th>
@@ -14,54 +10,64 @@
   </tr>
     <tr>
     <th>Induced draft <br>(Crossflow)<sup>1</sup>,<sup>2</sup>,<sup>3</sup> </th>
-    <td>&middot; Air enters in the horizontal direction while the water falls vertically through the fill media</td>
-    <td>&middot; Hot water basin can be gravity flow
-      <br> &middot; Hot water line need not be pressurized thus low pumping head and operational cost
-      <br> &middot; Lower noise and easy maintenance compared to counter flow
+    <td><ul><li>Air enters in the horizontal direction while the water falls vertically through the fill media</li></ul></td>
+    <td><ul>
+        <li>Hot water basin can be gravity flow</li>
+      <li>Hot water line need not be pressurized thus low pumping head and operational cost</li>
+      <li>Lower noise and easy maintenance compared to counter flow</li>
+        </ul>
 </td>
-    <td>&middot; Larger tower foot print
-           <br>&middot; Large inlet surface makes icing control difficult and sometimes leads to uneven air distribution through the infill</td>
-    <td>  <a href="javascript:window.open('img/tower_induced_counter.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')">
-        <img class="transimage" ng-src="img/tower_induced_counter.png" alt="diagram of a tower" width="150px" height="100px"></img></a> </td>
-
+    <td><ul><li>
+        Larger tower foot print</li>
+           <li>Large inlet surface makes icing control difficult and sometimes leads to uneven air distribution through the infill</li></ul></td>
+    <td> 
+        <a href="javascript:window.open('img/tower_induced_counter.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')">
+        <img class="transimage" ng-src="img/tower_induced_counter.png" alt="diagram of a tower" width="100%"></img></a></td>
   </tr>
 
   <tr>
     <th>Induced draft <br> (Counterflow)<sup>1</sup>,<sup>2</sup>,<sup>3</sup></th>
-    <td>&middot;Air flows vertically upwards, opposite to the direction of the water which falls downwards</td>
-    <td>&middot; Smaller tower foot print
-      <br>&middot; Efficient air/water contact through droplets formed by spraying</td>
-    <td>&middot; Cannot use gravity flow for hot water distribution basin
-      <br>&middot; Hot water line needs to be pressurized thus increasing operational cost and noise compared to crossflow </td>
+    <td><ul>
+        <li>Air flows vertically upwards, opposite to the direction of the water which falls downwards</li></ul></td>
+        
+    <td><ul>    
+        <li>Smaller tower foot print</li>
+        <li>Efficient air/water contact through droplets formed by spraying</li></ul></td>
+    </li></td>
+
+    <td><ul>
+    <li>Cannot use gravity flow for hot water distribution basin</li>
+      <li>Hot water line needs to be pressurized thus increasing operational cost and noise compared to crossflow </li></ul>
+    </td>
       <td>  <a href="javascript:window.open('img/tower_induced_double.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')">
-          <img class="transimage" ng-src="img/tower_induced_double.png" alt="diagram of a tower" width="150px" height="100px"></img></a> </td>
+          <img class="transimage" ng-src="img/tower_induced_double.png" alt="diagram of a tower" width="100%"></img></a> </td>
 
   </tr>
 
   <tr>
     <th>Forced draft<sup>2</sup>,<sup>4</sup></th>
-    <td>&middot; Air is pushed into the cooling tower by a fan which is located at the base</td>
-    <td>&middot; Efficient operation</td>
-    <td>&middot; Water distribution and recirculation challenges</td>
+    <td><ul><li>Air is pushed into the cooling tower by a fan which is located at the base</li></ul></td>
+    <td><ul><li>Efficient operation</li></ul></td>
+    <td><ul><li>Water distribution and recirculation challenges</li></ul></td>
       <td> <a href="javascript:window.open('img/tower_forced.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')">
-          <img class="transimage" ng-src="img/tower_forced.png" alt="diagram of a tower" width="150px" height="100px"></img></a> </td>
+          <img class="transimage" ng-src="img/tower_forced.png" alt="diagram of a tower" width="100%"></img></a> </td>
   </tr>
 
   <tr>
     <th>Natural convection<sup>2</sup></th>
-    <td> &middot; Air is heated by the warm water flowing over the fill. The warm air rises up through convection pulling in colder air from outside </td>
-    <td>&middot;Low energy consumption as there is no fan
-        <br>&middot;Low noise </td>
-      <td>&middot; Significantly larger in size compared to induced or forced draft cooling towers</td>
-      <td> <a href="javascript:window.open('img/towers_industrial.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')"> <img class="transimage" ng-src="img/towers_industrial.png" alt="diagram of a tower" width="150px" height="100px"></img></a> </td>
+    <td><ul><li>Air is heated by the warm water flowing over the fill. The warm air rises up through convection pulling in colder air from outside</li> </td>
+    <td><ul><li>Low energy consumption as there is no fan</li>
+        <li>Low noise</li></ul></td>
+      <td><ul><li>Significantly larger in size compared to induced or forced draft cooling towers</li></ul></td>
+      <td> <a href="javascript:window.open('img/towers_industrial.png','_blank','toolbar=no,menubar=no,resizable=yes,scrollbars=yes')"> <img class="transimage" ng-src="img/towers_industrial.png" alt="diagram of a tower" width="100%"></img></a> </td>
   </tr>
 
 </table>
-<p><sup>5</sup> Source: NREL</p>
+<span class="source"><sup>5</sup> Source: NREL</span>
 
-<myh3>Sources</myh3>
-<div class="Source">
-<p>1. <a href="http://www.wacon.co/files/Counterflow%20vs%20crossflow%20cooling%20towers.pdf " target="_blank">Cross flow and counter flow cooling tower </a>by Wacon international </p>
-<p>2. <a href="http://marleyct.com/cooling-tower-knowledge/" target="_blank">Cooling tower knowledge </a>by SPX cooling</p>
-<p>3.	<a href="http://spxcooling.com/products/marley-nc" target="_blank">Marley induced draft crossflow cooling tower </a>by SPX cooling</p>
-<p>4.	<a href="http://www.mesubjects.net/difference-between-natural-draft-and-forced-draft-cooling-towers/ " target="_blank">Function, Types, Advantages of a Cooling Tower and Difference between Natural Draft and Forced Draft Cooling Towers  </a> </p>
+<myh3>Sources:</myh3>
+    <ol class="source">
+<li><a href="http://www.wacon.co/files/Counterflow%20vs%20crossflow%20cooling%20towers.pdf " target="_blank">Cross flow and counter flow cooling tower </a>by Wacon international </li>
+<li><a href="http://marleyct.com/cooling-tower-knowledge/" target="_blank">Cooling tower knowledge </a>by SPX cooling</li>
+<li><a href="http://spxcooling.com/products/marley-nc" target="_blank">Marley induced draft crossflow cooling tower </a>by SPX cooling</li>
+<li><a href="http://www.mesubjects.net/difference-between-natural-draft-and-forced-draft-cooling-towers/ " target="_blank">Function, Types, Advantages of a Cooling Tower and Difference between Natural Draft and Forced Draft Cooling Towers  </a></li> </ol>
