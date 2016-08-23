@@ -674,9 +674,36 @@ body {
 .bottomlinks {
     float:right;
     color: #1d449c;
-    padding-right: 30px;
     text-decoration: none;
+    font-size: 10pt;
+     font-weight: normal;
+    text-decoration: none!important; 
+     margin-right: 30%;
+     align-content: center;
+     text-align: right;
 }
+.bottomlinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none!important;
+}
+.bottomlinks li {
+    float: right;
+}
+.bottomlinks li a {
+    display: block;
+    color: #1d449c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none!important;
+}
+/* Change the link color to white with blue top on hover */
+.bottomlinks li a:hover  {
+    color: #1d449c!important;
+}
+
 
 /*Right Navigation Settings*/
 .rtnav {
@@ -728,12 +755,12 @@ body {
 
 /* Rollovers on the Central PlantDiagram*/
 
-#chiller:hover, #boiler:hover, #cp-pump:hover, #d-pump1:hover, #d-pump2:hover, #fan1:hover, #fan2:hover, #cp-valve:hover, #cp-valve-control:hover, #d-valve:hover, #duct1-outline:hover, #duct2-outline:hover, #diffuser1:hover, #diffuser2:hover, #terminal1:hover, #terminal2:hover, #vav:hover, #t-outline:hover, #ahu-back:hover, #cp-valve:hover, #cp-valve2:hover       {
+#chiller:hover, #boiler:hover, #cp-pump:hover, #d-pump1:hover, #d-pump2:hover, #fan1:hover, #fan2:hover, #cp-valve:hover, #cp-valve-control:hover, #d-valve:hover, #duct1-outline:hover, #duct2-outline:hover, #diffuser1:hover, #diffuser2:hover, #terminal1:hover, #terminal2:hover, #vav:hover, #t-outline:hover, #ahu-back:hover, #cp-valve:hover, #cp-valve2:hover, #hottherm:hover, #hottherm:hover      {
   fill: #00A3E0!important;
     stroke: #444444 !important;
 }
 
-#chiller:active, #boiler:active, #cp-pump:active, #d-pump1:active, #d-pump2:active, #fan1:active, #fan2:active, #cp-valve:active, #cp-valve-control:active, #d-valve:active, #duct1-outline:active, #duct2-outline:active, #diffuser1:active, #diffuser2:active, #terminal1:active, #terminal2:active, #vav:active, #t-outline:active, #ahu-back:active, #cp-valve1:active, #cp-valve2:active {
+#chiller:active, #boiler:active, #cp-pump:active, #d-pump1:active, #d-pump2:active, #fan1:active, #fan2:active, #cp-valve:active, #cp-valve-control:active, #d-valve:active, #duct1-outline:active, #duct2-outline:active, #diffuser1:active, #diffuser2:active, #terminal1:active, #terminal2:active, #vav:active, #t-outline:active, #ahu-back:active, #cp-valve1:active, #cp-valve2:active, #hottherm:active, #cooltherm:hover {
   fill: #71C5E8 !important;
   stroke: #444444 !important;
 }
