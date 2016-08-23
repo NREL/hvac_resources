@@ -482,6 +482,16 @@ td li {
   font-weight: 500;
 }
 
+/*style for the right links on homepage*/
+.homeright {
+    background-color: #eeeeee;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.homeright img {
+ float: left;
+    margin: 0px 10px 0px 0px;   
+}
 
 
 
