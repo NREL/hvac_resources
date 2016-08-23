@@ -43,8 +43,8 @@ a:hover {
 }
 
 .bbtop {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /*top bar and horizontal navigation*/
@@ -76,7 +76,7 @@ a:hover {
     font-size: 12pt;
      font-weight: bolder;
     text-decoration: none!important; 
-     width: 70%;
+     width: 90%;
      position:relative;
      text-align: center;
      
@@ -143,8 +143,8 @@ a:hover {
   font-size: 26px;
   color: black;
   line-height: 120%;
-margin-left: 10%;
-    margin-right: 10%;
+margin-left: 5%;
+    margin-right: 5%;
 }
 @media (max-width: 430px) {
   .topbartitle {
@@ -331,11 +331,13 @@ table, td {
     border-collapse: collapse;
     font-family: 'PT Sans Narrow', sans-serif;
      font-weight: normal;
+    line-height: 110%!important;
+    font-size: 11pt;
 }
 th {
     background-color: #e2e2e2;
     text-align: center;
-    padding: 3px;
+    padding: 2px;
     border: 1px solid white;
     color: black;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -343,7 +345,7 @@ th {
 }
 
 th, td {
-    padding: 3px;
+    padding: 1px;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 tr:nth-child(even) {
@@ -387,10 +389,10 @@ td li {
   -ms-flex-flow: wrap;
   flex-flow: wrap;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   line-height: 140%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 @media (max-width: 430px) {
   .flexcontainer {
@@ -439,7 +441,7 @@ td li {
   flex: 2 3 0;
   -webkit-flex: 2 3 0;
   -ms-flex: 2 3 0;
-  height: 100%;
+  height: 74%;
 }
 
 .fadein {
@@ -470,7 +472,7 @@ td li {
 /*containter for hvac diagram*/
 #diagram {
   order: 2;
-  width: 30%;
+  width: 26%;
   border: 1px solid #dddddd!important;
   overflow: hidden;
   /*flex: 1 0 350px;
