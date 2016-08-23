@@ -43,8 +43,8 @@ a:hover {
 }
 
 .bbtop {
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 /*top bar and horizontal navigation*/
@@ -61,16 +61,19 @@ a:hover {
     background: linear-gradient(to bottom,#1e5aab 0%,#2888c6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5aab',endColorstr='#2888c6',GradientType=0);
     width: 100%; 
-    height: 46px;
+    min-height: 46px;  
+}
+@media (max-width: 430px) {
+  .topbar {
+    min-height: 100%;
+  }
 }
  .topmenu {
     font-size: 12pt;
      font-weight: normal;
     text-decoration: none!important; 
      width: 70%;
-     margin-left: 30%;
-     margin-right: 30%;
-     align-content: center;
+     position:relative;
      text-align: center;
  }
 
@@ -78,10 +81,13 @@ a:hover {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     text-decoration: none!important;
     color: #92d1fa!important;
     font-size: 12pt;
+    clear:left;
+   float:left;
+    position:relative;
+    left:50%;
 }
 .topmenu li {
     float: left;
@@ -93,6 +99,8 @@ a:hover {
     padding: 14px 16px;
     font-size: 12pt;
     text-decoration: none!important;
+    position:relative;
+   right:50%;
 }
 /* Change the link color to white with blue top on hover */
 .topmenu li a:hover  {
@@ -109,6 +117,8 @@ a:hover {
     font-size: 12pt;
     border-top: 4px solid #1d449c!important;
 }
+
+
 .topbartitle {
      position: relative;
     font-family:  'Avenir';
@@ -119,7 +129,7 @@ a:hover {
     padding-bottom: 7px;
   font-weight: lighter; 
   text-align: left;
-  font-size: 24px;
+  font-size: 26px;
   color: black;
   line-height: 120%;
 margin-left: 15%;
@@ -367,7 +377,6 @@ td li {
   flex-flow: wrap;
   justify-content: space-between;
   width: 70%;
-  height: 70%;
   line-height: 140%;
     margin-left: 15%;
     margin-right: 15%;
@@ -450,7 +459,7 @@ td li {
 /*containter for hvac diagram*/
 #diagram {
   order: 2;
-  width: 25%;
+  width: 27%;
   border: 1px solid #dddddd!important;
   overflow: hidden;
   /*flex: 1 0 350px;
