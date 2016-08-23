@@ -60,12 +60,16 @@ a:hover {
     background: -webkit-linear-gradient(top,#1e5aab 0%,#2888c6 100%);
     background: linear-gradient(to bottom,#1e5aab 0%,#2888c6 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5aab',endColorstr='#2888c6',GradientType=0);
-    width: 100%; 
-    min-height: 46px;  
+    width: 100%;  
 }
-@media (max-width: 430px) {
+@media (max-width: 700px) {
   .topbar {
     min-height: 100%;
+  }
+}
+@media (min-width: 701px) {
+  .topbar {
+    height: 46px;
   }
 }
  .topmenu {
@@ -132,8 +136,8 @@ a:hover {
   font-size: 26px;
   color: black;
   line-height: 120%;
-margin-left: 15%;
-    margin-right: 15%;
+margin-left: 10%;
+    margin-right: 10%;
 }
 @media (max-width: 430px) {
   .topbartitle {
