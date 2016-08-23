@@ -376,10 +376,10 @@ td li {
   -ms-flex-flow: wrap;
   flex-flow: wrap;
   justify-content: space-between;
-  width: 70%;
+  width: 80%;
   line-height: 140%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 @media (max-width: 430px) {
   .flexcontainer {
@@ -459,7 +459,7 @@ td li {
 /*containter for hvac diagram*/
 #diagram {
   order: 2;
-  width: 27%;
+  width: 30%;
   border: 1px solid #dddddd!important;
   overflow: hidden;
   /*flex: 1 0 350px;
