@@ -78,7 +78,9 @@ a:hover {
     text-decoration: none!important; 
      width: 90%;
      position:relative;
-     text-align: center;
+     float: left;
+    text-align: center;
+     margin-left: 10px;
      
        -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -96,9 +98,9 @@ a:hover {
     color: #92d1fa!important;
     font-size: 12pt;
     clear:left;
-   float:left;
     position:relative;
-    left:50%;
+    display: inline-block;
+
 }
 .topmenu li {
     float: left;
@@ -111,7 +113,6 @@ a:hover {
     font-size: 12pt;
     text-decoration: none!important;
     position:relative;
-   right:50%;
 }
 /* Change the link color to white with blue top on hover */
 .topmenu li a:hover  {
@@ -361,7 +362,20 @@ td li {
 .content-main {
   width: 100%;
 }
-
+.sidebar {
+  padding-left: 10px;
+  align-self: flex-start;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+@media (max-width: 430px) {
+  .sidebar{
+       display: none;
+  }
+}
 .content-secondary {
   padding-left: 10px;
   align-self: flex-start;
@@ -394,10 +408,11 @@ td li {
     margin-left: 5%;
     margin-right: 5%;
 }
-@media (max-width: 430px) {
-  .flexcontainer {
+@media (max-width: 500px) {
+  .flexcontainer, .subflex {
       margin-left: 2%;
     margin-right: 2%;
+      flex-flow: wrap-reverse;
   }
 }
 
@@ -791,6 +806,7 @@ body {
 .rtnav:last-child {
   border-bottom: none;
 }
+
 
 /* Rollovers on the Central PlantDiagram*/
 
