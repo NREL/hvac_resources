@@ -707,4 +707,3 @@ routerApp.run(['$rootScope', '$log', '$state', function ($rootScope, $log, $stat
     $log.error('State not found:', unfoundState.to);
   });
 }]);
-
