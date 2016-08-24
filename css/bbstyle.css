@@ -412,7 +412,7 @@ td li {
   .flexcontainer, .subflex {
       margin-left: 2%;
     margin-right: 2%;
-      flex-flow: wrap-reverse;
+      flex-flow: wrap;
       width: 100%!important;
   }
 }
@@ -803,8 +803,11 @@ body {
   color: white !important;
   font-weight: 100;
 }
+
+/*alternative right navigation for mobile*/
+/*
 #demo {
-        margin: 30px 0 50px 0;
+        margin: 10px 0 10px 0;
         display: none;
 
     }
@@ -812,25 +815,25 @@ body {
     #demo .wrap {
         display: inline-block;
         width: 180px;
-        margin: 0 10px 0 0;
+        margin: 0 5px 0 0;
         height: 20px;
         position: relative;
     }
     
     #demo .parent {
+        font-family: 'Avenir';
+        text-align: left;
+        font-size: 16px;
+        color: #1e428a;
+        text-decoration: none;
         height: 100%;
         width: 100%;
         display: block;
         cursor: pointer;
         line-height: 30px;
         height: 30px;
-        border-radius: 5px;
-        background: #F9F9F9;
+        background: #ffffff;
         border: 1px solid #AAA;
-        border-bottom: 1px solid #777;
-        color: #282D31;
-        font-weight: bold;
-        z-index: 2;
         position: relative;
         -webkit-transition: border-radius .1s linear, background .1s linear, z-index 0s linear;
         -webkit-transition-delay: .8s;
@@ -850,6 +853,8 @@ body {
     }
     
     #demo .cont {
+        font-size: 12px;
+        font-family: 'Avenir';
         position: absolute;
         top: 0;
         display: block;
@@ -865,13 +870,13 @@ body {
     }
     
     #demo .wrap:active .cont {
-        height: 123px;
+        height: 300px;
         z-index: 3;
         -webkit-transition-delay: 0s;
     }
     
     #demo .cont:hover {
-        height: 123px;
+        height: 300px;
         z-index: 3;
         -webkit-transition-delay: 0s;
     }
@@ -915,6 +920,7 @@ body {
   #regular { display: none; }
   #demo { display: block; }
 }
+*/
 
 
 /* Rollovers on the Central PlantDiagram*/
