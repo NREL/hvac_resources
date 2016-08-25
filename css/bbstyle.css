@@ -62,11 +62,7 @@ a:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5aab',endColorstr='#2888c6',GradientType=0);
     width: 100%;  
 }
-@media (max-width: 700px) {
-  .topbar {
-    min-height: 100%;
-  }
-}
+
 @media (min-width: 701px) {
   .topbar {
     height: 46px;
@@ -76,18 +72,17 @@ a:hover {
     font-size: 12pt;
      font-weight: bolder;
     text-decoration: none!important; 
-     width: 90%;
+     width: 100%;
      position:relative;
      float: left;
     text-align: center;
-     margin-left: 10px;
      
-       -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
  }
 
 .topmenu ul {
@@ -334,11 +329,15 @@ table, td {
      font-weight: normal;
     line-height: 110%!important;
     font-size: 11pt;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 th {
     background-color: #e2e2e2;
     text-align: center;
     padding: 2px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     border: 1px solid white;
     color: black;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -346,7 +345,6 @@ th {
 }
 
 th, td {
-    padding: 1px;
     font-family: 'PT Sans Narrow', sans-serif;
 }
 tr:nth-child(even) {
