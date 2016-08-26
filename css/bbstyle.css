@@ -128,7 +128,7 @@ a:hover {
 
 .topbartitle {
      position: relative;
-    font-family:  'Avenir';
+   font-family: 'Avenir', 'Arial', sans-serif;
   top: 0;
   left: 0;
   float: left;
