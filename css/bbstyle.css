@@ -10,10 +10,10 @@ myh1, myh2, myh3, myh4{
     font-family: 'Avenir', arial, sans-serif;
 }
 
-p { 
+p, li, span { 
     color: black;
     font-family: 'Avenir';
-    font-size: 12pt;
+    font-size: 11pt;
 }
 
 html, body {
@@ -208,7 +208,7 @@ hr {
 .doctitle {
   font-family: 'Avenir', arial, sans-serif;
   font-style: italic;
-  font-size: 12pt!important;
+  font-size: 11pt!important;
     text-decoration: underline;
     
 }
@@ -240,7 +240,7 @@ hr {
 .caption {
     font-family: 'Avenir';
     color: #444444;
-    font-size: 12px;   
+    font-size: 11px;   
 }
 
 
@@ -248,7 +248,7 @@ hr {
 .imgtitle {
   font-family: 'Avenir', arial, sans-serif;
   font-weight: 300;
-  font-size: 12pt;
+  font-size: 11pt;
   color: #444444;
   padding-top: 5px;
   padding-bottom: 5px;
