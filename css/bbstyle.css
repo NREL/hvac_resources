@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Avenir';
-    src: url('fonts/Avenir.woff2')format('woff2'),
-    url('fonts/Avenir.woff')format('woff');   
+    src: url('/fonts/Avenir.woff2')format('woff2'),
+    url('/fonts/Avenir.woff')format('woff');   
 }
 
 
 myh1, myh2, myh3, myh4{
     color: #0062A0;
-    font-family: 'Avenir', 'Arial', sans-serif;
+    font-family: 'Avenir', arial, sans-serif;
 }
 
-p .tooltip, .popover { 
+p { 
     color: black;
     font-family: 'Avenir';
     font-size: 12pt;
@@ -19,7 +19,7 @@ p .tooltip, .popover {
 html, body {
   height: 100%;
   background: #ffffff !important;
-font-family: 'Avenir', 'Arial', sans-serif;
+font-family: 'Avenir', arial, sans-serif;
 }
 
 /* placeholder hyperlinks */
@@ -67,7 +67,7 @@ a:hover {
   }
 }
  .topmenu {
-     font-family: 'Avenir', 'Arial', sans-serif;
+     font-family: 'Avenir', arial, sans-serif;
     font-size: 12pt;
      font-weight: bolder;
     text-decoration: none!important; 
@@ -100,7 +100,7 @@ a:hover {
     float: left;
 }
 .topmenu li a {
-    font-family: 'Avenir', 'Arial', sans-serif;
+    font-family: 'Avenir', arial, sans-serif;
     display: block;
     color: #92d1fa;
     text-align: center;
@@ -128,7 +128,7 @@ a:hover {
 
 .topbartitle {
      position: relative;
-   font-family: 'Avenir', 'Arial', sans-serif;
+   font-family: 'Avenir', arial, sans-serif;
   top: 0;
   left: 0;
   float: left;
@@ -162,7 +162,7 @@ hr {
 }
 /*headers*/
 .myh1 {
-  font-family: 'Avenir', 'Arial', sans-serif;
+  font-family: 'Avenir', arial, sans-serif;
   text-align: left;
   font-size: 22px;
   color: #1e428a;
@@ -172,7 +172,7 @@ hr {
 }
 
 .myh2 {
-  font-family: 'Avenir', 'Arial', sans-serif;
+  font-family: 'Avenir', arial, sans-serif;
     font-weight: bold;
   text-align: left;
   font-size: 20px;
@@ -183,7 +183,7 @@ hr {
 }
 
 .myh3 {
-   font-family: 'Avenir', 'Arial', sans-serif;
+   font-family: 'Avenir', arial, sans-serif;
   text-align: left;
   font-size: 18px;
   color: #1e428a;
@@ -193,7 +193,7 @@ hr {
   margin-top: 14px;
 }
 .myh4 {
-  font-family: 'Avenir', 'Arial', sans-serif;
+  font-family: 'Avenir', arial, sans-serif;
   text-align: left;
   font-size: 16px;
   color: #1e428a;
@@ -206,7 +206,7 @@ hr {
 }
 
 .doctitle {
-  font-family: 'Avenir', 'Arial', sans-serif;
+  font-family: 'Avenir', arial, sans-serif;
   font-style: italic;
   font-size: 12pt!important;
     text-decoration: underline;
@@ -215,7 +215,7 @@ hr {
 
 
 .myh3bold {
-  font-family: 'Avenir', 'Arial', sans-serif;
+  font-family: 'Avenir', arial, sans-serif;
   font-weight: bold;
   text-align: left;
   font-size: 14px;
@@ -246,7 +246,7 @@ hr {
 
 /* image title style */
 .imgtitle {
-  font-family: 'Avenir', 'Arial', sans-serif;
+  font-family: 'Avenir', arial, sans-serif;
   font-weight: 300;
   font-size: 12pt;
   color: #444444;
@@ -257,7 +257,7 @@ hr {
 
 /* quote box and text style */
 .pquote {
-  font-family: 'Avenir', 'Arial', sans-serif;
+  font-family: 'Avenir', arial, sans-serif;
   float: left;
     font-size: 12pt!important;
   color: #444444;
@@ -783,7 +783,7 @@ body {
 }
 .rtnav li {
   font-size: 12px;
-    font-family: 'Avenir', 'Arial', sans-serif;
+    font-family: 'Avenir', arial, sans-serif;
 }
 .rtnav a {
   display: block;
