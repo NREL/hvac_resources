@@ -4,9 +4,6 @@
     url('fonts/Avenir.woff')format('woff');   
 }
 
-body {
-  overflow-y: scroll;
-}
 
 myh1, myh2, myh3, myh4, h1, h2, h3, h4, h5, h6 {
     color: #0062A0;
@@ -69,6 +66,7 @@ a:hover {
   }
 }
  .topmenu {
+     font-family: 'Avenir';
     font-size: 12pt;
      font-weight: bolder;
     text-decoration: none!important; 
@@ -101,6 +99,7 @@ a:hover {
     float: left;
 }
 .topmenu li a {
+    font-family: 'Avenir';
     display: block;
     color: #92d1fa;
     text-align: center;
