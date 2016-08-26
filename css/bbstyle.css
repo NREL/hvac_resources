@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Avenir';
-    src: url('fonts/Avenir.woff2')format('woff2')
+    src: url('fonts/Avenir.woff2')format('woff2'),
     url('fonts/Avenir.woff')format('woff');   
 }
 
