@@ -7,7 +7,7 @@
 
 myh1, myh2, myh3, myh4, h1, h2, h3, h4, h5, h6 {
     color: #0062A0;
-    font-family: 'Avenir', Arial, sans-serif;
+    font-family: 'Avenir', 'Arial', sans-serif;
 }
 p .tooltip, .popover { 
     color: black;
@@ -18,7 +18,7 @@ p .tooltip, .popover {
 html, body {
   height: 100%;
   background: #ffffff !important;
-font-family: 'Avenir', Arial, sans-serif;
+font-family: 'Avenir', 'Arial', sans-serif;
 }
 
 /* placeholder hyperlinks */
@@ -99,7 +99,7 @@ a:hover {
     float: left;
 }
 .topmenu li a {
-    font-family: 'Avenir';
+    font-family: 'Avenir', 'Arial', sans-serif;
     display: block;
     color: #92d1fa;
     text-align: center;
@@ -458,7 +458,12 @@ td li {
 }
 
 .fadein {
-  transition: opacity .5s linear,
+    -webkit-transition: opacity .5s linear
+    -moz-transition: opacity .5s linear
+    -ms-transition: opacity .5s linear;
+    -o-transition: opacity .5s linear
+    transition: opacity .5s linear 
+  transition: opacity .5s linear;      
   visibility .5s linear;
 }
 
