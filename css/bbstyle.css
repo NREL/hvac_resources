@@ -10,10 +10,13 @@ myh1, myh2, myh3, myh4{
     font-family: 'Avenir', arial, sans-serif;
 }
 
-p, li, span { 
+p, span { 
     color: black;
-    font-family: 'Avenir';
+    font-family: 'Avenir', arial, sans-serif;
     font-size: 11pt;
+}
+li{
+  font-size: 11pt;  
 }
 
 html, body {
