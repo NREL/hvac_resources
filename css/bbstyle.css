@@ -287,6 +287,13 @@ blockquote {
      line-height: 160% !important;
     
 }
+.mylist2{
+    margin-left: 7px;
+    list-style-position: outside;
+     line-height: 160% !important;
+    font-size: 11pt;
+    
+}
 
 /* image style */
 .whiteimg {
