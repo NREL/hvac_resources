@@ -325,6 +325,24 @@ blockquote {
 }
 
 /*table formating*/
+
+.tuneTable {
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: normal;
+    line-height: 110%!important;
+    font-size: 11pt;
+    padding: 7px;
+    margin-left: 5px;
+}
+
+.tuneTable td{
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 5px;
+    line-height: 140%!important;
+}
 table, td {
     border: 1px solid white;
     border-collapse: collapse;

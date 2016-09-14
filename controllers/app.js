@@ -674,6 +674,10 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         name: 'codes',
         url: '/codes',
         templateUrl: 'views/fan_codes.html'
+        }, {
+        name: 'tune',
+        url: '/tune',
+        templateUrl: 'views/fan_tune.html'
       }]
     });
 
