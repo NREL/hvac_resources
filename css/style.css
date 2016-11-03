@@ -43,7 +43,7 @@ hr {
 }
 
 .myh1 {
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab', serif;
   font-weight: 300;
   text-align: left;
   font-size: 36px;
@@ -67,7 +67,7 @@ hr {
 }
 
 .myh3 {
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab', serif;
   font-weight: 300;
   text-align: left;
   font-size: 22px;
@@ -86,7 +86,7 @@ hr {
 }
 
 .myh3bold {
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab', serif;
   font-weight: bold;
   text-align: left;
   font-size: 22px;
@@ -97,6 +97,7 @@ hr {
   padding-bottom: 8px;
   margin-top: 14px;
 }
+
 .source {
   font-style: italic;
   font-weight: 300;
@@ -130,8 +131,9 @@ hr {
 blockquote {
   margin: 0; /* gets rid of the default blockquote margin */
 }
-.mylist{
-    margin-left: 7%;
+
+.mylist {
+  margin-left: 7%;
 }
 
 .whiteimg {
@@ -168,27 +170,28 @@ blockquote {
   max-width: 350px;
   text-align: center;
 }
+
 table, td {
-    border: 1px solid #444444;
-    border-collapse: collapse;
-    font-family: 'Open Sans Condensed', sans-serif;
+  border: 1px solid #444444;
+  border-collapse: collapse;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
+
 th {
-    background-color: #333333;
-    text-align: center;
-    padding: 15px;
-    border: 1px solid black;
-    font-family: 'Open Sans Condensed', sans-serif;
+  background-color: #333333;
+  text-align: center;
+  padding: 15px;
+  border: 1px solid black;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 th, td {
-    padding: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: 'Open Sans Condensed', sans-serif;
+  padding: 15px 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
+
 tr:nth-child(even) {
-    background-color: #222222;
+  background-color: #222222;
 }
 
 .content-main {
@@ -197,10 +200,15 @@ tr:nth-child(even) {
 
 .content-secondary {
   padding-left: 10px;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
   align-self: flex-start;
   display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
   flex-flow: column;
   position: relative;
 }
@@ -208,13 +216,19 @@ tr:nth-child(even) {
 .flexcontainer {
   display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-direction: row;
   -webkit-flex-flow: wrap;
   -ms-flex-flow: wrap;
   flex-flow: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
   height: 100%;
@@ -224,17 +238,23 @@ tr:nth-child(even) {
 .flexfoot {
   display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   flex-direction: row;
   width: 100%;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
 .subflex {
   display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   display: -webkit-flex;
 }
@@ -242,25 +262,34 @@ tr:nth-child(even) {
 .flexnav {
   display: -webkit-flex;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
   flex-flow: column;
 }
 
 .infocontainer {
   background-color: #282828;
   color: white;
-    margin-top: 20px;
-    margin-right: 5px;
+  margin-top: 20px;
+  margin-right: 5px;
   padding: 10px;
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+  -ms-flex-order: 3;
   order: 3;
+  -webkit-box-flex: 2;
   flex: 2 3 0;
   -webkit-flex: 2 3 0;
   -ms-flex: 2 3 0;
   height: 100%;
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .fadein {
+  -webkit-transition: opacity .5s linear,
+  visibility .5s linear;
   transition: opacity .5s linear,
   visibility .5s linear;
 }
@@ -286,6 +315,9 @@ tr:nth-child(even) {
 }
 
 #diagram {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
   order: 2;
   width: 26%;
   height: 26%;
@@ -293,34 +325,34 @@ tr:nth-child(even) {
   /*flex: 1 0 350px;
   -webkit-flex: 1 0 350px;
   -ms-flex: 1 0 350px;*/
-  -moz-transition: width 1s ease-in-out, left 1.5s ease-in-out;
   -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
-  -o-transition: width 1s ease-in-out, left 1.5s ease-in-out;
   transition: width 1s ease-in-out, left 1.5s ease-in-out;
 }
+
 /* Tooltip container */
 .mytooltip {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 /* Tooltip text */
 .mytooltip .mytooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: gray;
-    color: #000;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
- 
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
+  visibility: hidden;
+  width: 120px;
+  background-color: gray;
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
 }
+
 /* Show the tooltip text when you mouse over the tooltip container */
 .mytooltip:hover .mytooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
 
 .mybtn {
@@ -344,14 +376,18 @@ tr:nth-child(even) {
 }
 
 .navcontainer {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
   order: 1;
+  -webkit-box-flex: 0;
   flex: 0 0 200px;
   -webkit-flex: 0 0 200px;
   -ms-flex: 0 0 200px;
 }
 
 .topbartitle {
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab', serif;
   font-weight: 400;
   text-align: left;
   font-size: 36px;
@@ -707,7 +743,6 @@ body {
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -774,18 +809,20 @@ body {
 }
 
 #d-pump1:hover, #d-pump2:hover {
-fill: #ddcc77 !important;
-  stroke: black !important;  
+  fill: #ddcc77 !important;
+  stroke: black !important;
 }
+
 #d-pump1:active, #d-pump2:active {
-fill: #ddcc77 !important;
-  stroke: yellow !important;  
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
 }
 
 #ahu-back:hover {
   fill: #4a4428 !important;
   stroke: #ddcc77 !important;
 }
+
 #ahu-back:active {
   fill: #ddcc77 !important;
   stroke: yellow !important;
@@ -800,61 +837,71 @@ fill: #ddcc77 !important;
   fill: #ddcc77 !important;
   stroke: yellow !important;
 }
+
 #pipes:hover {
-    stroke: #ddcc77 !important;
-      stroke-width: 3px;    
-  }
-  #pipes:active {
-    stroke: #ddcc77 !important;
-    fill: #ddcc77 !important;
-    stroke-width: 1px;    
-  }
- #cp-valve:hover, #cp-valve-control:hover{
-    fill: #4a9 !important;
-    stroke: #44aa99 !important;
-  }
- #cp-valve:active, #cp-valve-control:active{
-    fill: #4a9 !important;
-    stroke: yellow !important;
- }
-#d-valve:hover{
-     fill: #ddcc77 !important;
-    stroke: #ddcc77 !important;
-  }
-#d-valve:active{
-     fill: #ddcc77 !important;
-    stroke: yellow !important;
-  }
+  stroke: #ddcc77 !important;
+  stroke-width: 3px;
+}
+
+#pipes:active {
+  stroke: #ddcc77 !important;
+  fill: #ddcc77 !important;
+  stroke-width: 1px;
+}
+
+#cp-valve:hover, #cp-valve-control:hover {
+  fill: #4a9 !important;
+  stroke: #44aa99 !important;
+}
+
+#cp-valve:active, #cp-valve-control:active {
+  fill: #4a9 !important;
+  stroke: yellow !important;
+}
+
+#d-valve:hover {
+  fill: #ddcc77 !important;
+  stroke: #ddcc77 !important;
+}
+
+#d-valve:active {
+  fill: #ddcc77 !important;
+  stroke: yellow !important;
+}
+
 #duct1-outline:hover, #duct2-outline:hover {
   fill: #ddcc77 !important;
-    stroke: #ddcc77 !important;
+  stroke: #ddcc77 !important;
 }
 
 #duct1-outline:active, #duct2-outline:active {
   fill: #ddcc77 !important;
   stroke: yellow !important;
 }
+
 #diffuser1:hover, #diffuser2:hover {
   fill: #ddcc77 !important;
-    stroke: #ddcc77 !important;
+  stroke: #ddcc77 !important;
 }
 
 #terminal1:hover, #terminal2:hover {
   fill: #7f723b !important;
-    stroke: #ddcc77 !important;  
+  stroke: #ddcc77 !important;
 }
 
 #diffuser1:active, #diffuser2:active {
   fill: #ddcc77 !important;
   stroke: yellow !important;
 }
+
 #terminal1:active, #terminal2:active {
-        fill: #4a4428 !important;
-    stroke: #ddcc77 !important;
-  }
-#vav:hover{
+  fill: #4a4428 !important;
+  stroke: #ddcc77 !important;
+}
+
+#vav:hover {
   fill: #7f723b !important;
-    stroke: #ddcc77 !important;
+  stroke: #ddcc77 !important;
 }
 
 #vav:active {
@@ -863,11 +910,12 @@ fill: #ddcc77 !important;
 }
 
 #t-outline:hover {
-    fill: #14332e !important;
-    stroke: #4a9 !important;
+  fill: #14332e !important;
+  stroke: #4a9 !important;
 }
+
 #t-outline:active {
-    fill: #4a9 !important;
+  fill: #4a9 !important;
   stroke: yellow !important;
 }
 
@@ -886,11 +934,9 @@ fill: #ddcc77 !important;
   stroke: black !important;
 }
 
-
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
