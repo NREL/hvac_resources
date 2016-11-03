@@ -6,42 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HVAC Resources</title>
     <link rel="shortcut icon" href="img/hvac_icon2.ico">
-<!--    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
+    <!--    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <link rel="stylesheet" href="css/bbstyle.css">
-    <link rel="stylesheet" href="css/animate.css"> 
+    <link rel="stylesheet" href="css/animate.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="bower_components/angular-ui-router.stateHelper/statehelper.min.js"></script>
-    <script src="bower_components/GreenSock-JS/src/minified/TweenMax.min.js"></script> 
+    <script src="bower_components/GreenSock-JS/src/minified/TweenMax.min.js"></script>
     <script src="controllers/app.js"></script>
- </head>
+  </head>
   <body ng-app="routerApp">
     <div id="wrapper">
       <div id="content">
-          <div class="bbtop"><a href="http://betterbuildingssolutioncenter.energy.gov/"><img ng-src="img/logo.png" alt="Better Buildings Logo" height="122px"></img></a>
-          <span style="float:right;">
-              <a href="http://betterbuildingssolutioncenter.energy.gov/about-better-buildings-initiative"><img ng-src="img/email.gif" alt="Send us an email message" height="30"></img></a>
-        <a href="http://twitter.com/BetterBldgsDOE"><img ng-src="img/twitter.gif" alt="Follow Better Buildigns on Twitter" height="29"></img></a>
-      <a href="http://www.linkedin.com/company/3782561?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1430851151347%2Ctas%3Abetter%20buildings"><img ng-src="img/linkedin.gif" alt="Keep up with Better Buildings on Linkedin" height="32"></img></a>
+        <div class="bbtop"><a href="http://betterbuildingssolutioncenter.energy.gov/"><img src="img/logo.png" alt="Better Buildings Logo" height="122"></a>
+          <span style="float:right; padding-top:8px;">
+              <a href="http://betterbuildingssolutioncenter.energy.gov/about-better-buildings-initiative"><img src="img/email.png" alt="Send us an email message"></a>
+        <a href="http://twitter.com/BetterBldgsDOE"><img src="img/twitter.png" alt="Follow Better Buildings on Twitter"></a>
+      <a href="http://www.linkedin.com/company/3782561?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1430851151347%2Ctas%3Abetter%20buildings"><img src="img/linkedin.png" alt="Keep up with Better Buildings on LinkedIn"></a>
       </span>
-    </div>
-        <div class="topbar"><div class="topmenu">
-                                <ul>
-                               <li><a href="#/" id="hvachome">HVAC Home</a></li>
-                               <li><a href="#/central_plant" id="centralplant">Central Plant</a></li>
-                                <li><a href="#/distribution_system" id="distribution">Distribution</a></li>
-                                <li><a href="#/space_loads" id="spaceloads">Space Loads</a></li>
-                                </ul>
-                            </div>
+        </div>
+        <div class="topbar">
+          <div class="topmenu">
+            <ul>
+              <li><a href="#/" id="hvachome">HVAC Home</a></li>
+              <li><a href="#/central_plant" id="centralplant">Central Plant</a></li>
+              <li><a href="#/distribution_system" id="distribution">Distribution</a></li>
+              <li><a href="#/space_loads" id="spaceloads">Space Loads</a></li>
+            </ul>
+          </div>
         </div>
         <div class="flexfoot">
-         <div class="topbartitle">
+          <div class="topbartitle">
             HVAC Resources
-          </div></div>
+          </div>
+        </div>
 
         <div class="flexcontainer">
           <div id="diagram" class="noselect" alt="Diagram of HVAC system showing the heating and cooling loop as part of the central plant and the distribution system." ng-include="'img/hvacdiagram-adjust-bb.svg'"></div>
@@ -53,21 +55,20 @@
           </div>
         </div>
       </div>
-      
+
 
       <div id="footer">
-          <div class="doelogo">
-          <img ng-src="img/doe-logo.png" alt="Department of Energy Logo" height="43px"></img>
-        <span class="bottomlinks">
+        <div class="doelogo">
+          <img src="img/doe-logo.png" alt="Department of Energy Logo" height="43">
+          <span class="bottomlinks">
             <ul>
-            <li><a href="http://betterbuildingssolutioncenter.energy.gov/about-better-buildings-initiative">CONTACT US</a></li>
-                <li><a href="http://betterbuildingssolutioncenter.energy.gov/about-better-buildings-initiative">ABOUT</a></li></li>
-          </ul>
-                </span>
-          
+              <li><a href="http://betterbuildingssolutioncenter.energy.gov/about-better-buildings-initiative">CONTACT US</a></li>
+              <li><a href="http://betterbuildingssolutioncenter.energy.gov/about-better-buildings-initiative">ABOUT</a></li>
+            </ul>
+          </span>
+        </div>
       </div>
     </div>
-
   </body>
 
 </html>
