@@ -11,6 +11,11 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
       templateUrl: 'views/home.html'
     })
     .state({
+      name: 'contributors',
+      url:'/contributors',
+      templateUrl: 'views/contributors.html'
+    })
+    .state({
       name: 'central_plant',
       url: '/central_plant',
       templateUrl: 'views/central_plant.html'
