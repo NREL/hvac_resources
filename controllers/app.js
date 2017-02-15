@@ -172,6 +172,44 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         templateUrl: 'views/pump_procure.html'
       }]
     })
+  .state({
+      name: 'steamtrap',
+      url: '/steamtrap',
+      templateUrl: 'views/steamtrap.html',
+      children: [{
+        name: 'design',
+        url: '/eems',
+        templateUrl: 'views/steamtrap_design.html'
+      }, {
+        name: 'basics',
+        url: '/basics',
+        templateUrl: 'views/steamtrap_basics.html'
+    }, {
+        name: 'codes',
+        url: '/codes',
+        templateUrl: 'views/steamtrap_codes.html'
+     }, {
+        name: 'operation',
+        url: '/operation',
+        templateUrl: 'views/steamtrap_operation.html'
+          }, {
+        name: 'tools',
+        url: '/tools',
+        templateUrl: 'views/steamtrap_tools.html'
+               }, {
+        name: 'cases',
+        url: '/cases',
+        templateUrl: 'views/steamtrap_cases.html'
+             }, {
+        name: 'types',
+        url: '/types',
+        templateUrl: 'views/steamtrap_types.html'
+                      }, {
+        name: 'procure',
+        url: '/procure',
+        templateUrl: 'views/steamtrap_procure.html'
+      }]
+    })
     .state({
       name: 'distribution_system',
       url: '/distribution_system',
