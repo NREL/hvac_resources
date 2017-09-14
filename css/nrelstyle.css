@@ -1,28 +1,145 @@
 @font-face {
-  font-family: 'Avenir';
-  src: url('../fonts/Avenir.woff2') format('woff2'),
-  url('../fonts/Avenir.woff') format('woff');
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Regular.woff2') format('woff2'),
+		url('../fonts/Roboto-Regular.woff') format('woff'),
+		url('../fonts/Roboto-Regular.ttf') format('truetype'),
+		url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
-.myh1, .myh2, .myh3, .myh4 {
-  color: #0062A0;
-  font-family: 'Avenir', arial, sans-serif;
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Italic.eot');
+	src: url('../fonts/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Italic.woff2') format('woff2'),
+		url('../fonts/Roboto-Italic.woff') format('woff'),
+		url('../fonts/Roboto-Italic.ttf') format('truetype'),
+		url('../fonts/Roboto-Italic.svg#Roboto-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Thin.eot');
+	src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-Thin.woff2') format('woff2'),
+		url('../fonts/Roboto-Thin.woff') format('woff'),
+		url('../fonts/Roboto-Thin.ttf') format('truetype'),
+		url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-ThinItalic.eot');
+	src: url('../fonts/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
+		url('../fonts/Roboto-ThinItalic.woff') format('woff'),
+		url('../fonts/Roboto-ThinItalic.ttf') format('truetype'),
+		url('../fonts/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Droid Serif';
+	src: url('../fonts/DroidSerif-Regular.eot');
+	src: url('../fonts/DroidSerif-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DroidSerif-Regular.woff2') format('woff2'),
+		url('../fonts/DroidSerif-Regular.woff') format('woff'),
+		url('../fonts/DroidSerif-Regular.ttf') format('truetype'),
+		url('../fonts/DroidSerif-Regular.svg#DroidSerif-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Droid Serif';
+	src: url('../fonts/DroidSerif-Italic.eot');
+	src: url('../fonts/DroidSerif-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DroidSerif-Italic.woff2') format('woff2'),
+		url('../fonts/DroidSerif-Italic.woff') format('woff'),
+		url('../fonts/DroidSerif-Italic.ttf') format('truetype'),
+		url('../fonts/DroidSerif-Italic.svg#DroidSerif-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Droid Serif';
+	src: url('../fonts/DroidSerif-BoldItalic.eot');
+	src: url('../fonts/DroidSerif-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/DroidSerif-BoldItalic.woff2') format('woff2'),
+		url('../fonts/DroidSerif-BoldItalic.woff') format('woff'),
+		url('../fonts/DroidSerif-BoldItalic.ttf') format('truetype'),
+		url('../fonts/DroidSerif-BoldItalic.svg#DroidSerif-BoldItalic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+@font-face {
+	font-family: 'Pt Sans Narrow';
+	src: url('../fonts/PTSans-NarrowBold.eot');
+	src: url('../fonts/PTSans-NarrowBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PTSans-NarrowBold.woff2') format('woff2'),
+		url('../fonts/PTSans-NarrowBold.woff') format('woff'),
+		url('../fonts/PTSans-NarrowBold.ttf') format('truetype'),
+		url('../fonts/PTSans-NarrowBold.svg#PTSans-NarrowBold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Pt Sans Narrow';
+	src: url('../fonts/PTSans-Narrow.eot');
+	src: url('../fonts/PTSans-Narrow.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PTSans-Narrow.woff2') format('woff2'),
+		url('../fonts/PTSans-Narrow.woff') format('woff'),
+		url('../fonts/PTSans-Narrow.ttf') format('truetype'),
+		url('../fonts/PTSans-Narrow.svg#PTSans-Narrow') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.myh1, .myh2 {
+  color: #333333;
+  font-family: 'Roboto';
+    font-weight: normal;
+	font-style: normal;
+}
+.myh3, .myh4 {
+  color: #CC6600;
+  font-family: 'Roboto';
+    font-weight: normal;
+	font-style: normal;
+}
+.myh4 {
+  color: #CC6600;
+  font-family: 'pt sans narrow';
 }
 
 p, span {
-  color: black;
-  font-family: 'Avenir', arial, sans-serif;
-  font-size: 11pt;
+  color: #333;
+  font-family: 'Droid Serif';
 }
 
-li {
-  font-size: 11pt;
+.largertx {
+  color: #333;
+  font-family: 'Droid Serif';
+  font-size: 14pt;
+    line-height: 1.35;
 }
 
-html, body {
-  height: 100%;
-  background: #ffffff !important;
-  font-family: 'Avenir', arial, sans-serif;
+body {
+    color: #333;
+    font-family: "Droid Serif";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.65;
+    padding: 0;
 }
 
 /* placeholder hyperlinks */
@@ -43,10 +160,28 @@ a:hover {
   color: #00A3E0;
 }
 
-.bbtop {
-  margin-left: 5%;
-  margin-right: 5%;
+.nreltop {
+  padding-left: 3%;
+  padding-right: 5%;
+  background-color: #0079C5;
+    height: 60px;
+    border-bottom: 4px solid #005D92 !important;
+      -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
 }
+
+.nreltitle {
+    color: #ffffff!important; 
+  font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+	font-style: normal;
+   text-decoration: none !important; 
+  font-size: 24pt;
+    line-height: 70px;
+    text-transform: uppercase!important;
+    padding-left: 5px;
+  }
 
 /*top bar and horizontal navigation*/
 
@@ -55,30 +190,28 @@ a:hover {
   top: 0;
   left: 0;
   float: left;
-  padding-top: 7px;
-  background: #1e5aab;
-  background: -webkit-linear-gradient(top, #1e5aab 0%, #2888c6 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#1e5aab), to(#2888c6));
-  background: linear-gradient(to bottom, #1e5aab 0%, #2888c6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5aab', endColorstr='#2888c6', GradientType=0);
+  padding-top: 0px;
+  background: #000000;
   width: 100%;
 }
 
 @media (min-width: 701px) {
   .topbar {
     height: 46px;
+      background-color: #000000 !important;
   }
 }
 
 .topmenu {
-  font-family: 'Avenir', arial, sans-serif;
-  font-size: 12pt;
-  font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+  font-size: 13pt;
+  font-weight: normal;
   text-decoration: none !important;
   width: 100%;
   position: relative;
   float: left;
   text-align: center;
+    text-transform: uppercase!important;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -92,7 +225,7 @@ a:hover {
   margin: 0;
   padding: 0;
   text-decoration: none !important;
-  color: #92d1fa !important;
+  color: #ffffff!important;
   font-size: 12pt;
   clear: left;
   position: relative;
@@ -105,11 +238,10 @@ a:hover {
 }
 
 .topmenu li a {
-  font-family: 'Avenir', arial, sans-serif;
   display: block;
-  color: #92d1fa;
+  color: #ffffff !important;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 10px;
   font-size: 12pt;
   text-decoration: none !important;
   position: relative;
@@ -117,8 +249,8 @@ a:hover {
 
 /* Change the link color to white with blue top on hover */
 .topmenu li a:hover {
-  background-color: white !important;
-  color: #1d449c !important;
+background-color: #ffffff !important;
+  color: #000000 !important;
   font-size: 12pt;
   border-top: 4px solid #1d449c !important;
 }
@@ -126,15 +258,14 @@ a:hover {
 /* Change the link color to white with blue top on hover */
 .topmenu a:active,
 .topmenu a:focus {
-  background-color: white !important;
-  color: #1d449c !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
   font-size: 12pt;
-  border-top: 4px solid #1d449c !important;
+  border-top: 4px solid #62D2FF !important;
 }
 
 .topbartitle {
   position: relative;
-  font-family: 'Avenir', arial, sans-serif;
   top: 0;
   left: 0;
   float: left;
@@ -142,19 +273,31 @@ a:hover {
   padding-bottom: 7px;
   font-weight: lighter;
   text-align: left;
-  font-size: 26px;
-  color: black;
+  font-size: 26pt;
+  color: #0079C5;
   line-height: 120%;
   margin-left: 5%;
   margin-right: 5%;
 }
 
 @media (max-width: 430px) {
-  .topbartitle {
-    font-size: 20px;
-    line-height: 2.5em;
-    margin-left: 2%;
-    margin-right: 2%;
+  .nreltitle {
+      font-family: 'Pt Sans Narrow';
+    font-size: 13pt;
+    line-height: 110%;
+      word-wrap: break-word;
+    }
+    .topbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    padding-top: 0px;
+    background: #000000;
+    width: 100%;
+    }
+    .hvacimage {
+    display: none;
   }
 }
 
@@ -168,31 +311,25 @@ hr {
 
 /*headers*/
 .myh1 {
-  font-family: 'Avenir', arial, sans-serif;
   text-align: left;
-  font-size: 22px;
-  color: #1e428a;
+  font-size: 28px;
   padding-top: 15px;
   padding-bottom: 10px;
   line-height: 110%;
 }
 
 .myh2 {
-  font-family: 'Avenir', arial, sans-serif;
   font-weight: bold;
   text-align: left;
-  font-size: 20px;
-  color: #1e428a;
+  font-size: 24px;
   padding-top: 15px;
   padding-bottom: 10px;
   line-height: 110%;
 }
 
 .myh3 {
-  font-family: 'Avenir', arial, sans-serif;
   text-align: left;
   font-size: 18px;
-  color: #1e428a;
   line-height: 120%;
   padding-top: 10px;
   padding-bottom: 8px;
@@ -200,28 +337,37 @@ hr {
 }
 
 .myh4 {
-  font-family: 'Avenir', arial, sans-serif;
   text-align: left;
-  font-size: 16px;
-  color: #1e428a;
+  font-size: 18px;
   line-height: 160%;
   padding-top: 10px;
   padding-bottom: 8px;
   margin-top: 14px;
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: normal;
+}
+.myhome {
+    font-family: 'Roboto';
+  text-align: left;
+  font-size: 14px;
+  line-height: 160%;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  margin-top: 14px;
+  text-decoration: none;
+  font-weight: 100;
+	font-style: normal;
+    color: #CC6600;
 }
 
 .doctitle {
-  font-family: 'Avenir', arial, sans-serif;
-  font-style: italic;
-  font-size: 11pt !important;
+   font-family: 'Droid Serif';
+  font-weight: bold;
+	font-style: italic;
   text-decoration: underline;
-
 }
 
 .myh3bold {
-  font-family: 'Avenir', arial, sans-serif;
   font-weight: bold;
   text-align: left;
   font-size: 14px;
@@ -237,46 +383,48 @@ hr {
 .source {
   font-style: italic;
   font-size: 10pt;
-  color: #444444;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  font-family: 'Avenir', arial, sans-serif;
+    line-height= 100%!important;
+    font-weight: 100;
+  color: #666666;
+  padding-top: 3px;
+  padding-bottom: 4px;
+   font-family: 'pt sans narrow', sans-serif;
 }
 
 .caption {
-  font-family: 'Avenir', arial, sans-serif;
+   font-family: 'Roboto', sans-serif;
   color: #444444;
   font-size: 11px;
 }
 
 /* image title style */
 .imgtitle {
-  font-family: 'Avenir', arial, sans-serif;
-  font-weight: 300;
-  font-size: 11pt;
-  color: #444444;
-  padding-top: 5px;
+   font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+	font-style: normal;
+  font-size: 12pt;
+  color: #000000;
+  padding-top: 0px;
   padding-bottom: 5px;
-  margin-left: 5%;
+  text-align: center;
 }
 
 /* quote box and text style */
 .pquote {
-  font-family: 'Avenir', arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   float: left;
   font-size: 12pt !important;
-  color: #444444;
-  width: 100%;
+	font-style: italic;
+  color: #666666;
+  width: 95%;
   background: #eeeeee;
-  font-weight: lighter;
-  font-style: italic;
   padding: 13px;
   margin: 0 23px 23px 0;
-  line-height: 170% !important;
+  line-height: 150% !important;
 }
 
 blockquote {
-  margin: 0; /* gets rid of the default blockquote margin */
+  margin: 5px; /* gets rid of the default blockquote margin */
 }
 
 /* custom indent for lists */
@@ -285,28 +433,23 @@ blockquote {
   list-style: disc inside;
   text-indent: -1em;
   padding-left: 1em;
-  line-height: 160% !important;
+  line-height: 170% !important;
+  font-size: 13px;
 
 }
 
 .mylist2 {
   margin-left: 7px;
-  list-style-position: outside;
-  line-height: 160% !important;
-  font-size: 11pt;
+  padding-left: 1em;
+  line-height: 170% !important;
+  font-size: 13pt !important;
+    font-family: 'Droid Serif';
 }
 
-.mylist2 {
-  margin-left: 7px;
-  list-style-position: outside;
-  line-height: 160% !important;
-  font-size: 11pt;
-
-}
 
 /* image style */
 .whiteimg {
-  padding: 8px;
+  padding: 5px;
   background-color: white;
   border-radius: 8px;
   display: inline-block;
@@ -317,7 +460,7 @@ blockquote {
 }
 
 .transimg {
-  padding: 8px;
+  padding: 5px;
   display: inline-block;
   vertical-align: middle;
   width: 90%;
@@ -367,8 +510,10 @@ table, td {
   font-weight: normal;
   line-height: 110% !important;
   font-size: 11pt;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 th {
@@ -378,7 +523,6 @@ th {
   border: 1px solid white;
   color: black;
   font-family: 'PT Sans Narrow', sans-serif;
-  font-weight: bolder !important;
 }
 
 th, td {
@@ -574,7 +718,7 @@ td li {
   -webkit-flex-basis: 26%;
   -ms-flex-preferred-size: 26%;
   flex-basis: 26%;
-  border: 1px solid #dddddd !important;
+  border: 1px solid #eeeeee !important;
   overflow: hidden;
   /*flex: 1 0 350px;
   -webkit-flex: 1 0 350px;
@@ -606,14 +750,15 @@ td li {
 /*style for the right links on homepage*/
 .homeright {
   background-color: #eeeeee;
-  padding: 10px;
+  padding: 20px;
   margin-bottom: 10px;
+    margin-top: 20px;
   max-width: 340px;
 }
 
 .homeright img {
   float: left;
-  margin: 0 10px 0 0;
+  margin: 0px 10px 0 0;
 }
 
 /*mynav on left side*/
@@ -742,6 +887,7 @@ body {
 #wrapper {
   min-height: 100%;
   position: relative;
+    width: 100%;
 }
 
 #header {
@@ -750,22 +896,19 @@ body {
 }
 
 #content {
-  padding-bottom: 130px; /* Height of the footer element */
+  padding-bottom: 120px; /* Height of the footer element */
+    width: 100%;
 }
 
-/*bb footers*/
-#bluebottom {
-  background: #1e5aab;
-  background: -webkit-linear-gradient(top, #1e5aab 0%, #2888c6 100%);
-  background: -webkit-gradient(linear, left top, left bottom, from(#1e5aab), to(#2888c6));
-  background: linear-gradient(to bottom, #1e5aab 0%, #2888c6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5aab', endColorstr='#2888c6', GradientType=0);
+
+#footer {
+  background-color: #000000;
   width: 100%;
-  height: 30px;
+  height: 100px;
   position: absolute;
   bottom: 0;
   left: 0;
-  line-height: 150%;
+  line-height: 170%;
   color: white;
   text-align: center;
   font-size: 10px;
@@ -773,82 +916,37 @@ body {
   padding-top: 15px;
 }
 
-#footer {
-  background: #eeeeee;
-  width: 70%;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  line-height: 150%;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #1d449c;
-  font-size: 10px;
-  letter-spacing: 4px;
-  padding-top: 15px;
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
 .doelogo {
   float: left;
-  width: 95%;
-
+    padding-left: 20px;
+    padding-top: 20px;  
 }
 
-.bottomlinks {
-  float: right;
-  color: #1d449c;
-  font-size: 9pt;
-  font-weight: normal;
-  text-decoration: none !important;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-  align-content: center;
-  text-align: right;
-
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.bottomtext {
+    font-family: 'pt sans narrow';
+    font-size: 9pt!important;
+    line-height: 140%;
+    padding-top: 0px;  
+  float: left;
+  color: #ffffff;
+  text-align: left;
+    padding-left: 50px;
+    width: 70%;
+    font-weight: normal;
+	font-style: normal;
 }
 
-.bottomlinks ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  text-decoration: none !important;
-}
 
-.bottomlinks li {
-  float: right;
-}
-
-.bottomlinks li a {
-  display: block;
-  color: #1d449c;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none !important;
-}
-
-/* Change the link color to white with blue top on hover */
-.bottomlinks li a:hover {
-  color: #1d449c !important;
-}
 
 /*Right Navigation Settings*/
 .rtnav {
+  font-family: 'Pt Sans Narrow';
   color: #0062A0;
   background-color: #ffffff;
   list-style-type: none;
   margin: 0;
-  border-left: 1px solid #dddddd;
   padding: 4px;
-  text-align: left;
+  text-align: left; 
   border-bottom: 1px solid #dddddd;
 
   -webkit-touch-callout: none;
@@ -859,8 +957,8 @@ body {
 }
 
 .rtnav li {
-  font-size: 12px;
-  font-family: 'Avenir', arial, sans-serif;
+  font-size: 13px;
+  font-family: 'PT Sans Narrow';
 }
 
 .rtnav a {
@@ -888,23 +986,23 @@ body {
 /* Rollovers on the Central PlantDiagram*/
 
 #steamtrapht:hover, #steamtrap:hover, #chiller:hover, #boiler:hover, #cp-pump:hover, #d-pump1:hover, #d-pump2:hover, #fan1:hover, #fan2:hover, #cp-valve:hover, #cp-valve-control:hover, #d-valve:hover, #duct1-outline:hover, #duct2-outline:hover, #diffuser1:hover, #diffuser2:hover, #terminal1:hover, #terminal2:hover, #vav:hover, #t-outline:hover, #ahu-back:hover, #cp-valve:hover, #cp-valve2:hover, #hottherm:hover, #hottherm:hover, #blrcont:hover, #ahucont:hover, #controlcont:hover, #zone1cont:hover, #zone2cont:hover, #zone3cont:hover, #zone4cont:hover {
-  fill: #00A3E0 !important;
+  fill: #F98E2D !important;
   stroke: #444444 !important;
 }
 
 #steamtrapht:active, #steamtrap:active, #chiller:active, #boiler:active, #cp-pump:active, #d-pump1:active, #d-pump2:active, #fan1:active, #fan2:active, #cp-valve:active, #cp-valve-control:active, #d-valve:active, #duct1-outline:active, #duct2-outline:active, #diffuser1:active, #diffuser2:active, #terminal1:active, #terminal2:active, #vav:active, #t-outline:active, #ahu-back:active, #cp-valve1:active, #cp-valve2:active, #hottherm:active, #cooltherm:active, #blrcont:active, #ahucont:active, #controlcont:active, #zone1cont:active, #zone2cont:active, #zone3cont:active, #zone4cont:active {
-  fill: #71C5E8 !important;
+  fill: #00A3E0 !important;
   stroke: #444444 !important;
 }
 
 #pipes:hover {
-  stroke: #00A3E0 !important;
+  stroke: #F98E2D !important;
   stroke-width: 3px;
 }
 
 #pipes:active {
-  stroke: #71C5E8 !important;
-  fill: #71C5E8 !important;
+  stroke: #00A3E0 !important;
+  fill: #00A3E0 !important;
   stroke-width: 1px;
 }
 
