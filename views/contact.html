@@ -1,0 +1,59 @@
+<style>
+  #hvac {
+    opacity: 1;
+    transition: opacity 1s linear;
+  }
+
+  #space {
+    opacity: 0;
+    transition: visibility 0s 1s, opacity .1s linear;
+  }
+
+  #svg {
+    transform: scale(1.0, 1.0);
+    transform-origin: 0% 0%;
+    transition: all 1s ease-in-out;
+  }
+
+  #contact {
+     background-color: #ffffff !important;
+  color: #000000 !important;
+  border-top: 4px solid #62D2FF !important;
+    }
+
+
+  #centralplant, #distribution, #spaceloads, #contributors, #home{
+    display: block;
+    color: #7cc110;
+    text-decoration: none !important;
+    position: relative;
+  }
+
+</style>
+<head><script src="../controllers/controllers.js"></script>
+</head>
+
+<div class="subflex">
+  <div class="content-main">
+
+    <div class="container" ng-app="ContactForm">
+	<h1>AngularJS Contact Form</h1>
+	<form name="cf" ng-controller="cfController as cfCtrl" ng-submit="submitForm(cf.$valid)" novalidate>
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input id="name" type="text" name="name" ng-model="name" required>
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input id="email" type="email" name="email" g-model="email" required>
+		</div>
+		<div class="form-group">
+			<label for="msg">Message</label>
+			<textarea id="msg" name="message" rows="4" ng-model="msg" required></textarea>
+		</div>
+		<input type="submit" value="Send" ng-disabled="cf.$invalid"/>
+	</form>
+</div>
+  </div>
+    
+  </div>

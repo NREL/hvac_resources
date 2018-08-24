@@ -11,6 +11,11 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
       templateUrl: 'views/home.html'
     })
     .state({
+      name: 'contact',
+      url: '/contact',
+      templateUrl: 'views/contact.html'
+    })
+    .state({
       name: 'contributors',
       url:'/contributors',
       templateUrl: 'views/contributors.html'
@@ -725,6 +730,24 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
     });
 
 }); // closes $routerApp.config()
+
+
+app.controller("cfController",function($scope){
+	$scope.submitForm = function(isValid) {
+		this.formInput = {
+        name: $("input[name='name']").val(),
+        email: $("input[name='email']").val(),
+        message: $("textarea[name='message']").val()
+   };
+		if (isValid) {
+			console.log('Message sent successfully');
+			console.log(this.formInput);
+		} else {
+			console.log('Failed to send message')
+		}
+	};
+});
+
 
 
 routerApp.run(['$rootScope', '$log', '$state', function ($rootScope, $log, $state) {
