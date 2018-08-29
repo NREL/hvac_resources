@@ -766,7 +766,28 @@ input[type=text], select {
     box-sizing: border-box;
     font-family: 'pt sans narrow';
 }
+
+input[type=email], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'pt sans narrow';
+}
 input[type=text]:focus {
+    background-color: gainsboro;
+    font-family: 'pt sans narrow';
+}
+
+input[type=email]:focus {
+    background-color: gainsboro;
+    font-family: 'pt sans narrow';
+}
+
+input[type=textarea]:focus {
     background-color: gainsboro;
     font-family: 'pt sans narrow';
 }
