@@ -764,9 +764,11 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: 'pt sans narrow';
 }
 input[type=text]:focus {
     background-color: gainsboro;
+    font-family: 'pt sans narrow';
 }
 
 textarea {
@@ -776,7 +778,17 @@ textarea {
      width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
+    font-family: 'pt sans narrow';
 }
+label {
+font-family: 'Droid Serif';
+color: #333333;
+font-weight: bold;
+display: block;
+width: 150px;
+float: left;
+}
+label:after { content: ": " }
 
 
 

@@ -30,153 +30,64 @@
   }
 
 </style>
-<head><script src="../controllers/controllers.js"></script>
+<head>
 </head>
 
 <div class="subflex">
   <div class="content-main">
 
       <p class="myh1">Contact Us</p>
-      <!--Section: Contact v.2-->
-<section class="section">
-
-    <div class="row">
-
-        <!--Grid column-->
-        <div>
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div>
-                        <div>
-                            <label for="name" class="">Your name</label>
-                            <input type="text" id="name" name="name" class="form-control">
-                            
+        <div ng-app="contactApp" >
+            <div class="vertical-middle">
+                <div class="container">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">Contact Form</h2>
                         </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div>
-                        <div>
-                            <label for="email" class="">Your email</label>
-                            <input type="text" id="email" name="email" class="form-control">
-                            
+                        <div ng-controller="ContactController" class="panel-body">
+                            <form ng-submit="submit(contactform)" name="contactform" method="post" action="" class="form-horizontal" role="form">
+                                <div class="form-group" ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+                                    <label for="inputName" class="col-lg-2 control-label">Name</label>
+                                    <div class="col-lg-10">
+                                        <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+                                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                                    <div class="col-lg-10">
+                                        <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-class="{ 'has-error': contactform.inputSubject.$invalid && submitted }">
+                                    <label for="inputSubject" class="col-lg-2 control-label">Subject</label>
+                                    <div class="col-lg-10">
+                                        <input ng-model="formData.inputSubject" type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Subject Message" required>
+                                    </div>
+                                </div>
+                                <div class="form-group" ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
+                                    <label for="inputMessage" class="col-lg-2 control-label">Message</label>
+                                    <div class="col-lg-10">
+                                        <textarea ng-model="formData.inputMessage" class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Your message..." required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                        <button type="submit" class="btn btn-default" ng-disabled="submitButtonDisabled">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <p ng-class="result" style="padding: 15px; margin: 0;">{{ resultMessage }}</p>
                         </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div>
-                        <div>
-                            <label for="subject" class="">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div>
-
-                        <div>
-                            <label for="message">Your message</label>
-                            <textarea type="text" id="message" name="message" rows="5" class="form-control md-textarea"></textarea>
-                            
-                        </div>
-
                     </div>
                 </div>
-                <!--Grid row-->
-
-            </form>
-            <br>
-
-            <div class="text-center text-md-left">
-                <a class="mybtn" onclick="validateForm()">Send</a>
             </div>
-            <div class="status"></div>
         </div>
-        <!--Grid column-->
 
- </div>
-
-</section>
-<!--Section: Contact v.2-->
+      
       
       
   </div>
-    <!--Custom scripts-->
-    <script>
-
-function validateForm() {
-    // var x =  document.getElementById('name').value;
-    // if (x == "") {
-    //     document.getElementById('status').innerHTML = "Name cannot be empty";
-    //     return false;
-    // }
-    // x =  document.getElementById('email').value;
-    // if (x == "") {
-    //     document.getElementById('status').innerHTML = "Email cannot be empty";
-    //     return false;
-    // } else {
-    //     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    //     if(!re.test(x)){
-    //         document.getElementById('status').innerHTML = "Email format invalid";
-    //         return false;
-    //     }
-    // }
-    // x =  document.getElementById('subject').value;
-    // if (x == "") {
-    //     document.getElementById('status').innerHTML = "Subject cannot be empty";
-    //     return false;
-    // }
-    // x =  document.getElementById('message').value;
-    // if (x == "") {
-    //     document.getElementById('status').innerHTML = "Message cannot be empty";
-    //     return false;
-    // }
- //get input field values data to be sent to serverpy
-    document.getElementById('status').innerHTML = "Sending...";
-    formData = {
-        'name'     : $('input[name=name]').val(),
-        'email'    : $('input[name=email]').val(),
-        'subject'  : $('input[name=subject]').val(),
-        'message'  : $('textarea[name=message]').val()
-    };
-
-
-   $.ajax({
-    url : "mail.php",
-    type: "POST",
-    data : formData,
-    success: function(data, textStatus, jqXHR)
-    {
-
-        $('#status').text(data.message);
-        if (data.code) //If mail was sent successfully, reset the form.
-        $('#contact-form').closest('form').find("input[type=text], textarea").val("");
-    },
-    error: function (jqXHR, textStatus, errorThrown)
-    {
-        $('#status').text(jqXHR);
-    }
-});
-
-
-
-}
-    </script>
-    
-  </div>
+   </div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
