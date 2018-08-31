@@ -37,57 +37,21 @@
   <div class="content-main">
 
       <p class="myh1">Contact Us</p>
-        <div ng-app="contactApp" >
-            <div class="vertical-middle">
-                <div class="container">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h2 class="panel-title">Contact Form</h2>
-                        </div>
-                        <div ng-controller="ContactController" class="panel-body">
-                            <form ng-submit="submit(contactform)" name="contactform" method="post" action="" class="form-horizontal" role="form">
-                                <div class="form-group" ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
-                                    <label for="inputName" class="label">Name</label>
-                    
-                                        <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name" required>
-                    
-                                </div>
-                                <div class="form-group" ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-                                    <label for="inputEmail" class="label">Email</label>
-                                   
-                                        <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email" required>
-                                    
-                                </div>
-                                <div class="form-group" ng-class="{ 'has-error': contactform.inputSubject.$invalid && submitted }">
-                                    <label for="inputSubject" class="label">Subject</label>
-                                    <div class="col-lg-10">
-                                        <input ng-model="formData.inputSubject" type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Subject Message" required>
-                                    </div>
-                                </div>
-                                <div class="form-group" ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
-                                    <label for="inputMessage" class="label">Message</label>
-                                    <div class="col-lg-10">
-                                        <textarea ng-model="formData.inputMessage" class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Your message..." required></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="col-lg-offset-2 col-lg-10">
-                                        <button type="submit" class="mybtn" ng-disabled="submitButtonDisabled">
-                                            Send Message
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                            <p ng-class="result" style="padding: 15px; margin: 0;">{{ resultMessage }}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <form method="POST" action="https://formspree.io/Michael.Deru@nrel.gov>">
+           
+            <label for="name" class="label">Name</label>
+          <input type="text" name="name" placeholder="Your name" required>
+    <br>        
+            <label for="email" class="label">Email</label>
+          <input type="email" name="email" placeholder="Your email" required>
+            
+            <label for="message" class="label">Message</label>
+          <textarea name="message" placeholder="Provide your feedback, suggestions, and comments" required></textarea>
+            
+          <button type="submit" class="mybtn">Send</button>
+        </form>
       
       
       
   </div>
    </div>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
