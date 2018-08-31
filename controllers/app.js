@@ -733,9 +733,6 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
 
 
 
-var app = angular.module('contactApp', []);
-
-
 routerApp.run(['$rootScope', '$log', '$state', function ($rootScope, $log, $state) {
   $(function () {
     var $body = $('body');

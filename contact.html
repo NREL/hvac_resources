@@ -20,6 +20,12 @@
     <script src="bower_components/GreenSock-JS/src/minified/TweenMax.min.js"></script>
       <script src="controllers/app.js"></script>
       <script src="js/controllers.js"></script>
+      <style>  #contact {
+     background-color: #ffffff !important;
+  color: #000000 !important;
+  border-top: 4px solid #62D2FF !important;
+    }
+</style>
   </head>
   <body ng-app="routerApp">
     <div id="wrapper">
@@ -30,24 +36,45 @@
         <div class="topbar">
           <div class="topmenu">
             <ul>
-              <li><a href="#/" id="hvachome">HVAC Home</a></li>
-              <li><a href="#/central_plant" id="centralplant">Central Plant</a></li>
+              <li><a href="index.html" id="hvachome">HVAC Home</a></li>
+              <!--<li><a href="#/central_plant" id="centralplant">Central Plant</a></li>
               <li><a href="#/distribution_system" id="distribution">Distribution</a></li>
               <li><a href="#/space_loads" id="spaceloads">Space Loads</a></li>
               <li><a href="#/contributors" id="contributors">Contributors</a></li>
-<!--                <li><a href="#/contact" id="contact">Contact Us</a></li>-->
-                <li><a href="contact.html" id="contact" target="_blank">Contact Us</a></li>
+                <li><a href="#/contact" id="contact">Contact Us</a></li>-->
+                <li><a href="contact.html" id="contact">Contact Us</a></li>
             </ul>
           </div>
         </div>
 
         <div class="flexcontainer">
-          <div id="diagram" class="noselect" alt="Diagram of HVAC system showing the heating and cooling loop as part of the central plant and the distribution system." ng-include="'img/hvacdiagram-adjust-bb2.svg'"></div>
+          <!--<div id="diagram" class="noselect" alt="Diagram of HVAC system showing the heating and cooling loop as part of the central plant and the distribution system." ng-include="'img/hvacdiagram-adjust-bb2.svg'"></div>-->
 
           <!-- COLUMN Three NAMED VIEW -->
           <div class="infocontainer">
             <!-- Page Content Here ============================== -->
-            <div ui-view class="fadein"></div>
+            <div class="subflex">
+  <div class="content-main">
+
+      <p class="myh1">Contact Us</p>
+        <form method="POST" action="https://formspree.io/hvacresourcemap@nrel.gov>">
+           
+            <label for="name" class="label">Name</label>
+          <input type="text" name="name" placeholder="Your name" required>
+    <br>        
+            <label for="email" class="label">Email</label>
+          <input type="email" name="email" placeholder="Your email" required>
+            
+            <label for="message" class="label">Message</label>
+          <textarea name="message" placeholder="Provide your feedback, suggestions, and comments" required></textarea>
+            
+          <button type="submit" class="mybtn">Send</button>
+        </form>
+      
+      
+      
+  </div>
+   </div>
           </div>
         </div>
       </div>
@@ -63,13 +90,13 @@ NREL is a national laboratory of the U.S. Department of Energy, Office of Energy
       </div>
     </div>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18838154-17"></script>
-    <script>
+  <!--  <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'UA-18838154-17');
-    </script>
+    </script>-->
   </body>
 
 </html>
