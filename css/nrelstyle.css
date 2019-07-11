@@ -1053,7 +1053,7 @@ body {
 
 /* Rollovers on the Central PlantDiagram*/
 
-#steamtrapht:hover, #steamtrap:hover, #chiller:hover, #boiler:hover, #cp-pump:hover, #d-pump1:hover, #d-pump2:hover, #fan1:hover, #fan2:hover, #cp-valve:hover, #cp-valve-control:hover, #d-valve:hover, #duct1-outline:hover, #duct2-outline:hover, #diffuser1:hover, #diffuser2:hover, #terminal1:hover, #terminal2:hover, #vav:hover, #t-outline:hover, #ahu-back:hover, #cp-valve:hover, #cp-valve2:hover, #hottherm:hover, #hottherm:hover, #blrcont:hover, #ahucont:hover, #controlcont:hover, #zone1cont:hover, #zone2cont:hover, #zone3cont:hover, #zone4cont:hover {
+#steamtrapht:hover, #steamtrap:hover, #chiller:hover, #boiler:hover, #cp-pump:hover, #d-pump1:hover, #d-pump2:hover, #fan1:hover, #fan2:hover, #cp-valve:hover, #cp-valve-control:hover, #d-valve:hover, #duct1-outline:hover, #duct2-outline:hover, #diffuser1:hover, #diffuser2:hover, #terminal1:hover, #terminal2:hover, #vav:hover, #t-outline:hover, #ahu-back:hover, #cp-valve:hover, #cp-valve2:hover, #hottherm:hover, #cooltherm:hover, #blrcont:hover, #ahucont:hover, #controlcont:hover, #zone1cont:hover, #zone2cont:hover, #zone3cont:hover, #zone4cont:hover {
   fill: #F98E2D !important;
   stroke: #444444 !important;
 }
