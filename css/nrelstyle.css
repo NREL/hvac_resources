@@ -517,7 +517,7 @@ blockquote {
     border-collapse: collapse;
     font-family: 'PT Sans Narrow', sans-serif;
     font-weight: normal;
-    line-height: 110% !important;
+    line-height: 115% !important;
     font-size: 11pt;
     padding: 7px;
     margin-left: 5px;
@@ -567,12 +567,12 @@ td li {
 }
 
 .subtable {
-    background-color: #eeeeee!important;
-    text-align: left!important;
-    padding: 10px!important;
-    border: 20px solid white!important;
+    background-color: #eeeeee !important;
+    text-align: left !important;
+    padding: 10px !important;
+    border: 20px solid white !important;
     color: black !important;
-    font-family: 'PT Sans Narrow', sans-serif!important;
+    font-family: 'PT Sans Narrow', sans-serif !important;
 }
 
 /*flexbox formatting*/
