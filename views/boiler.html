@@ -1,46 +1,49 @@
 <style>
-  #hvac, #text {
-    opacity: 1;
-    transition: opacity 1s linear;
-  }
+    #hvac,
+    #text {
+        opacity: 1;
+        transition: opacity 1s linear;
+    }
 
-  #space {
-    opacity: 0;
-    transition: visibility 0s 1s, opacity .1s linear;
-  }
+    #space {
+        opacity: 0;
+        transition: visibility 0s 1s, opacity .1s linear;
+    }
 
-  #boiler {
-     fill: #00A3E0 !important;
-  stroke: #444444 !important;
-  }
-      #svg {
-    transform: scale(1.7, 1.7);
-    transform-origin: 0% 10%;
-    transition: all 1s ease-in-out;
-  }
+    #boiler {
+        fill: #00A3E0 !important;
+        stroke: #444444 !important;
+    }
+
+    #svg {
+        transform: scale(1.7, 1.7);
+        transform-origin: 0% 10%;
+        transition: all 1s ease-in-out;
+    }
+
 </style>
 
 
 <div class="myh1">Boiler</div>
 <div class="subflex">
-  <div class="content-main">
-    <div ui-view></div>
-  </div>
-  <div class="content-secondary">
-    <div>
-        <span class="myh4">BOILER RESOURCES</span>
-      <nav class="rtnav">
-          <ul>
-        <li><a ui-sref=".basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
-<!--        <li><a ui-sref=".types" id="rttypes"><i class="fa fa-tasks fa-1x fa-fw" aria-hidden="true"></i> Types</a></li> -->
-        <li><a ui-sref=".codes" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Performance Ratings </a></li>
-        <li><a ui-sref=".design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Energy Efficiency Measures </a></li>
-        <li><a ui-sref=".tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
-        <li><a ui-sref=".operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
-        <li><a ui-sref=".procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
-        <li><a ui-sref=".cases" id="rtcases"><i class="fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Case Studies</a></li>
-      </ul>
-          </nav>
+    <div class="content-main">
+        <div ui-view></div>
     </div>
-  </div>
+    <div class="content-secondary">
+        <div>
+            <span class="myh4">BOILER RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <!--        <li><a ui-sref=".types" id="rttypes"><i class="fa fa-tasks fa-1x fa-fw" aria-hidden="true"></i> Types</a></li> -->
+                    <li><a ui-sref=".codes" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Performance Ratings </a></li>
+                    <li><a ui-sref=".design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Energy Efficiency Measures </a></li>
+                    <li><a ui-sref=".tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
+                    <li><a ui-sref=".operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+                    <li><a ui-sref=".procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
+                    <li><a ui-sref=".cases" id="rtcases"><i class="fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Case Studies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
 </div>
