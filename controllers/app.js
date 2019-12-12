@@ -733,8 +733,39 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
             templateUrl: 'views/laboratories.html',
             children: [{
                 name: 'boiler_basics',
+                nav: 'boiler',
                 url: '/boiler_basics',
                 templateUrl: 'views/boiler_basics.html'
+            }, {
+                name: 'codes',
+                nav: 'boiler',
+                url: '/codes',
+                templateUrl: 'views/boiler_codes.html'
+            }, {
+                name: 'design',
+                nav: 'boiler',
+                url: '/design',
+                templateUrl: 'views/boiler_design.html'
+            }, {
+                name: 'tools',
+                nav: 'boiler',
+                url: '/tools',
+                templateUrl: 'views/boiler_tools.html'
+            }, {
+                name: 'operation',
+                nav: 'boiler',
+                url: '/operation',
+                templateUrl: 'views/boiler_operation.html'
+            }, {
+                name: 'procure',
+                nav: 'boiler',
+                url: '/procure',
+                templateUrl: 'views/boiler_procure.html'
+            }, {
+                name: 'cases',
+                nav: 'boiler',
+                url: '/cases',
+                templateUrl: 'views/boiler_cases.html'
             }]
         });
 
@@ -770,6 +801,8 @@ routerApp.run(['$rootScope', '$log', '$state', function ($rootScope, $log, $stat
 }]);
 
 routerApp.controller('MainCtrl', ['$scope', '$state', function ($scope, $state) {
+    $scope.state = $state;
+
     $scope.svg = function () {
         if ($state.current.name) {
             if ($state.current.name.startsWith('laboratories')) {

@@ -54,18 +54,32 @@
         </div>
     </div>
 
-    <div class="content-secondary">
-        <div>
+    <div class="content-secondary" ng-switch="state.current.nav">
+        <div ng-switch-default>
             <span class="myh4">COMPONENTS</span>
             <nav class="rtnav">
                 <ul>
-                    <li><a href="#/laboratories/boiler_basics"> Boiler</a></li>
-                    <li><a href="#/chiller/basics">Chiller</a></li>
-                    <li><a href="#/tower/basics">Cooling Tower</a></li>
-                    <li><a href="#/cool_thermal/basics">Cool Thermal Energy Storage</a></li>
-                    <li><a href="#/hot_thermal/basics">Hot Thermal Energy Storage</a></li>
-                    <li><a href="#/pump/basics">Pump</a></li>
-                    <li><a href="#/sensors_controls/basics">Sensors &amp; Controls</a></li>
+                    <li><a ui-sref=".boiler_basics">Boiler</a></li>
+                    <li><a ui-sref=".chiller_basics">Chiller</a></li>
+                    <li><a ui-sref=".tower_basics">Cooling Tower</a></li>
+                    <li><a ui-sref=".cool_thermal_basics">Cool Thermal Energy Storage</a></li>
+                    <li><a ui-sref=".hot_thermal_basics">Hot Thermal Energy Storage</a></li>
+                    <li><a ui-sref=".pump_basics">Pump</a></li>
+                    <li><a ui-sref=".sensors_controls_basics">Sensors &amp; Controls</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="boiler">
+            <span class="myh4">BOILER RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".boiler_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".codes" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Performance Ratings </a></li>
+                    <li><a ui-sref=".design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Energy Efficiency Measures </a></li>
+                    <li><a ui-sref=".tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
+                    <li><a ui-sref=".operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+                    <li><a ui-sref=".procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
+                    <li><a ui-sref=".cases" id="rtcases"><i class="fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Case Studies</a></li>
                 </ul>
             </nav>
         </div>
