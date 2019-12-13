@@ -9,10 +9,6 @@
         transition: visibility 0s 1s, opacity .1s linear;
     }
 
-    #cp-outline {
-        fill: #62D2FF !important;
-        stroke: #444444 !important;
-    }
 
     #svg {
         transform: scale(1.00, 1.00);
@@ -40,7 +36,7 @@
 </style>
 
 
-<div class="myh1">LABORATORIES</div>
+<div class="myh1"><a href="https://hvacresourcemap.net/#/laboratories/" target="_self">LABORATORIES</div>
 <div class="subflex">
     <div class="content-main">
         <div ui-view>
@@ -80,6 +76,75 @@
                     <li><a ui-sref=".operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
                     <li><a ui-sref=".procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
                     <li><a ui-sref=".cases" id="rtcases"><i class="fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Case Studies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="chiller">
+            <span class="myh4">CHILLER RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".chiller_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".chiller_codes" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Performance Ratings </a></li>
+                    <li><a ui-sref=".chiller_design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Energy Efficiency Measures </a></li>
+                    <li><a ui-sref=".chiller_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
+                    <li><a ui-sref=".chiller_operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+                    <li><a ui-sref=".chiller_procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
+                    <li><a ui-sref=".chiller_cases" id="rtcases"><i class="fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Case Studies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="tower">
+            <span class="myh4">COOLING TOWER RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".tower_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".tower_types" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Types</a></li>
+                    <li><a ui-sref=".tower_codes" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Performance Ratings </a></li>
+                    <li><a ui-sref=".tower_design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Energy Efficiency Measures </a></li>
+                    <li><a ui-sref=".tower_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
+                    <li><a ui-sref=".tower_operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+                    <li><a ui-sref=".tower_procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
+                    <li><a ui-sref=".tower_cases" id="rtcases"><i class="fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Case Studies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="pump">
+            <span class="myh4">PUMP RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".pump_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".pump_codes" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Performance Ratings </a></li>
+                    <li><a ui-sref=".pump_design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Design Guides &amp; EEMs </a></li>
+                    <li><a ui-sref=".pump_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
+                    <li><a ui-sref=".pump_operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+                    <li><a ui-sref=".pump_procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
+                    <li><a ui-sref=".pump_cases" id="rtcases"><i class="fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Case Studies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="cool">
+            <span class="myh4">COOL STORAGE RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".cool_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="hot">
+            <span class="myh4">HOT STORAGE RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".hot_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="sensor">
+            <span class="myh4">SENSORS &amp; CONTROLS RESOURCES </span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".sensor_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".sensor_operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+
                 </ul>
             </nav>
         </div>

@@ -2,10 +2,10 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.eot');
     src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Roboto-Regular.woff2') format('woff2'),
-    url('../fonts/Roboto-Regular.woff') format('woff'),
-    url('../fonts/Roboto-Regular.ttf') format('truetype'),
-    url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,10 +14,10 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Italic.eot');
     src: url('../fonts/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Roboto-Italic.woff2') format('woff2'),
-    url('../fonts/Roboto-Italic.woff') format('woff'),
-    url('../fonts/Roboto-Italic.ttf') format('truetype'),
-    url('../fonts/Roboto-Italic.svg#Roboto-Italic') format('svg');
+        url('../fonts/Roboto-Italic.woff2') format('woff2'),
+        url('../fonts/Roboto-Italic.woff') format('woff'),
+        url('../fonts/Roboto-Italic.ttf') format('truetype'),
+        url('../fonts/Roboto-Italic.svg#Roboto-Italic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
@@ -26,10 +26,10 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Thin.eot');
     src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Roboto-Thin.woff2') format('woff2'),
-    url('../fonts/Roboto-Thin.woff') format('woff'),
-    url('../fonts/Roboto-Thin.ttf') format('truetype'),
-    url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
+        url('../fonts/Roboto-Thin.woff2') format('woff2'),
+        url('../fonts/Roboto-Thin.woff') format('woff'),
+        url('../fonts/Roboto-Thin.ttf') format('truetype'),
+        url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
     font-weight: 100;
     font-style: normal;
 }
@@ -38,10 +38,10 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto-ThinItalic.eot');
     src: url('../fonts/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
-    url('../fonts/Roboto-ThinItalic.woff') format('woff'),
-    url('../fonts/Roboto-ThinItalic.ttf') format('truetype'),
-    url('../fonts/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg');
+        url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Roboto-ThinItalic.woff') format('woff'),
+        url('../fonts/Roboto-ThinItalic.ttf') format('truetype'),
+        url('../fonts/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg');
     font-weight: 100;
     font-style: italic;
 }
@@ -50,10 +50,10 @@
     font-family: 'Droid Serif';
     src: url('../fonts/DroidSerif-Regular.eot');
     src: url('../fonts/DroidSerif-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DroidSerif-Regular.woff2') format('woff2'),
-    url('../fonts/DroidSerif-Regular.woff') format('woff'),
-    url('../fonts/DroidSerif-Regular.ttf') format('truetype'),
-    url('../fonts/DroidSerif-Regular.svg#DroidSerif-Regular') format('svg');
+        url('../fonts/DroidSerif-Regular.woff2') format('woff2'),
+        url('../fonts/DroidSerif-Regular.woff') format('woff'),
+        url('../fonts/DroidSerif-Regular.ttf') format('truetype'),
+        url('../fonts/DroidSerif-Regular.svg#DroidSerif-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -62,10 +62,10 @@
     font-family: 'Droid Serif';
     src: url('../fonts/DroidSerif-Italic.eot');
     src: url('../fonts/DroidSerif-Italic.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DroidSerif-Italic.woff2') format('woff2'),
-    url('../fonts/DroidSerif-Italic.woff') format('woff'),
-    url('../fonts/DroidSerif-Italic.ttf') format('truetype'),
-    url('../fonts/DroidSerif-Italic.svg#DroidSerif-Italic') format('svg');
+        url('../fonts/DroidSerif-Italic.woff2') format('woff2'),
+        url('../fonts/DroidSerif-Italic.woff') format('woff'),
+        url('../fonts/DroidSerif-Italic.ttf') format('truetype'),
+        url('../fonts/DroidSerif-Italic.svg#DroidSerif-Italic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
@@ -74,10 +74,10 @@
     font-family: 'Droid Serif';
     src: url('../fonts/DroidSerif-BoldItalic.eot');
     src: url('../fonts/DroidSerif-BoldItalic.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/DroidSerif-BoldItalic.woff2') format('woff2'),
-    url('../fonts/DroidSerif-BoldItalic.woff') format('woff'),
-    url('../fonts/DroidSerif-BoldItalic.ttf') format('truetype'),
-    url('../fonts/DroidSerif-BoldItalic.svg#DroidSerif-BoldItalic') format('svg');
+        url('../fonts/DroidSerif-BoldItalic.woff2') format('woff2'),
+        url('../fonts/DroidSerif-BoldItalic.woff') format('woff'),
+        url('../fonts/DroidSerif-BoldItalic.ttf') format('truetype'),
+        url('../fonts/DroidSerif-BoldItalic.svg#DroidSerif-BoldItalic') format('svg');
     font-weight: bold;
     font-style: italic;
 }
@@ -87,10 +87,10 @@
     font-family: 'Pt Sans Narrow';
     src: url('../fonts/PTSans-NarrowBold.eot');
     src: url('../fonts/PTSans-NarrowBold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/PTSans-NarrowBold.woff2') format('woff2'),
-    url('../fonts/PTSans-NarrowBold.woff') format('woff'),
-    url('../fonts/PTSans-NarrowBold.ttf') format('truetype'),
-    url('../fonts/PTSans-NarrowBold.svg#PTSans-NarrowBold') format('svg');
+        url('../fonts/PTSans-NarrowBold.woff2') format('woff2'),
+        url('../fonts/PTSans-NarrowBold.woff') format('woff'),
+        url('../fonts/PTSans-NarrowBold.ttf') format('truetype'),
+        url('../fonts/PTSans-NarrowBold.svg#PTSans-NarrowBold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
@@ -99,10 +99,10 @@
     font-family: 'Pt Sans Narrow';
     src: url('../fonts/PTSans-Narrow.eot');
     src: url('../fonts/PTSans-Narrow.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/PTSans-Narrow.woff2') format('woff2'),
-    url('../fonts/PTSans-Narrow.woff') format('woff'),
-    url('../fonts/PTSans-Narrow.ttf') format('truetype'),
-    url('../fonts/PTSans-Narrow.svg#PTSans-Narrow') format('svg');
+        url('../fonts/PTSans-Narrow.woff2') format('woff2'),
+        url('../fonts/PTSans-Narrow.woff') format('woff'),
+        url('../fonts/PTSans-Narrow.ttf') format('truetype'),
+        url('../fonts/PTSans-Narrow.svg#PTSans-Narrow') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -395,7 +395,7 @@ hr {
 .source {
     font-style: italic;
     font-size: 10pt;
-    line-height: 100% !important;
+    line-height: 150% !important;
     font-weight: 100;
     color: #666666;
     padding-top: 3px;
@@ -724,9 +724,9 @@ td li {
 
 .fadein {
     -webkit-transition: opacity .5s linear,
-    visibility .5s linear;
+        visibility .5s linear;
     transition: opacity .5s linear,
-    visibility .5s linear;
+        visibility .5s linear;
 }
 
 .fadein.ng-enter {
@@ -998,7 +998,8 @@ label:after {
  */
 
 /*keeps the footer at the bottom*/
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;

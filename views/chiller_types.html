@@ -1,24 +1,43 @@
 <style>
-#rttypes{
-text-decoration: none;
-  background-color: #00a3e0;
-  color: white !important;
-  font-weight: 100;
+    #rttypes {
+        text-decoration: none;
+        background-color: #00a3e0;
+        color: white !important;
+        font-weight: 100;
     }
-#rtbasics, #rtcases, #rtdesign, #rtoperation, #rtprocure, #rttools, #rtcodes{
-  color: #0062A0;
-  background-color: #ffffff;
-}
+
+    #rtbasics,
+    #rtcases,
+    #rtdesign,
+    #rtoperation,
+    #rtprocure,
+    #rttools,
+    #rtcodes {
+        color: #0062A0;
+        background-color: #ffffff;
+    }
+
+    #chiller {
+        fill: #71C5E8 !important;
+        stroke: #444444 !important;
+    }
+
+    #svg {
+        transform: scale(1.7, 1.7);
+        transform-origin: 100% 10%;
+        transition: all 1s ease-in-out;
+    }
+
 </style>
 
-<span class="myh2">Types</span>
+<span class="myh2">Chiller: Types</span>
 
 <p class="myh3">Vapor Compression</p>
 <p>Most vapor compression chillers use a mechanical compressor to move the refrigerant around the cycle and increase the pressure of the refrigerant in the vapor phase. Mechanical compressors can be categorized into dynamic (centrifugal) and positive displacement (reciprocating, rotary, and orbital).</p>
 
 <p class="myh3">Absorption</p>
 <p>Absorption chillers work similar to a vapor compression cycle chiller except for the difference in the method used to increase the temperature and pressure of the refrigerant after it leaves the evaporator. In an absorption chiller, the compressor is replaced by an absorber and a generator.
-The source of heat for an absorption chiller could be natural gas, steam or hot water. Absorption chillers are best suited in places where waste heat is generated, for example in a campus which has a cogeneration plant. Absorption chillers are less noisy compared to a vapor compression cycle based chiller.</p>
+    The source of heat for an absorption chiller could be natural gas, steam or hot water. Absorption chillers are best suited in places where waste heat is generated, for example in a campus which has a cogeneration plant. Absorption chillers are less noisy compared to a vapor compression cycle based chiller.</p>
 <br>
 <img class="transimg" src="img/steam14_chillers.png" alt="C.O.C=(TDS of blowdown)/(TDS of makeup water)">
 <p class="source">Vapor compression and absorption cycle comparison (Source: <a href="http://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/steam14_chillers.pdf" target="_blank">Steam Tip Sheet #14, U.S. D.O.E</a>)</p>
@@ -26,95 +45,96 @@ The source of heat for an absorption chiller could be natural gas, steam or hot 
 <p>For additional information about using low-grade waste steam to for absorption chiller, refer to <a href="http://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/steam14_chillers.pdf" target="_blank">Steam Tip Sheet #14, U.S. D.O.E</a>)</p>
 <br>
 <p>
-<table style="width:100%">
-  <tr>
-    <th colspan="5">Vapor Compression Chiller</th>
-  </tr>
-  <tr>
-    <th></th>
-    <th>Reciprocating</th>
-    <th>Centrifugal</th>
-      <th>Screw/ Rotary</th>
-      <th>Scroll</th>
-  </tr>
-    <tr>
-    <th>Types</th>
-    <td><ul>
-        <li>Hermitic sealed</li>
-        <li>Open construction</li>
-        </ul></td>
-    <td>&middot; Hermitic sealed
-        <br>&middot; Open construction</td>
-      <td>&middot; Single screw
-          <br>&middot; Twin screw</td>
-      <td>&middot; Single unit
-          <br>&middot; Manifolded</td>
-  </tr>
-     <tr>
-    <th>Advantages <sup>5,6</sup></th>
-    <td>&middot; Low cost
-        <br>&middot; Improved part load efficiencies</td>
-    <td>&middot; Cost effective in larger sizes (>200 tons)</td>
-      <td>&middot; Few moving parts
-          <br>&middot; Light weight</td>
-      <td>&middot; Few moving parts
-          <br>&middot; Compact design<br>&middot; Low noise</td>
-  </tr>
-     <tr>
-    <th>Typical capacity (tons)<sup>1,5,6,7</sup></th>
-    <td>5 to ~400</td>
-    <td>100 to ~4,000</td>
-      <td>20 to ~1,000</td>
-      <td>< 40</td>
-  </tr>
-         <tr>
-    <th>Application</th>
-    <td>Small — medium sized buildings</td>
-    <td>Central plants (district cooling)</td>
-      <td>Commercial  refrigeration</td>
-      <td>Bulk milk cooling, truck transportation, marine containers and grocery display cases </td>
-  </tr>
-<tr>
-    <th>Drawback</th>
-    <td>&middot; High maintenance<br>
-        &middot; Noise and vibration<br>
-        &middot; Max capacity per piece<br>
-        &middot; Limited models<br>
-        &middot; Limited central plant application<br>
-        </td>
-    <td>&middot; Costly for smaller sizes<sup>7</sup><br>
-        &middot; Available mostly in water-cooled type
-        </td>
-    <td>&middot; Low efficiency
-        </td>
-    <td>&middot; Larger capacities need multiple compressors
-        </td>
- </tr>
-     <tr>
-    <th>Efficiency (kW/ton)</th>
-    <td>0.78 – 0.85<sup>1</sup></td>
-    <td>0.45 – 0.68<sup>2</sup></td>
-      <td>0.67 – 0.74<sup>4</sup></td>
-      <td>0.92 – 1.25<sup>3</sup></td>
-  </tr>
-         <tr>
+    <table style="width:100%">
+        <tr>
+            <th colspan="5">Vapor Compression Chiller</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Reciprocating</th>
+            <th>Centrifugal</th>
+            <th>Screw/ Rotary</th>
+            <th>Scroll</th>
+        </tr>
+        <tr>
+            <th>Types</th>
+            <td>
+                <ul>
+                    <li>Hermitic sealed</li>
+                    <li>Open construction</li>
+                </ul>
+            </td>
+            <td>&middot; Hermitic sealed
+                <br>&middot; Open construction</td>
+            <td>&middot; Single screw
+                <br>&middot; Twin screw</td>
+            <td>&middot; Single unit
+                <br>&middot; Manifolded</td>
+        </tr>
+        <tr>
+            <th>Advantages <sup>5,6</sup></th>
+            <td>&middot; Low cost
+                <br>&middot; Improved part load efficiencies</td>
+            <td>&middot; Cost effective in larger sizes (>200 tons)</td>
+            <td>&middot; Few moving parts
+                <br>&middot; Light weight</td>
+            <td>&middot; Few moving parts
+                <br>&middot; Compact design<br>&middot; Low noise</td>
+        </tr>
+        <tr>
+            <th>Typical capacity (tons)<sup>1,5,6,7</sup></th>
+            <td>5 to ~400</td>
+            <td>100 to ~4,000</td>
+            <td>20 to ~1,000</td>
+            <td>
+                < 40</td> </tr> <tr>
+            <th>Application</th>
+            <td>Small — medium sized buildings</td>
+            <td>Central plants (district cooling)</td>
+            <td>Commercial refrigeration</td>
+            <td>Bulk milk cooling, truck transportation, marine containers and grocery display cases </td>
+        </tr>
+        <tr>
+            <th>Drawback</th>
+            <td>&middot; High maintenance<br>
+                &middot; Noise and vibration<br>
+                &middot; Max capacity per piece<br>
+                &middot; Limited models<br>
+                &middot; Limited central plant application<br>
+            </td>
+            <td>&middot; Costly for smaller sizes<sup>7</sup><br>
+                &middot; Available mostly in water-cooled type
+            </td>
+            <td>&middot; Low efficiency
+            </td>
+            <td>&middot; Larger capacities need multiple compressors
+            </td>
+        </tr>
+        <tr>
+            <th>Efficiency (kW/ton)</th>
+            <td>0.78 – 0.85<sup>1</sup></td>
+            <td>0.45 – 0.68<sup>2</sup></td>
+            <td>0.67 – 0.74<sup>4</sup></td>
+            <td>0.92 – 1.25<sup>3</sup></td>
+        </tr>
+        <tr>
 
-  </tr>
-</table>
-<br>
-<br>
+        </tr>
+    </table>
+    <br>
+    <br>
 
 
 
-<myh3>Sources</myh3>
-<div class="source">
-<p>1. <a href="http://www.alabamapower.com/business/save-money-energy/energy-know-how/chillers/reciprocating-chillers.asp" target="_blank">http://www.alabamapower.com/business/save-money-energy/energy-know-how/chillers/reciprocating-chillers.asp</a> </p>
-<p>2. <a href="http://www.trane.com/commercial/north-america/us/en/products-systems/equipment/chillers/water-cooled-chiller/centrifugal-liquid-cooled-chillers/earthwise-centravac.html" target="_blank">TRANE. Centrifugal chiller</a></p>
-<p>3.	<a href="http://www.emersonclimate.com/en-us/products/compressors/scroll_compressors/pages/scroll_compressors.aspxl" target="_blank">http://www.emersonclimate.com/en-us/products/compressors/scroll_compressors/pages/scroll_compressors.aspx</a></p>
-<p>4.	<a href="http://www.trane.com/content/dam/Trane/Commercial/global/products-systems/equipment/chillers/water-cooled/helical-rotary/RLC-PRC029G-EN_07272015.pdf" target="_blank">Trane screw chiller (Performance data: Page 21); condenser entering water temp = 85°F; evaporator leaving temperature= 44°F </a></p>
-<p>5.	<a href="http://www.pdhonline.org/courses/m119/m119content.pdf" target="_blank">Selection tips for chiller compressors. PDH online.</a></p>
-<p>6.	<a href="http://www.alabamapower.com/business/save-money-energy/energy-know-how/chillers/home.asp" target="_blank">Reciprocating chillers</a></p>
-<p>7.	<a href="http://www.alabamapower.com/business/save-money-energy/energy-know-how/compare-costs/chiller-installation.asp " target="_blank">Comparing installed cost of chillers</a></p>
-<p>8.	<a href="http://www.utcccs-cdn.com/hvac/docs/1001/Public/02/811-20065.pdf" target="_blank">Scroll compressors</a></p>
-<p>9.	<a href="http://www.alabamapower.com/business/save-money-energy/energy-know-how/chillers/absorption-chillers/home.asp" target="_blank">Absorption chiller </p>
-</div>
+    <myh3>Sources</myh3>
+    <div class="source">
+        <p>1. <a href="http://www.alabamapower.com/business/save-money-energy/energy-know-how/chillers/reciprocating-chillers.asp" target="_blank">http://www.alabamapower.com/business/save-money-energy/energy-know-how/chillers/reciprocating-chillers.asp</a> </p>
+        <p>2. <a href="http://www.trane.com/commercial/north-america/us/en/products-systems/equipment/chillers/water-cooled-chiller/centrifugal-liquid-cooled-chillers/earthwise-centravac.html" target="_blank">TRANE. Centrifugal chiller</a></p>
+        <p>3. <a href="http://www.emersonclimate.com/en-us/products/compressors/scroll_compressors/pages/scroll_compressors.aspxl" target="_blank">http://www.emersonclimate.com/en-us/products/compressors/scroll_compressors/pages/scroll_compressors.aspx</a></p>
+        <p>4. <a href="http://www.trane.com/content/dam/Trane/Commercial/global/products-systems/equipment/chillers/water-cooled/helical-rotary/RLC-PRC029G-EN_07272015.pdf" target="_blank">Trane screw chiller (Performance data: Page 21); condenser entering water temp = 85°F; evaporator leaving temperature= 44°F </a></p>
+        <p>5. <a href="http://www.pdhonline.org/courses/m119/m119content.pdf" target="_blank">Selection tips for chiller compressors. PDH online.</a></p>
+        <p>6. <a href="http://www.alabamapower.com/business/save-money-energy/energy-know-how/chillers/home.asp" target="_blank">Reciprocating chillers</a></p>
+        <p>7. <a href="http://www.alabamapower.com/business/save-money-energy/energy-know-how/compare-costs/chiller-installation.asp " target="_blank">Comparing installed cost of chillers</a></p>
+        <p>8. <a href="http://www.utcccs-cdn.com/hvac/docs/1001/Public/02/811-20065.pdf" target="_blank">Scroll compressors</a></p>
+        <p>9. <a href="http://www.alabamapower.com/business/save-money-energy/energy-know-how/chillers/absorption-chillers/home.asp" target="_blank">Absorption chiller </p>
+    </div>

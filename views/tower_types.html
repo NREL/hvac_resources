@@ -1,130 +1,148 @@
 <style>
-  #rttypes {
-    text-decoration: none;
-    background-color: #00a3e0;
-    color: white !important;
-    font-weight: 100;
-  }
+    #rttypes {
+        text-decoration: none;
+        background-color: #00a3e0;
+        color: white !important;
+        font-weight: 100;
+    }
 
-  #rtbasics, #rtcases, #rtdesign, #rtoperation, #procure, #rttools, #rtcodes {
-    color: #0062A0;
-    background-color: #ffffff;
-  }
+    #rtbasics,
+    #rtcases,
+    #rtdesign,
+    #rtoperation,
+    #procure,
+    #rttools,
+    #rtcodes {
+        color: #0062A0;
+        background-color: #ffffff;
+    }
+
+    #t-outline {
+        fill: #71C5E8 !important;
+        stroke: #444444 !important;
+    }
+
+    #svg {
+        transform: scale(1.8, 1.8);
+        transform-origin: 100% -10%;
+        transition: all 1s ease-in-out;
+    }
+
 </style>
 
-<span class="myh2">Types</span>
+<span class="myh2">Cooling Tower: Types</span>
 <br><br>
 <table style="width=100%">
 
-  <tr>
-    <th>Cooling Tower Type</th>
-    <th>Flow</th>
-    <th>Advantages</th>
-    <th>Disadvantages</th>
-    <th>Click on image to enlarge <sup>5</sup></th>
-  </tr>
-  <tr>
-    <th>Induced Draft <br>(crossflow)<sup>1,</sup><sup>2,</sup><sup>3</sup></th>
-    <td>
-      <ul>
-        <li>Air enters horizontally and water falls vertically through the fill media</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Hot water basin can be gravity flow</li>
-        <li>Hot water line need not be pressurized, resulting in low pumping head and operational cost</li>
-        <li>Less noise and easy maintenance compared to counterflow</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>
-          Larger tower footprint
-        </li>
-        <li>Large inlet surface makes icing control difficult and sometimes leads to uneven air distribution through the infill</li>
-      </ul>
-    </td>
-    <td>
-      <a href="img/tower_induced_counter.png" target="_blank">
-        <img class="transimage" src="img/tower_induced_counter.png" alt="diagram of an induced draft crossflow cooling tower. Hot water flows in and fills tank. Fan above pulls out heat and cool air goes in the bottom and cold water flows out." width="100%"></a></td>
-  </tr>
+    <tr>
+        <th>Cooling Tower Type</th>
+        <th>Flow</th>
+        <th>Advantages</th>
+        <th>Disadvantages</th>
+        <th>Click on image to enlarge <sup>5</sup></th>
+    </tr>
+    <tr>
+        <th>Induced Draft <br>(crossflow)<sup>1,</sup><sup>2,</sup><sup>3</sup></th>
+        <td>
+            <ul>
+                <li>Air enters horizontally and water falls vertically through the fill media</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Hot water basin can be gravity flow</li>
+                <li>Hot water line need not be pressurized, resulting in low pumping head and operational cost</li>
+                <li>Less noise and easy maintenance compared to counterflow</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>
+                    Larger tower footprint
+                </li>
+                <li>Large inlet surface makes icing control difficult and sometimes leads to uneven air distribution through the infill</li>
+            </ul>
+        </td>
+        <td>
+            <a href="img/tower_induced_counter.png" target="_blank">
+                <img class="transimage" src="img/tower_induced_counter.png" alt="diagram of an induced draft crossflow cooling tower. Hot water flows in and fills tank. Fan above pulls out heat and cool air goes in the bottom and cold water flows out." width="100%"></a></td>
+    </tr>
 
-  <tr>
-    <th>Induced Draft <br> (counterflow)<sup>1,</sup><sup>2,</sup><sup>3</sup></th>
-    <td>
-      <ul>
-        <li>Air flows vertically upwards, opposite to the direction of the water, which falls downwards</li>
-      </ul>
-    </td>
+    <tr>
+        <th>Induced Draft <br> (counterflow)<sup>1,</sup><sup>2,</sup><sup>3</sup></th>
+        <td>
+            <ul>
+                <li>Air flows vertically upwards, opposite to the direction of the water, which falls downwards</li>
+            </ul>
+        </td>
 
-    <td>
-      <ul>
-        <li>Smaller tower footprint</li>
-        <li>Efficient air/water contact through droplets formed by spraying</li>
-      </ul>
-    </td>
+        <td>
+            <ul>
+                <li>Smaller tower footprint</li>
+                <li>Efficient air/water contact through droplets formed by spraying</li>
+            </ul>
+        </td>
 
-    <td>
-      <ul>
-        <li>Cannot use gravity flow for hot water distribution basin</li>
-        <li>Hot water line needs to be pressurized thus increasing operational cost and noise compared to crossflow</li>
-      </ul>
-    </td>
-    <td><a href="img/tower_induced_double.png" target="_blank">
-      <img class="transimage" src="img/tower_induced_double.png" alt="diagram of a induced draft counterflow cooling tower. Hot water comes in through top sides, louvers let in airflow, heat from water rises up through fan. Cold water sump goes through the bottom." width="100%"></a></td>
+        <td>
+            <ul>
+                <li>Cannot use gravity flow for hot water distribution basin</li>
+                <li>Hot water line needs to be pressurized thus increasing operational cost and noise compared to crossflow</li>
+            </ul>
+        </td>
+        <td><a href="img/tower_induced_double.png" target="_blank">
+                <img class="transimage" src="img/tower_induced_double.png" alt="diagram of a induced draft counterflow cooling tower. Hot water comes in through top sides, louvers let in airflow, heat from water rises up through fan. Cold water sump goes through the bottom." width="100%"></a></td>
 
-  </tr>
+    </tr>
 
-  <tr>
-    <th>Forced Draft<sup>2,</sup><sup>4</sup></th>
-    <td>
-      <ul>
-        <li>Air is pushed into the cooling tower by a fan located at the base</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Efficient operation</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Water distribution and recirculation challenges</li>
-      </ul>
-    </td>
-    <td><a href="img/tower_forced.png" target="_blank">
-      <img class="transimage" src="img/tower_forced.png" alt="diagram of a forced draft cooling tower. Hot water is piped into the tank from the top and filles the basin. The heat rises out. Below the basin cold water flows through with a fan on the backside of the flow." width="100%"></a></td>
-  </tr>
+    <tr>
+        <th>Forced Draft<sup>2,</sup><sup>4</sup></th>
+        <td>
+            <ul>
+                <li>Air is pushed into the cooling tower by a fan located at the base</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Efficient operation</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Water distribution and recirculation challenges</li>
+            </ul>
+        </td>
+        <td><a href="img/tower_forced.png" target="_blank">
+                <img class="transimage" src="img/tower_forced.png" alt="diagram of a forced draft cooling tower. Hot water is piped into the tank from the top and filles the basin. The heat rises out. Below the basin cold water flows through with a fan on the backside of the flow." width="100%"></a></td>
+    </tr>
 
-  <tr>
-    <th>Natural Convection<sup>2</sup></th>
-    <td>
-      <ul>
-        <li>Air is heated by the warm water flowing over the fill. The warm air rises up through convection, pulling in colder air from outside.</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Low energy consumption because there is no fan</li>
-        <li>Less noise</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>Significantly larger in size compared to induced or forced draft cooling towers</li>
-      </ul>
-    </td>
-    <td><a href="img/towers_industrial.png" target="_blank"> <img class="transimage" src="img/towers_industrial.png" alt="diagram of a natural convection cooling towers. One version shows the drift eleminators, distribution system, and fill off to the side and a beaker shaped tower. The other shows the drift eliminators, distribution system, and fill within the beaker shaped tower. Both have cool water at the base of the tower. " width="100%"></a></td>
-  </tr>
+    <tr>
+        <th>Natural Convection<sup>2</sup></th>
+        <td>
+            <ul>
+                <li>Air is heated by the warm water flowing over the fill. The warm air rises up through convection, pulling in colder air from outside.</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Low energy consumption because there is no fan</li>
+                <li>Less noise</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Significantly larger in size compared to induced or forced draft cooling towers</li>
+            </ul>
+        </td>
+        <td><a href="img/towers_industrial.png" target="_blank"> <img class="transimage" src="img/towers_industrial.png" alt="diagram of a natural convection cooling towers. One version shows the drift eleminators, distribution system, and fill off to the side and a beaker shaped tower. The other shows the drift eliminators, distribution system, and fill within the beaker shaped tower. Both have cool water at the base of the tower. " width="100%"></a></td>
+    </tr>
 
 </table>
 <span class="source"><sup>5</sup>Source: National Renewable Energy Laboratory</span>
 
 <p class="myh3">Sources:</p>
 <ol class="mylist">
-  <li><a href="http://www.wacon.co/files/Counterflow%20vs%20crossflow%20cooling%20towers.pdf " target="_blank">Cross Flow or Counter Flow Cooling Tower,</a> Wacon International</li>
-  <li><a href="https://spxcooling.com/library/detail/cooling-tower-performance-basic-theory-and-practice" target="_blank">Cooling Tower Performance,</a> SPX Cooling Technologies, Inc.</li>
-  <li><a href="http://spxcooling.com/products/marley-nc" target="_blank">Marley induced-draft crossflow cooling tower, </a>by SPX cooling</li>
-  <li><a href="http://www.mesubjects.net/difference-between-natural-draft-and-forced-draft-cooling-towers/ " target="_blank">Function, Types, Advantages of a Cooling Tower and Difference between Natural Draft and Forced Draft Cooling Towers </a></li>
+    <li><a href="http://www.wacon.co/files/Counterflow%20vs%20crossflow%20cooling%20towers.pdf " target="_blank">Cross Flow or Counter Flow Cooling Tower,</a> Wacon International</li>
+    <li><a href="https://spxcooling.com/library/detail/cooling-tower-performance-basic-theory-and-practice" target="_blank">Cooling Tower Performance,</a> SPX Cooling Technologies, Inc.</li>
+    <li><a href="http://spxcooling.com/products/marley-nc" target="_blank">Marley induced-draft crossflow cooling tower, </a>by SPX cooling</li>
+    <li><a href="http://www.mesubjects.net/difference-between-natural-draft-and-forced-draft-cooling-towers/ " target="_blank">Function, Types, Advantages of a Cooling Tower and Difference between Natural Draft and Forced Draft Cooling Towers </a></li>
 </ol>

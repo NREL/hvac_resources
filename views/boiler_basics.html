@@ -1,133 +1,196 @@
 <style>
-#rtbasics{
-text-decoration: none;
-  background-color: #00a3e0;
-  color: white !important;
-  font-weight: 100;
+    #rtbasics {
+        text-decoration: none;
+        background-color: #00a3e0;
+        color: white !important;
+        font-weight: 100;
     }
-#rtcases, #rtcodes, #rtdesign, #rtoperation, #rtprocure, #rttools, #rttypes{
-  color: #0062A0;
-  background-color: #ffffff;
-}
+
+    #rtcases,
+    #rtcodes,
+    #rtdesign,
+    #rtoperation,
+    #rtprocure,
+    #rttools,
+    #rttypes {
+        color: #0062A0;
+        background-color: #ffffff;
+    }
+
+    #svg {
+        transform: scale(1.7, 1.7);
+        transform-origin: 0% 10%;
+        transition: all 1s ease-in-out;
+    }
+
+    #boiler {
+        fill: #00A3E0 !important;
+        stroke: #444444 !important;
+    }
+
 </style>
 
-<div class="myh2">Basics</div>
+<div class="myh2">Boiler: General Information</div>
 
-<img class="transimg" src="img/Fire_tube_boiler_low_res.jpg" alt="Cleaver Brooks CB-200 fire tube boiler (natural gas) at the FTLB Central Plant" >
+<img class="transimg" src="img/Fire_tube_boiler_low_res.jpg" alt="Cleaver Brooks CB-200 fire tube boiler (natural gas) at the FTLB Central Plant">
 <p class="imgtitle">Cleaver Brooks CB-200 fire-tube boiler (natural gas)<br><span class="source"> Photo by Dennis Schroeder/NREL 38463</span></p>
 
 <p>Boilers heat water to produce hot water or steam for heating. The hot water or steam is supplied from the centralized heating plant to
-  different buildings through piping systems. Efficient boiler maintenance and operation is necessary for improving the overall efficiency
-  of the heating plant. The table below gives an overview of some common boiler types.</p>
+    different buildings through piping systems. Efficient boiler maintenance and operation is necessary for improving the overall efficiency
+    of the heating plant. The table below gives an overview of some common boiler types.</p>
 
-  <table>
+<table>
 
     <tr>
-      <th></th>
-      <th>Description</th>
-      <th>Advantages</th>
+        <th></th>
+        <th>Description</th>
+        <th>Advantages</th>
         <th>Disadvantages</th>
         <th>Application</th>
     </tr>
-      <tr>
-      <th>Fire-tube boilers</th>
-      <td><ul>
-          <li>Combustion gas passes through the tubes, heating the surrounding fluid</li>
-          </ul></td>
-      <td><ul>
-          <li>Easy to maintain and clean</li>
-          <li>Compact</li>
-          <li>Relatively inexpensive</li>
-          </ul></td>
-        <td><ul>
-          <li>Not suitable for high pressure applications</li>
-           <li>Limited application for high steam generation</li></ul></td>
-        <td><ul>
-          <li>Space heating</li>
-            <li>Industrial processes</li></ul></td>
-    </tr>
-       <tr>
-      <th>Water-tube boilers</th>
-      <td><ul>
-          <li>Water-tube boiler	Water flows inside the tube and is heated by combustion gases around it</li></ul>
+    <tr>
+        <th>Fire-tube boilers</th>
+        <td>
+            <ul>
+                <li>Combustion gas passes through the tubes, heating the surrounding fluid</li>
+            </ul>
         </td>
-      <td><ul>
-          <li>Responds better to load changes</li>
-          <li>Can operate at high steam generation and can handle high pressure</li>
-          </ul></td>
+        <td>
+            <ul>
+                <li>Easy to maintain and clean</li>
+                <li>Compact</li>
+                <li>Relatively inexpensive</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Not suitable for high pressure applications</li>
+                <li>Limited application for high steam generation</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Space heating</li>
+                <li>Industrial processes</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th>Water-tube boilers</th>
+        <td>
+            <ul>
+                <li>Water-tube boiler Water flows inside the tube and is heated by combustion gases around it</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Responds better to load changes</li>
+                <li>Can operate at high steam generation and can handle high pressure</li>
+            </ul>
+        </td>
 
-        <td><ul><li>High upfront cost</li>
-            <li>Difficult to clean</li></ul></td>
+        <td>
+            <ul>
+                <li>High upfront cost</li>
+                <li>Difficult to clean</li>
+            </ul>
+        </td>
 
-        <td><ul>
-            <li>Large steam applications</li>
-            <li>Industrial processes</li>
-            </ul></td>
+        <td>
+            <ul>
+                <li>Large steam applications</li>
+                <li>Industrial processes</li>
+            </ul>
+        </td>
     </tr>
 
-      <tr>
-      <th>Cast iron boilers</th>
-      <td><ul>
-          <li>Built from cast iron sections that have water and combustion gas passages instead of tubes</li>
-          </ul></td>
-      <td><ul>
-          <li>Can be assembled on site</li>
-          </ul></td>
-      <td><ul>
-          <li>Prone to leakage with time; sections are sealed with gaskets that wear out</li>
-          </ul></td>
-      <td><ul>
-          <li>Commercial heating</li>
-          </ul></td>
-   </tr>
-       <tr>
-      <th>Condensing boilers </th>
-      <td><ul>
-        <li>Flue gases pass over a secondary heat exchanger, heating the incoming water and forming condensate on the heat exchanger</li>
-      </ul></td>
-      <td><ul>
-        <li>Higher efficiency compared to non-condensing boilers</li>
-      </ul></td>
-      <td><ul>
-        <li>Efficiency gain can be gained only when the return water temperature is lower than ~130°F</li>
-        <li>Needs additional components such as a condensate pump, drain, and neutralization kit to treat the condensate</li>
-      </ul></td>
-      <td><ul>
-        <li>Moderate climates</li>
-        <li>Low-temperature heating systems such as under-floor radiant heating</li>
-        <li>Buildings with hot water loops that can be retrofitted to avoid bypass coils and three-way valves</li>
-      </ul></td>
-  </tr>
+    <tr>
+        <th>Cast iron boilers</th>
+        <td>
+            <ul>
+                <li>Built from cast iron sections that have water and combustion gas passages instead of tubes</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Can be assembled on site</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Prone to leakage with time; sections are sealed with gaskets that wear out</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Commercial heating</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th>Condensing boilers </th>
+        <td>
+            <ul>
+                <li>Flue gases pass over a secondary heat exchanger, heating the incoming water and forming condensate on the heat exchanger</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Higher efficiency compared to non-condensing boilers</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Efficiency gain can be gained only when the return water temperature is lower than ~130°F</li>
+                <li>Needs additional components such as a condensate pump, drain, and neutralization kit to treat the condensate</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Moderate climates</li>
+                <li>Low-temperature heating systems such as under-floor radiant heating</li>
+                <li>Buildings with hot water loops that can be retrofitted to avoid bypass coils and three-way valves</li>
+            </ul>
+        </td>
+    </tr>
 
 
     <tr>
-   <th>Steam boilers </th>
-   <td><ul>
-     <li>Steam produced from the boiler flows from high pressure to a lower pressure without any external device such as a pump; steam can directly feed into steam-using equipment
-        or heat water through a heat exchanger</li>
-   </ul></td>
-   <td><ul>
-     <li>Fewer moving parts (no fan or pump needed for heat transfer)</li>
-   </ul></td>
-   <td><ul>
-     <li>Highly inefficient</li>
-     <li>Substantial warm-up time</li>
-     <li>Cannot respond quickly to load variation </li>
-   </ul></td>
-   <td><ul>
-     <li>Large facilities such as hospitals and campuses with  steam distribution</li>
-   </ul></td>
-</tr>
+        <th>Steam boilers </th>
+        <td>
+            <ul>
+                <li>Steam produced from the boiler flows from high pressure to a lower pressure without any external device such as a pump; steam can directly feed into steam-using equipment
+                    or heat water through a heat exchanger</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Fewer moving parts (no fan or pump needed for heat transfer)</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Highly inefficient</li>
+                <li>Substantial warm-up time</li>
+                <li>Cannot respond quickly to load variation </li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Large facilities such as hospitals and campuses with steam distribution</li>
+            </ul>
+        </td>
+    </tr>
 </table>
 
 <myh3>Sources</myh3>
 <span class="source">
     <ol class="mylist">
-        <li><a class="doctitle"  href="http://www.csemag.com/single-article/boilers-types-applications-and-efficiencies/7bc11452ecee4ce569a4766dadb231d0.html" target="_blank">Boilers: Types, applications, and efficiencies</a> </li>
-        <li><a class="doctitle"  href="http://www.csemag.com/single-article/boiler-systems-economics-and-efficiencies/882702317f45aa774eb70b797efe75bd.html " target="_blank">Boiler systems: Economics and efficiencies </a></li>
-        <li><a class="doctitle"  href=" https://betterbricks.com/resources/boilers" target="_blank">Boilers </a></li>
-        <li><a class="doctitle"  href="http://energy.gov/energysaver/furnaces-and-boilers" target="_blank">Furnaces and boilers  </a>, U.S. Department of Energy</li>
-        <li><a class="doctitle"  href="http://www.gsa.gov/portal/mediaId/194247/fileName/Condensing_Boilers_2014a_(508).action  " target="_blank">Condensing boilers</a>, GSA </li>
-        <li><a class="doctitle"  href="http://energy.gov/eere/femp/purchasing-energy-efficient-commercial-boilers  " target="_blank">Purchasing Energy-Efficient Commercial Boilers</a>, U.S. Department of Energy </li>
-   </ol>
-    </span>
+        <li><a class="doctitle" href="http://www.csemag.com/single-article/boilers-types-applications-and-efficiencies/7bc11452ecee4ce569a4766dadb231d0.html" target="_blank">Boilers: Types, applications, and efficiencies</a> </li>
+        <li><a class="doctitle" href="http://www.csemag.com/single-article/boiler-systems-economics-and-efficiencies/882702317f45aa774eb70b797efe75bd.html " target="_blank">Boiler systems: Economics and efficiencies </a></li>
+        <li><a class="doctitle" href=" https://betterbricks.com/resources/boilers" target="_blank">Boilers </a></li>
+        <li><a class="doctitle" href="http://energy.gov/energysaver/furnaces-and-boilers" target="_blank">Furnaces and boilers </a>, U.S. Department of Energy</li>
+        <li><a class="doctitle" href="http://www.gsa.gov/portal/mediaId/194247/fileName/Condensing_Boilers_2014a_(508).action  " target="_blank">Condensing boilers</a>, GSA </li>
+        <li><a class="doctitle" href="http://energy.gov/eere/femp/purchasing-energy-efficient-commercial-boilers  " target="_blank">Purchasing Energy-Efficient Commercial Boilers</a>, U.S. Department of Energy </li>
+    </ol>
+</span>
