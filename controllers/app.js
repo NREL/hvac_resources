@@ -880,12 +880,12 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 name: 'sensor_basics',
                 nav: 'sensor',
                 url: '/sensor_basics',
-                templateUrl: 'views/sensor_controls_basics.html'
+                templateUrl: 'views/sensors_controls_basics.html'
                 }, {
                 name: 'sensor_operation',
                 nav: 'sensor',
                 url: '/sensor_operation',
-                templateUrl: 'views/sensor_controls_operation.html'
+                templateUrl: 'views/sensors_controls_operation.html'
                 }, {
                 name: 'cool_basics',
                 nav: 'cool',
@@ -896,7 +896,61 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 nav: 'hot',
                 url: '/hot_basics',
                 templateUrl: 'views/hot_thermal_basics.html'
-
+                 }, {
+                name: 'ahu_design',
+                nav: 'ahu',
+                url: '/ahu_design',
+                templateUrl: 'views/ahu_design.html'
+            }, {
+                name: 'ahu_basics',
+                nav: 'ahu',
+                url: '/ahu_basics',
+                templateUrl: 'views/ahu_basics.html'
+            }, {
+                name: 'ahu_types',
+                nav: 'ahu',
+                url: '/ahu_types',
+                templateUrl: 'views/ahu_types.html'
+            }, {
+                name: 'ahu_cases',
+                nav: 'ahu',
+                url: '/ahu_cases',
+                templateUrl: 'views/ahu_cases.html'
+            }, {
+                name: 'ahu_codes',
+                nav: 'ahu',
+                url: '/ahu_codes',
+                templateUrl: 'views/ahu_codes.html'
+            }, {
+                name: 'ahu_operation',
+                nav: 'ahu',
+                url: '/ahu_operation',
+                templateUrl: 'views/ahu_operation.html'
+            }, {
+                name: 'ahu_procure',
+                nav: 'ahu',
+                url: '/ahu_procure',
+                templateUrl: 'views/ahu_procure.html'
+            }, {
+                name: 'ahu_tools',
+                nav: 'ahu',
+                url: '/ahu_tools',
+                templateUrl: 'views/ahu_tools.html'
+                }, {
+                name: 'duct_basics',
+                nav: 'duct',
+                url: '/duct_basics',
+                templateUrl: 'views/duct_basics.html'
+                }, {
+                name: 'steamtrap_basics',
+                nav: 'steamtrap',
+                url: '/steamtrap_basics',
+                templateUrl: 'views/steamtrap_basics.html'
+                }, {
+                name: 'steamtrap_tools',
+                nav: 'steamtrap',
+                url: '/steamtrap_tools',
+                templateUrl: 'views/steamtrap_tools.html'
 
 
             }]

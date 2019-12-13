@@ -1,111 +1,153 @@
 <style>
-  #rtbasics {
-    text-decoration: none;
-    background-color: #00a3e0;
-    color: white !important;
-    font-weight: 100;
+    #rtbasics {
+        text-decoration: none;
+        background-color: #00a3e0;
+        color: white !important;
+        font-weight: 100;
+    }
+
+    #rtcases,
+    #rtcodes,
+    #rtdesign,
+    #rtoperation,
+    #procure,
+    #rttools,
+    #rttypes {
+        color: #0062A0;
+        background-color: #ffffff;
+    }
+      #steamtrapht, #steamtrap {
+         fill: #71C5E8 !important;
+  stroke: #444444 !important;
   }
 
-  #rtcases, #rtcodes, #rtdesign, #rtoperation, #procure, #rttools, #rttypes {
-    color: #0062A0;
-    background-color: #ffffff;
+  #svg {
+    transform: scale(1.9, 1.9);
+    transform-origin: 30% 20%;
+    transition: all 1s ease-in-out;
   }
+
 </style>
 
-<span class="myh2">Basics</span>
+<span class="myh2">Steam Traps: Basics</span>
 
 <aside class="pquote">
-  <blockquote>“In steam systems that have not been maintained for 3 to 5 years, between 15% to 30% of the installed steam traps may have failed—thus allowing live steam to escape into the condensate return system.”</blockquote>
-  <p class="source"><a href="https://www.energy.gov/sites/prod/files/2014/05/f16/steam1_traps.pdf " target="_blank">Inspect and Repair Steam Traps</a>, U.S. Department of Energy (DOE) Steam Tip Sheet #1</p>
+    <blockquote>“In steam systems that have not been maintained for 3 to 5 years, between 15% to 30% of the installed steam traps may have failed—thus allowing live steam to escape into the condensate return system.”</blockquote>
+    <p class="source"><a href="https://www.energy.gov/sites/prod/files/2014/05/f16/steam1_traps.pdf " target="_blank">Inspect and Repair Steam Traps</a>, U.S. Department of Energy (DOE) Steam Tip Sheet #1</p>
 </aside>
 
 <p>“A steam trap is a device for allowing the passage of condensate and preventing the passage of steam, or for allowing the passage of air as well as condensate.
-  Common steam trap types include float and thermostatic (F&amp;T) traps, inverted-bucket traps, and thermodynamic traps.”
-  -<a class="doctitle" href="https://www.ashrae.org/resources--publications/free-resources/ashrae-terminology" target="_blank">ASHRAE terminology</a> </p>
+    Common steam trap types include float and thermostatic (F&amp;T) traps, inverted-bucket traps, and thermodynamic traps.”
+    -<a class="doctitle" href="https://www.ashrae.org/resources--publications/free-resources/ashrae-terminology" target="_blank">ASHRAE terminology</a> </p>
 <p>When condensate gets collected it reduces the heat transfer efficiency and can cause water hammer effect.</p>
 
 
 <table>
 
-  <tr>
-    <th>Steam trap types </th>
-    <th>Operation driven by</th>
-    <th>Advantages</th>
-      <th>Disadvantages</th>
-      <th>Application</th>
-  </tr>
     <tr>
-    <th>Float and thermostatic</th>
-    <td><ul>
-        <li>The difference in temperature between steam and sub-cooled condensate</li>
-        </ul></td>
-    <td><ul>
-        <li>Allows rapid purging of air at startup</li>
-        <li>Can handle high back pressure and large air quantities</li>
-    </ul></td>
-      <td><ul>
-        <li>Unable to handle dirt</li>
-    </ul></td>
-      <td><ul>
-        <li>Process application (removing condensate from a heat transfer process)</li>
-          <li>When large quantity of air is present in the system</li></ul></td>
-  </tr>
-     <tr>
-    <th>Mechanical (inverted-bucket)</th>
-    <td><ul>
-        <li>the difference in condensate and steam density</li></ul>
-      </td>
-    <td><ul>
-        <li>Robust</li>
-        <li>Resistant to water hammer</li>
-        <li>Resistant to dirt and scale</li>
-        </ul></td>
+        <th>Steam trap types </th>
+        <th>Operation driven by</th>
+        <th>Advantages</th>
+        <th>Disadvantages</th>
+        <th>Application</th>
+    </tr>
+    <tr>
+        <th>Float and thermostatic</th>
+        <td>
+            <ul>
+                <li>The difference in temperature between steam and sub-cooled condensate</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Allows rapid purging of air at startup</li>
+                <li>Can handle high back pressure and large air quantities</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Unable to handle dirt</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Process application (removing condensate from a heat transfer process)</li>
+                <li>When large quantity of air is present in the system</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <th>Mechanical (inverted-bucket)</th>
+        <td>
+            <ul>
+                <li>the difference in condensate and steam density</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Robust</li>
+                <li>Resistant to water hammer</li>
+                <li>Resistant to dirt and scale</li>
+            </ul>
+        </td>
 
-      <td><ul>
-        <li>Unable to distinguish difference in steam and air density</li>
-        <li>Some steam gets purged out with air</li>
-        <li>Not suitable for removing large quantities of air</li>
-      </ul></td>
+        <td>
+            <ul>
+                <li>Unable to distinguish difference in steam and air density</li>
+                <li>Some steam gets purged out with air</li>
+                <li>Not suitable for removing large quantities of air</li>
+            </ul>
+        </td>
 
-      <td><ul>
-          <li>Drip applications on steam main and supply lines</li>
-      </ul></td>
-  </tr>
+        <td>
+            <ul>
+                <li>Drip applications on steam main and supply lines</li>
+            </ul>
+        </td>
+    </tr>
 
     <tr>
-    <th>Thermodynamic (disc type)</th>
-    <td><ul>
-        <li>the differences in pressure applied by the steam and condensate</li>
-        </ul></td>
-    <td><ul>
-        <li>Resistant to water hammer</li>
-        <li>Anti-freezing</li>
-        </ul></td>
-    <td><ul>
-        <li>Not suitable for removing large quantities of air</li>
-        <li>Unable to handle dirt</li>
-        <li>Poor operation against back pressure</li>
-        </ul></td>
-    <td><ul>
-        <li>Drip applications on steam main and supply lines</li>
-        </ul></td>
- </tr>
+        <th>Thermodynamic (disc type)</th>
+        <td>
+            <ul>
+                <li>the differences in pressure applied by the steam and condensate</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Resistant to water hammer</li>
+                <li>Anti-freezing</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Not suitable for removing large quantities of air</li>
+                <li>Unable to handle dirt</li>
+                <li>Poor operation against back pressure</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Drip applications on steam main and supply lines</li>
+            </ul>
+        </td>
+    </tr>
 
 </table>
 
 <p class="myh3">Other Resources</p>
 <ul class="mylist">
 
-  <li><a class="doctitle" href="https://www1.eere.energy.gov/femp/pdfs/FTA_SteamTrap.pdf" target="_blank">Steam Trap Performance Assessment</a>, DOE</li>
+    <li><a class="doctitle" href="https://www1.eere.energy.gov/femp/pdfs/FTA_SteamTrap.pdf" target="_blank">Steam Trap Performance Assessment</a>, DOE</li>
 
-  <li><a class="doctitle" href="http://www.watsonmcdaniel.com/v2/pdfs2010/steamtraps/SteamTrapApplications_284_295.pdf " target="_blank">Steam Trap Applications</a>, Watson McDaneil Corporation</li>
+    <li><a class="doctitle" href="http://www.watsonmcdaniel.com/v2/pdfs2010/steamtraps/SteamTrapApplications_284_295.pdf " target="_blank">Steam Trap Applications</a>, Watson McDaneil Corporation</li>
 
-  <li><a class="doctitle" href="https://www.armstronginternational.com/sites/default/files/resources/documents/backtobasicssteamtraps1016-95.pdf" target="_blank">Back to Basics—Steam Traps 101</a>, D. Fischer, PLANT ENGINEERING</li>
+    <li><a class="doctitle" href="https://www.armstronginternational.com/sites/default/files/resources/documents/backtobasicssteamtraps1016-95.pdf" target="_blank">Back to Basics—Steam Traps 101</a>, D. Fischer, PLANT ENGINEERING</li>
 
-  <li><a class="doctitle" href="http://energy.gov/sites/prod/files/2015/04/f21/mbpg2015.pdf" target="_blank">Metering Best Practices: A Guide to Achieving Utility Resource Efficiency</a>, DOE</li>
+    <li><a class="doctitle" href="http://energy.gov/sites/prod/files/2015/04/f21/mbpg2015.pdf" target="_blank">Metering Best Practices: A Guide to Achieving Utility Resource Efficiency</a>, DOE</li>
 
-  <li><a class="doctitle" href="http://www.steamtrapsystems.com/documents/20130828SteamTraps101.pdf " target="_blank">Steam Traps 101</a>, National Grid </li>
+    <li><a class="doctitle" href="http://www.steamtrapsystems.com/documents/20130828SteamTraps101.pdf " target="_blank">Steam Traps 101</a>, National Grid </li>
 
-  <li><a class="doctitle" href="http://aceee.org/files/proceedings/1997/data/papers/SS97_Panel1_Paper53.pdf " target="_blank">Capturing Energy Savings with Steam Traps</a>, Bloss D. et.al., ACEEE panel paper
+    <li><a class="doctitle" href="http://aceee.org/files/proceedings/1997/data/papers/SS97_Panel1_Paper53.pdf " target="_blank">Capturing Energy Savings with Steam Traps</a>, Bloss D. et.al., ACEEE panel paper
 
 </ul>

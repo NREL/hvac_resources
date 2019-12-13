@@ -1,122 +1,142 @@
 <style>
-#rtbasics{
-text-decoration: none;
-  background-color: #00a3e0;
-  color: white !important;
-  font-weight: 100;
+    #rtbasics {
+        text-decoration: none;
+        background-color: #00a3e0;
+        color: white !important;
+        font-weight: 100;
     }
-#rtcases, #rtcodes, #rtdesign, #rtoperation, #procure, #rttools, #rttypes{
-  color: #0062A0;
-  background-color: #ffffff;
-}
+
+    #rtcases,
+    #rtcodes,
+    #rtdesign,
+    #rtoperation,
+    #procure,
+    #rttools,
+    #rttypes {
+        color: #0062A0;
+        background-color: #ffffff;
+    }
+
+    #duct1-outline,
+    #duct2-outline {
+        fill: #71C5E8 !important;
+        stroke: #444444 !important;
+    }
+
+    #svg {
+        transform: scale(1.05, 1.05);
+        transform-origin: 40% 270%;
+        transition: all 1.7s ease-in-out;
+    }
+
 </style>
 
-<span class="myh2">Basics</span>
+<span class="myh2">Ducting: Basics</span>
 <br><br>
 
 <table>
-<tr>
-  <th colspan="2"> Duct Material Type  </th>
-  <th>Application</th>
-  <th>Advantage</th>
-  <th>Disadvantage</th>
-</tr>
+    <tr>
+        <th colspan="2"> Duct Material Type </th>
+        <th>Application</th>
+        <th>Advantage</th>
+        <th>Disadvantage</th>
+    </tr>
 
-<tr>
-  <th rowspan="4">Metallic Duct</th>
-  <th>Galvanized Steel</th>
-  <td>Used in air handling system supply and return ducts</td>
-  <td>Strong, rigid, durable, rust-resistant, easy to work (i.e., drill holes, weld, and paint)</td>
-  <td>Poor acoustics, can transmit noise due to vibration; cannot be used in corrosive environment and to handle high temperature fluid</td>
-</tr>
+    <tr>
+        <th rowspan="4">Metallic Duct</th>
+        <th>Galvanized Steel</th>
+        <td>Used in air handling system supply and return ducts</td>
+        <td>Strong, rigid, durable, rust-resistant, easy to work (i.e., drill holes, weld, and paint)</td>
+        <td>Poor acoustics, can transmit noise due to vibration; cannot be used in corrosive environment and to handle high temperature fluid</td>
+    </tr>
 
-<tr>
-  <th>Carbon Steel</th>
-  <td>High temperature duct systems and ducts requiring paint or special coating (flues, stacks, and hoods) </td>
-  <td>Sturdy, rigid, durable, easily available, weldable. and nonporous </td>
-  <td>Gets corroded quickly, heavyweight</td>
-</tr>
+    <tr>
+        <th>Carbon Steel</th>
+        <td>High temperature duct systems and ducts requiring paint or special coating (flues, stacks, and hoods) </td>
+        <td>Sturdy, rigid, durable, easily available, weldable. and nonporous </td>
+        <td>Gets corroded quickly, heavyweight</td>
+    </tr>
 
-<tr>
-  <th>Aluminum</th>
-  <td>Clean room, moist air, exhausts</td>
-  <td>Lightweight, corrosion-resistant, lower static friction drop compared to galvanized steel</td>
-  <td>Low strength, expensive compared to galvanized steel, difficult to weld </td>
-</tr>
+    <tr>
+        <th>Aluminum</th>
+        <td>Clean room, moist air, exhausts</td>
+        <td>Lightweight, corrosion-resistant, lower static friction drop compared to galvanized steel</td>
+        <td>Low strength, expensive compared to galvanized steel, difficult to weld </td>
+    </tr>
 
-<tr>
-  <th>Stainless Steel </th>
-  <td>Kitchen exhaust, moist air, fume exhaust </td>
-  <td>Corrosion-resistant, can take high polish </td>
-  <td>Difficult to work (i.e., drill holes, bend), expensive compared to galvanized steel </td>
-</tr>
+    <tr>
+        <th>Stainless Steel </th>
+        <td>Kitchen exhaust, moist air, fume exhaust </td>
+        <td>Corrosion-resistant, can take high polish </td>
+        <td>Difficult to work (i.e., drill holes, bend), expensive compared to galvanized steel </td>
+    </tr>
 
-<tr>
-  <th rowspan="4">Non metallic Duct</th>
-  <th>Fiberglass- Reinforced Plastic </th>
-  <td>Chemical exhausts, scrubbers, underground duct systems</td>
-  <td>Good sound attenuation, corrosion-resistant</td>
-  <td>High cost, weight, fabrication, code acceptance</td>
-</tr>
+    <tr>
+        <th rowspan="4">Non metallic Duct</th>
+        <th>Fiberglass- Reinforced Plastic </th>
+        <td>Chemical exhausts, scrubbers, underground duct systems</td>
+        <td>Good sound attenuation, corrosion-resistant</td>
+        <td>High cost, weight, fabrication, code acceptance</td>
+    </tr>
 
-<tr>
-  <th>Polyvinyl Chloride (PVC) </th>
-  <td>Exhaust for chemical fumes and underground duct work </td>
-  <td>Corrosion-resistant, lightweight, easy to work (weld and modify) </td>
-  <td>High cost, inability to handle thermal shock </td>
-</tr>
+    <tr>
+        <th>Polyvinyl Chloride (PVC) </th>
+        <td>Exhaust for chemical fumes and underground duct work </td>
+        <td>Corrosion-resistant, lightweight, easy to work (weld and modify) </td>
+        <td>High cost, inability to handle thermal shock </td>
+    </tr>
 
-<tr>
-  <th>Polyvinyl Steel (PVS)</th>
-  <td>Ducts, moist air environments</td>
-  <td>Corrosion-resistant, lightweight</td>
-  <td>Inability to withstand high temperatures, prone to coating damage</td>
-</tr>
+    <tr>
+        <th>Polyvinyl Steel (PVS)</th>
+        <td>Ducts, moist air environments</td>
+        <td>Corrosion-resistant, lightweight</td>
+        <td>Inability to withstand high temperatures, prone to coating damage</td>
+    </tr>
 
-<tr>
-  <th>Flexible Duct</th>
-  <td>Run outs, used to connect supply plenum to diffuser </td>
-  <td>Factory-insulated, fewer duct connections and joints</td>
-  <td>Can get easily torn and crushed, high resistance to airflow</td>
-</tr>
+    <tr>
+        <th>Flexible Duct</th>
+        <td>Run outs, used to connect supply plenum to diffuser </td>
+        <td>Factory-insulated, fewer duct connections and joints</td>
+        <td>Can get easily torn and crushed, high resistance to airflow</td>
+    </tr>
 
 </table>
 
 <br>
 
 <table>
-<tr>
-    <th>Duct Type</th>
-    <th>Application</th>
-    <th>Advantage</th>
-    <th>Disadvantage</th>
-</tr>
+    <tr>
+        <th>Duct Type</th>
+        <th>Application</th>
+        <th>Advantage</th>
+        <th>Disadvantage</th>
+    </tr>
 
-<tr>
-    <th>Round</th>
-    <td rowspan="3">Air distribution</td>
-    <td>Smaller pressure drop per unit area, high ratio of air-carrying capacity to pressure drop, less leakage compared to rectangular duct </td>
-    <td>Height cannot be adjusted, needs a fixed amount of clear space</td>
-</tr>
+    <tr>
+        <th>Round</th>
+        <td rowspan="3">Air distribution</td>
+        <td>Smaller pressure drop per unit area, high ratio of air-carrying capacity to pressure drop, less leakage compared to rectangular duct </td>
+        <td>Height cannot be adjusted, needs a fixed amount of clear space</td>
+    </tr>
 
-<tr>
-    <th>Rectangular</th>
-    <td>Easy fabrication, can fit into tight spaces, provides flat surface for tap-ins</td>
-    <td>Higher pressure drop, uses more material compared to a round duct for same airflow, difficult to seal</td>
-</tr>
+    <tr>
+        <th>Rectangular</th>
+        <td>Easy fabrication, can fit into tight spaces, provides flat surface for tap-ins</td>
+        <td>Higher pressure drop, uses more material compared to a round duct for same airflow, difficult to seal</td>
+    </tr>
 
-<tr>
-    <th>Oval</th>
-    <td>Smaller height requirement compared to a round duct</td>
-    <td>Fittings are difficult to fabricate, difficult to handle and ship large sizes</td>
-</tr>
+    <tr>
+        <th>Oval</th>
+        <td>Smaller height requirement compared to a round duct</td>
+        <td>Fittings are difficult to fabricate, difficult to handle and ship large sizes</td>
+    </tr>
 
 </table>
 
 <p class="myh2">References</p>
 <ul class="mylist">
-        <li><a class="doctitle"  href="http://www.nrel.gov/docs/fy12osti/53352.pdf" target="_blank">Advanced Strategy Guideline: Air Distribution Basics and Duct Design </a>, U.S. Department of Energy</li>
-        <li><a class="doctitle"  href="https://www.rses.org/assets/serviceapplicationmanual/630-148.pdf " target="_blank">Duct System Design Considerations</a>, Refrigeration Service Engineers Society</li>
-        <li><a class="doctitle"  href="http://www1.eere.energy.gov/buildings/publications/pdfs/building_america/27630.pdf " target="_blank">Improving the Efficiency of Your Duct System</a>, U.S. Department of Energy</li>
-        <li><a class="doctitle"  href="https://www.energy.gov/energysaver/minimizing-energy-losses-ducts" target="_blank">Minimizing Energy Losses in Ducts</a>, U.S. Department of Energy</li>
-    </ul>
+    <li><a class="doctitle" href="http://www.nrel.gov/docs/fy12osti/53352.pdf" target="_blank">Advanced Strategy Guideline: Air Distribution Basics and Duct Design </a>, U.S. Department of Energy</li>
+    <li><a class="doctitle" href="https://www.rses.org/assets/serviceapplicationmanual/630-148.pdf " target="_blank">Duct System Design Considerations</a>, Refrigeration Service Engineers Society</li>
+    <li><a class="doctitle" href="http://www1.eere.energy.gov/buildings/publications/pdfs/building_america/27630.pdf " target="_blank">Improving the Efficiency of Your Duct System</a>, U.S. Department of Energy</li>
+    <li><a class="doctitle" href="https://www.energy.gov/energysaver/minimizing-energy-losses-ducts" target="_blank">Minimizing Energy Losses in Ducts</a>, U.S. Department of Energy</li>
+</ul>

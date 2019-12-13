@@ -36,7 +36,7 @@
 </style>
 
 
-<div class="myh1"><a href="https://hvacresourcemap.net/#/laboratories/" target="_self">LABORATORIES</div>
+<div class="myh1"><a href="#/laboratories" target="_self">LABORATORIES</a></div>
 <div class="subflex">
     <div class="content-main">
         <div ui-view>
@@ -58,10 +58,13 @@
                     <li><a ui-sref=".boiler_basics">Boiler</a></li>
                     <li><a ui-sref=".chiller_basics">Chiller</a></li>
                     <li><a ui-sref=".tower_basics">Cooling Tower</a></li>
-                    <li><a ui-sref=".cool_thermal_basics">Cool Thermal Energy Storage</a></li>
-                    <li><a ui-sref=".hot_thermal_basics">Hot Thermal Energy Storage</a></li>
+                    <li><a ui-sref=".cool_basics">Cool Thermal Energy Storage</a></li>
+                    <li><a ui-sref=".hot_basics">Hot Thermal Energy Storage</a></li>
                     <li><a ui-sref=".pump_basics">Pump</a></li>
-                    <li><a ui-sref=".sensors_controls_basics">Sensors &amp; Controls</a></li>
+                    <li><a ui-sref=".sensor_basics">Sensors &amp; Controls</a></li>
+                    <li><a ui-sref=".ahu_basics">Air Handling Unit</a></li>
+                    <li><a ui-sref=".duct_basics">Ducting</a></li>
+                    <li><a ui-sref=".steamtrap_basics">Steam Traps</a></li>
                 </ul>
             </nav>
         </div>
@@ -98,9 +101,9 @@
             <nav class="rtnav">
                 <ul>
                     <li><a ui-sref=".tower_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
-                    <li><a ui-sref=".tower_types" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Types</a></li>
+                    <li><a ui-sref=".tower_types" id="rtcodes"><i class="fa fa-tasks fa-1x fa-fw" aria-hidden="true"></i> Types</a></li>
                     <li><a ui-sref=".tower_codes" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Performance Ratings </a></li>
-                    <li><a ui-sref=".tower_design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Energy Efficiency Measures </a></li>
+                    <li><a ui-sref=".tower_design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Design Guides &amp; EEMs </a></li>
                     <li><a ui-sref=".tower_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
                     <li><a ui-sref=".tower_operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
                     <li><a ui-sref=".tower_procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
@@ -138,6 +141,7 @@
                 </ul>
             </nav>
         </div>
+
         <div ng-switch-when="sensor">
             <span class="myh4">SENSORS &amp; CONTROLS RESOURCES </span>
             <nav class="rtnav">
@@ -145,6 +149,38 @@
                     <li><a ui-sref=".sensor_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
                     <li><a ui-sref=".sensor_operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
 
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="ahu">
+            <span class="myh4">AHU RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".ahu_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".ahu_types" id="rtcodes"><i class="fa fa-tasks fa-1x fa-fw" aria-hidden="true"></i> Types </a></li>
+                    <li><a ui-sref=".ahu_codes" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Performance Ratings </a></li>
+                    <li><a ui-sref=".ahu_design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Energy Efficiency Measures </a></li>
+                    <!--                    <li><a ui-sref=".ahu_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>-->
+                    <li><a ui-sref=".ahu_operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+                    <li><a ui-sref=".ahu_procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
+                    <li><a ui-sref=".ahu_cases" id="rtcases"><i class="fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Case Studies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="duct">
+            <span class="myh4">DUCTING RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".duct_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="steamtrap">
+            <span class="myh4">STEAM TRAPS RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".steamtrap_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".steamtrap_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
                 </ul>
             </nav>
         </div>
