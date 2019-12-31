@@ -1,0 +1,76 @@
+<style>
+    #rtbasics {
+        text-decoration: none;
+        background-color: #00a3e0;
+        color: white !important;
+        font-weight: 100;
+    }
+
+    #rtcases,
+    #rtcodes,
+    #rtdesign,
+    #rtoperation,
+    #procure,
+    #rttools,
+    #rttypes {
+        color: #0062A0;
+        background-color: #ffffff;
+    }
+
+    #rect4513_1_,
+    #rect4513_2_ {
+        fill: #71C5E8 !important;
+        stroke: #444444 !important;
+    }
+
+    #energyrecoverypipe {
+        stroke: #71C5E8 !important;
+        stroke-width: 5px;
+    }
+
+
+    #svg {
+        transform: scale(1.8, 1.8);
+        transform-origin: 20% 70%;
+        transition: all 1.7s ease-in-out;
+    }
+
+</style>
+
+
+<span class="myh2">Energy Recovery: General Information</span>
+
+<p>Labs often need high ventilation rates to keep air quality at acceptable levels. The outside air that provides the ventilation must be conditioned to meet lab space requirements. Conditioning outside air can be energy intensive in cold or hot climates. To make this process more efficient, energy recovery systems can be put in place. This is accomplished by transferring heat between the outdoor air and exhaust air streams. During cold weather, energy recovery systems pre-heat the incoming outdoor air. Then, for the hot weather, the outdoor air is pre-cooled.</p>
+
+<p>There are multiple strategies and devices to accomplish energy recovery. For all of the following strategies, the additional fan energy to overcome the pressure drop through the energy recovery device must be taken into consideration. The pressure drop across some energy recovery devices can be non-trivial, resulting in a sizable fan energy penalty. Enthalpy wheels in particular can have a large pressure drop.</p>
+
+<span class="myh3">Heat Wheels</span>
+<p>These devices transfer only the sensible energy between the exhaust and outdoor air streams. There is no moisture (latent energy) transfer. Consequently, in the winter, the outdoor air temperature is pre-heated toward the inlet exhaust air temperature. In the summer, the outdoor air temperature is pre-cooled.</p>
+
+<span class="myh3">Enthalpy Wheels</span>
+<p>The wheel absorbs sensible and latent energy from the exhaust air on one side and cycles it towards the opposite s outside air side. This process is illustrated in Figure 1.</p>
+
+<p>Enthalpy wheels are like heat wheels in that they transfer sensible energy. Yet they also transfer moisture between the two air streams. In the winter, the higher temperature and dew-point exhaust air will increase the temperature and dew-point of the outdoor air. While in the summer, enthalpy wheels will pre-cool the outdoor air and provide some dehumidification.</p>
+
+<p>Enthalpy wheels can be placed in the general exhaust but not in hazardous exhaust because of potential cross contamination. The exhaust air must pass immediately adjacent to the supply air.</p>
+
+<img class="transimg" src="img/energy_recovery_illustration.jpg" alt="Cross section of enthalpy wheel system with purge section. Front cross section show the exhaust rotation, the purge section, and the supply sections of the circular cross section. The side cross section shows the exhaust air from the laboratory flowing through the fan to exhaust air. It is joined by purged flow from the purge section and outside air. Outside air flows through the wheel to suppy air fan and to labs.">
+<p class="imgtitle">Figure 1. Cross Sections (Front and Side) of Enthalpy Wheel System with Purge Section.<br><span class="source"> Bell, G. C. (2007)</span></p>
+
+<span class="myh3">Heat Pipes</span>
+<p>Another energy recovery device is a heat pipe. Similar to heat wheels, these exchange sensible heat only. Heat pipes are long pipes with a hollow core surrounded by a heat transfer fluid. When heat is added to one end, the fluid vaporizes and travels through the hollow core. By the time it reaches the end, enough heat leaves the system that it condenses and moves back to the opposite end, repeating the cycle. The exhaust air must pass immediately adjacent to the supply air unless a pump is added.</p>
+
+<span class="myh3">Run-around Loops</span>
+<p>Heat transfer can also be achieved by taking the heat from one airstream in a pipe and transferring it to the airstream in another with the assistance of two heat exchangers and a heat transfer medium. Usually a pump is necessary to induce movement in the system.</p>
+
+<ul class="mylist">
+    <li>Run-around loops are well-suited for transferring energy between process loads and ventilation air because there is no chance of cross contamination.</li>
+    <li>Run-around loops and heat pipes can also be used to reduce reheat energy by transferring heat from the outdoor air to a reheat device located after a cooling coil that is providing both sensible and latent cooling. The cool, lower dew-point air leaving the cooling coil is passed through the run-around loop to be reheated before delivery to the conditioned space.</li>
+</ul>
+
+
+<br>
+<span class="myh3">References</span>
+<ul class="mylist">
+    <li>Bell, G. C. (2007). Laboratories for the 21st Century: Best Practice Guide. Energy Recovery in Energy Facilities. U.S Department of Energy. Retrieved from <a class="doctitle" href="http://www.i2sl.org/documents/toolkit/bp_recovery_508.pdf" target="_blank">http://www.i2sl.org/documents/toolkit/bp_recovery_508.pdf</a></li>
+</ul>

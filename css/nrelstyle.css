@@ -896,6 +896,12 @@ label:after {
     text-decoration: none !important;
 }
 
+.rtnavsubtitle {
+    color: dimgray;
+    background-color: #eeeeee;
+    padding-left: 3px;
+}
+
 .menu-list ul,
 .rtnav ul {
     list-style-type: none;
@@ -908,7 +914,7 @@ label:after {
 .menu-list li a,
 .rtnav li a {
     display: block;
-    padding: 6px 0 10px 10px;
+    padding: 6px 0 3px 3px;
     text-decoration: none !important;
 
 }
@@ -1136,7 +1142,9 @@ body {
 #zone1cont:hover,
 #zone2cont:hover,
 #zone3cont:hover,
-#zone4cont:hover {
+#zone4cont:hover,
+#vav_1_:hover,
+#vav_2_:hover {
     fill: #F98E2D !important;
     stroke: #444444 !important;
 }
@@ -1172,7 +1180,9 @@ body {
 #zone1cont:active,
 #zone2cont:active,
 #zone3cont:active,
-#zone4cont:active {
+#zone4cont:active,
+#vav_1_:active,
+#vav_2_:active {
     fill: #00A3E0 !important;
     stroke: #444444 !important;
 }

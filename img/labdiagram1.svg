@@ -312,7 +312,7 @@
                 <path id="disoutline" class="st1" d="M406.2,278c0-3.2-2.7-6-6-6H14c-3.2,0-6,2.7-6,6v143c0,3.2,2.7,6,6,6h263.5
 				c-1.3,2.2-2,199.6-2,199.6c0,8.5,6.9,15.4,15.4,15.4h100c8.5,0,15.4-6.9,15.4-15.4L406.2,278L406.2,278z" />
                 <g id="pipesall">
-                    <a id="pipelink" xlink:href="#/pipe/basics">
+                    <a id="pipelink" xlink:href="#/laboratories/pipe_basics">
                         <g id="pipes">
                             <polygon id="polygon4412" class="st2" points="32.2,86 28,86 28.1,157.7 28.2,320.8 208.1,320.8 208.1,369 212.1,369 
 							212.1,316.8 32.2,316.8 						" />
@@ -335,7 +335,7 @@
                     <line id="ductconnectionline1" class="st7" x1="323.7" y1="394.1" x2="330.1" y2="423.2" />
                 </a>
                 <g id="vavall">
-                    <a id="vavlink" xlink:href="#/vav/basics">
+                    <a id="vavlink" xlink:href="#/laboratories/exhaust_vav_basics">
                         <rect id="vav" x="321.9" y="534.8" class="st8" width="43.1" height="74.5" />
                         <line id="line4451" class="st9" x1="326.7" y1="550.2" x2="326.7" y2="566.8" />
                         <line id="line4453" class="st9" x1="333.4" y1="550.2" x2="333.4" y2="566.8" />
@@ -347,7 +347,7 @@
                         <line id="line4465" class="st10" x1="321.9" y1="545.8" x2="364.8" y2="545.8" />
                     </a>
                 </g>
-                <a id="diffuserlink1" xlink:href="#/diffuser/basics">
+                <a id="diffuserlink1" xlink:href="#/laboratories/lab_diffuser_basics">
                     <g id="diffuser">
                         <polygon id="diffuser1" class="st8" points="318.5,641.5 369.7,641.5 351.8,624.5 334.4,624.5 					" />
                     </g>
@@ -363,7 +363,7 @@
                     </a>
                 </g>
                 <g id="ahu">
-                    <a id="ahu-link" xlink:href="#/ahu/basics">
+                    <a id="ahu-link" xlink:href="#/laboratories/ahu_basics">
                         <polygon id="ahu-back" class="st8" points="63,371.3 63,414 109.6,414 160.6,414.7 317.7,414.7 309.9,371 					" />
                     </a>
                     <g id="ahu-front">
@@ -383,7 +383,7 @@
                         <line id="line4567" class="st13" x1="108.6" y1="392.3" x2="99.5" y2="383.2" />
                         <line id="line4569" class="st13" x1="108.6" y1="381.8" x2="99.5" y2="372.7" />
                     </g>
-                    <a id="fanlink" xlink:href="#/fan/basics">
+                    <a id="fanlink" xlink:href="#/laboratories/fan_basics">
                         <path id="fan1" class="st8" d="M275,394.6c0.4-0.2,0.5-0.5,0.4-0.7c0-0.3-0.3-0.8-0.8-0.8h-0.7c1.3-1.5,2.2-5.2,2.2-9.4
 						c0-5.6-1.6-10.2-3.6-10.2s-3.6,4.6-3.6,10.2c0,4.2,0.9,7.9,2.2,9.4h-8c-0.3,0-0.8,0.3-0.8,0.8c0,0.3,0.3,0.8,0.8,0.8h8.6
 						c-1.1,1.7-1.9,5.1-1.9,9c0,5.6,1.6,10.2,3.6,10.2s3.6-4.6,3.6-10.2C277,399.7,276.2,396.3,275,394.6z" />
@@ -486,7 +486,7 @@
 						L159.5,62.2z" />
                     </a>
                 </g>
-                <a id="ductotherlink" xlink:href="#/duct/basics">
+                <a id="ductotherlink" xlink:href="#/laboratories/duct_basics">
                     <polygon id="ductoutline2" class="st17" points="328.5,372.4 332.6,390.1 379.9,389.9 379.2,608.8 252,608.6 252,640.6 
 					269.8,640.6 269.8,630 337.5,630 337.5,640.6 355.1,640.6 355.1,630 398.8,629.5 398.8,372.4 				" />
                 </a>
@@ -550,7 +550,7 @@
                     </g>
                 </g>
                 <g id="coolvalve">
-                    <a id="valve1link" xlink:href="#/valve/basics">
+                    <a id="valve1link" xlink:href="#/laboratories/valve_basics">
                         <polygon id="cp-valve2" class="st8" points="240.2,229.8 226.2,229.8 232.2,240.2 226.5,252.5 240.8,252.5 234.2,240.2 					
 						" />
                     </a>
@@ -625,7 +625,7 @@
 				l0.2-0.5l-0.4,11.1L76.6,768.9z" />
                 <rect id="generalexhaust" x="80.7" y="642" class="st8" width="88.6" height="17.5" />
                 <g id="vavall_2_">
-                    <a id="vavlink_2_" xlink:href="#/vav/basics">
+                    <a id="vavlink_2_" xlink:href="#/laboratories/exhaust_vav_basics">
                         <rect id="vav_2_" x="22.8" y="558.5" class="st8" width="35.3" height="61" />
                         <line id="line4463_2_" class="st26" x1="22.8" y1="588.2" x2="57.9" y2="588.2" />
                         <line id="line4465_2_" class="st26" x1="22.8" y1="567.5" x2="57.9" y2="567.5" />
@@ -635,7 +635,7 @@
                     </a>
                 </g>
                 <g id="vavall_1_">
-                    <a id="vavlink_1_" xlink:href="#/vav/basics">
+                    <a id="vavlink_1_" xlink:href="#/laboratories/exhaust_vav_basics">
                         <rect id="vav_1_" x="106.5" y="558.5" class="st8" width="35.3" height="61" />
                         <line id="line4463_1_" class="st26" x1="106.5" y1="588.2" x2="141.6" y2="588.2" />
                         <line id="line4465_1_" class="st26" x1="106.5" y1="567.5" x2="141.6" y2="567.5" />
@@ -668,14 +668,14 @@
                 </g>
                 <polyline id="energyrecoverypipe" class="st36" points="142.7,520.7 142.7,432.5 186.1,432.5 186.1,413.9 			" />
                 <g id="energyrecoverytop">
-                    <g id="ahu-front_1_">
+                    <g id="energy_rec_1_">
                         <rect id="rect4513_1_" x="181.5" y="372.2" class="st37" width="9.7" height="41.1" />
                     </g>
                     <polyline id="polyline4545_1_" class="st38" points="181.9,412.9 190.8,407.8 181.5,401.4 191,394.8 181.3,388.3 191,380.4 
 					181.5,372.2 				" />
                 </g>
                 <g id="energyrecoverybttm">
-                    <g id="ahu-front_2_">
+                    <g id="energy_rec_2_">
                         <rect id="rect4513_2_" x="139.4" y="521.2" class="st39" width="6.8" height="21.4" />
                     </g>
                     <polyline id="polyline4545_2_" class="st40" points="139.7,542.4 146,539.7 139.4,536.4 146.1,533 139.3,529.6 146.1,525.4 
@@ -1306,7 +1306,7 @@
                     <path class="st12" d="M131.3,288.5v-7.4l0,0l-2.1,7.4h-0.8l-2.1-7.4l0,0v7.4h-0.8V280h1.2l2,7.2l0,0l2-7.2h1.3v8.5H131.3z" />
                 </g>
                 <g id="fantxt1" class="st11">
-                    <a id="fantxtlink1" xlink:href="#/fan/basics">
+                    <a id="fantxtlink1" xlink:href="#/laboratories/fan_basics">
                         <path d="M281,388.3v3h2.4v0.7H281v4h-0.8v-8.5h3.4v0.8H281z" />
                         <path d="M287.1,396c0-0.1,0-0.1,0-0.2s0-0.2,0-0.3c0-0.1,0-0.2,0-0.3c0-0.1,0-0.2,0-0.3l0,0c-0.2,0.8-0.7,1.3-1.4,1.3
 						c-0.2,0-0.3,0-0.5-0.1s-0.3-0.2-0.5-0.3c-0.1-0.1-0.2-0.3-0.3-0.5c-0.1-0.2-0.1-0.5-0.1-0.8c0-0.4,0.1-0.8,0.2-1

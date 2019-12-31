@@ -36,17 +36,24 @@
 </style>
 
 
-<div class="myh1"><a href="#/laboratories" target="_self">LABORATORIES</a></div>
+<div class="myh1">HVAC Resource Map for <a href="#/laboratories" target="_self">Laboratories</a></div>
 <div class="subflex">
     <div class="content-main">
         <div ui-view>
-            <p><span class="largertx">Central plants are the heart of the HVAC systems in large buildings or complexes of buildings. This section provides information on boilers, chillers, cooling towers, energy storage, pumps, water treatment systems, valves, pipes, sensors, and controls.</span></p>
-            <p>Typically, central plants supply systems with cooling loads in excess
-                of 50 tons. The added components in these systems increase the complexity of operations and require a higher level of operator knowledge and control oversight than
-                stand-alone HVAC systems.</p>
+            <span class="myh2">What is this resource?</span>
+            <p><span class="largertx"> The HVAC Resource Map for Laboratories is an intuitive graphical interface that provides quick access to a broad array of quality information on design, operations and maintenance best practices, and energy and water efficiency measures in single-pass HVAC systems that are 100% outside air and do not have return air.</span></p>
+            <p>The resources cover the central plant, distribution systems, and zone systems. The primary audiences are facility managers, operations staff, and design engineers who want to improve central plant and distribution efficiency.</p>
+            <p>This Resource Map does not duplicate guidance provided in codes and standards, and it should not be used in lieu of professional engineering services.</p>
 
-            <img class="transimg" src="img/NREL_central_plant.jpg" alt="Photo of central plant with green pipes and pumps.">
-            <p class="imgtitle">Central plant<span class="source"> Photo by Dennis Schroeder/NREL 38444</span></p>
+            <span class="myh3">Explore HVAC Resources</span>
+
+            <p>Use the horizontal navigation above or the interactive diagram on the left to dive into resources on different HVAC components.
+
+                The resources listed on this site have been carefully selected to help narrow your search for helpful information.</p>
+
+            <img class="transimg" src="img/lab_29658.jpg" alt="Photo of scientist performing research in the compositional analysis lab at the Field Test Laboratory Building (FTLB) at the National Renewable Energy Laboratory in Golden, CO.">
+            <p class="imgtitle">Laboratories have unique HVAC needs. <span class="source"> Photo by Dennis Schroeder/NREL 38444</span></p>
+
         </div>
     </div>
 
@@ -55,6 +62,7 @@
             <span class="myh4">COMPONENTS</span>
             <nav class="rtnav">
                 <ul>
+                    <li class="rtnavsubtitle">CENTRAL PLANT</li>
                     <li><a ui-sref=".boiler_basics">Boiler</a></li>
                     <li><a ui-sref=".chiller_basics">Chiller</a></li>
                     <li><a ui-sref=".tower_basics">Cooling Tower</a></li>
@@ -62,9 +70,23 @@
                     <li><a ui-sref=".hot_basics">Hot Thermal Energy Storage</a></li>
                     <li><a ui-sref=".pump_basics">Pump</a></li>
                     <li><a ui-sref=".sensor_basics">Sensors &amp; Controls</a></li>
+
+                    <li class="rtnavsubtitle">DISTRIBUTION</li>
                     <li><a ui-sref=".ahu_basics">Air Handling Unit</a></li>
                     <li><a ui-sref=".duct_basics">Ducting</a></li>
+                    <li><a ui-sref=".lab_diffuser_basics">Diffuser</a></li>
+                    <li><a ui-sref=".fan_basics">Fan</a></li>
+                    <li><a ui-sref=".pipe_basics">Piping</a></li>
                     <li><a ui-sref=".steamtrap_basics">Steam Traps</a></li>
+                    <li><a ui-sref=".valve_basics">Valve</a></li>
+                    <li><a ui-sref=".energy_recovery_basics">Energy Recovery</a></li>
+
+                    <li class="rtnavsubtitle">EXHAUST DEVICES</li>
+                    <li><a ui-sref=".lab_vav_basics">VAV Boxes</a></li>
+                    <li class="rtnavsubtitle">LAB</li>
+                    <li><a ui-sref=".demand_vent_basics">Demand Control Ventilation</a></li>
+                    <li><a ui-sref=".occupancy_sensor_basics">Occupancy Sensors</a></li>
+                    <li><a ui-sref=".exposure_control_basics">Exposure Control Devices</a></li>
                 </ul>
             </nav>
         </div>
@@ -181,6 +203,102 @@
                 <ul>
                     <li><a ui-sref=".steamtrap_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
                     <li><a ui-sref=".steamtrap_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="fan">
+            <span class="myh4">FAN RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".fan_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".fan_design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Energy Efficiency Measures </a></li>
+                    <li><a ui-sref=".fan_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
+                    <li><a ui-sref=".fan_operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+                    <li><a ui-sref=".fan_procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
+                    <li><a ui-sref=".fan_cases" id="rtcases"><i class="fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Case Studies</a></li>
+                    <li><a ui-sref=".fan_tuneup" id="rttune"><i class="fa fa-list-alt fa-1x fa-fw" aria-hidden="true"></i> Tune-up Measures
+                        </a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="diffuser">
+            <span class="myh4">DIFFUSER RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".lab_diffuser_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="pipe">
+            <span class="myh4">PIPING RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".pipe_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".pipe_codes" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Performance Ratings </a></li>
+                    <li><a ui-sref=".pipe_design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Energy Efficiency Measures </a></li>
+                    <li><a ui-sref=".pipe_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
+                    <li><a ui-sref=".pipe_operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+                    <li><a ui-sref=".pipe_procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="valve">
+            <span class="myh4">VALVE RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".valve_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".valve_types" id="rtcodes"><i class="fa fa-tasks fa-1x fa-fw" aria-hidden="true"></i> Types </a></li>
+                    <li><a ui-sref=".valve_codes" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Performance Ratings </a></li>
+                    <li><a ui-sref=".valve_design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i> Design Guides &amp; EEMs </a></li>
+                    <li><a ui-sref=".valve_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
+                    <li><a ui-sref=".valve_operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+                    <li><a ui-sref=".valve_cases" id="rtcases"><i class="fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Case Studies</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="exhaust_vav">
+            <span class="myh4">EXHAUST VAV RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".exhaust_vav_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="demand_control">
+            <span class="myh4">DEMAND CONTROL VENTILATION RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".demand_vent_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="occupancy_sensor">
+            <span class="myh4">OCCUPANCY SENSOR RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".occupancy_sensor_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="energy_recovery">
+            <span class="myh4">ENERGY RECOVERY RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".energy_recovery_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="exposure_control">
+            <span class="myh4">EXPOSURE CONTROL DEVICES RESOURCES</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".exposure_control_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".exposure_control_types" id="rtcodes"><i class="fa fa-tasks fa-1x fa-fw" aria-hidden="true"></i> Types </a></li>
+                    <li><a ui-sref=".exposure_control_eems" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i> Energy Efficiency Measures </a></li>
+                    <li><a ui-sref=".exposure_control_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
+                    <li><a ui-sref=".exposure_control_operations" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+
                 </ul>
             </nav>
         </div>
