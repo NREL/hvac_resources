@@ -936,7 +936,12 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 nav: 'ahu',
                 url: '/ahu_tools',
                 templateUrl: 'views/ahu_tools.html'
-                }, {
+           }, {
+                name: 'ahu_alt_hvac',
+                nav: 'ahu',
+                url: '/ahu_alt_hvac',
+                templateUrl: 'views/ahu_alt_hvac.html'
+           }, {
                 name: 'duct_basics',
                 nav: 'duct',
                 url: '/duct_basics',
@@ -1116,6 +1121,26 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 nav: 'exposure_control',
                 url: '/exposure_control_operations',
                 templateUrl: 'views/exposure_control_operations.html'
+                }, {
+                name: 'bldg_modeling_basics',
+                nav: 'bldg_modeling',
+                url: '/bldg_modeling_basics',
+                templateUrl: 'views/bldg_modeling_basics.html'
+                    }, {
+                name: 'lab_vent_basics',
+                nav: 'lab_vent',
+                url: '/lab_vent_basics',
+                templateUrl: 'views/lab_vent_basics.html'
+                                    }, {
+                name: 'exhaust_stack_basics',
+                nav: 'exhaust_stack',
+                url: '/exhaust_stack_basics',
+                templateUrl: 'views/exhaust_stack_basics.html'
+                                                    }, {
+                name: 'lab_vavsystems_basics',
+                nav: 'lab_vavsystems',
+                url: '/lab_vavsystems_basics',
+                templateUrl: 'views/lab_vavsystems_basics.html'
             }]
         });
 
@@ -1156,7 +1181,7 @@ routerApp.controller('MainCtrl', ['$scope', '$state', function ($scope, $state) 
     $scope.svg = function () {
         if ($state.current.name) {
             if ($state.current.name.startsWith('laboratories')) {
-                return 'img/labdiagram1.svg';
+                return 'img/labdiagram2.svg';
             } else {
                 return 'img/hvacdiagram.svg';
             }

@@ -1143,8 +1143,9 @@ body {
 #zone2cont:hover,
 #zone3cont:hover,
 #zone4cont:hover,
-#vav_1_:hover,
-#vav_2_:hover {
+#duct1-outline_1_:hover,
+#duct1_1_:hover,
+#hoodoutline:hover {
     fill: #F98E2D !important;
     stroke: #444444 !important;
 }
@@ -1181,8 +1182,9 @@ body {
 #zone2cont:active,
 #zone3cont:active,
 #zone4cont:active,
-#vav_1_:active,
-#vav_2_:active {
+#duct1-outline_1_:active,
+#duct1_1_:active,
+#hoodoutline:active {
     fill: #00A3E0 !important;
     stroke: #444444 !important;
 }
@@ -1196,6 +1198,28 @@ body {
     stroke: #00A3E0 !important;
     fill: #00A3E0 !important;
     stroke-width: 1px;
+}
+
+#energyrecovery_x5F_pipe:hover {
+    fill: #F98E2D !important;
+    stroke-width: 1px;
+    stroke: #F98E2D !important;
+}
+
+#energyrecovery_x5F_pipe:active {
+    fill: #00A3E0 !important;
+    stroke-width: 1px;
+    stroke: #00A3E0 !important;
+}
+
+#er_rec_top:hover,
+#er_rec_bttm:hover {
+    fill: #F98E2D !important;
+}
+
+#er_rec_top:active,
+#er_rec_bttm:active {
+    fill: #00A3E0 !important;
 }
 
 .cpoff {

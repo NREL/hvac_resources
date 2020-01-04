@@ -20,6 +20,8 @@
     <script src="bower_components/angular-ui-router.stateHelper/statehelper.min.js"></script>
     <script src="bower_components/GreenSock-JS/src/minified/TweenMax.min.js"></script>
     <script src="controllers/app.js"></script>
+    <script src="js/accordion-menu.js"></script>
+
 </head>
 
 <body ng-app="routerApp">
@@ -75,6 +77,10 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-18838154-17');
+
+    </script>
+    <script>
+        new AccordionMenu('.col-menu');
 
     </script>
 </body>

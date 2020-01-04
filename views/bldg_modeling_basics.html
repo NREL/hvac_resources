@@ -1,0 +1,48 @@
+<style>
+    #rtbasics {
+        text-decoration: none;
+        background-color: #00a3e0;
+        color: white !important;
+        font-weight: 100;
+    }
+
+    #rtcases,
+    #rtcodes,
+    #rtdesign,
+    #rtoperation,
+    #procure,
+    #rttools,
+    #rttypes {
+        color: #0062A0;
+        background-color: #ffffff;
+    }
+
+
+
+    #svg {
+        transform: scale(1.0, 1.0);
+        transform-origin: 0% 0%;
+        transition: all 1s ease-in-out;
+    }
+
+</style>
+
+
+<span class="myh2">Building Energy Modeling for Laboratories: General Information</span>
+
+<p>Building energy modeling is used to gain insight into how buildings use energy and how efficiency can be improved, for both existing buildings and those in the design stage. Building energy modeling can be used to benchmark performance of existing buildings and assess potential for improvement, both at a high level and from consideration of specific energy efficiency measures, and to compare proposed scenarios for design of new buildings. Building energy modeling can also provide insight into disaggregation of building energy consumption by end use.</p>
+
+<p>Building energy modeling offers significant benefits for lab buildings. In the context of any building type, results from building energy models should be interpreted with consideration of the degree of certainty surrounding input to the model. A variety of resources are available to assist in developing building energy models. ASHRAE Standard 90.1 Appendix G provides modeling guidelines for energy code compliance purposes and can be broadly applicable to make robust comparisons between “baseline” and “proposed” designs. I2SL’s Lab Modeling Guidelines interpret ASHRAE 90.1 Appendix G in the context of lab buildings.</p>
+
+<p>For new construction, energy modeling for buildings in the design stage generally relies on some level of assumptions regarding the building loads and operating hours. Lab buildings vary greatly in terms of load, operating hours, ventilation requirements, and other conditions, making it difficult to formulate these assumptions without detailed knowledge of a building’s intended use. Even if the initial operation of a lab building can be predicted with a high degree of certainty, academic lab buildings in particular are often subject to reconfigurations over their lifetime. Additionally, many lab spaces are subject to strict ventilation requirements, and often have complex HVAC systems and process loads that can require detailed work to represent in energy models.</p>
+
+<p>To provide a starting point, prototype building models have been developed in OpenStudio. OpenStudio is a “cross-platform collection of software tools to support whole building energy modeling using EnergyPlus.” The OpenStudio application is a graphical interface for creating EnergyPlus models with convenient abstractions for construction types, HVAC systems, loads and schedules. The prototype building models consist of seventeen types of typical buildings, intended to represent the majority of the commercial building stock in the US including a lab building. The prototype building models can be customized to represent the sixteen climate locations in the U.S., as well as one international location (New Delhi, India). With their robust documentation and well-supported inputs and assumptions, the prototype building models are useful as starting points for modeling of new or existing buildings and can be easily modified by the user in OpenStudio.</p>
+
+
+<br>
+<span class="myh3">Additional Resources</span>
+<ul class="mylist">
+    <li><a class="doctitle" href="https://www.energycodes.gov/development/commercial/prototype_models" , target="_blank">Prototype Buildings Models</a> (Lab building soon to be available)</li>
+    <li><a class="doctitle" href="https://www.openstudio.net/" , target="_blank">OpenStudio</a> (information and download)</li>
+    <li><a class="doctitle" href="https://bcl.nrel.gov/" , target="_blank">Building Component Library</a> (Users can create prototype buildings through the “Create DOE Prototype Building” measure for OpenStudio that is available through the Building Component Library. OpenStudio Measures are Ruby scripts that can create and customize energy models. The lab prototype building will soon be available as an option in this measure.) </li>
+</ul>
