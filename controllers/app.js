@@ -1186,7 +1186,7 @@ routerApp.controller('MainCtrl', ['$scope', '$state', function ($scope, $state) 
     $scope.svg = function () {
         if ($state.current.name) {
             if ($state.current.name.startsWith('laboratories')) {
-                return 'img/labdiagram2.svg';
+                return 'img/labdiagram3.svg';
             } else {
                 return 'img/hvacdiagram.svg';
             }
