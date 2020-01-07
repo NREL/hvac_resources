@@ -1131,7 +1131,8 @@ body {
 #terminal2:hover,
 #vav:hover,
 #t-outline:hover,
-#ahu-back:hover,
+#ahu_back:hover,
+#ahu:hover,
 #cp-valve:hover,
 #cp-valve2:hover,
 #hottherm:hover,
@@ -1145,7 +1146,14 @@ body {
 #zone4cont:hover,
 #duct1-outline_1_:hover,
 #duct1_1_:hover,
-#hoodoutline:hover {
+#hoodoutline:hover,
+#demand_control_box:hover,
+#lab_outline:hover,
+#exhaust_stack:hover,
+#vav_2_:hover,
+#vav_1_:hover,
+#occ_sensor_back:hover,
+#vav_systems-outline:hover {
     fill: #F98E2D !important;
     stroke: #444444 !important;
 }
@@ -1171,6 +1179,7 @@ body {
 #vav:active,
 #t-outline:active,
 #ahu-back:active,
+#ahu:active,
 #cp-valve1:active,
 #cp-valve2:active,
 #hottherm:active,
@@ -1184,7 +1193,14 @@ body {
 #zone4cont:active,
 #duct1-outline_1_:active,
 #duct1_1_:active,
-#hoodoutline:active {
+#hoodoutline:active,
+#demand_control_box:active,
+#lab_outline:active,
+#exhaust_stack:active,
+#vav_2_:active,
+#vav_1_:active,
+#occ_sensor_back:active,
+#vav_systems-outline:active {
     fill: #00A3E0 !important;
     stroke: #444444 !important;
 }

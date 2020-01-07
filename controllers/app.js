@@ -1131,6 +1131,11 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 nav: 'lab_vent',
                 url: '/lab_vent_basics',
                 templateUrl: 'views/lab_vent_basics.html'
+                }, {
+                name: 'lab_vent_cfd',
+                nav: 'lab_vent',
+                url: '/lab_vent_cfd',
+                templateUrl: 'views/lab_vent_cfd.html'
                                     }, {
                 name: 'exhaust_stack_basics',
                 nav: 'exhaust_stack',
