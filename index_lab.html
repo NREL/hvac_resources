@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HVAC RESOURCE MAP</title>
+    <link rel="shortcut icon" href="img/hvac_icon2.ico">
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto" rel="stylesheet">-->
+    <link rel="stylesheet" href="css/nrelstyle.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-ui-router.stateHelper/statehelper.min.js"></script>
+    <script src="bower_components/GreenSock-JS/src/minified/TweenMax.min.js"></script>
+    <script src="controllers/app.js"></script>
+    <script src="js/accordion-menu.js"></script>
+
+</head>
+
+<body ng-app="routerApp">
+    <div id="wrapper" ng-controller="MainCtrl">
+        <div id="content">
+            <div class="nreltop"><img style="float: left;" src="img/hvac_image-whitesm.png" alt="Icon showing cooling on one side and heating on the other" height="60"><span class="nreltitle">HVAC RESOURCE MAP</span>
+                <a href="http://www.nrel.gov"><img style="float: right;" src="img/nrel-logo-nobar.png" alt="National Renewable Energy Laboratory Logo" height="60"></a>
+            </div>
+            <div class="topbar">
+                <div class="topmenu">
+                    <ul>
+                        <li><a href="#/" id="hvachome">HVAC Home</a></li>
+                        <li><a href="#/central_plant" id="centralplant">Central Plant</a></li>
+                        <li><a href="#/distribution_system" id="distribution">Distribution</a></li>
+                        <li><a href="#/space_loads" id="spaceloads">Space Loads</a></li>
+                        <li><a href="#/laboratories" id="laboratories">Laboratories</a></li>
+                        <li><a href="#/contributors" id="contributors">Contributors</a></li>
+                        <!--<li><a href="#/contact" id="contact">Contact Us</a></li>-->
+                        <li><a href="contact.html" id="contact" target="_blank">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flexcontainer">
+                <div id="diagram" class="noselect no-animate" alt="Diagram of HVAC system showing the heating and cooling loop as part of the central plant and the distribution system." ng-include="svg()"></div>
+
+                <!-- COLUMN Three NAMED VIEW -->
+                <div class="infocontainer">
+                    <!-- Page Content Here ============================== -->
+                    <div ui-view></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <span class="doelogo">
+            <a href="http://energy.gov/"><img style="float: left;" src="img/logo_footer_white.png" alt="Department of Energy Logo" height="32"></a></span>
+        <span class="bottomtext" style="float: left;">
+            The HVAC Resource Map was developed by the National Renewable Energy Laboratory with support from the U.S. Department of Energy’s Building Technology Office.
+            <p> </p>
+            NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.
+        </span>
+    </div>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18838154-17"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-18838154-17');
+
+    </script>
+    <script>
+        new AccordionMenu('.col-menu');
+
+    </script>
+</body>
+
+</html>

@@ -1,98 +1,106 @@
 <style>
-#rtbasics{
-text-decoration: none;
-  background-color: #00a3e0;
-  color: white !important;
-  font-weight: 100;
+    #rtbasics {
+        text-decoration: none;
+        background-color: #00a3e0;
+        color: white !important;
+        font-weight: 100;
     }
-#rtcases, #rtcodes, #rtdesign, #rtoperation, #procure, #rttools, #rttypes{
-  color: #0062A0;
-  background-color: #ffffff;
-}
+
+    #rtcases,
+    #rtcodes,
+    #rtdesign,
+    #rtoperation,
+    #procure,
+    #rttools,
+    #rttypes {
+        color: #0062A0;
+        background-color: #ffffff;
+    }
+
 </style>
 
 
-<span class="myh2">Basics</span>
+<span class="myh2">Diffusers: General Information</span>
 
 <p>Occupant comfort is a critical consideration in HVAC design when it comes to ensuring occupant productivity and reducing hot/cold calls. Selecting and sizing the
-   outlet diffusers is thus an important step in providing a comfortable environment for occupants. Outlet diffusers can be selected based on architectural
-   requirements, noise criteria, distance of throw, airflow, etc. Location of the supply diffuser and return grille is also important. Refer to the
-   <a class="doctitle" href="http://anthraciteashrae.weebly.com/uploads/2/2/8/5/22852420/designing_for_comfort.pdf" target="_blank">‘Selecting air-distribution outlets: Designing for comfort’</a> and
-   <a class="doctitle" href="https://pdfs.semanticscholar.org/cfb7/786135bb9f10d33c41aeb2a8d5db90b0dbe4.pdf" target="_blank">‘Designing Air-Distribution Systems to Maximize Comfort’</a> articles by David John for ASHRAE Journal
+    outlet diffusers is thus an important step in providing a comfortable environment for occupants. Outlet diffusers can be selected based on architectural
+    requirements, noise criteria, distance of throw, airflow, etc. Location of the supply diffuser and return grille is also important. Refer to the
+    <a class="doctitle" href="http://anthraciteashrae.weebly.com/uploads/2/2/8/5/22852420/designing_for_comfort.pdf" target="_blank">‘Selecting air-distribution outlets: Designing for comfort’</a> and
+    <a class="doctitle" href="https://pdfs.semanticscholar.org/cfb7/786135bb9f10d33c41aeb2a8d5db90b0dbe4.pdf" target="_blank">‘Designing Air-Distribution Systems to Maximize Comfort’</a> articles by David John for ASHRAE Journal
     for more details on diffuser selection and sizing.</p>
 
 <p>Each diffuser type has a different pressure drop, which also needs to be taken into account when selecting the diffuser. The table below gives a comparison of performance parameters for commonly used diffuser types.</p>
 
 <table>
 
-  <tr>
-    <th></th>
-    <th>Airflow (cfm)</th>
-    <th>Pressure drop (inches of wc)</th>
-      <th>Noise criteria</th>
-      <th>Throw <sup>1</sup> </th>
-  </tr>
-  <tr>
-    <th>Linear slot diffuser <sup>2</sup> </th>
-    <td align="center"> 550 </td>
-    <td align="center">0.305</td>
-    <td align="center">39</td>
-    <td align="center">19-24-34</td>
-  </tr>
+    <tr>
+        <th></th>
+        <th>Airflow (cfm)</th>
+        <th>Pressure drop (inches of wc)</th>
+        <th>Noise criteria</th>
+        <th>Throw <sup>1</sup> </th>
+    </tr>
+    <tr>
+        <th>Linear slot diffuser <sup>2</sup> </th>
+        <td align="center"> 550 </td>
+        <td align="center">0.305</td>
+        <td align="center">39</td>
+        <td align="center">19-24-34</td>
+    </tr>
 
-  <tr>
-    <th>Ceiling and side wall diffuser <sup>3</sup> </th>
-    <td align="center"> 490 </td>
-    <td align="center">0.175</td>
-    <td align="center">40</td>
-    <td align="center">12-17-25</td>
-  </tr>
+    <tr>
+        <th>Ceiling and side wall diffuser <sup>3</sup> </th>
+        <td align="center"> 490 </td>
+        <td align="center">0.175</td>
+        <td align="center">40</td>
+        <td align="center">12-17-25</td>
+    </tr>
 
-  <tr>
-    <th>Nozzle diffuser <sup>4</sup> </th>
-    <td align="center"> 580 </td>
-    <td align="center">0.48</td>
-    <td align="center">29</td>
-    <td align="center">41-58-82</td>
-  </tr>
+    <tr>
+        <th>Nozzle diffuser <sup>4</sup> </th>
+        <td align="center"> 580 </td>
+        <td align="center">0.48</td>
+        <td align="center">29</td>
+        <td align="center">41-58-82</td>
+    </tr>
 
-  <tr>
-    <th>Plaque face diffuser <sup>5</sup> </th>
-    <td align="center"> 550 </td>
-    <td align="center">0.115</td>
-    <td align="center">18</td>
-    <td align="center">6-9-16</td>
-  </tr>
+    <tr>
+        <th>Plaque face diffuser <sup>5</sup> </th>
+        <td align="center"> 550 </td>
+        <td align="center">0.115</td>
+        <td align="center">18</td>
+        <td align="center">6-9-16</td>
+    </tr>
 
-  <tr>
-    <th>Louvered face diffuser <sup>6</sup> </th>
-    <td align="center"> 700 </td>
-    <td align="center">0.229</td>
-    <td align="center">32</td>
-    <td align="center">25-30-43</td>
-  </tr>
+    <tr>
+        <th>Louvered face diffuser <sup>6</sup> </th>
+        <td align="center"> 700 </td>
+        <td align="center">0.229</td>
+        <td align="center">32</td>
+        <td align="center">25-30-43</td>
+    </tr>
 
-  <tr>
-    <th>Swirl face diffuser <sup>7</sup> </th>
-    <td align="center"> 550 </td>
-    <td align="center">0.271</td>
-    <td align="center">41</td>
-    <td align="center">6-9-14</td>
-  </tr>
+    <tr>
+        <th>Swirl face diffuser <sup>7</sup> </th>
+        <td align="center"> 550 </td>
+        <td align="center">0.271</td>
+        <td align="center">41</td>
+        <td align="center">6-9-14</td>
+    </tr>
 </table>
 
 <ul class="mylist">
-<li>Throw values are for terminal velocities of 150, 100, add 50 fpm respectively</li>
-<li>2-in. slot width, 1-slot 12-in. inlet, 5-ft length</li>
-<li>Duct size—14 in. x 8 in., velocity—700 fpm, 4-way</li>
-<li>Nominal size—12 in., nozzle velocity—2500 fpm</li>
-<li>24-in. x 24-in. module, 12-in. neck, neck velocity—700 fpm</li>
-<li>12-in. x 12-in. neck, velocity—700 fpm</li>
-<li>24-in. x 24-in. module, 12-in. dia, velocity—700 fpm</li>
+    <li>Throw values are for terminal velocities of 150, 100, add 50 fpm respectively</li>
+    <li>2-in. slot width, 1-slot 12-in. inlet, 5-ft length</li>
+    <li>Duct size—14 in. x 8 in., velocity—700 fpm, 4-way</li>
+    <li>Nominal size—12 in., nozzle velocity—2500 fpm</li>
+    <li>24-in. x 24-in. module, 12-in. neck, neck velocity—700 fpm</li>
+    <li>12-in. x 12-in. neck, velocity—700 fpm</li>
+    <li>24-in. x 24-in. module, 12-in. dia, velocity—700 fpm</li>
 </ul>
 
 <br>
 <span class="myh3">Other Resources</span>
 <ul class="mylist">
-    <li> <a class="doctitle"  href="https://www.krueger-hvac.com/file/9261/GRD_Engineering.pdf" target="_blank"> Air Distribution Engineering</a>, Krueger</li>
+    <li> <a class="doctitle" href="https://www.krueger-hvac.com/file/9261/GRD_Engineering.pdf" target="_blank"> Air Distribution Engineering</a>, Krueger</li>
 </ul>

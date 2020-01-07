@@ -395,7 +395,7 @@ hr {
 .source {
     font-style: italic;
     font-size: 10pt;
-    line-height=100% !important;
+    line-height: 150% !important;
     font-weight: 100;
     color: #666666;
     padding-top: 3px;
@@ -416,7 +416,7 @@ hr {
     font-style: normal;
     font-size: 12pt;
     color: #000000;
-    padding-top: 0px;
+    padding-top: 0;
     padding-bottom: 5px;
     text-align: center;
 }
@@ -445,7 +445,7 @@ hr {
     width: 50%;
     background: #eeeeee;
     padding: 13px;
-    margin: 20 23px 23px 20;
+    margin: 20px 23px 23px 20px;
     line-height: 150% !important;
 }
 
@@ -751,6 +751,7 @@ td li {
 
 /*container for hvac diagram*/
 #diagram {
+    min-height: calc(100vh - 250px);
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
@@ -768,14 +769,14 @@ td li {
 }
 
 
-/*Contact form button and formating*/
+/*Contact form button and formatting*/
 .mybtn {
     background-color: #0062A0;
     font-size: 18px;
     letter-spacing: 1px;
     color: white !important;
-    -webkit-border-radius: 10;
-    -moz-border-radius: 10;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
@@ -861,7 +862,6 @@ label:after {
 }
 
 
-
 /*style for the right links on homepage*/
 .homeright {
     background-color: #eeeeee;
@@ -896,6 +896,12 @@ label:after {
     text-decoration: none !important;
 }
 
+.rtnavsubtitle {
+    color: dimgray;
+    background-color: #eeeeee;
+    padding-left: 3px;
+}
+
 .menu-list ul,
 .rtnav ul {
     list-style-type: none;
@@ -908,7 +914,7 @@ label:after {
 .menu-list li a,
 .rtnav li a {
     display: block;
-    padding: 6px 0 10px 10px;
+    padding: 6px 0 3px 3px;
     text-decoration: none !important;
 
 }
@@ -1006,6 +1012,7 @@ body {
 }
 
 #wrapper {
+    margin-bottom: -115px;
     min-height: 100%;
     position: relative;
     width: 100%;
@@ -1027,15 +1034,13 @@ body {
     background-color: #000000;
     width: 100%;
     height: 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     line-height: 170%;
     color: white;
     text-align: center;
     font-size: 10px;
     letter-spacing: 4px;
     padding-top: 15px;
+    overflow: hidden;
 }
 
 .doelogo {
@@ -1057,7 +1062,6 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-
 
 
 /*Right Navigation Settings*/
@@ -1127,7 +1131,8 @@ body {
 #terminal2:hover,
 #vav:hover,
 #t-outline:hover,
-#ahu-back:hover,
+#ahu_back:hover,
+#ahu:hover,
 #cp-valve:hover,
 #cp-valve2:hover,
 #hottherm:hover,
@@ -1138,7 +1143,17 @@ body {
 #zone1cont:hover,
 #zone2cont:hover,
 #zone3cont:hover,
-#zone4cont:hover {
+#zone4cont:hover,
+#duct1-outline_1_:hover,
+#duct1_1_:hover,
+#hoodoutline:hover,
+#demand_control_box:hover,
+#lab_outline:hover,
+#exhaust_stack:hover,
+#vav_2_:hover,
+#vav_1_:hover,
+#occ_sensor_back:hover,
+#vav_systems-outline:hover {
     fill: #F98E2D !important;
     stroke: #444444 !important;
 }
@@ -1164,6 +1179,7 @@ body {
 #vav:active,
 #t-outline:active,
 #ahu-back:active,
+#ahu:active,
 #cp-valve1:active,
 #cp-valve2:active,
 #hottherm:active,
@@ -1174,7 +1190,17 @@ body {
 #zone1cont:active,
 #zone2cont:active,
 #zone3cont:active,
-#zone4cont:active {
+#zone4cont:active,
+#duct1-outline_1_:active,
+#duct1_1_:active,
+#hoodoutline:active,
+#demand_control_box:active,
+#lab_outline:active,
+#exhaust_stack:active,
+#vav_2_:active,
+#vav_1_:active,
+#occ_sensor_back:active,
+#vav_systems-outline:active {
     fill: #00A3E0 !important;
     stroke: #444444 !important;
 }
@@ -1188,6 +1214,28 @@ body {
     stroke: #00A3E0 !important;
     fill: #00A3E0 !important;
     stroke-width: 1px;
+}
+
+#energyrecovery_x5F_pipe:hover {
+    fill: #F98E2D !important;
+    stroke-width: 1px;
+    stroke: #F98E2D !important;
+}
+
+#energyrecovery_x5F_pipe:active {
+    fill: #00A3E0 !important;
+    stroke-width: 1px;
+    stroke: #00A3E0 !important;
+}
+
+#er_rec_top:hover,
+#er_rec_bttm:hover {
+    fill: #F98E2D !important;
+}
+
+#er_rec_top:active,
+#er_rec_bttm:active {
+    fill: #00A3E0 !important;
 }
 
 .cpoff {
@@ -1211,4 +1259,8 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.no-animate {
+    transition: none !important;
 }
