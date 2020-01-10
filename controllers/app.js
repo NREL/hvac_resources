@@ -1123,7 +1123,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 templateUrl: 'views/exposure_control_operations.html'
                 }, {
                 name: 'bldg_modeling_basics',
-                nav: 'bldg_modeling',
+                nav: 'lab_vent',
                 url: '/bldg_modeling_basics',
                 templateUrl: 'views/bldg_modeling_basics.html'
                     }, {

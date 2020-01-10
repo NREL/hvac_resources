@@ -473,6 +473,15 @@ blockquote {
     font-family: 'Droid Serif';
 }
 
+.footnote {
+    margin-left: 7px;
+    list-style: disc inside;
+    text-indent: -1em;
+    padding-left: 1em;
+    line-height: 170% !important;
+    font-size: 13px;
+
+}
 
 /* image style */
 .whiteimg {
