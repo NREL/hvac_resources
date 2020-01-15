@@ -897,10 +897,10 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 url: '/hot_basics',
                 templateUrl: 'views/hot_thermal_basics.html'
                  }, {
-                name: 'ahu_design',
+                name: 'ahu_design_lab',
                 nav: 'ahu',
-                url: '/ahu_design',
-                templateUrl: 'views/ahu_design.html'
+                url: '/ahu_design_lab',
+                templateUrl: 'views/ahu_design_lab.html'
             }, {
                 name: 'ahu_basics',
                 nav: 'ahu',
@@ -941,11 +941,16 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 nav: 'ahu',
                 url: '/ahu_alt_hvac',
                 templateUrl: 'views/ahu_alt_hvac.html'
+                }, {
+                name: 'ahu_operation_lab',
+                nav: 'ahu',
+                url: '/ahu_operaton_lab',
+                templateUrl: 'views/ahu_operation_lab.html'
            }, {
-                name: 'duct_basics',
+                name: 'duct_basics_lab',
                 nav: 'duct',
-                url: '/duct_basics',
-                templateUrl: 'views/duct_basics.html'
+                url: '/duct_basics_lab',
+                templateUrl: 'views/duct_basics_lab.html'
                 }, {
                 name: 'steamtrap_basics',
                 nav: 'steamtrap',
@@ -1146,6 +1151,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 nav: 'lab_vavsystems',
                 url: '/lab_vavsystems_basics',
                 templateUrl: 'views/lab_vavsystems_basics.html'
+
             }]
         });
 
