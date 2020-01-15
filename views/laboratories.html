@@ -85,7 +85,7 @@
 
                     <li class="rtnavsubtitle">DISTRIBUTION</li>
                     <li><a ui-sref=".ahu_basics">Air Handling Unit</a></li>
-                    <li><a ui-sref=".duct_basics">Ducting</a></li>
+                    <li><a ui-sref=".duct_basics_lab">Ducting</a></li>
                     <li><a ui-sref=".lab_vavsystems_basics">Variable Air Volume Systems</a></li>
                     <li><a ui-sref=".lab_diffuser_basics">Diffuser</a></li>
                     <li><a ui-sref=".fan_basics">Fans</a></li>
@@ -188,9 +188,9 @@
                     <li><a ui-sref=".ahu_alt_hvac" id="althvac"><i class="fa fa-flask" aria-hidden="true"></i> Alternate HVAC</a></li>
                     <!--                    <li><a ui-sref=".ahu_types" id="rttypes"><i class="fa fa-tasks fa-1x fa-fw" aria-hidden="true"></i> Types </a></li>-->
                     <li><a ui-sref=".ahu_codes" id="rtcodes"><i class="fa fa-check-square fa-1x fa-fw" aria-hidden="true"></i> Performance Ratings </a></li>
-                    <li><a ui-sref=".ahu_design" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Energy Efficiency Measures </a></li>
+                    <li><a ui-sref=".ahu_design_lab" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i>Energy Efficiency Measures </a></li>
                     <!--                    <li><a ui-sref=".ahu_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>-->
-                    <li><a ui-sref=".ahu_operation" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
+                    <li><a ui-sref=".ahu_operation_lab" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
                     <li><a ui-sref=".ahu_procure" id="rtprocure"><i class="fa fa-tachometer fa-1x fa-fw" aria-hidden="true"></i> Procurement &amp; Performance</a></li>
                     <!--                    <li><a ui-sref=".ahu_cases" id="rtcases"><i class="fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Case Studies</a></li>-->
                 </ul>
@@ -200,7 +200,7 @@
             <span class="myh4">DUCTING RESOURCES</span>
             <nav class="rtnav">
                 <ul>
-                    <li><a ui-sref=".duct_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                    <li><a ui-sref=".duct_basics_lab" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
                 </ul>
             </nav>
         </div>
@@ -336,7 +336,7 @@
                 </ul>
             </nav>
         </div>
-                <div ng-switch-when="lab_vav">
+        <div ng-switch-when="lab_vav">
             <span class="myh4">VAV SYSTEMS RESOURCES</span>
             <nav class="rtnav">
                 <ul>
