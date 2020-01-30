@@ -211,8 +211,8 @@ a:hover {
 }
 
 .topmenu {
-    font-family: 'Roboto', sans-serif;
-    font-size: 13pt;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 11pt;
     font-weight: normal;
     text-decoration: none !important;
     width: 100%;
@@ -234,7 +234,7 @@ a:hover {
     padding: 0;
     text-decoration: none !important;
     color: #ffffff !important;
-    font-size: 12pt;
+    font-size: 10pt;
     clear: left;
     position: relative;
     display: inline-block;
