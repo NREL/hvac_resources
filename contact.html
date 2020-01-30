@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,72 +26,74 @@
             color: #000000 !important;
             border-top: 4px solid #62D2FF !important;
         }
+
     </style>
 </head>
+
 <body ng-app="routerApp">
-<div id="wrapper">
-    <div id="content">
-        <div class="nreltop">
-            <img style="float: left;" src="img/hvac_image-whitesm.png" alt="Icon showing cooling on one side and heating on the other" height="60px"><span class="nreltitle">HVAC RESOURCE MAP</span>
-            <a href="http://www.nrel.gov"><img style="float: right;" src="img/nrel-logo-nobar.png" alt="National Renewable Energy Laboratory Logo" height="60px"></a>
-        </div>
-        <div class="topbar">
-            <div class="topmenu">
-                <ul>
-                    <li><a href="index.html" id="hvachome">HVAC Home</a></li>
-                    <!--<li><a href="#/central_plant" id="centralplant">Central Plant</a></li>
+    <div id="wrapper">
+        <div id="content">
+            <div class="nreltop">
+                <img style="float: left;" src="img/hvac_image-whitesm.png" alt="Icon showing cooling on one side and heating on the other" height="60px"><span class="nreltitle">HVAC RESOURCE MAP</span>
+                <a href="http://www.nrel.gov"><img style="float: right;" src="img/nrel-logo-nobar.png" alt="National Renewable Energy Laboratory Logo" height="60px"></a>
+            </div>
+            <div class="topbar">
+                <div class="topmenu">
+                    <ul>
+                        <li><a href="index.html" id="hvachome">Home</a></li>
+                        <!--<li><a href="#/central_plant" id="centralplant">Central Plant</a></li>
                     <li><a href="#/distribution_system" id="distribution">Distribution</a></li>
                     <li><a href="#/space_loads" id="spaceloads">Space Loads</a></li>
                     <li><a href="#/contributors" id="contributors">Contributors</a></li>
                     <li><a href="#/contact" id="contact">Contact Us</a></li>-->
-                    <li><a href="contact.html" id="contact">Contact Us</a></li>
-                </ul>
+                        <li><a href="contact.html" id="contact">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <div class="flexcontainer">
-            <!--<div id="diagram" class="noselect" alt="Diagram of HVAC system showing the heating and cooling loop as part of the central plant and the distribution system." ng-include="'img/hvacdiagram-adjust-bb2.svg'"></div>-->
+            <div class="flexcontainer">
+                <!--<div id="diagram" class="noselect" alt="Diagram of HVAC system showing the heating and cooling loop as part of the central plant and the distribution system." ng-include="'img/hvacdiagram-adjust-bb2.svg'"></div>-->
 
-            <!-- COLUMN Three NAMED VIEW -->
-            <div class="infocontainer">
-                <!-- Page Content Here ============================== -->
-                <div class="subflex">
-                    <div class="content-main">
+                <!-- COLUMN Three NAMED VIEW -->
+                <div class="infocontainer">
+                    <!-- Page Content Here ============================== -->
+                    <div class="subflex">
+                        <div class="content-main">
 
-                        <p class="myh1">Contact Us</p>
-                        <form method="POST" action="https://formspree.io/hvacresourcemap@nrel.gov">
+                            <p class="myh1">Contact Us</p>
+                            <form method="POST" action="https://formspree.io/hvacresourcemap@nrel.gov">
 
-                            <label for="name" class="label">Name</label>
-                            <input type="text" name="name" placeholder="Your name" required>
-                            <br>
-                            <label for="email" class="label">Email</label>
-                            <input type="email" name="email" placeholder="Your email" required>
+                                <label for="name" class="label">Name</label>
+                                <input type="text" name="name" placeholder="Your name" required>
+                                <br>
+                                <label for="email" class="label">Email</label>
+                                <input type="email" name="email" placeholder="Your email" required>
 
-                            <label for="message" class="label">Message</label>
-                            <textarea name="message" placeholder="Provide your feedback, suggestions, and comments" required></textarea>
+                                <label for="message" class="label">Message</label>
+                                <textarea name="message" placeholder="Provide your feedback, suggestions, and comments" required></textarea>
 
-                            <button type="submit" class="mybtn">Send</button>
-                        </form>
+                                <button type="submit" class="mybtn">Send</button>
+                            </form>
 
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div id="footer">
+    <div id="footer">
         <span class="doelogo">
             <a href="http://energy.gov/"><img style="float: left;" src="img/logo_footer_white.png" alt="Department of Energy Logo" height="32"></a>
         </span>
-    <span class="bottomtext" style="float: left;">
+        <span class="bottomtext" style="float: left;">
             The HVAC Resource Map was developed by the National Renewable Energy Laboratory with support from the U.S. Department of Energy’s Building Technology Office.
             <p> </p>
-NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.
+            NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.
         </span>
-</div>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-18838154-17"></script>
-<!--  <script>
+    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18838154-17"></script>
+    <!--  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
