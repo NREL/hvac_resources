@@ -212,7 +212,7 @@ a:hover {
 
 .topmenu {
     font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 11pt;
+    font-size: 10pt;
     font-weight: normal;
     text-decoration: none !important;
     width: 100%;
@@ -250,7 +250,7 @@ a:hover {
     color: #ffffff !important;
     text-align: center;
     padding: 10px 10px;
-    font-size: 12pt;
+    font-size: 10pt;
     text-decoration: none !important;
     position: relative;
 }
@@ -259,7 +259,7 @@ a:hover {
 .topmenu li a:hover {
     background-color: #ffffff !important;
     color: #000000 !important;
-    font-size: 12pt;
+    font-size: 10pt;
     border-top: 4px solid #1d449c !important;
 }
 
@@ -268,7 +268,7 @@ a:hover {
 .topmenu a:focus {
     background-color: #ffffff !important;
     color: #000000 !important;
-    font-size: 12pt;
+    font-size: 10pt;
     border-top: 4px solid #62D2FF !important;
 }
 
