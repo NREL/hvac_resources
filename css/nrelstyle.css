@@ -769,7 +769,7 @@ td li {
     -ms-flex-preferred-size: 26%;
     flex-basis: 26%;
     border: 1px solid #eeeeee !important;
-/*    overflow: hidden;*/
+    /*    overflow: hidden;*/
     /*flex: 1 0 350px;
   -webkit-flex: 1 0 350px;
   -ms-flex: 1 0 350px;*/
@@ -982,6 +982,10 @@ label:after {
         display: none;
     }
 
+    #diagram {
+        flex-basis: 26% !important;
+    }
+
     .nav-side-menu .menu-list .menu-content {
         display: block;
     }
@@ -991,11 +995,13 @@ label:after {
     }
 }
 
-/*@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     #diagram {
-        display: none;
+        /*        display: none;*/
+        flex-basis: 90% !important;
+
     }
-}*/
+}
 
 @media only screen and (max-width: 1200px) {
     .pquote {
