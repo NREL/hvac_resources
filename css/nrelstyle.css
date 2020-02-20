@@ -991,11 +991,11 @@ label:after {
     }
 }
 
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
     #diagram {
         display: none;
     }
-}
+}*/
 
 @media only screen and (max-width: 1200px) {
     .pquote {
