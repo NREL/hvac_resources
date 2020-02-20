@@ -212,7 +212,7 @@ a:hover {
 
 .topmenu {
     font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 11pt;
+    font-size: 10pt;
     font-weight: normal;
     text-decoration: none !important;
     width: 100%;
@@ -769,7 +769,7 @@ td li {
     -ms-flex-preferred-size: 26%;
     flex-basis: 26%;
     border: 1px solid #eeeeee !important;
-    overflow: hidden;
+/*    overflow: hidden;*/
     /*flex: 1 0 350px;
   -webkit-flex: 1 0 350px;
   -ms-flex: 1 0 350px;*/
