@@ -2,10 +2,10 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.eot');
     src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto-Regular.woff') format('woff'),
-        url('../fonts/Roboto-Regular.ttf') format('truetype'),
-        url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype'),
+    url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -14,10 +14,10 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Italic.eot');
     src: url('../fonts/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Roboto-Italic.woff2') format('woff2'),
-        url('../fonts/Roboto-Italic.woff') format('woff'),
-        url('../fonts/Roboto-Italic.ttf') format('truetype'),
-        url('../fonts/Roboto-Italic.svg#Roboto-Italic') format('svg');
+    url('../fonts/Roboto-Italic.woff2') format('woff2'),
+    url('../fonts/Roboto-Italic.woff') format('woff'),
+    url('../fonts/Roboto-Italic.ttf') format('truetype'),
+    url('../fonts/Roboto-Italic.svg#Roboto-Italic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
@@ -26,10 +26,10 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Thin.eot');
     src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Roboto-Thin.woff2') format('woff2'),
-        url('../fonts/Roboto-Thin.woff') format('woff'),
-        url('../fonts/Roboto-Thin.ttf') format('truetype'),
-        url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
+    url('../fonts/Roboto-Thin.woff2') format('woff2'),
+    url('../fonts/Roboto-Thin.woff') format('woff'),
+    url('../fonts/Roboto-Thin.ttf') format('truetype'),
+    url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
     font-weight: 100;
     font-style: normal;
 }
@@ -38,10 +38,10 @@
     font-family: 'Roboto';
     src: url('../fonts/Roboto-ThinItalic.eot');
     src: url('../fonts/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
-        url('../fonts/Roboto-ThinItalic.woff') format('woff'),
-        url('../fonts/Roboto-ThinItalic.ttf') format('truetype'),
-        url('../fonts/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg');
+    url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-ThinItalic.woff') format('woff'),
+    url('../fonts/Roboto-ThinItalic.ttf') format('truetype'),
+    url('../fonts/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg');
     font-weight: 100;
     font-style: italic;
 }
@@ -50,10 +50,10 @@
     font-family: 'Droid Serif';
     src: url('../fonts/DroidSerif-Regular.eot');
     src: url('../fonts/DroidSerif-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/DroidSerif-Regular.woff2') format('woff2'),
-        url('../fonts/DroidSerif-Regular.woff') format('woff'),
-        url('../fonts/DroidSerif-Regular.ttf') format('truetype'),
-        url('../fonts/DroidSerif-Regular.svg#DroidSerif-Regular') format('svg');
+    url('../fonts/DroidSerif-Regular.woff2') format('woff2'),
+    url('../fonts/DroidSerif-Regular.woff') format('woff'),
+    url('../fonts/DroidSerif-Regular.ttf') format('truetype'),
+    url('../fonts/DroidSerif-Regular.svg#DroidSerif-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -62,10 +62,10 @@
     font-family: 'Droid Serif';
     src: url('../fonts/DroidSerif-Italic.eot');
     src: url('../fonts/DroidSerif-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/DroidSerif-Italic.woff2') format('woff2'),
-        url('../fonts/DroidSerif-Italic.woff') format('woff'),
-        url('../fonts/DroidSerif-Italic.ttf') format('truetype'),
-        url('../fonts/DroidSerif-Italic.svg#DroidSerif-Italic') format('svg');
+    url('../fonts/DroidSerif-Italic.woff2') format('woff2'),
+    url('../fonts/DroidSerif-Italic.woff') format('woff'),
+    url('../fonts/DroidSerif-Italic.ttf') format('truetype'),
+    url('../fonts/DroidSerif-Italic.svg#DroidSerif-Italic') format('svg');
     font-weight: normal;
     font-style: italic;
 }
@@ -74,10 +74,10 @@
     font-family: 'Droid Serif';
     src: url('../fonts/DroidSerif-BoldItalic.eot');
     src: url('../fonts/DroidSerif-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/DroidSerif-BoldItalic.woff2') format('woff2'),
-        url('../fonts/DroidSerif-BoldItalic.woff') format('woff'),
-        url('../fonts/DroidSerif-BoldItalic.ttf') format('truetype'),
-        url('../fonts/DroidSerif-BoldItalic.svg#DroidSerif-BoldItalic') format('svg');
+    url('../fonts/DroidSerif-BoldItalic.woff2') format('woff2'),
+    url('../fonts/DroidSerif-BoldItalic.woff') format('woff'),
+    url('../fonts/DroidSerif-BoldItalic.ttf') format('truetype'),
+    url('../fonts/DroidSerif-BoldItalic.svg#DroidSerif-BoldItalic') format('svg');
     font-weight: bold;
     font-style: italic;
 }
@@ -87,10 +87,10 @@
     font-family: 'Pt Sans Narrow';
     src: url('../fonts/PTSans-NarrowBold.eot');
     src: url('../fonts/PTSans-NarrowBold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/PTSans-NarrowBold.woff2') format('woff2'),
-        url('../fonts/PTSans-NarrowBold.woff') format('woff'),
-        url('../fonts/PTSans-NarrowBold.ttf') format('truetype'),
-        url('../fonts/PTSans-NarrowBold.svg#PTSans-NarrowBold') format('svg');
+    url('../fonts/PTSans-NarrowBold.woff2') format('woff2'),
+    url('../fonts/PTSans-NarrowBold.woff') format('woff'),
+    url('../fonts/PTSans-NarrowBold.ttf') format('truetype'),
+    url('../fonts/PTSans-NarrowBold.svg#PTSans-NarrowBold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
@@ -99,10 +99,10 @@
     font-family: 'Pt Sans Narrow';
     src: url('../fonts/PTSans-Narrow.eot');
     src: url('../fonts/PTSans-Narrow.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/PTSans-Narrow.woff2') format('woff2'),
-        url('../fonts/PTSans-Narrow.woff') format('woff'),
-        url('../fonts/PTSans-Narrow.ttf') format('truetype'),
-        url('../fonts/PTSans-Narrow.svg#PTSans-Narrow') format('svg');
+    url('../fonts/PTSans-Narrow.woff2') format('woff2'),
+    url('../fonts/PTSans-Narrow.woff') format('woff'),
+    url('../fonts/PTSans-Narrow.ttf') format('truetype'),
+    url('../fonts/PTSans-Narrow.svg#PTSans-Narrow') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -125,7 +125,7 @@
 
 .myh4 {
     color: #CC6600;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 p,
@@ -143,7 +143,7 @@ span {
 
 body {
     color: #333;
-    font-family: "Droid Serif";
+    font-family: 'Droid Serif';
     font-size: 13px;
     font-weight: 400;
     line-height: 1.65;
@@ -198,7 +198,7 @@ a:hover {
     top: 0;
     left: 0;
     float: left;
-    padding-top: 0px;
+    padding-top: 0;
     background: #000000;
     width: 100%;
 }
@@ -211,7 +211,7 @@ a:hover {
 }
 
 .topmenu {
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
     font-size: 10pt;
     font-weight: normal;
     text-decoration: none !important;
@@ -301,7 +301,7 @@ a:hover {
         top: 0;
         left: 0;
         float: left;
-        padding-top: 0px;
+        padding-top: 0;
         background: #000000;
         width: 100%;
     }
@@ -400,7 +400,7 @@ hr {
     color: #666666;
     padding-top: 3px;
     padding-bottom: 4px;
-    font-family: 'pt sans narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
 }
 
 .caption {
@@ -524,7 +524,7 @@ blockquote {
 .tuneTable {
     border: 1px solid white;
     border-collapse: collapse;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
     font-weight: normal;
     line-height: 115% !important;
     font-size: 11pt;
@@ -543,7 +543,7 @@ table,
 td {
     border: 1px solid white;
     border-collapse: collapse;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
     font-weight: normal;
     line-height: 110% !important;
     font-size: 11pt;
@@ -559,12 +559,12 @@ th {
     padding: 7px 2px;
     border: 1px solid white;
     color: black;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
 }
 
 th,
 td {
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
 }
 
 tr:nth-child(even) {
@@ -581,7 +581,7 @@ td li {
     padding: 10px !important;
     border: 20px solid white !important;
     color: black !important;
-    font-family: 'PT Sans Narrow', sans-serif !important;
+    font-family: 'Pt Sans Narrow', sans-serif !important;
 }
 
 /*flexbox formatting*/
@@ -733,9 +733,9 @@ td li {
 
 .fadein {
     -webkit-transition: opacity .5s linear,
-        visibility .5s linear;
+    visibility .5s linear;
     transition: opacity .5s linear,
-        visibility .5s linear;
+    visibility .5s linear;
 }
 
 .fadein.ng-enter {
@@ -761,6 +761,7 @@ td li {
 /*container for hvac diagram*/
 #diagram {
     min-height: calc(100vh - 250px);
+    max-height: 100vh;
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
@@ -769,12 +770,18 @@ td li {
     -ms-flex-preferred-size: 26%;
     flex-basis: 26%;
     border: 1px solid #eeeeee !important;
-    /*    overflow: hidden;*/
+    overflow: hidden;
     /*flex: 1 0 350px;
   -webkit-flex: 1 0 350px;
   -ms-flex: 1 0 350px;*/
     -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}
+
+#svg {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+    transition: all 1s ease-in-out;
 }
 
 
@@ -814,7 +821,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
     font-size: 12pt;
 }
 
@@ -827,23 +834,23 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
     font-size: 12pt;
 }
 
 input[type=text]:focus {
     background-color: gainsboro;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 input[type=email]:focus {
     background-color: gainsboro;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 input[type=textarea]:focus {
     background-color: gainsboro;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 textarea {
@@ -854,7 +861,7 @@ textarea {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 label {
@@ -882,7 +889,7 @@ label:after {
 
 .homeright img {
     float: left;
-    margin: 0px 10px 0 0;
+    margin: 0 10px 0 0;
 }
 
 /*mynav on left side*/
@@ -1065,10 +1072,10 @@ body {
 }
 
 .bottomtext {
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
     font-size: 9pt !important;
     line-height: 140%;
-    padding-top: 0px;
+    padding-top: 0;
     float: left;
     color: #ffffff;
     text-align: left;
@@ -1099,7 +1106,7 @@ body {
 
 .rtnav li {
     font-size: 13px;
-    font-family: 'PT Sans Narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 .rtnav a {
@@ -1278,4 +1285,115 @@ body {
 
 .no-animate {
     transition: none !important;
+}
+
+.diagram-ahu #svg {
+    transform: scale(1.1, 1.1);
+    transform-origin: 70% 240%;
+}
+
+.diagram-boiler #svg {
+    transform: scale(1.7, 1.7);
+    transform-origin: 0 10%;
+}
+
+.diagram-chiller #svg {
+    transform: scale(1.7, 1.7);
+    transform-origin: 100% 10%;
+}
+
+.diagram-coolthermal #svg {
+    transform: scale(1.7, 1.7);
+    transform-origin: 100% 0;
+}
+
+.diagram-diffuser #svg {
+    transform: scale(1.2, 1.2);
+    transform-origin: 10% 270%;
+}
+
+.diagram-duct #svg {
+    transform: scale(1.05, 1.05);
+    transform-origin: 40% 270%;
+}
+
+.diagram-exchanger #svg {
+    transform: scale(1.05, 1.05);
+    transform-origin: 40% 270%;
+}
+
+.diagram-expansion #svg {
+    transform: scale(1.05, 1.05);
+    transform-origin: 40% 270%;
+}
+
+.diagram-fan #svg {
+    transform: scale(1.8, 1.8);
+    transform-origin: 60% 70%;
+}
+
+.diagram-hotthermal #svg {
+    transform: scale(1.7, 1.7);
+    transform-origin: 60% 20%;
+}
+
+.diagram-pipe #svg {
+    transform: scale(1.2, 1.2);
+    transform-origin: 70% 30%;
+}
+
+.diagram-pump #svg {
+    transform: scale(1.6, 1.6);
+    transform-origin: 110% 0;
+}
+
+.diagram-steamtrap #svg {
+    transform: scale(1.7, 1.7);
+    transform-origin: 30% 20%;
+}
+
+.diagram-terminal #svg {
+    transform: scale(1.2, 1.2);
+    transform-origin: 80% 270%;
+}
+
+.diagram-tower #svg {
+    transform: scale(1.8, 1.8);
+    transform-origin: 100% -10%;
+}
+
+.diagram-valve #svg {
+    transform: scale(1.2, 1.2);
+    transform-origin: 20% 0;
+}
+
+.diagram-vav #svg {
+    transform: scale(1.2, 1.2);
+    transform-origin: 70% 240%;
+}
+
+.diagram-laboratories-demand_vent_basics #svg {
+    transform: scale(1.2, 1.2);
+    transform-origin: 80% 270%;
+}
+
+.diagram-laboratories-energy_recovery_basics #svg {
+    transform: scale(1.8, 1.8);
+    transform-origin: 20% 70%;
+}
+
+.diagram-laboratories-exhaust_stack_basics #svg {
+    transform: scale(1.2, 1.2);
+    transform-origin: 0 180%;
+}
+
+.diagram-laboratories-lab_vav_basics #svg,
+.diagram-laboratories-lab_vavsystems_basics #svg {
+    transform: scale(1.1, 1.1);
+    transform-origin: 10% 350%;
+}
+
+.diagram-laboratories-occupancy_sensor_basics #svg {
+    transform: scale(1.6, 1.6);
+    transform-origin: 100% 150%;
 }
