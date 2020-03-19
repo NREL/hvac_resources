@@ -1201,7 +1201,6 @@ routerApp.controller('MainCtrl', ['$scope', '$state', function ($scope, $state) 
 
   $scope.diagramClass = function () {
     if ($state.current.name) {
-      console.log($state.current.name);
 
       var names = [
         'laboratories.demand_vent_basics',

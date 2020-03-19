@@ -779,9 +779,17 @@ td li {
 }
 
 #svg {
-    transform: scale(1, 1);
-    transform-origin: 0 0;
+    position: relative;
+    transform-origin: top left;
     transition: all 1s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#svg *:focus {
+  outline: none;
 }
 
 
@@ -1288,112 +1296,129 @@ body {
 }
 
 .diagram-ahu #svg {
-    transform: scale(1.1, 1.1);
-    transform-origin: 70% 240%;
+    transform: scale(1.1);
+    left: -7%;
+    top: -22%;
 }
 
 .diagram-boiler #svg {
-    transform: scale(1.7, 1.7);
-    transform-origin: 0 10%;
+    transform: scale(1.7);
+    top: -6%;
 }
 
 .diagram-chiller #svg {
-    transform: scale(1.7, 1.7);
-    transform-origin: 100% 10%;
+    transform: scale(1.7);
+    left: -70%;
+    top: -7%;
 }
 
 .diagram-coolthermal #svg {
-    transform: scale(1.7, 1.7);
-    transform-origin: 100% 0;
+    transform: scale(1.7);
+    left: -70%;
 }
 
 .diagram-diffuser #svg {
-    transform: scale(1.2, 1.2);
-    transform-origin: 10% 270%;
+    transform: scale(1.2);
+    left: -2%;
+    top: -54%;
 }
 
 .diagram-duct #svg {
-    transform: scale(1.05, 1.05);
-    transform-origin: 40% 270%;
+    transform: scale(1.05);
+    left: -2%;
+    top: -13.5%;
 }
 
 .diagram-exchanger #svg {
-    transform: scale(1.05, 1.05);
-    transform-origin: 40% 270%;
+    transform: scale(1.05);
+    left: -2%;
+    top: -13.5%;
 }
 
 .diagram-expansion #svg {
-    transform: scale(1.05, 1.05);
-    transform-origin: 40% 270%;
+    transform: scale(1.05);
+    left: -2%;
+    top: -13.5%;
 }
 
 .diagram-fan #svg {
-    transform: scale(1.8, 1.8);
-    transform-origin: 60% 70%;
+    transform: scale(1.8);
+    left: -48%;
+    top: -56%;
 }
 
 .diagram-hotthermal #svg {
-    transform: scale(1.7, 1.7);
-    transform-origin: 60% 20%;
+    transform: scale(1.7);
+    left: -42%;
+    top: -14%;
 }
 
 .diagram-pipe #svg {
-    transform: scale(1.2, 1.2);
-    transform-origin: 70% 30%;
+    transform: scale(1.2);
+    left: -14%;
+    top: -6%;
 }
 
 .diagram-pump #svg {
-    transform: scale(1.6, 1.6);
-    transform-origin: 110% 0;
+    transform: scale(1.6);
+    left: -66%;
 }
 
 .diagram-steamtrap #svg {
-    transform: scale(1.7, 1.7);
-    transform-origin: 30% 20%;
+    transform: scale(1.7);
+    left: -21%;
+    top: -14%;
 }
 
 .diagram-terminal #svg {
-    transform: scale(1.2, 1.2);
-    transform-origin: 80% 270%;
+    transform: scale(1.2);
+    left: -16%;
+    top: -54%;
 }
 
 .diagram-tower #svg {
-    transform: scale(1.8, 1.8);
-    transform-origin: 100% -10%;
+    transform: scale(1.8);
+    left: -80%;
+    top: 8%;
 }
 
 .diagram-valve #svg {
-    transform: scale(1.2, 1.2);
-    transform-origin: 20% 0;
+    transform: scale(1.2);
+    left: -4px;
 }
 
 .diagram-vav #svg {
-    transform: scale(1.2, 1.2);
-    transform-origin: 70% 240%;
+    transform: scale(1.2);
+    left: -14%;
+    top: -48%;
 }
 
 .diagram-laboratories-demand_vent_basics #svg {
-    transform: scale(1.2, 1.2);
-    transform-origin: 80% 270%;
+    transform: scale(1.2);
+    left: -16%;
+    top: -54%;
 }
 
 .diagram-laboratories-energy_recovery_basics #svg {
-    transform: scale(1.8, 1.8);
-    transform-origin: 20% 70%;
+    transform: scale(1.8);
+    left: -16%;
+    top: -56%;
 }
 
 .diagram-laboratories-exhaust_stack_basics #svg {
-    transform: scale(1.2, 1.2);
-    transform-origin: 0 180%;
+    transform: scale(1.2);
+    top: -36%;
 }
 
 .diagram-laboratories-lab_vav_basics #svg,
 .diagram-laboratories-lab_vavsystems_basics #svg {
-    transform: scale(1.1, 1.1);
-    transform-origin: 10% 350%;
+    transform: scale(1.1);
+    left: -1%;
+    top: -35%;
 }
 
 .diagram-laboratories-occupancy_sensor_basics #svg {
-    transform: scale(1.6, 1.6);
-    transform-origin: 100% 150%;
+    transform: scale(1.6);
+    left: -60%;
+    top: -90%;
 }
