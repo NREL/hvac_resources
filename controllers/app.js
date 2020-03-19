@@ -1211,7 +1211,7 @@ routerApp.controller('MainCtrl', ['$scope', '$state', function ($scope, $state) 
         'laboratories.lab_vavsystems_basics',
         'laboratories.occupancy_sensor_basics'
       ];
-      for (var i = i; i < names.length; ++i) {
+      for (var i = 0; i < names.length; ++i) {
         var name = names[i];
         if (name === $state.current.name) {
           return 'diagram-' + name.replace('.', '-');
