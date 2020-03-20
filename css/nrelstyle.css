@@ -125,7 +125,7 @@
 
 .myh4 {
     color: #CC6600;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 p,
@@ -143,7 +143,7 @@ span {
 
 body {
     color: #333;
-    font-family: "Droid Serif";
+    font-family: 'Droid Serif';
     font-size: 13px;
     font-weight: 400;
     line-height: 1.65;
@@ -198,7 +198,7 @@ a:hover {
     top: 0;
     left: 0;
     float: left;
-    padding-top: 0px;
+    padding-top: 0;
     background: #000000;
     width: 100%;
 }
@@ -211,7 +211,7 @@ a:hover {
 }
 
 .topmenu {
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
     font-size: 10pt;
     font-weight: normal;
     text-decoration: none !important;
@@ -301,7 +301,7 @@ a:hover {
         top: 0;
         left: 0;
         float: left;
-        padding-top: 0px;
+        padding-top: 0;
         background: #000000;
         width: 100%;
     }
@@ -400,7 +400,7 @@ hr {
     color: #666666;
     padding-top: 3px;
     padding-bottom: 4px;
-    font-family: 'pt sans narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
 }
 
 .caption {
@@ -524,7 +524,7 @@ blockquote {
 .tuneTable {
     border: 1px solid white;
     border-collapse: collapse;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
     font-weight: normal;
     line-height: 115% !important;
     font-size: 11pt;
@@ -543,7 +543,7 @@ table,
 td {
     border: 1px solid white;
     border-collapse: collapse;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
     font-weight: normal;
     line-height: 110% !important;
     font-size: 11pt;
@@ -559,12 +559,12 @@ th {
     padding: 7px 2px;
     border: 1px solid white;
     color: black;
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
 }
 
 th,
 td {
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Pt Sans Narrow', sans-serif;
 }
 
 tr:nth-child(even) {
@@ -581,7 +581,7 @@ td li {
     padding: 10px !important;
     border: 20px solid white !important;
     color: black !important;
-    font-family: 'PT Sans Narrow', sans-serif !important;
+    font-family: 'Pt Sans Narrow', sans-serif !important;
 }
 
 /*flexbox formatting*/
@@ -761,6 +761,7 @@ td li {
 /*container for hvac diagram*/
 #diagram {
     min-height: calc(100vh - 250px);
+    max-height: 100vh;
     -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
@@ -769,12 +770,26 @@ td li {
     -ms-flex-preferred-size: 26%;
     flex-basis: 26%;
     border: 1px solid #eeeeee !important;
-    /*    overflow: hidden;*/
+    overflow: hidden;
     /*flex: 1 0 350px;
   -webkit-flex: 1 0 350px;
   -ms-flex: 1 0 350px;*/
     -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}
+
+#svg {
+    position: relative;
+    transform-origin: top left;
+    transition: all 1s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#svg *:focus {
+    outline: none;
 }
 
 
@@ -814,7 +829,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
     font-size: 12pt;
 }
 
@@ -827,23 +842,23 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
     font-size: 12pt;
 }
 
 input[type=text]:focus {
     background-color: gainsboro;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 input[type=email]:focus {
     background-color: gainsboro;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 input[type=textarea]:focus {
     background-color: gainsboro;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 textarea {
@@ -854,7 +869,7 @@ textarea {
     width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 label {
@@ -882,7 +897,7 @@ label:after {
 
 .homeright img {
     float: left;
-    margin: 0px 10px 0 0;
+    margin: 0 10px 0 0;
 }
 
 /*mynav on left side*/
@@ -1065,10 +1080,10 @@ body {
 }
 
 .bottomtext {
-    font-family: 'pt sans narrow';
+    font-family: 'Pt Sans Narrow';
     font-size: 9pt !important;
     line-height: 140%;
-    padding-top: 0px;
+    padding-top: 0;
     float: left;
     color: #ffffff;
     text-align: left;
@@ -1099,7 +1114,7 @@ body {
 
 .rtnav li {
     font-size: 13px;
-    font-family: 'PT Sans Narrow';
+    font-family: 'Pt Sans Narrow';
 }
 
 .rtnav a {
@@ -1278,4 +1293,199 @@ body {
 
 .no-animate {
     transition: none !important;
+}
+
+.diagram-ahu #svg {
+    transform: scale(1.1);
+    left: -7%;
+    top: -22%;
+}
+
+.diagram-boiler #svg {
+    transform: scale(1.7);
+    top: -6%;
+}
+
+.diagram-chiller #svg {
+    transform: scale(1.7);
+    left: -70%;
+    top: -7%;
+}
+
+.diagram-coolthermal #svg {
+    transform: scale(1.7);
+    left: -70%;
+}
+
+.diagram-diffuser #svg {
+    transform: scale(1.2);
+    left: -2%;
+    top: -54%;
+}
+
+.diagram-duct #svg {
+    transform: scale(1.05);
+    left: -2%;
+    top: -13.5%;
+}
+
+.diagram-exchanger #svg {
+    transform: scale(1.05);
+    left: -2%;
+    top: -13.5%;
+}
+
+.diagram-expansion #svg {
+    transform: scale(1.05);
+    left: -2%;
+    top: -13.5%;
+}
+
+.diagram-fan #svg {
+    transform: scale(1.8);
+    left: -48%;
+    top: -56%;
+}
+
+.diagram-hotthermal #svg {
+    transform: scale(1.7);
+    left: -42%;
+    top: -14%;
+}
+
+.diagram-pipe #svg {
+    transform: scale(1.2);
+    left: -14%;
+    top: -6%;
+}
+
+.diagram-pump #svg {
+    transform: scale(1.6);
+    left: -66%;
+}
+
+.diagram-steamtrap #svg {
+    transform: scale(1.7);
+    left: -21%;
+    top: -14%;
+}
+
+.diagram-terminal #svg {
+    transform: scale(1.2);
+    left: -16%;
+    top: -54%;
+}
+
+.diagram-tower #svg {
+    transform: scale(1.8);
+    left: -80%;
+    top: 8%;
+}
+
+.diagram-valve #svg {
+    transform: scale(1.2);
+    left: -4px;
+}
+
+.diagram-vav #svg {
+    transform: scale(1.2);
+    left: -14%;
+    top: -48%;
+}
+
+.diagram-laboratories-demand_vent_basics #svg {
+    transform: scale(1.2);
+    left: -16%;
+    top: -54%;
+}
+
+.diagram-laboratories-energy_recovery_basics #svg {
+    transform: scale(1.8);
+    left: -16%;
+    top: -56%;
+}
+
+.diagram-laboratories-exhaust_stack_basics #svg {
+    transform: scale(1.2);
+    top: -36%;
+}
+
+.diagram-laboratories-lab_vav_basics #svg,
+.diagram-laboratories-lab_vavsystems_basics #svg {
+    transform: scale(1.1);
+    left: -1%;
+    top: -35%;
+}
+
+.diagram-laboratories-occupancy_sensor_basics #svg {
+    transform: scale(1.6);
+    left: -60%;
+    top: -90%;
+}
+
+.diagram-laboratories-boiler_basics #svg {
+    transform: scale(1.7);
+    top: -6%;
+}
+
+.diagram-laboratories-chiller_basics #svg {
+    transform: scale(1.7);
+    left: -70%;
+    top: -7%;
+}
+
+.diagram-laboratories-ahu_basics #svg {
+    transform: scale(1.1);
+    left: -7%;
+    top: -22%;
+}
+
+.diagram-laboratories-cool_basics #svg {
+    transform: scale(1.7);
+    left: -70%;
+}
+
+.diagram-laboratories-pump_basics #svg {
+    transform: scale(1.6);
+    left: -66%;
+}
+
+.diagram-laboratories-lab_diffuser_basics #svg {
+    transform: scale(1.6);
+    left: -60%;
+    top: -50%;
+}
+
+.diagram-laboratories-exposure_control_basics #svg {
+    transform: scale(1.6);
+
+    top: -50%;
+}
+
+.diagram-laboratories-hot_basics #svg {
+    transform: scale(1.7);
+    left: -42%;
+    top: -14%;
+}
+
+.diagram-laboratories-fan_basics #svg {
+    transform: scale(1.8);
+    left: -48%;
+    top: -56%;
+}
+
+.diagram-laboratories-valve_basics #svg {
+    transform: scale(1.2);
+    left: -4px;
+}
+
+.diagram-laboratories-steamtrap_basics #svg {
+    transform: scale(1.7);
+    left: -21%;
+    top: -14%;
+}
+.diagram-laboratories-tower_basics #svg {
+    transform: scale(1.8);
+    left: -80%;
+    top: 8%;
 }

@@ -9,8 +9,7 @@
     <link rel="shortcut icon" href="img/hvac_icon2.ico">
     <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
-    <!--<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto" rel="stylesheet">-->
+    <!--<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto|PT+Sans+Narrow" rel="stylesheet">-->
     <link rel="stylesheet" href="css/nrelstyle.css">
     <link rel="stylesheet" href="css/animate.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -20,8 +19,7 @@
     <script src="bower_components/angular-ui-router.stateHelper/statehelper.min.js"></script>
     <script src="bower_components/GreenSock-JS/src/minified/TweenMax.min.js"></script>
     <script src="controllers/app.js"></script>
-    <script src="js/accordion-menu.js"></script>
-
+    <!--<script src="js/accordion-menu.js"></script>-->
 </head>
 
 <body ng-app="routerApp">
@@ -46,7 +44,7 @@
             </div>
 
             <div class="flexcontainer">
-                <div id="diagram" class="noselect no-animate" alt="Diagram of HVAC system showing the heating and cooling loop as part of the central plant and the distribution system." ng-include="svg()"></div>
+                <div id="diagram" class="noselect no-animate" alt="Diagram of HVAC system showing the heating and cooling loop as part of the central plant and the distribution system." ng-include="svg()" ng-class="diagramClass()"></div>
 
                 <!-- COLUMN Three NAMED VIEW -->
                 <div class="infocontainer">
@@ -79,10 +77,9 @@
         gtag('config', 'UA-18838154-17');
 
     </script>
-    <script>
+    <!--<script>
         new AccordionMenu('.col-menu');
-
-    </script>
+    </script>-->
 </body>
 
 </html>
