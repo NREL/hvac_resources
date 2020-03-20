@@ -1510,3 +1510,8 @@ body {
     left: -80%;
     top: 8%;
 }
+
+.graybox {
+    background-color: #eeeeee;
+    padding: 20px;
+}
