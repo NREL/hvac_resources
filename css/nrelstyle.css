@@ -1301,17 +1301,6 @@ body {
     top: -22%;
 }
 
-.diagram-boiler #svg {
-    transform: scale(1.7);
-    top: -6%;
-}
-
-.diagram-chiller #svg {
-    transform: scale(1.7);
-    left: -70%;
-    top: -7%;
-}
-
 .diagram-coolthermal #svg {
     transform: scale(1.7);
     left: -70%;
@@ -1341,11 +1330,6 @@ body {
     top: -13.5%;
 }
 
-.diagram-fan #svg {
-    transform: scale(1.8);
-    left: -48%;
-    top: -56%;
-}
 
 .diagram-hotthermal #svg {
     transform: scale(1.7);
@@ -1359,28 +1343,12 @@ body {
     top: -6%;
 }
 
-.diagram-pump #svg {
-    transform: scale(1.6);
-    left: -66%;
-}
-
-.diagram-steamtrap #svg {
-    transform: scale(1.7);
-    left: -21%;
-    top: -14%;
-}
-
 .diagram-terminal #svg {
     transform: scale(1.2);
     left: -16%;
     top: -54%;
 }
 
-.diagram-tower #svg {
-    transform: scale(1.8);
-    left: -80%;
-    top: 8%;
-}
 
 .diagram-valve #svg {
     transform: scale(1.2);
@@ -1423,18 +1391,36 @@ body {
     top: -90%;
 }
 
-.diagram-laboratories-boiler_basics #svg {
+.diagram-boiler #svg,
+.diagram-laboratories-boiler_basics #svg,
+.diagram-laboratories-codes #svg,
+.diagram-laboratories-design #svg,
+.diagram-laboratories-tools #svg,
+.diagram-laboratories-operation #svg,
+.diagram-laboratories-procure #svg,
+.diagram-laboratories-cases #svg {
     transform: scale(1.7);
     top: -6%;
 }
 
-.diagram-laboratories-chiller_basics #svg {
+.diagram-chiller #svg,
+.diagram-laboratories-chiller_basics #svg,
+.diagram-laboratories-chiller_codes #svg,
+.diagram-laboratories-chiller_design #svg,
+.diagram-laboratories-chiller_tools #svg,
+.diagram-laboratories-chiller_operation #svg,
+.diagram-laboratories-chiller_procure #svg,
+.diagram-laboratories-chiller_cases #svg {
     transform: scale(1.7);
     left: -70%;
     top: -7%;
 }
 
-.diagram-laboratories-ahu_basics #svg {
+.diagram-laboratories-ahu_basics #svg,
+.diagram-laboratories-ahu_alt_hvac #svg,
+.diagram-laboratories-ahu_codes #svg,
+.diagram-laboratories-ahu_design_lab #svg,
+.diagram-laboratories-ahu_operation_lab #svg {
     transform: scale(1.1);
     left: -7%;
     top: -22%;
@@ -1445,7 +1431,14 @@ body {
     left: -70%;
 }
 
-.diagram-laboratories-pump_basics #svg {
+.diagram-pump #svg,
+.diagram-laboratories-pump_basics #svg,
+.diagram-laboratories-pump_codes #svg,
+.diagram-laboratories-pump_design #svg,
+.diagram-laboratories-pump_tools #svg,
+.diagram-laboratories-pump_operation #svg,
+.diagram-laboratories-pump_procure #svg,
+.diagram-laboratories-pump_cases #svg {
     transform: scale(1.6);
     left: -66%;
 }
@@ -1456,10 +1449,14 @@ body {
     top: -50%;
 }
 
-.diagram-laboratories-exposure_control_basics #svg {
+.diagram-laboratories-exposure_control_basics #svg,
+.diagram-laboratories-exposure_control_types #svg,
+.diagram-laboratories-exposure_control_eems #svg,
+.diagram-laboratories-exposure_control_tools #svg,
+.diagram-laboratories-exposure_control_operations #svg {
     transform: scale(1.6);
 
-    top: -50%;
+    top: -80%;
 }
 
 .diagram-laboratories-hot_basics #svg {
@@ -1468,23 +1465,47 @@ body {
     top: -14%;
 }
 
-.diagram-laboratories-fan_basics #svg {
+.diagram-fan #svg,
+.diagram-laboratories-fan_basics #svg,
+.diagram-laboratories-fan_design #svg,
+.diagram-laboratories-fan_tools #svg,
+.diagram-laboratories-fan_operation #svg,
+.diagram-laboratories-fan_procure #svg,
+.diagram-laboratories-fan_cases #svg,
+.diagram-laboratories-fan_tuneup #svg {
     transform: scale(1.8);
     left: -48%;
     top: -56%;
 }
 
-.diagram-laboratories-valve_basics #svg {
+.diagram-laboratories-valve_basics #svg,
+.diagram-laboratories-valve_types #svg,
+.diagram-laboratories-valve_codes #svg,
+.diagram-laboratories-valve_design #svg,
+.diagram-laboratories-valve_tools #svg,
+.diagram-laboratories-valve_operation #svg,
+.diagram-laboratories-valve_cases #svg {
     transform: scale(1.2);
     left: -4px;
 }
 
-.diagram-laboratories-steamtrap_basics #svg {
+.diagram-laboratories-steamtrap_basics #svg,
+.diagram-laboratories-steamtrap_tools #svg,
+.diagram-steamtrap #svg {
     transform: scale(1.7);
     left: -21%;
     top: -14%;
 }
-.diagram-laboratories-tower_basics #svg {
+
+.diagram-tower #svg,
+.diagram-laboratories-tower_basics #svg,
+.diagram-laboratories-tower_types #svg,
+.diagram-laboratories-tower_codes #svg,
+.diagram-laboratories-tower_design #svg,
+.diagram-laboratories-tower_tools #svg,
+.diagram-laboratories-tower_operation #svg,
+.diagram-laboratories-tower_procure #svg,
+.diagram-laboratories-tower_cases #svg {
     transform: scale(1.8);
     left: -80%;
     top: 8%;
