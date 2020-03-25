@@ -249,8 +249,8 @@ a:hover {
     display: block;
     color: #ffffff !important;
     text-align: center;
-    padding: 10px 10px;
-    font-size: 10pt;
+    padding: 12px 12px;
+    font-size: 12pt;
     text-decoration: none !important;
     position: relative;
 }
@@ -259,7 +259,7 @@ a:hover {
 .topmenu li a:hover {
     background-color: #ffffff !important;
     color: #000000 !important;
-    font-size: 10pt;
+    /*    font-size: 12pt;*/
     border-top: 4px solid #1d449c !important;
 }
 
@@ -268,7 +268,7 @@ a:hover {
 .topmenu a:focus {
     background-color: #ffffff !important;
     color: #000000 !important;
-    font-size: 10pt;
+    /*    font-size: 12pt;*/
     border-top: 4px solid #62D2FF !important;
 }
 
@@ -290,10 +290,7 @@ a:hover {
 
 @media (max-width: 430px) {
     .nreltitle {
-        font-family: 'Pt Sans Narrow';
         font-size: 10pt;
-        line-height: 110%;
-        word-wrap: break-word;
     }
 
     .topbar {
@@ -308,6 +305,16 @@ a:hover {
 
     .hvacimage {
         display: none;
+    }
+
+    .topmenu li a {
+        display: block;
+        color: #ffffff !important;
+        text-align: center;
+        padding: 10px 10px;
+        font-size: 10pt;
+        text-decoration: none !important;
+        position: relative;
     }
 }
 
