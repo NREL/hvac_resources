@@ -617,6 +617,17 @@ td li {
     .nrellink {
         display: none;
     }
+
+    .nreltop {
+        padding-left: 3%;
+        padding-right: 5%;
+        background-color: #0079C5;
+        height: 10%;
+        border-bottom: 2px solid #005D92 !important;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+    }
 }
 
 .content-secondary {
