@@ -793,11 +793,22 @@ td li {
     flex-basis: 26%;
     border: 1px solid #eeeeee !important;
     overflow: hidden;
+    position: relative;
     /*flex: 1 0 350px;
   -webkit-flex: 1 0 350px;
   -ms-flex: 1 0 350px;*/
     -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}
+
+#diagram .reset-btn {
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    z-index: 1;
 }
 
 #svg {
