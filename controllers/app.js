@@ -1175,6 +1175,7 @@ routerApp.run(['$rootScope', '$log', '$state', function ($rootScope, $log, $stat
         // $log.debug('$stateChangeStart');
     });
     $rootScope.$on('$stateChangeSuccess', function (event, toState, toParams, fromState, fromParams) {
+        $rootScope.resetDiagram = false;
         // $log.debug('$stateChangeSuccess');
     });
     $rootScope.$on('$stateChangeError', function (event, toState, toParams, fromState, fromParams, error) {
@@ -1186,8 +1187,9 @@ routerApp.run(['$rootScope', '$log', '$state', function ($rootScope, $log, $stat
     });
 }]);
 
-routerApp.controller('MainCtrl', ['$scope', '$state', function ($scope, $state) {
+routerApp.controller('MainCtrl', ['$rootScope', '$scope', '$state', function ($rootScope, $scope, $state) {
     $scope.state = $state;
+    $rootScope.resetDiagram = false;
 
     $scope.svg = function () {
         if ($state.current.name) {
@@ -1199,77 +1201,85 @@ routerApp.controller('MainCtrl', ['$scope', '$state', function ($scope, $state) 
         }
     };
 
+    $scope.reset = function () {
+        $rootScope.resetDiagram = true;
+    }
+
     $scope.diagramClass = function () {
+        if ($rootScope.resetDiagram) {
+            return;
+        }
+
         if ($state.current.name) {
 
             var names = [
-        'laboratories.demand_vent_basics',
-        'laboratories.energy_recovery_basics',
-        'laboratories.exhaust_stack_basics',
-        'laboratories.lab_vav_basics',
-        'laboratories.lab_vavsystems_basics',
-        'laboratories.occupancy_sensor_basics',
-          'laboratories.boiler_basics',
-                'laboratories.codes',
-                'laboratories.design',
-                'laboratories.tools',
-                'laboratories.operation',
-                'laboratories.procure',
-                'laboratories.cases',
-          'laboratories.chiller_basics',
-                'laboratories.chiller_codes',
-                'laboratories.chiller_design',
-                'laboratories.chiller_tools',
-                'laboratories.chiller_operation',
-                'laboratories.chiller_procure',
-                'laboratories.chiller_cases',
-            'laboratories.ahu_basics',
                 'laboratories.ahu_alt_hvac',
+                'laboratories.ahu_basics',
                 'laboratories.ahu_codes',
                 'laboratories.ahu_design_lab',
                 'laboratories.ahu_operation_lab',
-            'laboratories.cool_basics',
-            'laboratories.pump_basics',
-                'laboratories.pump_codes',
-                'laboratories.pump_design',
-                'laboratories.pump_tools',
-                'laboratories.pump_operation',
-                'laboratories.pump_procure',
-                'laboratories.pump_cases',
-                'laboratories.lab_diffuser_basics',
+                'laboratories.boiler_basics',
+                'laboratories.cases',
+                'laboratories.chiller_basics',
+                'laboratories.chiller_cases',
+                'laboratories.chiller_codes',
+                'laboratories.chiller_design',
+                'laboratories.chiller_operation',
+                'laboratories.chiller_procure',
+                'laboratories.chiller_tools',
+                'laboratories.codes',
+                'laboratories.cool_basics',
+                'laboratories.demand_vent_basics',
+                'laboratories.design',
+                'laboratories.energy_recovery_basics',
+                'laboratories.exhaust_stack_basics',
                 'laboratories.exposure_control_basics',
-                'laboratories.hot_basics',
-                'laboratories.fan_basics',
-            'laboratories.valve_basics',
-                'laboratories.valve_codes',
-                'laboratories.valve_types',
-                'laboratories.valve_design',
-                'laboratories.valve_tools',
-                'laboratories.valve_operation',
-                'laboratories.valve_cases',
-            'laboratories.steamtrap_basics',
-                'laboratories.steamtrap_tools',
-                'laboratories.tower_basics',
                 'laboratories.exposure_control_basics',
-                'laboratories.exposure_control_types',
                 'laboratories.exposure_control_eems',
-                'laboratories.exposure_control_tools',
                 'laboratories.exposure_control_operations',
-                'laboratories.tower_basics',
-                'laboratories.tower_types',
-                'laboratories.tower_codes',
-                'laboratories.tower_design',
-                'laboratories.tower_tools',
-                'laboratories.tower_operation',
-                'laboratories.tower_procure',
-                'laboratories.tower_cases',
+                'laboratories.exposure_control_tools',
+                'laboratories.exposure_control_types',
+                'laboratories.fan_basics',
+                'laboratories.fan_cases',
                 'laboratories.fan_design',
-                'laboratories.fan_tools',
                 'laboratories.fan_operation',
                 'laboratories.fan_procure',
-                'laboratories.fan_cases',
-                'laboratories.fan_tuneup'
-      ];
+                'laboratories.fan_tools',
+                'laboratories.fan_tuneup',
+                'laboratories.hot_basics',
+                'laboratories.lab_diffuser_basics',
+                'laboratories.lab_vav_basics',
+                'laboratories.lab_vavsystems_basics',
+                'laboratories.occupancy_sensor_basics',
+                'laboratories.operation',
+                'laboratories.procure',
+                'laboratories.pump_basics',
+                'laboratories.pump_cases',
+                'laboratories.pump_codes',
+                'laboratories.pump_design',
+                'laboratories.pump_operation',
+                'laboratories.pump_procure',
+                'laboratories.pump_tools',
+                'laboratories.steamtrap_basics',
+                'laboratories.steamtrap_tools',
+                'laboratories.tools',
+                'laboratories.tower_basics',
+                'laboratories.tower_basics',
+                'laboratories.tower_cases',
+                'laboratories.tower_codes',
+                'laboratories.tower_design',
+                'laboratories.tower_operation',
+                'laboratories.tower_procure',
+                'laboratories.tower_tools',
+                'laboratories.tower_types',
+                'laboratories.valve_basics',
+                'laboratories.valve_cases',
+                'laboratories.valve_codes',
+                'laboratories.valve_design',
+                'laboratories.valve_operation',
+                'laboratories.valve_tools',
+                'laboratories.valve_types'
+            ];
             for (var i = 0; i < names.length; ++i) {
                 var name = names[i];
                 if (name === $state.current.name) {
@@ -1278,23 +1288,23 @@ routerApp.controller('MainCtrl', ['$scope', '$state', function ($scope, $state) 
             }
 
             var prefixes = [
-        'ahu',
-        'boiler',
-        'chiller',
-        'coolthermal',
-        'diffuser',
-        'duct',
-        'exchanger',
-        'expansion',
-        'fan',
-        'hotthermal',
-        'pipe',
-        'pump',
-        'steamtrap',
-        'terminal',
-        'tower',
-        'valve'
-      ];
+                'ahu',
+                'boiler',
+                'chiller',
+                'coolthermal',
+                'diffuser',
+                'duct',
+                'exchanger',
+                'expansion',
+                'fan',
+                'hotthermal',
+                'pipe',
+                'pump',
+                'steamtrap',
+                'terminal',
+                'tower',
+                'valve'
+            ];
             for (var i = 0; i < prefixes.length; ++i) {
                 var prefix = prefixes[i];
                 var re = new RegExp('^' + prefix + '(?:\\.[a-z]+)?$');

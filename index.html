@@ -46,7 +46,10 @@
             </div>
 
             <div class="flexcontainer">
-                <div id="diagram" class="noselect no-animate" ng-include="svg()" ng-class="diagramClass()"></div>
+                <div id="diagram" class="noselect no-animate" ng-class="diagramClass()">
+                    <button class="reset-btn mybtn" ng-if="diagramClass()" ng-click="reset()">RESET</button>
+                    <div ng-include="svg()"></div>
+                </div>
 
                 <!-- COLUMN Three NAMED VIEW -->
                 <div class="infocontainer">

@@ -793,11 +793,24 @@ td li {
     flex-basis: 26%;
     border: 1px solid #eeeeee !important;
     overflow: hidden;
+    position: relative;
     /*flex: 1 0 350px;
   -webkit-flex: 1 0 350px;
   -ms-flex: 1 0 350px;*/
     -webkit-transition: width 1s ease-in-out, left 1.5s ease-in-out;
     transition: width 1s ease-in-out, left 1.5s ease-in-out;
+}
+
+#diagram .reset-btn {
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    z-index: 1;
+    font-size: 12px !important;
+    font-family: 'Roboto', sans-serif;
 }
 
 #svg {
@@ -818,15 +831,15 @@ td li {
 /*Contact form button and formatting*/
 .mybtn {
     background-color: #0062A0;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1px;
     color: white !important;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
-    width: 40%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    width: 20%;
 }
 
 .mybtn a:hover {
