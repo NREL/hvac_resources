@@ -1142,6 +1142,11 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 url: '/lab_vent_cfd',
                 templateUrl: 'views/lab_vent_cfd.html'
       }, {
+                name: 'lab_benchmark',
+                nav: 'lab_benchmark',
+                url: '/lab_energy_benchmark',
+                templateUrl: 'views/lab_energy_benchmarking.html'
+      }, { 
                 name: 'exhaust_stack_basics',
                 nav: 'exhaust_stack',
                 url: '/exhaust_stack_basics',

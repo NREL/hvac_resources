@@ -404,6 +404,15 @@ hr {
     font-size: 10pt;
     line-height: 150% !important;
     font-weight: 100;
+    color: #555555;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    font-family: 'Pt Sans Narrow', sans-serif;
+}
+.note {
+    font-size: 9pt;
+    line-height: 150% !important;
+    font-weight: 100;
     color: #666666;
     padding-top: 3px;
     padding-bottom: 4px;
