@@ -35,7 +35,7 @@
             <span class="myh2">What is this resource?</span>
             <p><span class="largertx"> The HVAC Resource Map for Laboratories is an intuitive graphical interface that provides quick access to a broad array of quality information on design, operations and maintenance best practices, and energy and water efficiency measures in single-pass HVAC systems that are 100% outside air and do not have return air.</span></p>
             <p>The resources cover the central plant, distribution systems, and zone systems. The primary audiences are facility managers, operations staff, and design engineers who want to improve central plant and distribution efficiency.</p>
-            <p>This Resource Map does not duplicate guidance provided in codes and standards, and it should not be used in lieu of professional engineering services.</p>
+            
             <div class="graybox">
                 <span class="myh3">Explore HVAC Resources</span>
 
@@ -46,7 +46,7 @@
 
             </div>
 
-            <img class="transimg" src="img/lab_29658.jpg" alt="Photo of scientist performing research in the compositional analysis lab at the Field Test Laboratory Building (FTLB) at the National Renewable Energy Laboratory in Golden, CO.">
+            <img class="transimg" src="img/lab_29658.jpg" alt="Photo of scientist performing research in the compositional analysis lab at the Field Test Laboratory Building &lpar;FTLB&rpar; at the National Renewable Energy Laboratory in Golden, CO.">
             <p class="imgtitle">Laboratories have unique HVAC needs. <span class="source"> Photo by Dennis Schroeder/NREL 38444</span></p>
             <p class="note">This Resource Map does not duplicate guidance provided in codes and standards, and it should not be used in lieu of professional engineering services.</p>
 
@@ -65,11 +65,24 @@
                     <li><a ui-sref=".demand_vent_basics">Demand Control Ventilation</a></li>
                     <li><a ui-sref=".occupancy_sensor_basics">Occupancy Sensors</a></li>
                     <li><a ui-sref=".exposure_control_basics">Exposure Control Devices</a></li>
+                    <li><a ui-sref=".bldg_modeling_basics">Building Energy Modeling</a></li>
+                    <li><a ui-sref=".lab_benchmark_basics">Energy Benchmarking for Labs</a></li>
+
+                    <li class="rtnavsubtitle">DISTRIBUTION</li>
+                    <li><a ui-sref=".low_pressure_basics">Low Pressure Drop Design</a></li>
+                    <li><a ui-sref=".ahu_basics">Air Handling Unit</a></li>
+                    <li><a ui-sref=".fan_basics">Fans</a></li>
+                    <li><a ui-sref=".duct_basics_lab">Ducting</a></li>
+                    <li><a ui-sref=".lab_vavsystems_basics">Variable Air Volume Systems</a></li>
+                    <li><a ui-sref=".lab_vav_basics">VAV Boxes</a></li>
+                    <li><a ui-sref=".lab_diffuser_basics">Diffuser</a></li>
+                    <li><a ui-sref=".pipe_basics">Piping</a></li>
+                    <li><a ui-sref=".steamtrap_basics">Steam Traps</a></li>
+                    <li><a ui-sref=".valve_basics">Valves</a></li>
 
                     <li class="rtnavsubtitle">LAB EXHAUST DEVICES</li>
-                    <li><a ui-sref=".lab_vav_basics">VAV Boxes</a></li>
                     <li><a ui-sref=".energy_recovery_basics">Energy Recovery</a></li>
-                    <li><a ui-sref=".exhaust_stack_basics">Optimized Exhaust Stack Discharge</a></li>
+                    <li><a ui-sref=".exhaust_stack_basics">Optimized Exhaust Stack Design</a></li>
 
                     <li class="rtnavsubtitle">CENTRAL PLANT</li>
                     <li><a ui-sref=".boiler_basics">Boiler</a></li>
@@ -80,15 +93,6 @@
                     <li><a ui-sref=".pump_basics">Pump</a></li>
                     <li><a ui-sref=".sensor_basics">Sensors &amp; Controls</a></li>
 
-                    <li class="rtnavsubtitle">DISTRIBUTION</li>
-                    <li><a ui-sref=".ahu_basics">Air Handling Unit</a></li>
-                    <li><a ui-sref=".duct_basics_lab">Ducting</a></li>
-                    <li><a ui-sref=".lab_vavsystems_basics">Variable Air Volume Systems</a></li>
-                    <li><a ui-sref=".lab_diffuser_basics">Diffuser</a></li>
-                    <li><a ui-sref=".fan_basics">Fans</a></li>
-                    <li><a ui-sref=".pipe_basics">Piping</a></li>
-                    <li><a ui-sref=".steamtrap_basics">Steam Traps</a></li>
-                    <li><a ui-sref=".valve_basics">Valves</a></li>
                 </ul>
             </nav>
             <!--            </div>-->
@@ -298,7 +302,7 @@
             <nav class="rtnav">
                 <ul>
                     <li><a ui-sref=".exposure_control_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
-                    <li><a ui-sref=".exposure_control_types" id="rtcodes"><i class="fa fa-tasks fa-1x fa-fw" aria-hidden="true"></i> Types </a></li>
+<!--                     <li><a ui-sref=".exposure_control_types" id="rtcodes"><i class="fa fa-tasks fa-1x fa-fw" aria-hidden="true"></i> Types </a></li> -->
                     <li><a ui-sref=".exposure_control_eems" id="rtdesign"><i class="fa fa-book fa-1x fa-fw" aria-hidden="true"></i> Energy Efficiency Measures </a></li>
                     <li><a ui-sref=".exposure_control_tools" id="rttools"><i class="fa fa-calculator fa-1x fa-fw" aria-hidden="true"></i> Calculators &amp; Tools</a></li>
                     <li><a ui-sref=".exposure_control_operations" id="rtoperation"><i class="fa fa-wrench fa-1x fa-fw" aria-hidden="true"></i> Operation &amp; Training</a></li>
@@ -311,9 +315,9 @@
             <nav class="rtnav">
                 <ul>
                     <li><a ui-sref=".lab_vent_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
-                    <li><a ui-sref=".lab_vent_cfd" id="rttypes"><i class="fa fa-line-chart fa-1x fa-fw" aria-hidden="true"></i> Computational Fluid Dynamics (CFD)</a>
+                    <li><a ui-sref=".lab_vent_cfd" id="rttypes"><i class="fa fa-line-chart fa-1x fa-fw" aria-hidden="true"></i> Computational Fluid Dynamics &lpar;CFD&rpar;</a>
                     </li>
-                    <li><a ui-sref=".bldg_modeling_basics" id="rtdesign"><i class="fa fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Building Energy Modeling</a></li>
+                    <!-- <li><a ui-sref=".bldg_modeling_basics" id="rtdesign"><i class="fa fa fa-building fa-1x fa-fw" aria-hidden="true"></i> Building Energy Modeling</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -338,6 +342,30 @@
             <nav class="rtnav">
                 <ul>
                     <li><a ui-sref=".lab_vavsystems_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="bldg_model">
+            <span class="myh4">Building Energy Modeling</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".bldg_modeling_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="lab_benchmark">
+            <span class="myh4">Energy Benchmarking for Labs</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".lab_benchmark_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div ng-switch-when="low_pressure">
+            <span class="myh4">Low Pressure Drop Design</span>
+            <nav class="rtnav">
+                <ul>
+                    <li><a ui-sref=".low_pressure_basics" id="rtbasics"><i class="fa fa-info fa-1x fa-fw" aria-hidden="true"></i> General Info</a></li>
                 </ul>
             </nav>
         </div>
