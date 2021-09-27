@@ -81,7 +81,17 @@
     font-weight: bold;
     font-style: italic;
 }
-
+@font-face {
+    font-family: 'Droid Serif';
+    src: url('../fonts/DroidSerif-Bold.eot');
+    src: url('../fonts/DroidSerif-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DroidSerif-Bold.woff2') format('woff2'),
+        url('../fonts/DroidSerif-Bold.woff') format('woff'),
+        url('../fonts/DroidSerif-Bold.ttf') format('truetype'),
+        url('../fonts/DroidSerif-Bold.svg#DroidSerif-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'Pt Sans Narrow';
@@ -386,6 +396,7 @@ hr {
     text-decoration: underline;
 }
 
+
 .myh3bold {
     font-weight: bold;
     text-align: left;
@@ -410,7 +421,7 @@ hr {
     font-family: 'Pt Sans Narrow', sans-serif;
 }
 .note {
-    font-size: 9pt;
+    font-size: 11pt;
     line-height: 150% !important;
     font-weight: 100;
     color: #666666;
@@ -450,7 +461,6 @@ hr {
     margin: 0 23px 23px 0;
     line-height: 150% !important;
 }
-
 /* quote box and text style */
 .pquoteright {
     font-family: 'Roboto', sans-serif;
@@ -462,6 +472,39 @@ hr {
     background: #eeeeee;
     padding: 13px;
     margin: 20px 23px 23px 20px;
+    line-height: 150% !important;
+}
+.featureimg {
+    float: left;
+    width: 15%;
+    padding: 0px;
+    padding-right: 20pt;
+    padding-left: 10pt;
+    vertical-align: middle!important;
+    margin: 10pt;
+}
+.featureimgsmaller {
+    float: left;
+    width: 10%;
+    padding: 0px;
+    padding-right: 20pt;
+    padding-left: 10pt;
+    vertical-align: middle!important;
+    margin: 0pt;
+}
+.featured {
+    background: #eeeeee;
+    color: #666666;
+    width: 95%;
+    padding: 8px;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle!important;
+    float: right;
+    font-size: 11pt !important;
+    padding-top:10pt;
+    padding-right: 20pt;
+    padding-bottom: 10pt;
+    margin: 0px 0px 10px 10px;
     line-height: 150% !important;
 }
 
@@ -513,11 +556,14 @@ blockquote {
 
 .transimg {
     padding: 5px;
-    display: inline-block;
+    display: block;
     vertical-align: middle;
     width: 90%;
     max-width: 700px;
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .myimage {

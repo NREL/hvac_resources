@@ -34,7 +34,10 @@
 </style>
 
 
-<div class="myh2">Optimized Exhaust Stack Discharge: General Information</div>
+<div class="myh2">Optimized Exhaust Stack Design</div>
+
+<img class="transimg" src="img/exhaust_stacks_nrel.jpg" alt="Photograph of roof of laboratory building with exhaust stacks.">
+<p class="imgtitle">Exhaust stacks at the NREL Energy Systems Integration Facility &lpar;ESIF&rpar; in Golden, CO, are optimized using active VAV based on dispersion modeling. Learn more in the NREL study included in the Resources section below. <span class="source">Image courtesy of the Smart Labs Toolkit.</span></p>
 
 <p>Exhaust systems are used to ventilate hazardous fumes out from an interior environment. In addition, laboratory exhaust systems must discharge the exhaust air away from the building to prevent entrainment into the building outside air system or exposure to personnel at the site. Since discharging fumes out the stack at a high velocity, these systems tend to consume large amounts of energy. This can be minimized through an energy efficient, optimized stack discharge. There are multiple ways to design an optimized stack discharge system. Each of the following will need to balance energy efficiency with optimal performance.</p>
 
@@ -42,15 +45,22 @@
 <p>The exhaust flow of passive VAV systems are based off the setpoint of two values: the minimum air quality setpoint and the building’s ventilation demand. The minimum air quality set point is defined as the minimum flow/exit velocity/stack height needed to provide acceptable air quality at all locations as determined by the dispersion modeling assessment.</p>
 
 <span class="myh3">Strategy 2: Active VAV with Anemometer</span>
-<p>A more energy efficient ventilation system utilizes an anemometer to modify the stack discharge velocity of the ventilation fan based on the surrounding wind. If the speed and direction of the wind is favorable, then the exhaust fan speed can be lowered to reduce energy usage. A dispersion model using a wind tunnel model or computational fluid dynamics is used to determine stack location, height and discharge velocity to safely discharge fumes under different wind speeds and direction. Wind-tunnel modeling is normally the preferred method for predicting maximum concentrations for stack designs and locations of interest and is recommended because it gives the most accurate estimates of concentration levels in complex building environments. The results of the dispersion model are programed into the exhaust system controls; the control will adjust the fan speed based on the measured real-time wind speed and direction.</p>
+<p>Utilizing an anemometer to modify the stack discharge velocity based on the surrounding wind can greatly improve the energy efficiency of the ventilation system. If the speed and direction of the wind is favorable, the exhaust fan speed can be lowered to reduce energy usage.</p> 
+   <p> A dispersion model using a wind tunnel model or computational fluid dynamics is used to determine stack location, height and discharge velocity to safely discharge fumes under different wind speeds and direction. Wind-tunnel modeling is normally the preferred method for predicting maximum concentrations for stack designs and locations of interest and is recommended because it gives the most accurate estimates of concentration levels in complex building environments. The results of the dispersion model are programed into the exhaust system controls; the control will adjust the fan speed based on the measured real-time wind speed and direction.
+    </p>
+
+<img class="transimg" src="img/exhaust_air_quality.jpg" alt="Three images show different air discharge velocities. The first shows adverse air-quality (low-velocity, low-energy). The exhaust flow is coming out sideways to the stack and staying closer to the building. The second image shows optimal balance of energy and air-quality and the exhaust is rising some out of the stack and diffusing. The third image shows wasted energy potential (high-velocity, high-energy). In ths version the air rises higher out of the stack and blows farther away.">
+<p class="imgtitle">Three versions of dispersion models <span class="source">Images courtesy of CPP, Inc.</span></p>
+
 
 <span class="myh3">Strategy 3: Active VAV with Chemical Monitor</span>
-<p>The presence of hazardous chemicals in an exhaust stream will inform the building control system to increase fan speed and stack discharge velocity. If none are detected, then the fans can operate at a lower speed and discharge velocity. This is a relatively new application with limited independent testing, one example is <a class="doctitle" href="https://www.measuredap.com/wp-content/uploads/2019/06/MAP-LifeScience-CaseStudy.pdf" target="_blank">https://www.measuredap.com/wp-content/uploads/2019/06/MAP-LifeScience-CaseStudy.pdf.</a></p>
+<p>The presence of hazardous chemicals in an exhaust stream will inform the building control system to increase fan speed and stack discharge velocity. If none are detected, then the fans can operate at a lower speed and discharge velocity.</p>
 
-<p>Strategy 2 and 3 could be combined for the lowest possible flow and greatest possible saving but the controls become complex and implementation costs increases; typically, only strategy 2 or 3 is used.</p>
+<p>Strategy 2 and 3 could be combined for the lowest possible flow and greatest possible savings, but the controls become complex and implementation costs increase; typically, only strategy 2 or 3 is used.</p>
 
 <br>
 <span class="myh3">References</span>
 <ul class="mylist">
-    <li>Bell, G. C. (2007). Laboratories for the 21st Century: Best Practice Guide. Modeling exhaust dispersion for specifying acceptable exhaust/intake designs. U.S Department of Energy. Retrieved from <a class="doctitle" href="https://www.i2sl.org/documents/toolkit/bp_modeling_508.pdf" target="_blank">http://www.i2sl.org/documents/toolkit/bp_modeling_508.pdf </a></li>
+    <li><a class="doctitle" href="https://www.i2sl.org/documents/toolkit/bp_modeling_508.pdf" target="_blank">I<sup>2</sup>SL Best Practice Guide: Modeling Exhaust Dispersion for Specifying Acceptable Exhaust/Intake Designs</a></li>
+    <li><a class="doctitle" href="https://smartlabs.i2sl.org/pdfs/nrel-dispersion-modeling-esif.pdf" target="_blank">NREL Energy Systems Integration Facility Dispersion Model Study</a></li>
 </ul>

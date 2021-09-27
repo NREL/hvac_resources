@@ -907,6 +907,11 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 url: '/ahu_basics',
                 templateUrl: 'views/ahu_basics.html'
       }, {
+              name: 'low_pressure_basics',
+              nav: 'low_pressure',
+              url: '/low_pressure_basics',
+              templateUrl: 'views/low_pressure_drop_basics.html'
+      }, {
                 name: 'ahu_types',
                 nav: 'ahu',
                 url: '/ahu_types',
@@ -944,7 +949,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
       }, {
                 name: 'ahu_operation_lab',
                 nav: 'ahu',
-                url: '/ahu_operaton_lab',
+                url: '/ahu_operation_lab',
                 templateUrl: 'views/ahu_operation_lab.html'
       }, {
                 name: 'duct_basics_lab',
@@ -1128,7 +1133,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 templateUrl: 'views/exposure_control_operations.html'
       }, {
                 name: 'bldg_modeling_basics',
-                nav: 'lab_vent',
+                nav: 'bldg_model',
                 url: '/bldg_modeling_basics',
                 templateUrl: 'views/bldg_modeling_basics.html'
       }, {
@@ -1142,7 +1147,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
                 url: '/lab_vent_cfd',
                 templateUrl: 'views/lab_vent_cfd.html'
       }, {
-                name: 'lab_benchmark',
+                name: 'lab_benchmark_basics',
                 nav: 'lab_benchmark',
                 url: '/lab_energy_benchmark',
                 templateUrl: 'views/lab_energy_benchmarking.html'
@@ -1244,6 +1249,7 @@ routerApp.controller('MainCtrl', ['$rootScope', '$scope', '$state', function ($r
                 'laboratories.exposure_control_operations',
                 'laboratories.exposure_control_tools',
                 'laboratories.exposure_control_types',
+                'laboratories.lab_benchmark_basics',
                 'laboratories.fan_basics',
                 'laboratories.fan_cases',
                 'laboratories.fan_design',
@@ -1283,6 +1289,7 @@ routerApp.controller('MainCtrl', ['$rootScope', '$scope', '$state', function ($r
                 'laboratories.valve_design',
                 'laboratories.valve_operation',
                 'laboratories.valve_tools',
+                'laboratories.low_pressure_basics',
                 'laboratories.valve_types'
             ];
             for (var i = 0; i < names.length; ++i) {
