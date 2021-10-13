@@ -1,6 +1,6 @@
-var routerApp = angular.module('routerApp', ['ngAnimate', 'ui.router', 'ui.router.stateHelper']);
+var routerApp = angular.module('routerApp', ['ngAnimate', 'ui.router', 'ui.router.stateHelper', 'ngMeta']);
 
-routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
+routerApp.config(function (stateHelperProvider, $urlRouterProvider, ngMetaProvider) {
 
     $urlRouterProvider.when('', '/').otherwise('/');
 
@@ -8,22 +8,46 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
         .state({
             name: 'home',
             url: '/',
-            templateUrl: 'views/home.html'
+            templateUrl: 'views/home.html',
+            data: {
+              meta: {
+                'title': 'HVAC Resource Map Home',
+                'description': 'This site provides access to a broad array of quality HVAC information on operations and maintenance best practices and energy and water efficiency measures. The resources cover the central plant, distribution systems, zone systems, and laboratory HVAC.'
+              }
+            }
         })
         .state({
             name: 'contact',
             url: '/contact',
-            templateUrl: 'views/contact.html'
+            templateUrl: 'views/contact.html',
+            data: {
+              meta: {
+                'title': 'Contact Up',
+                'description': 'Form to contact us with questions/comments.'
+              }
+            }
         })
         .state({
             name: 'contributors',
             url: '/contributors',
-            templateUrl: 'views/contributors.html'
+            templateUrl: 'views/contributors.html',
+            data: {
+              meta: {
+                'title': 'List of Contributors',
+                'description': 'The people and institutions that contribute to maintaining and updating this site.'
+              }
+            }
         })
         .state({
             name: 'central_plant',
             url: '/central_plant',
-            templateUrl: 'views/central_plant.html'
+            templateUrl: 'views/central_plant.html',
+            data: {
+              meta: {
+                'title': 'HVAC Central Plant',
+                'description': 'Central plants are the heart of the HVAC systems in large buildings or complexes of buildings. This section provides information on boilers, chillers, cooling towers, energy storage, pumps, water treatment systems, valves, pipes, sensors, and controls.'
+              }
+            }
         })
         .state({
             name: 'boiler',
@@ -1168,7 +1192,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
 }); // closes $routerApp.config()
 
 
-routerApp.run(['$rootScope', '$log', '$state', function ($rootScope, $log, $state) {
+routerApp.run(['$rootScope', '$log', '$state', 'ngMeta', function ($rootScope, $log, $state) {
     $(function () {
         var $body = $('body');
         $body.on('mouseenter', '#diagram a', function (evt) {
@@ -1179,6 +1203,7 @@ routerApp.run(['$rootScope', '$log', '$state', function ($rootScope, $log, $stat
             var id = $(evt.target).attr('id');
             console.debug('Left ' + id);
         });
+        // ngMeta.init();
     });
 
     $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
