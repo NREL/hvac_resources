@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HVAC RESOURCE MAP</title>
-   <meta name="description" content="This site provides access to a broad array of quality HVAC information on operations and maintenance best practices and energy and water efficiency measures. The resources cover the central plant, distribution systems, zone systems, and laboratory HVAC. ">
+    <meta name="description" content="This site provides access to a broad array of quality HVAC information on operations and maintenance best practices and energy and water efficiency measures. The resources cover the central plant, distribution systems, zone systems, and laboratory HVAC. ">
      <meta name="keywords" content="HVAC 101, central plant, heating and cooling, HVAC, HVAC systems, about HVAC, HVAC components, heating, ventilation, air conditioning, HVAC distribution, HVAC basics, HVAC system components, commercial HVAC system components, HVAC energy efficiency, HVAC system diagram, interactive HVAC system diagram, lab HVAC, laboratory HVAC, central chiller plants, central boiler plants, basics HVAC distribution systems, learn about HVAC, HVAC basics">
     <link rel="shortcut icon" href="img/hvac_icon2.ico">
     <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
@@ -22,6 +22,16 @@
     <script src="bower_components/GreenSock-JS/src/minified/TweenMax.min.js"></script>
     <script src="controllers/app.js"></script>
     <!--<script src="js/accordion-menu.js"></script>-->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVWCHL4FV0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KVWCHL4FV0');
+    </script>
 </head>
 
 <body ng-app="routerApp">
@@ -69,19 +79,6 @@
             NREL is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.
         </span>
     </div>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18838154-17"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-18838154-17');
-
-    </script>
     <!--<script>
         new AccordionMenu('.col-menu');
     </script>-->
