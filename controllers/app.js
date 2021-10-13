@@ -1,6 +1,9 @@
 var routerApp = angular.module('routerApp', ['ngAnimate', 'ui.router', 'ui.router.stateHelper', 'ngMeta']);
 
-routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
+routerApp.config(function (stateHelperProvider, $urlRouterProvider, ngMetaProvider) {
+
+    ngMetaProvider.setDefaultTitle('HVAC Resource Map');
+    ngMetaProvider.useTitleSuffix(true);
 
     $urlRouterProvider.when('', '/').otherwise('/');
 
@@ -11,8 +14,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
             templateUrl: 'views/home.html',
             data: {
               meta: {
-                'title': 'HVAC Resource Map Home',
-                'description': 'This site provides access to a broad array of quality HVAC information on operations and maintenance best practices and energy and water efficiency measures. The resources cover the central plant, distribution systems, zone systems, and laboratory HVAC.'
+                description: 'This site provides access to a broad array of quality HVAC information on operations and maintenance best practices and energy and water efficiency measures. The resources cover the central plant, distribution systems, zone systems, and laboratory HVAC.'
               }
             }
         })
@@ -22,8 +24,8 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
             templateUrl: 'views/contact.html',
             data: {
               meta: {
-                'title': 'Contact Up',
-                'description': 'Form to contact us with questions/comments.'
+                titleSuffix: ' | Contact Us',
+                description: 'Form to contact us with questions/comments.'
               }
             }
         })
@@ -33,8 +35,8 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
             templateUrl: 'views/contributors.html',
             data: {
               meta: {
-                'title': 'List of Contributors',
-                'description': 'The people and institutions that contribute to maintaining and updating this site.'
+                titleSuffix: ' | List of Contributors',
+                description: 'The people and institutions that contribute to maintaining and updating this site.'
               }
             }
         })
@@ -44,8 +46,8 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
             templateUrl: 'views/central_plant.html',
             data: {
               meta: {
-                'title': 'HVAC Central Plant',
-                'description': 'Central plants are the heart of the HVAC systems in large buildings or complexes of buildings. This section provides information on boilers, chillers, cooling towers, energy storage, pumps, water treatment systems, valves, pipes, sensors, and controls.'
+                titleSuffix: ' | HVAC Central Plant',
+                description: 'Central plants are the heart of the HVAC systems in large buildings or complexes of buildings. This section provides information on boilers, chillers, cooling towers, energy storage, pumps, water treatment systems, valves, pipes, sensors, and controls.'
               }
             }
         })
