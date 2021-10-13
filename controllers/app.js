@@ -1,6 +1,6 @@
 var routerApp = angular.module('routerApp', ['ngAnimate', 'ui.router', 'ui.router.stateHelper', 'ngMeta']);
 
-routerApp.config(function (stateHelperProvider, $urlRouterProvider, ngMetaProvider) {
+routerApp.config(function (stateHelperProvider, $urlRouterProvider) {
 
     $urlRouterProvider.when('', '/').otherwise('/');
 
@@ -1175,7 +1175,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider, ngMetaProvid
                 nav: 'lab_benchmark',
                 url: '/lab_energy_benchmark',
                 templateUrl: 'views/lab_energy_benchmarking.html'
-      }, { 
+      }, {
                 name: 'exhaust_stack_basics',
                 nav: 'exhaust_stack',
                 url: '/exhaust_stack_basics',
@@ -1192,7 +1192,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider, ngMetaProvid
 }); // closes $routerApp.config()
 
 
-routerApp.run(['$rootScope', '$log', '$state', 'ngMeta', function ($rootScope, $log, $state) {
+routerApp.run(['$rootScope', '$log', '$state', 'ngMeta', function ($rootScope, $log, $state, ngMeta) {
     $(function () {
         var $body = $('body');
         $body.on('mouseenter', '#diagram a', function (evt) {
@@ -1203,7 +1203,7 @@ routerApp.run(['$rootScope', '$log', '$state', 'ngMeta', function ($rootScope, $
             var id = $(evt.target).attr('id');
             console.debug('Left ' + id);
         });
-        // ngMeta.init();
+        ngMeta.init();
     });
 
     $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {

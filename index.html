@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="routerApp">
 
 <head>
     <meta charset="UTF-8">
@@ -21,11 +21,12 @@
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="bower_components/angular-ui-router.stateHelper/statehelper.min.js"></script>
     <script src="bower_components/GreenSock-JS/src/minified/TweenMax.min.js"></script>
+    <script src="bower_components/ngMeta/dist/ngMeta.min.js"></script>
     <script src="controllers/app.js"></script>
     <!--<script src="js/accordion-menu.js"></script>-->
 </head>
 
-<body ng-app="routerApp">
+<body>
     <div id="wrapper" ng-controller="MainCtrl">
         <div id="content">
             <div class="nreltop"><img style="float: left;" src="img/hvac_image-whitesm.png" alt="Icon showing cooling on one side and heating on the other" height="60"><span class="nreltitle">HVAC RESOURCE MAP</span>
