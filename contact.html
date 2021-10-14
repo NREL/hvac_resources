@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HVAC RESOURCE MAP</title>
+    <title>HVAC Resource Map | Contact Us</title>
     <link rel="shortcut icon" href="img/hvac_icon2.ico">
     <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
@@ -35,7 +35,7 @@
     <div id="wrapper">
         <div id="content">
             <div class="nreltop">
-                <img style="float: left;" src="img/hvac_image-whitesm.png" alt="Icon showing cooling on one side and heating on the other" height="60px"><span class="nreltitle">HVAC RESOURCE MAP</span>
+                <img style="float: left;" src="img/hvac_image-whitesm.png" alt="Icon showing cooling on one side and heating on the other" height="60px"><a class="nreltitle" href="index.html#/">HVAC RESOURCE MAP</a>
                 <a href="https://www.nrel.gov/" class="nrellink"><img style="float: right;" src="img/nrel-logo-nobar.png" alt="National Renewable Energy Laboratory Logo" height="60px"></a>
             </div>
             <div class="topbar">
@@ -65,14 +65,14 @@
                             <form method="POST" action="https://formspree.io/hvacresourcemap@nrel.gov">
 
                                 <label for="name" class="label">Name</label>
-                                <input type="text" name="name" placeholder="Your name" required>
+                                <input id="name" type="text" name="name" placeholder="Your name" required>
                                 <br>
                                 <label for="email" class="label">Email</label>
-                                <input type="email" name="email" placeholder="Your email" required>
-
+                                <input id="email" type="email" name="email" placeholder="Your email" required>
+                                <br>
                                 <label for="message" class="label">Message</label>
-                                <textarea name="message" placeholder="Provide your feedback, suggestions, and comments" required></textarea>
-
+                                <textarea id="message" name="message" placeholder="Provide your feedback, suggestions, and comments" required></textarea>
+                                <br>
                                 <button type="submit" class="mybtn">Send</button>
                             </form>
 

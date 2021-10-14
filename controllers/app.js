@@ -3,6 +3,7 @@ var routerApp = angular.module('routerApp', ['ngAnimate', 'ui.router', 'ui.route
 routerApp.config(function (stateHelperProvider, $urlRouterProvider, ngMetaProvider) {
 
     ngMetaProvider.setDefaultTitle('HVAC Resource Map');
+    ngMetaProvider.setDefaultTag('description', 'This site provides access to a broad array of quality HVAC information on operations and maintenance best practices and energy and water efficiency measures. The resources cover the central plant, distribution systems, zone systems, and laboratory HVAC.');
     ngMetaProvider.useTitleSuffix(true);
 
     $urlRouterProvider.when('', '/').otherwise('/');
@@ -11,12 +12,7 @@ routerApp.config(function (stateHelperProvider, $urlRouterProvider, ngMetaProvid
         .state({
             name: 'home',
             url: '/',
-            templateUrl: 'views/home.html',
-            data: {
-              meta: {
-                description: 'This site provides access to a broad array of quality HVAC information on operations and maintenance best practices and energy and water efficiency measures. The resources cover the central plant, distribution systems, zone systems, and laboratory HVAC.'
-              }
-            }
+            templateUrl: 'views/home.html'
         })
         .state({
             name: 'contact',
