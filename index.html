@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="routerApp">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HVAC RESOURCE MAP</title>
-    <meta name="description" content="This site provides access to a broad array of quality HVAC information on operations and maintenance best practices and energy and water efficiency measures. The resources cover the central plant, distribution systems, zone systems, and laboratory HVAC. ">
+    <title ng-bind="ngMeta.title"></title>
+    <meta name="description" content="{{ngMeta.description}}" />
+  <!--  <meta name="description" content="This site provides access to a broad array of quality HVAC information on operations and maintenance best practices and energy and water efficiency measures. The resources cover the central plant, distribution systems, zone systems, and laboratory HVAC. "> -->
+ 
      <meta name="keywords" content="HVAC 101, central plant, heating and cooling, HVAC, HVAC systems, about HVAC, HVAC components, heating, ventilation, air conditioning, HVAC distribution, HVAC basics, HVAC system components, commercial HVAC system components, HVAC energy efficiency, HVAC system diagram, interactive HVAC system diagram, lab HVAC, laboratory HVAC, central chiller plants, central boiler plants, basics HVAC distribution systems, learn about HVAC, HVAC basics">
     <link rel="shortcut icon" href="img/hvac_icon2.ico">
     <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">-->
@@ -20,6 +22,7 @@
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="bower_components/angular-ui-router.stateHelper/statehelper.min.js"></script>
     <script src="bower_components/GreenSock-JS/src/minified/TweenMax.min.js"></script>
+    <script src="bower_components/ngMeta/dist/ngMeta.min.js"></script>
     <script src="controllers/app.js"></script>
     <!--<script src="js/accordion-menu.js"></script>-->
 
@@ -34,10 +37,10 @@
     </script>
 </head>
 
-<body ng-app="routerApp">
+<body>
     <div id="wrapper" ng-controller="MainCtrl">
         <div id="content">
-            <div class="nreltop"><img style="float: left;" src="img/hvac_image-whitesm.png" alt="Icon showing cooling on one side and heating on the other" height="60"><span class="nreltitle">HVAC RESOURCE MAP</span>
+            <div class="nreltop"><img style="float: left;" src="img/hvac_image-whitesm.png" alt="Icon showing cooling on one side and heating on the other" height="60"><a class="nreltitle" href="#/">HVAC RESOURCE MAP</a>
                 <a href="https://www.nrel.gov" class="nrellink"><img style="float: right;" src="img/nrel-logo-nobar.png" alt="National Renewable Energy Laboratory Logo" height="60"></a>
             </div>
             <div class="topbar">
