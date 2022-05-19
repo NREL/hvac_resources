@@ -1396,9 +1396,9 @@ body {
 }
 
 .diagram-diffuser #svg {
-    transform: scale(1.2);
+    transform: scale(1.05);
     left: -2%;
-    top: -54%;
+    top: -65%;
 }
 
 .diagram-duct #svg {
@@ -1433,9 +1433,9 @@ body {
 }
 
 .diagram-terminal #svg {
-    transform: scale(1.2);
+    transform: scale(1.05);
     left: -1%;
-    top: -35%;
+    top: -54%;
 }
 
 
